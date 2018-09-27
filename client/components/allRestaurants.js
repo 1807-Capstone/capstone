@@ -16,9 +16,6 @@ const mapDispatchToProps = (dispatch) => ({
 export class AllRestaurants extends Component {
   async componentDidMount () {
     const restaurants = await this.props.getRestaurants()
-    this.setState({
-      restaurants: restaurants
-    })
   }
 
   render () {

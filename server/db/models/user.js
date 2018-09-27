@@ -27,10 +27,14 @@ const User = db.define('user', {
   googleId: {
     type: Sequelize.STRING
   },
-  isAdmin: {
-    type: Sequelize.BOOLEAN,
-    defaultValue: false
-  }
+  // imgUrl: {
+  //   type: Sequelize.STRING,
+  //   allowNull: true
+  // },
+  // isAdmin: {
+  //   type: Sequelize.BOOLEAN,
+  //   defaultValue: false
+  // }
 })
 
 module.exports = User

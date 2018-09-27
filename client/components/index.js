@@ -5,4 +5,8 @@
  */
 export {default as Navbar} from './navbar'
 export {default as UserHome} from './user-home'
+export {default as AllRestaurants} from './allRestaurants'
+export {default as SingleRestaurant} from './singleRestaurant'
+export {default as Filter} from './filter'
+export {default as MapView} from './map'
 export {Login, Signup} from './auth-form'

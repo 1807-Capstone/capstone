@@ -10,6 +10,7 @@ export const UserHome = props => {
 
   return (
     <div>
+      {/* <img src={imgUrl} /> */}
       <h3>Welcome, {email}</h3>
     </div>
   )
@@ -30,5 +31,6 @@ export default connect(mapState)(UserHome)
  * PROP TYPES
  */
 UserHome.propTypes = {
-  email: PropTypes.string
+  email: PropTypes.string,
+  // imgUrl: PropTypes.string
 }

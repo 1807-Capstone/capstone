@@ -12,9 +12,10 @@ const Review = db.define('reviews', {
   },
   content: {
     type: Sequelize.TEXT,
+    allowNull: true,
     validate: {
       isWithinRange(value) {
-        if (!value.length >= 15 && value.length <= 2000) {
+        if (!value.length <= 15 && value.length >= 2000) {
           throw new Error('review not within range')
         }
       }

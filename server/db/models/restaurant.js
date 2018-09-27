@@ -13,6 +13,9 @@ const Restaurant = db.define('restaurants', {
     type: Sequelize.ARRAY(Sequelize.STRING),
     allowNull: false
   },
+  description: {
+    type: Sequelize.TEXT
+  },
   imgUrl: {
     type: Sequelize.STRING
   },

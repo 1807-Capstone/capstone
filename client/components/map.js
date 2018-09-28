@@ -34,6 +34,18 @@ export class MapView extends React.Component {
       })
     })
 
+    map.on('load', function() {
+      map.addLayer({
+        id: 'terrain-data',
+        type: 'line',
+        source: {
+          type: 'vector',
+          url: 'mapbox://mapbox.mapbox-terrain-v2'
+        },
+        'source-layer': 'contour'
+      })
+    })
+
     const geolocate = new mapboxgl.GeolocateControl({
       positionOptions: {
         enableHighAccuracy: true

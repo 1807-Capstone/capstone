@@ -10,7 +10,7 @@ export class MapView extends React.Component {
     this.state = {
       lng: 5,
       lat: 34,
-      zoom: 1.5
+      zoom: 15
     }
   }
 
@@ -54,6 +54,11 @@ export class MapView extends React.Component {
     })
     map.addControl(geolocate)
     setTimeout(() => geolocate.trigger(), 1000)
+    let mark = document.createElement('div')
+    mark.className = 'marker'
+    new mapboxgl.Marker(mark).setLngLat([-87.639, 41.8956]).addTo(map)
+    // new mapboxgl.LngLat(lng, lat).toBounds(5000)
+    console.log('test:', map.getBounds())
   }
 
   render() {

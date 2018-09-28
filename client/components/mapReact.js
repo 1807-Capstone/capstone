@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ReactMapboxGl, {Layer, Feature} from 'react-mapbox-gl'
+import mapboxgl from 'mapbox-gl'
 
 const Map = ReactMapboxGl({
   accessToken:
@@ -7,6 +8,15 @@ const Map = ReactMapboxGl({
 })
 
 export class MapReact extends Component {
+  // componentDidMount() {
+  //   const geolocate = new mapboxgl.GeolocateControl({
+  //     positionOptions: {
+  //       enableHighAccuracy: true
+  //     },
+  //     trackUserLocation: true
+  //   })
+  //   map.addControl(geolocate)
+  // }
   render() {
     return (
       <Map

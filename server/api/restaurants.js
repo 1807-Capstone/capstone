@@ -3,36 +3,14 @@ const yelp = require('yelp-fusion')
 module.exports = router
 
 const googleMapsClient = require('@google/maps').createClient({
-  key: process.env.GOOGLE_API,
-  Promise: Promise
-})
-
-router.get('/external', async (req, res, next) => {
-  try {
-    const initialGoogleSearch = await googleMapsClient
-      .placesNearby({
-        language: 'en',
-        location: [41.91, -87.67],
-        radius: 1000,
-        type: 'restaurant'
-      })
-      .asPromise()
-    const googleSearch = initialGoogleSearch.json.results
-    res.json(googleSearch)
-  } catch (error) {
-    next(error)
-  }
-})
-
-const client = yelp.client(process.env.YELP_FUSION_API)
-const googleMapsClient = require('@google/maps').createClient({
   key: process.env.GOOGLE_MAPS_API,
   Promise: Promise
 })
+const client = yelp.client(process.env.YELP_FUSION_API)
 
-router.get('/', async (req, res, next) => {
+router.get('/external', async (req, res, next) => {
   try {
-    //Google search
+    // Google search
     const initialGoogleSearch = await googleMapsClient
       .placesNearby({
         language: 'en',

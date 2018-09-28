@@ -57,8 +57,3 @@ router.get('/', async (req, res, next) => {
     console.error(err)
   }
 })
-
-// term: 'Volare Ristorante Italiano',
-// latitude: 41.8914882,
-// longitude: -87.6225091,
-// limit: 1

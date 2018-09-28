@@ -1,7 +1,7 @@
 'use strict'
 
 const db = require('../server/db')
-const {User} = require('../server/db/models')
+const {User, Restaurant} = require('../server/db/models')
 
 async function seed() {
   await db.sync({force: true})
@@ -11,6 +11,33 @@ async function seed() {
     User.create({email: 'cody@email.com', password: '123'}),
     User.create({email: 'murphy@email.com', password: '123'})
   ])
+
+  const restaurants = [
+    {
+      name: 'Original Hooters',
+      location: [41.8941717, -87.6345194],
+      price: 2,
+      googleRating: 3.9
+    },
+    {
+      name: 'Underground Wonder Bar',
+      location: [41.8952072, -87.6313672],
+      price: 3,
+      googleRating: 3.6
+    },
+    {
+      name: `Lou Malnati's Pizzeria`,
+      location: [41.8903425, -87.6337034],
+      price: 2,
+      googleRating: 4.5
+    },
+    {
+      name: `Maggiano's Little Italy`,
+      location: [41.8914765, -87.6313334],
+      price: 2,
+      googleRating: 4.4
+    }
+  ]
 
   console.log(`seeded ${users.length} users`)
   console.log(`seeded successfully`)

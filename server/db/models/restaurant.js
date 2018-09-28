@@ -31,21 +31,21 @@ const Restaurant = db.define('restaurants', {
     }
   },
   yelpRating: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.NUMBER,
     validate: {
       min: 1,
       max: 5
     }
   },
   googleRating: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.NUMBER,
     validate: {
       min: 1,
       max: 5
     }
   },
   radiusRating: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.NUMBER,
     validate: {
       min: 1,
       max: 5

@@ -18,14 +18,14 @@ const getRestaurant = restaurant => ({
 })
 
 // Thunks
-export const getRestaurantsFromServer = () => {
+export const getRestaurantsFromExternalAPIs = () => {
   return async dispatch => {
-    const res = await axios.get('/api/restaurants')
+    const res = await axios.get('/api/restaurants/external')
     dispatch(getRestaurants(res.data))
   }
 }
 
-export const getRestaurantFromServer = (id) => {
+export const getRestaurantFromServer = id => {
   return async dispatch => {
     const res = await axios.get(`/api/restaurants/${id}`)
     dispatch(getRestaurant(res.data))
@@ -44,4 +44,4 @@ const reducer = (state = initialState, action) => {
   }
 }
 
-export default reducer;
+export default reducer

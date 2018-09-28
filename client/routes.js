@@ -3,14 +3,14 @@ import {connect} from 'react-redux'
 import {withRouter, Route, Switch} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {
-        Login,
-        Signup,
-        UserHome,
-        Filter,
-        MapView,
-        AllRestaurants,
-        SingleRestaurant
-      } from './components'
+  Login,
+  Signup,
+  UserHome,
+  Filter,
+  MapView,
+  AllRestaurants,
+  SingleRestaurant
+} from './components'
 import {me} from './store'
 
 /**
@@ -36,7 +36,13 @@ class Routes extends Component {
             <Route path="/filter" component={Filter} />
             <Route path="/map" component={MapView} />
             <Route exact path="/restaurants" component={AllRestaurants} />
-            <Route path="/restaurants/:id" component={SingleRestaurant} />
+            <Route
+              path="/restaurants/:id"
+              // render={props => (
+              //   <SingleRestaurant {...props} restaurant={restaurant} />
+              // )}
+              component={SingleRestaurant}
+            />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}

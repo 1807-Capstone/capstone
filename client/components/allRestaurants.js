@@ -1,24 +1,26 @@
 import React, {Component} from 'react'
-import {getRestaurantsFromServer} from '../store/restaurant'
+import {getRestaurantsFromExternalAPIs} from '../store/restaurant'
 import {NavLink} from 'react-router-dom'
-import {connect} from 'react-redux';
+import {connect} from 'react-redux'
+import {SingleRestaurant} from './singleRestaurant'
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     restaurants: state.restaurant.restaurants
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  getRestaurants: () => dispatch(getRestaurantsFromServer())
+const mapDispatchToProps = dispatch => ({
+  getRestaurants: () => dispatch(getRestaurantsFromExternalAPIs())
 })
 
 export class AllRestaurants extends Component {
-  async componentDidMount () {
-    const restaurants = await this.props.getRestaurants()
+  async componentDidMount() {
+    await this.props.getRestaurants()
   }
 
-  render () {
+  render() {
+    console.log('restaurants', this.props.restaurants)
     if (this.props.restaurants.length) {
       return (
         <div>
@@ -29,6 +31,10 @@ export class AllRestaurants extends Component {
                 <NavLink
                   to={`/restaurants/${restaurant.id}`}
                   className="item"
+                  restaurant={restaurant}
+                  render={props => (
+                    <SingleRestaurant {...props} restaurant={restaurant} />
+                  )}
                 >
                   <h4>{restaurant.name}</h4>
                 </NavLink>
@@ -42,9 +48,7 @@ export class AllRestaurants extends Component {
           })}
         </div>
       )
-    } else return (
-      <h3>Sorry, we could not find any restaurants</h3>
-    )
+    } else return <h3>Sorry, we could not find any restaurants</h3>
   }
 }
 

@@ -38,13 +38,7 @@ class Routes extends Component {
             <Route path="/map" component={MapView} />
             <Route path="/mapReact" component={MapReact} />
             <Route exact path="/restaurants" component={AllRestaurants} />
-            <Route
-              path="/restaurants/:id"
-              // render={props => (
-              //   <SingleRestaurant {...props} restaurant={restaurant} />
-              // )}
-              component={SingleRestaurant}
-            />
+            <Route path="/restaurants/:id" component={SingleRestaurant} />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}

@@ -4,27 +4,28 @@ import {getReviewsFromServer, addReviewToServer} from '../store/review'
 import {connect} from 'react-redux'
 import {Review} from './review'
 
-const mapStateToProps = state => {
-  return {
-    restaurants: state.restaurant.singleRestaurant,
-    reviews: state.reviews
-  }
-}
+// const mapStateToProps = state => {
+//   return {
+//     restaurants: state.restaurant.singleRestaurant,
+//     reviews: state.reviews
+//   }
+// }
 
-const mapDispatchToProps = dispatch => ({
-  getRestaurant: id => dispatch(getRestaurantFromServer(id)),
-  getReviews: restaurantId => dispatch(getReviewsFromServer(restaurantId)),
-  addReview: reviewInfo => dispatch(addReviewToServer(reviewInfo))
-})
+// const mapDispatchToProps = dispatch => ({
+//   getRestaurant: id => dispatch(getRestaurantFromServer(id)),
+//   getReviews: restaurantId => dispatch(getReviewsFromServer(restaurantId)),
+//   addReview: reviewInfo => dispatch(addReviewToServer(reviewInfo))
+// })
 
 export class SingleRestaurant extends Component {
-  async componentDidMount() {
-    const restaurantId = Number(this.props.match.params.id)
-    await this.props.getRestaurant(restaurantId)
-    await this.props.getReviews(restaurantId)
-  }
+  // async componentDidMount() {
+  //   const restaurantId = Number(this.props.match.params.id)
+  //   await this.props.getRestaurant(restaurantId)
+  //   await this.props.getReviews(restaurantId)
+  // }
 
   render() {
+    console.log('props', this.props)
     const restaurant = this.props.singleRestaurant
     if (restaurant) {
       return (
@@ -58,4 +59,6 @@ export class SingleRestaurant extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SingleRestaurant)
+export default SingleRestaurant
+
+// export default connect(mapStateToProps, mapDispatchToProps)(SingleRestaurant)

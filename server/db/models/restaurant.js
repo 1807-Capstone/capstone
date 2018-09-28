@@ -9,10 +9,10 @@ const Restaurant = db.define('restaurants', {
       notEmpty: true
     }
   },
-  location: {
-    type: Sequelize.ARRAY(Sequelize.NUMBER),
-    allowNull: false
-  },
+  // location: {
+  //   type: Sequelize.ARRAY(Sequelize.NUMBER),
+  //   allowNull: false
+  // },
   description: {
     type: Sequelize.TEXT
   },

@@ -31,7 +31,7 @@ export class AllRestaurants extends Component {
                 <NavLink
                   to={`/restaurants/${restaurant.id}`}
                   className="item"
-                  restaurant={restaurant}
+                  // restaurant={restaurant}
                   render={props => (
                     <SingleRestaurant {...props} restaurant={restaurant} />
                   )}

@@ -22,7 +22,6 @@ router.get('/', async (req, res, next) => {
       })
       .asPromise()
     const googleSearch = initialGoogleSearch.json.results
-    console.log('this is google info', googleSearch[0])
 
     // const finalSearch = googleSearch.map(async googleObj => {
     //   try {
@@ -44,14 +43,16 @@ router.get('/', async (req, res, next) => {
     //res.status(200).json(finalSearch)
 
     //Yelp search
-    const initialYelpSearch = await client.search({
-      term: 'food',
-      latitude: 41.895579,
-      longitude: -87.639064,
-      radius: 1000
-    })
-    const yelpSearch = initialYelpSearch.jsonBody.businesses
-    console.log('this is yelp info', yelpSearch[0])
+    // const initialYelpSearch = await client.search({
+    //   term: 'food',
+    //   latitude: 41.895579,
+    //   longitude: -87.639064,
+    //   radius: 1000
+    // })
+    // const yelpSearch = initialYelpSearch.jsonBody.businesses
+    // console.log('this is yelp info', yelpSearch[0])
+
+    res.status(200).json(googleSearch)
   } catch (err) {
     console.error(err)
   }

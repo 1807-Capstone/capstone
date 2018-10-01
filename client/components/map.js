@@ -1,8 +1,20 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
+import {getRestaurantsFromExternalAPIs} from '../store/restaurant'
+import {connect} from 'react-redux'
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA'
+
+const mapStateToProps = state => {
+  return {
+    restaurants: state.restaurant.restaurants
+  }
+}
+
+const mapDispatchToProps = dispatch => ({
+  getRestaurants: () => dispatch(getRestaurantsFromExternalAPIs())
+})
 
 export class MapView extends React.Component {
   constructor(props) {
@@ -14,7 +26,9 @@ export class MapView extends React.Component {
     }
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    await this.props.getRestaurants()
+
     const {lng, lat, zoom} = this.state
 
     const map = new mapboxgl.Map({
@@ -34,17 +48,17 @@ export class MapView extends React.Component {
       })
     })
 
-    map.on('load', function() {
-      map.addLayer({
-        id: 'terrain-data',
-        type: 'line',
-        source: {
-          type: 'vector',
-          url: 'mapbox://mapbox.mapbox-terrain-v2'
-        },
-        'source-layer': 'contour'
-      })
-    })
+    // map.on('load', function() {
+    //   map.addLayer({
+    //     id: 'terrain-data',
+    //     type: 'line',
+    //     source: {
+    //       type: 'vector',
+    //       url: 'mapbox://mapbox.mapbox-terrain-v2'
+    //     },
+    //     'source-layer': 'contour'
+    //   })
+    // })
 
     const geolocate = new mapboxgl.GeolocateControl({
       positionOptions: {
@@ -54,9 +68,18 @@ export class MapView extends React.Component {
     })
     map.addControl(geolocate)
     setTimeout(() => geolocate.trigger(), 1000)
-    let mark = document.createElement('div')
+    var mark = document.createElement('div')
     mark.className = 'marker'
-    new mapboxgl.Marker(mark).setLngLat([-87.639, 41.8956]).addTo(map)
+
+    this.props.restaurants.map(restaurant =>
+      new mapboxgl.Marker()
+        .setLngLat([
+          restaurant.geometry.location.lng,
+          restaurant.geometry.location.lat
+        ])
+        .addTo(map)
+    )
+
     // new mapboxgl.LngLat(lng, lat).toBounds(5000)
     console.log('test:', map.getBounds())
   }
@@ -78,4 +101,4 @@ export class MapView extends React.Component {
   }
 }
 
-export default MapView
+export default connect(mapStateToProps, mapDispatchToProps)(MapView)

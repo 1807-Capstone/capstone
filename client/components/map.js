@@ -27,7 +27,6 @@ const mapDispatchToProps = dispatch => {
 const mapStateToProps = state => {
   return {
     location: state.map.location,
-    markers: state.map.markers
   }
 }
 

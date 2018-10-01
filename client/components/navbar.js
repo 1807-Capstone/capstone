@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
-import {Menu, Image, Icon} from 'semantic-ui-react'
+import {Menu, Image, Icon, Responsive} from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Box = styled.div`
@@ -31,13 +31,13 @@ const Header = styled.h1`
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <Box>
-    <Menu secondary size="mini">
+    <Menu secondary size="mini" stackable>
       <Menu.Item>
-        <Image src="img/logo_transparent.png" size="tiny" />
+        <Image m src="img/logo_transparent.png" size="tiny" />
       </Menu.Item>
       <Header>RADIUS</Header>
       {isLoggedIn ? (
-        <Menu.Menu position="right">
+        <Responsive as={Menu.Menu} position="right">
           {/* The navbar will show these links after you log in */}
           <Menu.Item as={Link} to="/home">
             <Icon name="home" />
@@ -59,7 +59,7 @@ const Navbar = ({handleClick, isLoggedIn}) => (
             <Icon name="log out" />
             Logout
           </Menu.Item>
-        </Menu.Menu>
+        </Responsive>
       ) : (
         <Menu.Menu position="right">
           {/* The navbar will show these links before you log in */}

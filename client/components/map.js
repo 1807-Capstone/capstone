@@ -1,8 +1,16 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
+import styled from 'styled-components'
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA'
+
+const Box = styled.div`
+  height: 90vh;
+  width: 100vw;
+  display: inline-block;
+  position: relative;
+`
 
 export class MapView extends React.Component {
   constructor(props) {
@@ -65,15 +73,14 @@ export class MapView extends React.Component {
     const {lng, lat, zoom} = this.state
 
     return (
-      <div>
-        <div className="inline-block absolute top left mt12 ml12 bg-darken75 color-white z1 py6 px12 round-full txt-s txt-bold">
-          <div>{`Longitude: ${lng} Latitude: ${lat} Zoom: ${zoom}`}</div>
-        </div>
+      <Box>
+        <div>{`Longitude: ${lng} Latitude: ${lat} Zoom: ${zoom}`}</div>
+
         <div
           ref={el => (this.mapContainer = el)}
           className="absolute top right left bottom"
         />
-      </div>
+      </Box>
     )
   }
 }

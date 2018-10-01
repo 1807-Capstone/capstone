@@ -22,16 +22,17 @@ const googleMapsClient = require('@google/maps').createClient({
   key: process.env.GOOGLE_MAPS_API,
   Promise: Promise
 })
-const client = yelp.client(process.env.YELP_FUSION_API)
 
-router.get('/', async (req, res, next) => {
+router.post('/', async (req, res, next) => {
   console.log('** Starting post Req')
+  console.log('req.body', req.body)
   try {
     // Google search
     const initialGoogleSearch = await googleMapsClient
       .placesNearby({
         language: 'en',
-        location: [41.895579, -87.639064],
+        location: [req.body.lat, req.body.lng],
+        // location: [41.895579, -87.639064],
         radius: 1500,
         minprice: 1,
         maxprice: 4,

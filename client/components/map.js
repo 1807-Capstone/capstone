@@ -1,6 +1,6 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
-import {getRestaurantsFromExternalAPIs} from '../store/restaurant'
+import {fetchAllRestaurantsFromServer} from '../store/restaurant'
 import {connect} from 'react-redux'
 
 import {withRouter} from 'react-router-dom'
@@ -22,13 +22,14 @@ let map
 
 const mapStateToProps = state => {
   return {
-    restaurants: state.restaurant.restaurants,
+    restaurants: state.restaurant.allRestaurants,
     location: state.map.location
   }
 }
 
 const mapDispatchToProps = dispatch => ({
-  getRestaurants: () => dispatch(getRestaurantsFromExternalAPIs()),
+  getRestaurants: (lat, lng) =>
+    dispatch(fetchAllRestaurantsFromServer(lat, lng)),
   setLocation: location => dispatch(setLocation(location))
 })
 
@@ -40,9 +41,16 @@ export class MapView extends React.Component {
       center: [this.props.location.lng, this.props.location.lat],
       zoom: this.props.location.zoom
     })
-    await this.props.getRestaurants()
-    console.log('restaurants', this.props.restaurants)
-    this.geolocate()
+
+    await this.geolocate()
+
+    console.log('latitude', this.props.location.lat)
+    console.log('longitude', this.props.location.lng)
+
+    await this.props.getRestaurants(
+      this.props.location.lat,
+      this.props.location.lng
+    )
 
     this.props.restaurants.map(restaurant =>
       new mapboxgl.Marker()

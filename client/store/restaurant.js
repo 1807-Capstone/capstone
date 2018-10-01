@@ -26,10 +26,10 @@ const reqOneRestaurant = () => ({
 })
 
 // Thunks
-export const fetchAllRestaurantsFromServer = () => {
+export const fetchAllRestaurantsFromServer = (lat, lng) => {
   return async dispatch => {
     dispatch(reqAllRestaurants())
-    const res = await axios.get('/api/restaurants')
+    const res = await axios.post('/api/restaurants', {lat, lng})
     dispatch(gotAllRestaurants(res.data))
   }
 }

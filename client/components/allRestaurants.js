@@ -23,12 +23,10 @@ export class AllRestaurants extends Component {
     if (this.props.allFetching) {
       return (
         <div>
-        <button type="button" onClick={this.handleClick}>
-          {' '}
-          Fetch Restaurants
-        </button>
-
-
+          <button type="button" onClick={this.handleClick}>
+            {' '}
+            Fetch Restaurants
+          </button>
         </div>
       )
     } else
@@ -39,11 +37,20 @@ export class AllRestaurants extends Component {
             return (
               <div key={restaurant.id}>
                 <p>
-                  {idx + 1} Google Name {restaurant.name} ---------- ||Yelp Name {restaurant.yelpResults.name}
+                  {idx + 1} Google Name {restaurant.name} ---------- ||Yelp Name{' '}
+                  {restaurant.yelpResults.name}
                 </p>
-                <p>Price level: {restaurant.price_level} ---------- ||Yelp Price level: {restaurant.yelpResults.price}</p>
-                <p>Google Rating: {restaurant.rating} ---------- ||Yelp Rating: {restaurant.yelpResults.rating} </p>
-                <p>---------------------------------------------------------------------------------------------</p>
+                <p>
+                  Price level: {restaurant.price_level} ---------- ||Yelp Price
+                  level: {restaurant.yelpResults.price}
+                </p>
+                <p>
+                  Google Rating: {restaurant.rating} ---------- ||Yelp Rating:{' '}
+                  {restaurant.yelpResults.rating}{' '}
+                </p>
+                <p>
+                  ---------------------------------------------------------------------------------------------
+                </p>
               </div>
             )
           })}

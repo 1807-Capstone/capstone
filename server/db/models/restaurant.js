@@ -19,9 +19,9 @@ const Restaurant = db.define('restaurants', {
   imgUrl: {
     type: Sequelize.STRING
   },
-  // hours: {
-  //   type: Sequelize.ARRAY(Sequelize.STRING)
-  // },
+  hours: {
+    type: Sequelize.ARRAY(Sequelize.STRING)
+  },
   price: {
     type: Sequelize.INTEGER,
     allowNull: false,

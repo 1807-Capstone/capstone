@@ -8,6 +8,7 @@ import {
   UserHome,
   Filter,
   MapView,
+  MapReact,
   AllRestaurants,
   SingleRestaurant
 } from './components'
@@ -35,6 +36,7 @@ class Routes extends Component {
             <Route path="/users/:id" component={UserHome} />
             <Route path="/filter" component={Filter} />
             <Route path="/map" component={MapView} />
+            <Route path="/mapReact" component={MapReact} />
             <Route exact path="/restaurants" component={AllRestaurants} />
             <Route path="/restaurants/:id" component={SingleRestaurant} />
           </Switch>

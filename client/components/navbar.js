@@ -7,12 +7,15 @@ import {Menu, Image, Icon} from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Box = styled.div`
-  height: 15vh;
+  display: inline-block;
+  height: 14vh;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 30px;
   position: relative;
   border-bottom: 2px solid #801a15;
   margin-bottom: 10px;
+  width: 100vw;
+  text-align: center;
 `
 const Header = styled.h1`
   font-family: 'Proza Libre', sans-serif;
@@ -20,13 +23,15 @@ const Header = styled.h1`
   font-weight: 100;
   letter-spacing: 10px;
   text-align: center;
+  margin-top: 25px;
   width: 100vw;
   text-align: center;
+  position: fixed;
 `
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <Box>
-    <Menu secondary icon="labeled" size="mini">
+    <Menu secondary size="mini">
       <Menu.Item>
         <Image src="img/logo_transparent.png" size="tiny" />
       </Menu.Item>
@@ -35,23 +40,23 @@ const Navbar = ({handleClick, isLoggedIn}) => (
         <Menu.Menu position="right">
           {/* The navbar will show these links after you log in */}
           <Menu.Item as={Link} to="/home">
-            <Icon name="home" size="mini" />
+            <Icon name="home" />
             Home
           </Menu.Item>
           <Menu.Item as={Link} to="/map">
-            <Icon name="map marker alternate" size="mini" />
+            <Icon name="map marker alternate" />
             Map
           </Menu.Item>
           <Menu.Item>
-            <Icon name="utensils" size="mini" />
+            <Icon name="utensils" />
             Filter
           </Menu.Item>
           <Menu.Item>
-            <Icon name="user" size="mini" />
+            <Icon name="user" />
             Account
           </Menu.Item>
           <Menu.Item href="#" onClick={handleClick}>
-            <Icon name="log out" size="mini" />
+            <Icon name="log out" />
             Logout
           </Menu.Item>
         </Menu.Menu>
@@ -59,11 +64,11 @@ const Navbar = ({handleClick, isLoggedIn}) => (
         <Menu.Menu position="right">
           {/* The navbar will show these links before you log in */}
           <Menu.Item as={Link} to="/login">
-            <Icon name="user" size="mini" />
+            <Icon name="user" />
             Login
           </Menu.Item>
           <Menu.Item as={Link} to="/signup">
-            <Icon name="add user" size="mini" />
+            <Icon name="add user" />
             Sign Up
           </Menu.Item>
         </Menu.Menu>

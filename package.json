@@ -38,6 +38,7 @@
   "dependencies": {
     "@google/maps": "^0.5.5",
     "axios": "^0.15.3",
+    "bottleneck": "^2.11.1",
     "compression": "^1.7.3",
     "connect-session-sequelize": "^4.1.0",
     "express": "^4.16.3",

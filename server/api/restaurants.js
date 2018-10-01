@@ -35,13 +35,13 @@ router.get('/', async (req, res, next) => {
         minprice: 1,
         maxprice: 4,
         type: 'restaurant',
-        keyword: 'italian'
+        keyword: 'chinese'
       })
       .asPromise()
     console.log('** Got Google Results')
     const googleSearch = initialGoogleSearch.json.results
 
-    // const yelpResults = []
+    const yelpSearch = []
 
     // const yelpCalls = async () => {
     //   let theState
@@ -62,17 +62,29 @@ router.get('/', async (req, res, next) => {
     //           state: theState,
     //           country: 'US'
     //         })
-    //         yelpResults.push(newResult)
-    //         console.log('yelpResults ', yelpResults[i])
-    //       }, 150 + 350 * index)
+    //         yelpSearch.push(newResult)
+    //         console.log('yelpResults ', yelpSearch[i].jsonBody.businesses[0].name, googleSearch[i].name)
+    //       }, 150 + 250 * index)
     //     })(i)
     //   }
     //   console.log(`finished`)
     // }
 
-    // yelpCalls();
+    // function yelpWrapper() {
+    //   yelpCalls()
+    //   setTimeout(function() {
+    //     console.log('** Beginning setTimeout function')
+    //     for (let i = 0; i < googleSearch.length; i++) {
+    //       googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0]
+    //     }
+    //     console.log('** Ran Yelp Wrapper')
+    //     // console.log('** Google Search Modified Array ', googleSearch)
+    //     res.status(200).json(googleSearch)
+    //   }, 8000)
+    // }
 
-
+    // yelpWrapper();
+    // console.log('** Running Yelp Wrapper')
     // console.log('** yelpResults :', yelpResults)
 
     const yelpQueryOne = yelpQueryMakerOne(googleSearch)
@@ -83,8 +95,6 @@ router.get('/', async (req, res, next) => {
     console.log('** First Yelp Query Received')
     const yelpResultsTwo = await client.request(yelpQueryTwo)
     console.log('** Second Yelp Query Received')
-
-    const yelpSearch = []
 
     for (let property in yelpResultsOne) {
       if (yelpResultsOne.hasOwnProperty(property)) {
@@ -98,11 +108,12 @@ router.get('/', async (req, res, next) => {
     }
     console.log('** Yelp Array Created')
 
-    for(let i = 0; i < googleSearch.length; i++) {
+    for (let i = 0; i < googleSearch.length; i++) {
       googleSearch[i].yelpResults = yelpSearch[i]
     }
+    res.status(200).json(googleSearch)
 
-    console.log('** Done!')
+    // console.log('** Done!')
 
     // let yelpResults = 'hi'
     // console.log('yelp query length: ', yelpQuery)
@@ -135,8 +146,6 @@ router.get('/', async (req, res, next) => {
     // })
     // const yelpSearch = initialYelpSearch.jsonBody.businesses
     // console.log('this is yelp info', yelpSearch[0])
-
-    res.status(200).json(googleSearch)
   } catch (err) {
     console.error(err)
   }

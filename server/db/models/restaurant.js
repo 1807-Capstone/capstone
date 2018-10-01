@@ -9,19 +9,19 @@ const Restaurant = db.define('restaurants', {
       notEmpty: true
     }
   },
-  location: {
-    type: Sequelize.ARRAY(Sequelize.NUMBER),
-    allowNull: false
-  },
+  // location: {
+  //   type: Sequelize.ARRAY(Sequelize.NUMBER),
+  //   allowNull: false
+  // },
   description: {
     type: Sequelize.TEXT
   },
   imgUrl: {
     type: Sequelize.STRING
   },
-  hours: {
-    type: Sequelize.ARRAY(Sequelize.STRING)
-  },
+  // hours: {
+  //   type: Sequelize.ARRAY(Sequelize.STRING)
+  // },
   price: {
     type: Sequelize.INTEGER,
     allowNull: false,
@@ -31,21 +31,21 @@ const Restaurant = db.define('restaurants', {
     }
   },
   yelpRating: {
-    type: Sequelize.NUMBER,
+    type: Sequelize.DECIMAL,
     validate: {
       min: 1,
       max: 5
     }
   },
   googleRating: {
-    type: Sequelize.NUMBER,
+    type: Sequelize.DECIMAL,
     validate: {
       min: 1,
       max: 5
     }
   },
   radiusRating: {
-    type: Sequelize.NUMBER,
+    type: Sequelize.DECIMAL,
     validate: {
       min: 1,
       max: 5

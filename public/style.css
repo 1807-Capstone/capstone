@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 a {
@@ -10,12 +10,14 @@ label {
   display: block;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
-}
-
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.ui.menu {
+  border-bottom: 0 none !important;
+  box-shadow: none;
+  font-family: 'Open Sans', sans-serif !important;
+  margin: 10px;
 }

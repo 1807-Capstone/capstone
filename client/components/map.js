@@ -1,5 +1,10 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
+
+import {connect} from 'react-redux'
+import {withRouter} from 'react-router-dom'
+import {setLocation} from '../store/map'
+
 import styled from 'styled-components'
 
 mapboxgl.accessToken =
@@ -12,77 +17,95 @@ const Box = styled.div`
   position: relative;
 `
 
-export class MapView extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      lng: 5,
-      lat: 34,
-      zoom: 15
-    }
+let map
+const mapDispatchToProps = dispatch => {
+  return {
+    setLocation: location => dispatch(setLocation(location))
   }
+}
 
+const mapStateToProps = state => {
+  return {
+    location: state.map.location,
+  }
+}
+
+export class MapView extends React.Component {
   componentDidMount() {
-    const {lng, lat, zoom} = this.state
-
-    const map = new mapboxgl.Map({
+    map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
-      center: [lng, lat],
-      zoom
+      center: [this.props.location.lng, this.props.location.lat],
+      zoom: this.props.location.zoom
     })
+    this.geolocate()
+  }
 
-    map.on('move', () => {
-      const {lng, lat} = map.getCenter()
-
-      this.setState({
-        lng: lng.toFixed(4),
-        lat: lat.toFixed(4),
-        zoom: map.getZoom().toFixed(2)
-      })
-    })
-
-    map.on('load', function() {
-      map.addLayer({
-        id: 'terrain-data',
-        type: 'line',
-        source: {
-          type: 'vector',
-          url: 'mapbox://mapbox.mapbox-terrain-v2'
-        },
-        'source-layer': 'contour'
-      })
-    })
-
+  geolocate() {
     const geolocate = new mapboxgl.GeolocateControl({
       positionOptions: {
         enableHighAccuracy: true
       },
       trackUserLocation: true
     })
+
     map.addControl(geolocate)
     setTimeout(() => geolocate.trigger(), 1000)
-    let mark = document.createElement('div')
-    mark.className = 'marker'
-    new mapboxgl.Marker(mark).setLngLat([-87.639, 41.8956]).addTo(map)
-    // new mapboxgl.LngLat(lng, lat).toBounds(5000)
-    console.log('test:', map.getBounds())
+    map.on('move', () => {
+      const {lng, lat} = map.getCenter()
+
+      this.props.setLocation({
+        lng: lng.toFixed(4),
+        lat: lat.toFixed(4),
+        zoom: map.getZoom().toFixed(2)
+      })
+    })
+  }
+  createMarker(lng, lat, className) {
+    var marker = document.createElement('div')
+    marker.className = className
+    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
+  }
+
+  addLayer(obj) {
+    map.on('load', function() {
+      map.addLayer(obj)
+      //obj example
+      // {
+      //   id: 'terrain-data',
+      //   type: 'line',
+      //   source: {
+      //     type: 'vector',
+      //     url: 'mapbox://mapbox.mapbox-terrain-v2'
+      //   },
+      //   'source-layer': 'contour'
+      // }
+    })
   }
 
   render() {
-    const {lng, lat, zoom} = this.state
-
-    return (
-      <Box>
-        <div>{`Longitude: ${lng} Latitude: ${lat} Zoom: ${zoom}`}</div>
-
-        <div
-          ref={el => (this.mapContainer = el)}
-          className="absolute top right left bottom"
-        />
-      </Box>
-    )
+    if (this.props.location) {
+      return (
+        <div>
+          <Box>
+            <div>{`Longitude: ${this.props.location.lng} Latitude: ${
+              this.props.location.lat
+            } Zoom: ${this.props.location.zoom}`}</div>
+            <div
+              ref={el => (this.mapContainer = el)}
+              className="absolute top right left bottom"
+            />
+          </Box>
+        </div>
+      )
+    } else {
+      return null
+    }
   }
 }
 
-export default MapView
+const ConnectedMapView = withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(MapView)
+)
+
+export default ConnectedMapView

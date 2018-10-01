@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
-import {fetchAllRestaurantsFromServer} from '../store/restaurant'
+import {
+  fetchAllRestaurantsFromServer,
+  gotOneRestaurant
+} from '../store/restaurant'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 const mapStateToProps = state => {
   return {
@@ -10,7 +14,9 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  fetchAllRestaurantsFromServer: () => dispatch(fetchAllRestaurantsFromServer())
+  fetchAllRestaurantsFromServer: () =>
+    dispatch(fetchAllRestaurantsFromServer()),
+  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant))
 })
 
 export class AllRestaurants extends Component {
@@ -18,17 +24,21 @@ export class AllRestaurants extends Component {
     event.preventDefault()
     this.props.fetchAllRestaurantsFromServer()
   }
+  handleRestaurantClick = value => {
+    const selectedRestaurant = this.props.allRestaurants.filter(
+      restaurant => restaurant.name === value
+    )
+    this.props.gotOneRestaurant(selectedRestaurant[0])
+  }
   render() {
     const allRestaurants = this.props.allRestaurants
     if (this.props.allFetching) {
       return (
         <div>
-        <button type="button" onClick={this.handleClick}>
-          {' '}
-          Fetch Restaurants
-        </button>
-
-
+          <button type="button" onClick={this.handleClick}>
+            {' '}
+            Fetch Restaurants
+          </button>
         </div>
       )
     } else
@@ -38,12 +48,23 @@ export class AllRestaurants extends Component {
           {allRestaurants.map((restaurant, idx) => {
             return (
               <div key={restaurant.id}>
+                <Link
+                  to={`/restaurants/${restaurant.name}`}
+                  onClick={() => this.handleRestaurantClick(restaurant.name)}
+                >
+                  {restaurant.name}
+                </Link>
                 <p>
-                  {idx + 1} Google Name {restaurant.name} ---------- ||Yelp Name {restaurant.yelpResults.name}
+                  Price level: {restaurant.price_level} ---------- ||Yelp Price
+                  level: {restaurant.yelpResults.price}
                 </p>
-                <p>Price level: {restaurant.price_level} ---------- ||Yelp Price level: {restaurant.yelpResults.price}</p>
-                <p>Google Rating: {restaurant.rating} ---------- ||Yelp Rating: {restaurant.yelpResults.rating} </p>
-                <p>---------------------------------------------------------------------------------------------</p>
+                <p>
+                  Google Rating: {restaurant.rating} ---------- ||Yelp Rating:{' '}
+                  {restaurant.yelpResults.rating}{' '}
+                </p>
+                <p>
+                  ---------------------------------------------------------------------------------------------
+                </p>
               </div>
             )
           })}

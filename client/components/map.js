@@ -18,6 +18,7 @@ const Box = styled.div`
 `
 
 let map
+
 const mapDispatchToProps = dispatch => {
   return {
     setLocation: location => dispatch(setLocation(location))
@@ -26,7 +27,7 @@ const mapDispatchToProps = dispatch => {
 
 const mapStateToProps = state => {
   return {
-    location: state.map.location,
+    location: state.map.location
   }
 }
 

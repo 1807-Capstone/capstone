@@ -33,7 +33,6 @@ const mapStateToProps = state => {
 
 export class MapView extends React.Component {
   componentDidMount() {
-    console.log('componentdidmount', this.props)
     map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',

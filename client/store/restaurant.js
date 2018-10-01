@@ -1,44 +1,73 @@
 import axios from 'axios'
 
-const initialState = {restaurants: [], singleRestaurant: {}}
-
 // Action types
-const GET_RESTAURANTS = 'GET_RESTAURANTS'
-const GET_SINGLE_RESTAURANT = 'GET_RESTAURANT'
+const GOT_ALL_RESTAURANTS = 'GOT_ALL_RESTAURANTS'
+const GOT_ONE_RESTAURANT = 'GOT_ONE_RESTAURANT'
+const REQ_ALL_RESTAURANTS = 'REQ_ALL_RESTAURANTS'
+const REQ_ONE_RESTAURANT = 'REQ_ONE_RESTAURANT'
 
 // Action creators
-const getRestaurants = restaurants => ({
-  type: GET_RESTAURANTS,
-  restaurants
+const gotAllRestaurants = allRestaurants => ({
+  type: GOT_ALL_RESTAURANTS,
+  allRestaurants
 })
 
-const getRestaurant = restaurant => ({
-  type: GET_SINGLE_RESTAURANT,
-  restaurant
+const reqAllRestaurants = () => ({
+  type: REQ_ALL_RESTAURANTS
+})
+
+const gotOneRestaurant = oneRestaurant => ({
+  type: GOT_ONE_RESTAURANT,
+  oneRestaurant
+})
+
+const reqOneRestaurant = () => ({
+  type: REQ_ONE_RESTAURANT
 })
 
 // Thunks
-export const getRestaurantsFromExternalAPIs = () => {
+export const fetchAllRestaurantsFromServer = () => {
   return async dispatch => {
-    const res = await axios.get('/api/restaurants/external')
-    dispatch(getRestaurants(res.data))
+    dispatch(reqAllRestaurants())
+    const res = await axios.get('/api/restaurants')
+    dispatch(gotAllRestaurants(res.data))
   }
 }
 
-export const getRestaurantFromServer = id => {
+export const fetchOneRestaurantFromServer = id => {
   return async dispatch => {
+    dispatch(reqOneRestaurant())
     const res = await axios.get(`/api/restaurants/${id}`)
-    dispatch(getRestaurant(res.data))
+    dispatch(gotOneRestaurant(res.data))
   }
+}
+
+const initialState = {
+  allRestaurants: [],
+  allFetching: true,
+  oneRestaurant: {},
+  oneFetching: true
 }
 
 // Reducer
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_RESTAURANTS:
-      return {...state, restaurants: action.restaurants}
-    case GET_SINGLE_RESTAURANT:
-      return {...state, singleRestaurant: action.restaurant}
+    case GOT_ALL_RESTAURANTS:
+      return {
+        ...state,
+        allRestaurants: action.allRestaurants,
+        allFetching: false
+      }
+    case REQ_ALL_RESTAURANTS:
+      return {...state, allFetching: true}
+    case GOT_ONE_RESTAURANT:
+      return {
+        ...state,
+        oneRestaurant: action.oneRestaurant,
+        oneFetching: false
+      }
+    case REQ_ONE_RESTAURANT:
+      return {...state, oneFetching: true}
     default:
       return state
   }

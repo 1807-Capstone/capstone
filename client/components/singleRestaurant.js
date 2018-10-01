@@ -55,4 +55,6 @@ export class SingleRestaurant extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SingleRestaurant)
+export default SingleRestaurant
+
+// export default connect(mapStateToProps, mapDispatchToProps)(SingleRestaurant)

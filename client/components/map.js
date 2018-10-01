@@ -1,7 +1,8 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
-
+import {fetchAllRestaurantsFromServer} from '../store/restaurant'
 import {connect} from 'react-redux'
+
 import {withRouter} from 'react-router-dom'
 import {setLocation} from '../store/map'
 
@@ -19,27 +20,56 @@ const Box = styled.div`
 
 let map
 
-const mapDispatchToProps = dispatch => {
-  return {
-    setLocation: location => dispatch(setLocation(location))
-  }
-}
-
 const mapStateToProps = state => {
   return {
+    restaurants: state.restaurant.allRestaurants,
     location: state.map.location
   }
 }
 
+const mapDispatchToProps = dispatch => ({
+  getRestaurants: (lat, lng) =>
+    dispatch(fetchAllRestaurantsFromServer(lat, lng)),
+  setLocation: location => dispatch(setLocation(location))
+})
+
 export class MapView extends React.Component {
-  componentDidMount() {
+  async componentDidMount() {
     map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
       center: [this.props.location.lng, this.props.location.lat],
       zoom: this.props.location.zoom
     })
-    this.geolocate()
+
+    await this.geolocate()
+
+    console.log('latitude', this.props.location.lat)
+    console.log('longitude', this.props.location.lng)
+
+    await this.props.getRestaurants(
+      this.props.location.lat,
+      this.props.location.lng
+    )
+
+    this.props.restaurants.map(restaurant =>
+      new mapboxgl.Marker()
+        .setLngLat([
+          restaurant.geometry.location.lng,
+          restaurant.geometry.location.lat
+        ])
+        .addTo(map)
+    )
+    // this.createMarker(
+    //   this.props.restaurants[0].geometry.location.lng,
+    //   this.props.restaurants[0].geometry.location.lat
+    // )
+  }
+
+  createMarker(lng, lat, className) {
+    var marker = document.createElement('div')
+    marker.className = className
+    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
   }
 
   geolocate() {
@@ -62,11 +92,9 @@ export class MapView extends React.Component {
       })
     })
   }
-  createMarker(lng, lat, className) {
-    var marker = document.createElement('div')
-    marker.className = className
-    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
-  }
+
+  // new mapboxgl.LngLat(lng, lat).toBounds(5000)
+  // console.log('test:', map.getBounds())
 
   addLayer(obj) {
     map.on('load', function() {

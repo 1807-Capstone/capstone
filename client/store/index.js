@@ -5,8 +5,9 @@ import {composeWithDevTools} from 'redux-devtools-extension'
 import user from './user'
 import restaurant from './restaurant'
 import review from './review'
+import map from './map'
 
-const reducer = combineReducers({user, restaurant, review})
+const reducer = combineReducers({user, restaurant, review, map})
 const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
 )

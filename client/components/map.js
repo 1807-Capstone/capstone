@@ -1,11 +1,21 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
+
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import {setLocation} from '../store/map'
 
+import styled from 'styled-components'
+
 mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA'
+
+const Box = styled.div`
+  height: 90vh;
+  width: 100vw;
+  display: inline-block;
+  position: relative;
+`
 
 let map
 const mapDispatchToProps = dispatch => {
@@ -79,15 +89,15 @@ export class MapView extends React.Component {
     if (this.props.location) {
       return (
         <div>
-          <div className="inline-block absolute top left mt12 ml12 bg-darken75 color-white z1 py6 px12 round-full txt-s txt-bold">
+          <Box>
             <div>{`Longitude: ${this.props.location.lng} Latitude: ${
               this.props.location.lat
             } Zoom: ${this.props.location.zoom}`}</div>
-          </div>
-          <div
-            ref={el => (this.mapContainer = el)}
-            className="absolute top right left bottom"
-          />
+            <div
+              ref={el => (this.mapContainer = el)}
+              className="absolute top right left bottom"
+            />
+          </Box>
         </div>
       )
     } else {

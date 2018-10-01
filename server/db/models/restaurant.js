@@ -10,7 +10,7 @@ const Restaurant = db.define('restaurants', {
     }
   },
   location: {
-    type: Sequelize.ARRAY(Sequelize.NUMBER),
+    type: Sequelize.ARRAY(Sequelize.FLOAT),
     allowNull: false
   },
   description: {

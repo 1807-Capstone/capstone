@@ -3,7 +3,6 @@ import mapboxgl from 'mapbox-gl'
 import {getRestaurantsFromExternalAPIs} from '../store/restaurant'
 import {connect} from 'react-redux'
 
-import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import {setLocation} from '../store/map'
 
@@ -41,8 +40,28 @@ export class MapView extends React.Component {
       center: [this.props.location.lng, this.props.location.lat],
       zoom: this.props.location.zoom
     })
+    await this.props.getRestaurants()
+    console.log('restaurants', this.props.restaurants)
     this.geolocate()
-    await this.props.getRestaurants
+
+    this.props.restaurants.map(restaurant =>
+      new mapboxgl.Marker()
+        .setLngLat([
+          restaurant.geometry.location.lng,
+          restaurant.geometry.location.lat
+        ])
+        .addTo(map)
+    )
+    // this.createMarker(
+    //   this.props.restaurants[0].geometry.location.lng,
+    //   this.props.restaurants[0].geometry.location.lat
+    // )
+  }
+
+  createMarker(lng, lat, className) {
+    var marker = document.createElement('div')
+    marker.className = className
+    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
   }
 
   geolocate() {
@@ -65,24 +84,6 @@ export class MapView extends React.Component {
       })
     })
   }
-
-  createMarker(lng, lat, className) {
-    var marker = document.createElement('div')
-    marker.className = className
-    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
-  }
-
-  // this.props.restaurants.map(restaurant =>
-  //   createMarker(restaurant.geometry.location.lng, restaurant.geometry.location.lat)
-
-  //   this.props.restaurants.map(restaurant =>
-  //     new mapboxgl.Marker()
-  //       .setLngLat([
-  //         restaurant.geometry.location.lng,
-  //         restaurant.geometry.location.lat
-  //       ])
-  //       .addTo(map)
-  //   )
 
   // new mapboxgl.LngLat(lng, lat).toBounds(5000)
   // console.log('test:', map.getBounds())

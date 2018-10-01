@@ -1,5 +1,6 @@
 import React from 'react'
 import {Field, reduxForm} from 'redux-form'
+import {Rating} from 'semantic-ui-react'
 
 const renderField = ({input, type, meta: {error, touched}}) => (
   <div>
@@ -54,12 +55,13 @@ let FilterForm = props => {
           <br />
           <div className="field">
             Rating:{' '}
-            <Field
+            {/* <Field
               component={renderField}
               type="text"
               name="quantity"
               validate={minimumZero}
-            />
+            /> */}
+            <Rating icon="star" maxRating={5} />
           </div>
           <br />
           <div className="field">

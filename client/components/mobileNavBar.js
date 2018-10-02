@@ -67,11 +67,11 @@ class MobileNavbar extends Component {
             <Icon name="map marker alternate" />
             Map
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item as={Link} to="/filter">
             <Icon name="utensils" />
             Filter
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item as={Link} to="/account">
             <Icon name="user" />
             Account
           </Menu.Item>

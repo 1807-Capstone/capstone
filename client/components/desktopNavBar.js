@@ -51,7 +51,7 @@ const DesktopNavbar = ({handleClick, isLoggedIn}) => (
             <Icon name="utensils" />
             Filter
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item as={Link} to="/account">
             <Icon name="user" />
             Account
           </Menu.Item>

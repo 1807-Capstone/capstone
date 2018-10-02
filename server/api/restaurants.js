@@ -24,8 +24,8 @@ const googleMapsClient = require('@google/maps').createClient({
 })
 
 router.post('/', async (req, res, next) => {
-  console.log('** Starting post Req')
   console.log('req.body', req.body)
+
   try {
     // Google search
     const initialGoogleSearch = await googleMapsClient
@@ -33,14 +33,14 @@ router.post('/', async (req, res, next) => {
         language: 'en',
         location: [req.body.lat, req.body.lng],
         // location: [41.895579, -87.639064],
-        radius: 1500,
+        radius: 500,
         minprice: 1,
         maxprice: 4,
-        type: 'restaurant',
-        keyword: 'chinese'
+        type: 'restaurant'
+        // keyword: 'chinese'
       })
       .asPromise()
-    console.log('** Got Google Results')
+
     const googleSearch = initialGoogleSearch.json.results
 
     const yelpSearch = []
@@ -86,17 +86,11 @@ router.post('/', async (req, res, next) => {
     // }
 
     // yelpWrapper();
-    // console.log('** Running Yelp Wrapper')
-    // console.log('** yelpResults :', yelpResults)
 
     const yelpQueryOne = yelpQueryMakerOne(googleSearch)
-    console.log('** 1st Query Created')
     const yelpQueryTwo = yelpQueryMakerTwo(googleSearch)
-    console.log('** Second Query Created')
     const yelpResultsOne = await client.request(yelpQueryOne)
-    console.log('** First Yelp Query Received')
     const yelpResultsTwo = await client.request(yelpQueryTwo)
-    console.log('** Second Yelp Query Received')
 
     for (let property in yelpResultsOne) {
       if (yelpResultsOne.hasOwnProperty(property)) {
@@ -108,14 +102,11 @@ router.post('/', async (req, res, next) => {
         yelpSearch.push(yelpResultsTwo[property].business[0])
       }
     }
-    console.log('** Yelp Array Created')
 
     for (let i = 0; i < googleSearch.length; i++) {
       googleSearch[i].yelpResults = yelpSearch[i]
     }
     res.status(200).json(googleSearch)
-
-    // console.log('** Done!')
   } catch (err) {
     console.error(err)
   }

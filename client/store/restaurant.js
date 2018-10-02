@@ -27,6 +27,7 @@ const reqOneRestaurant = () => ({
 
 // Thunks
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
+  console.log('lat and long', lat, lng)
   return async dispatch => {
     dispatch(reqAllRestaurants())
     const res = await axios.post('/api/restaurants', {lat, lng})
@@ -44,7 +45,7 @@ export const fetchOneRestaurantFromServer = id => {
 
 const initialState = {
   allRestaurants: [],
-  allFetching: true,
+  allFetching: false,
   oneRestaurant: {},
   oneFetching: true
 }

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {GOOGLE_MAPS_API} from '../config'
+import {GOOGLE_MAPS} from '../config'
 
 const initialState = {location: {lng: 5, lat: 34, zoom: 1}}
 
@@ -20,24 +20,16 @@ export const initialGeolocation = geolocation => ({
 //Thunks
 
 export const fetchGeolocation = () => {
+  let mapApi
+  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    mapApi = GOOGLE_MAPS
+  } else {
+    mapApi = GOOGLE_MAPS_API
+  }
   return async dispatch => {
     const res = await axios.post(
-      `https://www.googleapis.com/geolocation/v1/geolocate?key=${GOOGLE_MAPS_API}`,
-      {
-        // considerIp: 'false',
-        // wifiAccessPoints: [
-        //   {
-        //     macAddress: '00:25:9c:cf:1c:ac',
-        //     signalStrength: -43,
-        //     signalToNoiseRatio: 0
-        //   },
-        //   {
-        //     macAddress: '00:25:9c:cf:1c:ad',
-        //     signalStrength: -55,
-        //     signalToNoiseRatio: 0
-        //   }
-        // ]
-      }
+      `https://www.googleapis.com/geolocation/v1/geolocate?key=${mapApi}`,
+      {}
     )
     dispatch(initialGeolocation(res.data))
   }

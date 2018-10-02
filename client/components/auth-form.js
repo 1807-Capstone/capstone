@@ -33,7 +33,7 @@ const AuthForm = props => {
 
   return (
     // <Wrapper>
-    <Grid textAlign="center" divided="vertically">
+    <Grid textAlign="center" stackable>
       <Grid.Row>
         <Grid.Column width={11}>
           <Image src="img/restaurantEDIT2.jpg" />

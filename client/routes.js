@@ -8,7 +8,6 @@ import {
   UserHome,
   Filter,
   MapView,
-  MapReact,
   AllRestaurants,
   SingleRestaurant
 } from './components'
@@ -30,15 +29,14 @@ class Routes extends Component {
         {/* Routes placed here are available to all visitors */}
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
+        <Route exact path="/restaurants" component={AllRestaurants} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}
             <Route path="/users/:id" component={UserHome} />
             <Route path="/filter" component={Filter} />
             <Route path="/map" component={MapView} />
-            <Route path="/mapReact" component={MapReact} />
-            <Route exact path="/restaurants" component={AllRestaurants} />
-            <Route path="/restaurants/:id" component={SingleRestaurant} />
+            <Route path="/restaurants/:name" component={SingleRestaurant} />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}

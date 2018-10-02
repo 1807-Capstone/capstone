@@ -1,50 +1,75 @@
 import React, {Component} from 'react'
-import {getRestaurantsFromServer} from '../store/restaurant'
-import {NavLink} from 'react-router-dom'
-import {connect} from 'react-redux';
+import {
+  fetchAllRestaurantsFromServer,
+  gotOneRestaurant
+} from '../store/restaurant'
+import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-    restaurants: state.restaurant.restaurants
+    allRestaurants: state.restaurant.allRestaurants,
+    allFetching: state.restaurant.allFetching
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  getRestaurants: () => dispatch(getRestaurantsFromServer())
+const mapDispatchToProps = dispatch => ({
+  fetchAllRestaurantsFromServer: () =>
+    dispatch(fetchAllRestaurantsFromServer()),
+  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant))
 })
 
 export class AllRestaurants extends Component {
-  async componentDidMount () {
-    const restaurants = await this.props.getRestaurants()
+  handleClick = event => {
+    event.preventDefault()
+    this.props.fetchAllRestaurantsFromServer()
   }
-
-  render () {
-    if (this.props.restaurants.length) {
+  handleRestaurantClick = value => {
+    const selectedRestaurant = this.props.allRestaurants.filter(
+      restaurant => restaurant.name === value
+    )
+    this.props.gotOneRestaurant(selectedRestaurant[0])
+  }
+  render() {
+    const allRestaurants = this.props.allRestaurants
+    if (this.props.allFetching) {
       return (
         <div>
-          <h2>All Restaurants</h2>
-          {this.props.restaurants.map(restaurant => {
+          <button type="button" onClick={this.handleClick}>
+            {' '}
+            Fetch Restaurants
+          </button>
+        </div>
+      )
+    } else
+      return (
+        <div>
+          <h1>All Restaurants</h1>
+          {allRestaurants.map((restaurant, idx) => {
             return (
               <div key={restaurant.id}>
-                <NavLink
-                  to={`/restaurants/${restaurant.id}`}
-                  className="item"
+                <Link
+                  to={`/restaurants/${restaurant.name}`}
+                  onClick={() => this.handleRestaurantClick(restaurant.name)}
                 >
-                  <h4>{restaurant.name}</h4>
-                </NavLink>
-                <p>{restaurant.location}</p>
-                <p>{restaurant.price}</p>
-                <p>{restaurant.yelpRating}</p>
-                <p>{restaurant.googleRating}</p>
-                <p>{restaurant.radiusRating}</p>
+                  {restaurant.name}
+                </Link>
+                <p>
+                  Price level: {restaurant.price_level} ---------- ||Yelp Price
+                  level: {restaurant.yelpResults.price}
+                </p>
+                <p>
+                  Google Rating: {restaurant.rating} ---------- ||Yelp Rating:{' '}
+                  {restaurant.yelpResults.rating}{' '}
+                </p>
+                <p>
+                  ---------------------------------------------------------------------------------------------
+                </p>
               </div>
             )
           })}
         </div>
       )
-    } else return (
-      <h3>Sorry, we could not find any restaurants</h3>
-    )
   }
 }
 

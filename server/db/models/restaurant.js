@@ -9,19 +9,19 @@ const Restaurant = db.define('restaurants', {
       notEmpty: true
     }
   },
-  // location: {
-  //   type: Sequelize.ARRAY(Sequelize.NUMBER),
-  //   allowNull: false
-  // },
+  location: {
+    type: Sequelize.ARRAY(Sequelize.FLOAT),
+    allowNull: false
+  },
   description: {
     type: Sequelize.TEXT
   },
   imgUrl: {
     type: Sequelize.STRING
   },
-  // hours: {
-  //   type: Sequelize.ARRAY(Sequelize.STRING)
-  // },
+  hours: {
+    type: Sequelize.ARRAY(Sequelize.STRING)
+  },
   price: {
     type: Sequelize.INTEGER,
     allowNull: false,

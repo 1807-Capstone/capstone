@@ -25,7 +25,6 @@ CheckIn.afterCreate(async (checkIn, options) => {
   });
   // Clean data
   const restaurantsVisited = response.map(elem => elem.dataValues.restaurantId)
-  console.log(restaurantsVisited)
   // Find All visited Restaurants
   user.set('checkedInRestaurants', restaurantsVisited)
   user.save()

@@ -70,6 +70,7 @@ function difference(arrA, arrB) {
   const setB = new Set(arrB);
   return arrA.filter(elem => !setB.has(elem));
 }
+
 function shuffle(array) {
   let m = array.length,
     t,
@@ -91,7 +92,6 @@ User.prototype.getSuggested = async function() {
   const allVisitedRestaurants = allUsers.map(
     elem => elem.dataValues.checkedInRestaurants
   );
-  console.log(allVisitedRestaurants);
   allVisitedRestaurants.forEach(elem => {
     if (
       intersection(userCheckedInRestaurants, elem).length >
@@ -105,7 +105,7 @@ User.prototype.getSuggested = async function() {
     shuffledRestaurants = shuffledRestaurants.slice(2);
   const response = Restaurant.findAll({
     where: {
-      restaurantId: {
+      id: {
         [Op.or]: shuffledRestaurants
       }
     }

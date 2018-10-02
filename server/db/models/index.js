@@ -4,7 +4,7 @@ const Restaurant = require('./restaurant')
 const WaitTime = require('./waitTime')
 const Cuisine = require('./cuisine')
 const RestaurantCuisine = require('./restaurant-cuisine')
-const UserRestaurant = require('./user-restaurant')
+const CheckIn = require('./check-in')
 /**
  * If we had any associations to make, this would be a great place to put them!
  * ex. if we had another model called BlogPost, we might say:
@@ -33,12 +33,12 @@ WaitTime.belongsTo(Restaurant)
 Restaurant.hasMany(WaitTime)
 
 //User-Restaurant
-User.belongsToMany(Restaurant, {through: UserRestaurant})
-Restaurant.belongsToMany(User, {through: UserRestaurant})
+User.belongsToMany(Restaurant, {through: CheckIn})
+Restaurant.belongsToMany(User, {through: CheckIn})
 
 //Eager loading UserRestaurant
-UserRestaurant.belongsTo(Restaurant)
-Restaurant.hasMany(UserRestaurant)
+CheckIn.belongsTo(Restaurant)
+Restaurant.hasMany(CheckIn)
 
 /**
  * We'll export all of our models here, so that any time a module needs a model,
@@ -53,5 +53,5 @@ module.exports = {
   WaitTime,
   Cuisine,
   RestaurantCuisine,
-  UserRestaurant
+  CheckIn
 }

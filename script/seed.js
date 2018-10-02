@@ -1,26 +1,27 @@
-'use strict'
+'use strict';
 
-const db = require('../server/db')
+const db = require('../server/db');
 const {
   User,
   Restaurant,
   Cuisine,
   Review,
-  WaitTime
-} = require('../server/db/models')
+  WaitTime,
+  CheckIn
+} = require('../server/db/models');
 
 async function seed() {
-  await db.sync({force: true})
-  console.log('db synced!')
+  await db.sync({force: true});
+  console.log('db synced!');
 
   const users = await Promise.all([
+    User.create({email: 'cody@email.com', password: '123'}),
+    User.create({email: 'murphy@email.com', password: '123'}),
     User.create({email: 'tony@boetto.org', password: '123'}),
     User.create({email: 'parag.g.zaveri@gmail.com', password: '123'}),
     User.create({email: 'juliet.welcome@gmail.com', password: '123'}),
-    User.create({email: 'abby.wigdale@gmail.com', password: '123'}),
-    User.create({email: 'cody@email.com', password: '123'}),
-    User.create({email: 'murphy@email.com', password: '123'})
-  ])
+    User.create({email: 'abby.wigdale@gmail.com', password: '123'})
+  ]);
 
   const restaurants = await Promise.all([
     Restaurant.create({
@@ -143,11 +144,9 @@ async function seed() {
       price: 2,
       googleRating: 4.4
     })
-  ])
+  ]);
 
-
-
-  console.log(`seeded ${users.length} users`)
+  console.log(`seeded ${users.length} users`);
 
   const cuisines = await Promise.all([
     Cuisine.create({name: 'American'}),
@@ -160,9 +159,9 @@ async function seed() {
     Cuisine.create({name: 'Thai'}),
     Cuisine.create({name: 'Greek'}),
     Cuisine.create({name: 'Vegetarian'})
-  ])
+  ]);
 
-  console.log(`seeded ${cuisines.length} cuisines`)
+  console.log(`seeded ${cuisines.length} cuisines`);
 
   const reviews = await Promise.all([
     Review.create({
@@ -269,9 +268,9 @@ async function seed() {
       userId: 2,
       restaurantId: 8
     })
-  ])
+  ]);
 
-  console.log(`seeded ${reviews.length} reviews`)
+  console.log(`seeded ${reviews.length} reviews`);
 
   const waitTimes = await Promise.all([
     WaitTime.create({
@@ -346,27 +345,130 @@ async function seed() {
       name: 'Over 60 minutes',
       restaurantId: 14
     })
-  ])
+  ]);
 
-  console.log(`seeded ${waitTimes.length} wait times`)
+  console.log(`seeded ${waitTimes.length} check ins`);
 
-  console.log(`seeded successfully`)
+  console.log(`seeded successfully`);
+
+  const checkIns = await Promise.all([
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 4
+    })
+
+  ]);
+  console.log(`seeded ${checkIns.length} wait times`);
+
+  console.log(`seeded successfully`);
 }
 
 // We've separated the `seed` function from the `runSeed` function.
 // This way we can isolate the error handling and exit trapping.
 // The `seed` function is concerned only with modifying the database.
 async function runSeed() {
-  console.log('seeding...')
+  console.log('seeding...');
   try {
-    await seed()
+    await seed();
   } catch (err) {
-    console.error(err)
-    process.exitCode = 1
+    console.error(err);
+    process.exitCode = 1;
   } finally {
-    console.log('closing db connection')
-    await db.close()
-    console.log('db connection closed')
+    console.log('closing db connection');
+    await db.close();
+    console.log('db connection closed');
   }
 }
 
@@ -374,8 +476,8 @@ async function runSeed() {
 // `Async` functions always return a promise, so we can use `catch` to handle
 // any errors that might occur inside of `seed`.
 if (module === require.main) {
-  runSeed()
+  runSeed();
 }
 
 // we export the seed function for testing purposes (see `./seed.spec.js`)
-module.exports = seed
+module.exports = seed;

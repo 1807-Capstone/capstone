@@ -18,12 +18,6 @@ import {Review} from './review'
 // })
 
 export class SingleRestaurant extends Component {
-  // async componentDidMount() {
-  //   const restaurantId = Number(this.props.match.params.id)
-  //   await this.props.getRestaurant(restaurantId)
-  //   await this.props.getReviews(restaurantId)
-  // }
-
   render() {
     console.log('props', this.props)
     const restaurant = this.props.singleRestaurant

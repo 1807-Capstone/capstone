@@ -3,13 +3,37 @@ import FilterFormRedux from './filterFormRedux'
 import RestaurantList from './allRestaurants'
 import {fetchAllRestaurantsFromServer} from '../store/restaurant'
 import {connect} from 'react-redux'
+import {fetchGeolocation} from '../store/map'
+
+// var startLat = document.createElement('div')
+// var startLon = document.createElement('div')
+
+// let startLat
+// let startLon
+
+// window.onload = function() {
+//   var startPos
+//   var geoSuccess = function(position) {
+//     startPos = position
+//     // document.getElementById('startLat').innerHTML = startPos.coords.latitude
+//     // document.getElementById('startLon').innerHTML = startPos.coords.longitude
+//     startLat = startPos.coords.latitude
+//     startLon = startPos.coords.longitude
+//   }
+//   navigator.geolocation.getCurrentPosition(geoSuccess)
+//   console.log(startLat)
+//   console.log(startLon)
+//   // console.log(startPos)
+// }
 
 const mapStateToProps = state => ({
-  allRestaurants: state.restaurant.allRestaurants
+  allRestaurants: state.restaurant.allRestaurants,
+  geolocation: state.map.location
 })
 
 const mapDispatchToProps = dispatch => ({
-  getRestaurants: () => dispatch(fetchAllRestaurantsFromServer())
+  getRestaurants: () => dispatch(fetchAllRestaurantsFromServer()),
+  geolocate: () => dispatch(fetchGeolocation())
 })
 
 class Filter extends React.Component {
@@ -28,7 +52,11 @@ class Filter extends React.Component {
     console.log('evt target', evt.target.elements.cuisine.value)
     // this.props.getRestaurants()
   }
+  componentDidMount() {
+    this.props.geolocate()
+  }
   render() {
+    console.log(this.props.geolocation)
     return (
       <div className="ui form">
         <br />

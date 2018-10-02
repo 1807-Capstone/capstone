@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
-import {fetchAllRestaurantsFromServer} from '../store/restaurant'
+import {
+  fetchAllRestaurantsFromServer,
+  gotOneRestaurant
+} from '../store/restaurant'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 const mapStateToProps = state => {
   return {
@@ -10,13 +14,21 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  fetchAllRestaurantsFromServer: () => dispatch(fetchAllRestaurantsFromServer())
+  fetchAllRestaurantsFromServer: () =>
+    dispatch(fetchAllRestaurantsFromServer()),
+  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant))
 })
 
 export class AllRestaurants extends Component {
   handleClick = event => {
     event.preventDefault()
     this.props.fetchAllRestaurantsFromServer()
+  }
+  handleRestaurantClick = value => {
+    const selectedRestaurant = this.props.allRestaurants.filter(
+      restaurant => restaurant.name === value
+    )
+    this.props.gotOneRestaurant(selectedRestaurant[0])
   }
   render() {
     const allRestaurants = this.props.allRestaurants
@@ -36,10 +48,12 @@ export class AllRestaurants extends Component {
           {allRestaurants.map((restaurant, idx) => {
             return (
               <div key={restaurant.id}>
-                <p>
-                  {idx + 1} Google Name {restaurant.name} ---------- ||Yelp Name{' '}
-                  {restaurant.yelpResults.name}
-                </p>
+                <Link
+                  to={`/restaurants/${restaurant.name}`}
+                  onClick={() => this.handleRestaurantClick(restaurant.name)}
+                >
+                  {restaurant.name}
+                </Link>
                 <p>
                   Price level: {restaurant.price_level} ---------- ||Yelp Price
                   level: {restaurant.yelpResults.price}

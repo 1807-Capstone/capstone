@@ -16,17 +16,14 @@ const reqAllRestaurants = () => ({
   type: REQ_ALL_RESTAURANTS
 })
 
-const gotOneRestaurant = oneRestaurant => ({
+export const gotOneRestaurant = oneRestaurant => ({
   type: GOT_ONE_RESTAURANT,
   oneRestaurant
 })
 
-const reqOneRestaurant = () => ({
-  type: REQ_ONE_RESTAURANT
-})
-
 // Thunks
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
+  console.log('lat and long', lat, lng)
   return async dispatch => {
     dispatch(reqAllRestaurants())
     const res = await axios.post('/api/restaurants', {lat, lng})
@@ -34,17 +31,17 @@ export const fetchAllRestaurantsFromServer = (lat, lng) => {
   }
 }
 
-export const fetchOneRestaurantFromServer = id => {
-  return async dispatch => {
-    dispatch(reqOneRestaurant())
-    const res = await axios.get(`/api/restaurants/${id}`)
-    dispatch(gotOneRestaurant(res.data))
-  }
-}
+// export const fetchOneRestaurantFromServer = id => {
+//   return async dispatch => {
+//     dispatch(reqOneRestaurant())
+//     const res = await axios.get(`/api/restaurants/${id}`)
+//     dispatch(gotOneRestaurant(res.data))
+//   }
+// }
 
 const initialState = {
   allRestaurants: [],
-  allFetching: true,
+  allFetching: false,
   oneRestaurant: {},
   oneFetching: true
 }

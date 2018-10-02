@@ -1,5 +1,17 @@
 const isDev = process.env.NODE_ENV === 'development'
 
+let definePlugin
+if (isDev) {
+  definePlugin = new webpack.DefinePlugin({
+    KEY_NAME: JSON.stringify("api-token398aseotuha.sch")
+  })
+}
+else {
+  definePlugin = new webpack.DefinePlugin({
+    KEY_NAME: JSON.stringify("api-token398aseotuha.sch")
+  })
+}
+
 module.exports = {
   mode: isDev ? 'development' : 'production',
   entry: [
@@ -13,6 +25,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
+  plugins: [definePlugin],
   devtool: 'source-map',
   module: {
     rules: [

@@ -19,10 +19,12 @@ const Box = styled.div`
 `
 
 let map
+let mapIsEmpty = true
 
 const mapStateToProps = state => {
   return {
     restaurants: state.restaurant.allRestaurants,
+    fetching: state.restaurant.allFetching,
     location: state.map.location
   }
 }
@@ -41,17 +43,22 @@ export class MapView extends React.Component {
       center: [this.props.location.lng, this.props.location.lat],
       zoom: this.props.location.zoom
     })
-
     await this.geolocate()
+  }
 
-    console.log('latitude', this.props.location.lat)
-    console.log('longitude', this.props.location.lng)
+  async shouldComponentUpdate(nextProps) {
+    if (this.props.location.lat === nextProps.location.lat && mapIsEmpty) {
+      if (!this.props.fetching) {
+        await this.props.getRestaurants(
+          this.props.location.lat,
+          this.props.location.lng
+        )
+      }
+      mapIsEmpty = false
+    }
+  }
 
-    await this.props.getRestaurants(
-      this.props.location.lat,
-      this.props.location.lng
-    )
-
+  componentDidUpdate() {
     this.props.restaurants.map(restaurant =>
       new mapboxgl.Marker()
         .setLngLat([
@@ -60,10 +67,6 @@ export class MapView extends React.Component {
         ])
         .addTo(map)
     )
-    // this.createMarker(
-    //   this.props.restaurants[0].geometry.location.lng,
-    //   this.props.restaurants[0].geometry.location.lat
-    // )
   }
 
   createMarker(lng, lat, className) {

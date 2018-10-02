@@ -36,7 +36,7 @@ class Routes extends Component {
             <Route path="/users/:id" component={UserHome} />
             <Route path="/filter" component={Filter} />
             <Route path="/map" component={MapView} />
-            <Route path="/restaurants/:id" component={SingleRestaurant} />
+            <Route path="/restaurants/:name" component={SingleRestaurant} />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}

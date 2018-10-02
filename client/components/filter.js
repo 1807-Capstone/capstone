@@ -13,9 +13,20 @@ const mapDispatchToProps = dispatch => ({
 })
 
 class Filter extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      cuisine: ''
+    }
+  }
+  select = evt => {
+    evt.preventDefault()
+    this.setState({cuisine: evt.target.elements.cuisine.value})
+  }
   filter = evt => {
     evt.preventDefault()
-    this.props.getRestaurants()
+    console.log('evt target', evt.target.elements.cuisine.value)
+    // this.props.getRestaurants()
   }
   render() {
     return (
@@ -24,7 +35,14 @@ class Filter extends React.Component {
         <h2 className="ui one column stackable center aligned page grid">
           Filter
         </h2>
-        <FilterFormRedux handleSubmit={this.filter} />
+        <br />
+        <br />
+        <FilterFormRedux
+          handleSubmit={this.filter}
+          handleSelect={this.select}
+        />
+        <br />
+        <br />
         <RestaurantList />
       </div>
     )

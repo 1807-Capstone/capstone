@@ -29,20 +29,59 @@ let FilterForm = props => {
         onSubmit={props.valid ? props.handleSubmit : preventDefault}
         className="ui form"
       >
-        <br />
-        <br />
         <div className="ui one column stackable center aligned page grid">
-          <div className="field">
+          <label>
+            Cuisine:
+            <select name="cuisine" onChange={props.handleSelect}>
+              <option value="">---</option>
+              <option value="italian">Italian</option>
+              <option value="mexican">Mexican</option>
+              <option value="chinese">Chinese</option>
+              <option value="burgers">Burgers</option>
+            </select>
+          </label>
+          <label>
+            Price:
+            <select name="price">
+              <option value="">---</option>
+              <option value="1">$</option>
+              <option value="2">$$</option>
+              <option value="3">$$$</option>
+              <option value="4">$$$$</option>
+            </select>
+          </label>
+          <label>
+            Rating:
+            <Rating icon="star" maxRating={5} />
+          </label>
+          <label>
+            Distance:
+            <select name="distance">
+              <option value="">---</option>
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+          </label>
+          <br />
+          <br />
+          {/* <div className="ui one column stackable center aligned page grid"> */}
+          {/* <div className="field">
             Cuisine:{' '}
-            <Field name="cuisine" component="select">
+            <Field
+              name="cuisine"
+              component="select"
+              onChange={props.handleSelect}
+            >
               <option>-</option>
               <option>Italian</option>
               <option>Mexican</option>
               <option>Chinese</option>
               <option>Burgers</option>
             </Field>
-          </div>
-          <div className="field">
+          </div> */}
+          {/* <div className="field">
             Price:{' '}
             <Field name="Price" component="select">
               <option>-</option>
@@ -53,18 +92,18 @@ let FilterForm = props => {
             </Field>
           </div>
           <br />
-          <div className="field">
-            Rating:{' '}
-            {/* <Field
+          <div className="field"> */}
+          {/* Rating:{' '} */}
+          {/* <Field
               component={renderField}
               type="text"
               name="quantity"
               validate={minimumZero}
             /> */}
-            <Rating icon="star" maxRating={5} />
-          </div>
+          {/* <Rating icon="star" maxRating={5} /> */}
+          {/* </div> */}
           <br />
-          <div className="field">
+          {/* <div className="field">
             Distance:{' '}
             <Field name="Distance" component="select">
               <option>-</option>
@@ -73,7 +112,7 @@ let FilterForm = props => {
               <option value={20}>20</option>
               <option value={50}>50</option>
             </Field>
-          </div>
+          </div> */}
           <br />
           <br />
         </div>

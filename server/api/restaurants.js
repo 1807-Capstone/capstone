@@ -24,8 +24,6 @@ const googleMapsClient = require('@google/maps').createClient({
 })
 
 router.post('/', async (req, res, next) => {
-  console.log('req.body', req.body)
-
   try {
     // Google search
     const initialGoogleSearch = await googleMapsClient
@@ -109,5 +107,49 @@ router.post('/', async (req, res, next) => {
     res.status(200).json(googleSearch)
   } catch (err) {
     console.error(err)
+  }
+})
+
+router.post('/filtered', async (req, res, next) => {
+  try {
+    const initialGoogleSearch = await googleMapsClient
+      .placesNearby({
+        language: 'en',
+        location: [41.895579, -87.639064],
+        radius: req.body.distance.value || 500,
+        minprice: req.body.price.value || 1,
+        maxprice: req.body.price.value || 4,
+        type: 'restaurant',
+        keyword: req.body.cuisine.value || null,
+        rating: req.body.rating.value || null
+      })
+      .asPromise()
+
+    const googleSearch = initialGoogleSearch.json.results
+
+    const yelpSearch = []
+
+    const yelpQueryOne = yelpQueryMakerOne(googleSearch)
+    const yelpQueryTwo = yelpQueryMakerTwo(googleSearch)
+    const yelpResultsOne = await client.request(yelpQueryOne)
+    const yelpResultsTwo = await client.request(yelpQueryTwo)
+
+    for (let property in yelpResultsOne) {
+      if (yelpResultsOne.hasOwnProperty(property)) {
+        yelpSearch.push(yelpResultsOne[property].business[0])
+      }
+    }
+    for (let property in yelpResultsTwo) {
+      if (yelpResultsTwo.hasOwnProperty(property)) {
+        yelpSearch.push(yelpResultsTwo[property].business[0])
+      }
+    }
+
+    for (let i = 0; i < googleSearch.length; i++) {
+      googleSearch[i].yelpResults = yelpSearch[i]
+    }
+    res.status(200).json(googleSearch)
+  } catch (error) {
+    next(error)
   }
 })

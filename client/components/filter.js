@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterFormRedux from './filterFormRedux'
 import RestaurantList from './allRestaurants'
-import {fetchAllRestaurantsFromServer} from '../store/restaurant'
+import {fetchFilteredRestaurantsFromServer} from '../store/restaurant'
 import {connect} from 'react-redux'
 import {fetchGeolocation} from '../store/map'
 
@@ -32,7 +32,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  getRestaurants: () => dispatch(fetchAllRestaurantsFromServer()),
+  getFilteredRestaurants: () => dispatch(fetchFilteredRestaurantsFromServer()),
   geolocate: () => dispatch(fetchGeolocation())
 })
 
@@ -50,13 +50,13 @@ class Filter extends React.Component {
   filter = evt => {
     evt.preventDefault()
     console.log('evt target', evt.target.elements.cuisine.value)
-    // this.props.getRestaurants()
+    this.props.getFilteredRestaurants()
   }
   componentDidMount() {
     this.props.geolocate()
   }
   render() {
-    console.log(this.props.geolocation)
+    console.log('location', this.props.geolocation)
     return (
       <div className="ui form">
         <br />

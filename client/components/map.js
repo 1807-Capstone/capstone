@@ -66,19 +66,24 @@ export class MapView extends React.Component {
 
   componentDidUpdate() {
     this.props.restaurants.map(restaurant =>
-      new mapboxgl.Marker()
-        .setLngLat([
-          restaurant.geometry.location.lng,
-          restaurant.geometry.location.lat
-        ])
-        .addTo(map)
+      // new mapboxgl.Marker()
+      //   .setLngLat([
+      //     restaurant.geometry.location.lng,
+      //     restaurant.geometry.location.lat
+      //   ])
+      //   .addTo(map)
+      this.createMarker(
+        restaurant.geometry.location.lng,
+        restaurant.geometry.location.lat
+      )
     )
   }
 
-  createMarker(lng, lat, className) {
+  createMarker(lng, lat) {
     var marker = document.createElement('div')
-    marker.className = className
-    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
+    marker.className = 'marker'
+    console.log('here')
+    return new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
   }
 
   geolocate() {

@@ -2,25 +2,10 @@ import React from 'react'
 import {reduxForm} from 'redux-form'
 import {Rating} from 'semantic-ui-react'
 
-// const renderField = ({input, type, meta: {error, touched}}) => (
-//   <div>
-//     <div>
-//       <div>
-//         <input {...input} type={type} />
-//       </div>
-//       <div>{touched && <span className="red">{error}</span>}</div>
-//     </div>
-//   </div>
-// )
-
 const preventDefault = event => {
   event.preventDefault()
 }
 
-// const notEmpty = value => (value ? undefined : 'Required field')
-
-// const minimumZero = price =>
-//   price && price < 0 ? `Must be at least 0` : undefined
 
 let FilterForm = props => {
   return (

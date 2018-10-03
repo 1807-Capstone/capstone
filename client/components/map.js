@@ -20,9 +20,13 @@ const Box = styled.div`
 `
 
 let map
+
 let mapIsEmpty = true
 let toggleNavigation = true
 
+let directions = new MapboxDirections({
+  accessToken: mapboxgl.accessToken
+})
 const mapStateToProps = state => {
   return {
     restaurants: state.restaurant.allRestaurants,
@@ -101,22 +105,12 @@ export class MapView extends React.Component {
     })
   }
   handleButtonClick() {
-    console.log(toggleNavigation)
-    // var directions = map.addControl(
-    //   new MapboxDirections({
-    //     accessToken: mapboxgl.accessToken
-    //   }),
-    //   'top-left'
-    // )
-    var directions
     if (toggleNavigation) {
-      directions = new MapboxDirections({
-        accessToken: mapboxgl.accessToken
-      })
       map.addControl(directions, 'top-left')
     } else {
-      map.remove(directions)
+      map.removeControl(directions)
     }
+    console.log('here')
     toggleNavigation = !toggleNavigation
   }
   // addLayer(obj) {

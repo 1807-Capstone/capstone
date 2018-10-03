@@ -47,8 +47,12 @@ export class MapView extends React.Component {
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
       center: [this.props.location.lng, this.props.location.lat],
-      zoom: this.props.location.zoom
-    })
+      zoom: this.props.location.zoom,
+      attributionControl: false
+    }).addControl(new mapboxgl.AttributionControl({compact: true}))
+
+    const nav = new mapboxgl.NavigationControl()
+    map.addControl(nav, 'top-right')
 
     await this.geolocate()
   }
@@ -70,6 +74,7 @@ export class MapView extends React.Component {
       this.createMarker(
         restaurant.geometry.location.lng,
         restaurant.geometry.location.lat,
+        // new mapboxgl.Popup().setText('Tupac > Biggie')
         new mapboxgl.Popup().setText('Tupac > Biggie')
       )
     )
@@ -110,7 +115,6 @@ export class MapView extends React.Component {
     } else {
       map.removeControl(directions)
     }
-    console.log('here')
     toggleNavigation = !toggleNavigation
   }
   // addLayer(obj) {

@@ -34,7 +34,6 @@ export const gotSuggestedRestaurants = suggestedRestaurants => ({
 
 // Thunks
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
-  console.log('lat and long', lat, lng);
   return async dispatch => {
     dispatch(reqAllRestaurants());
     const res = await axios.post('/api/restaurants', {lat, lng});
@@ -46,7 +45,6 @@ export const fetchSuggestedRestaurantsFromServer = id => {
   return async dispatch => {
     dispatch(reqSuggestedRestaurants());
     const res = await axios.get(`/api/users/${id}/suggested`);
-    console.log(res.data.length)
     dispatch(gotSuggestedRestaurants(res.data));
   };
 };

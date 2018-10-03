@@ -100,9 +100,11 @@ User.prototype.getSuggested = async function() {
       recommendedRestaurants = difference(elem, userCheckedInRestaurants);
     }
   });
+  if (!recommendedRestaurants.length) return [{googleRating: 4, yelpRating: 3, radiusRating: 5, name: 'No Suggestions Based on Your Data!', imgUrl: "/img/dim-sum.jpg"}]
   let shuffledRestaurants = shuffle(recommendedRestaurants);
-  if (shuffledRestaurants.length > 3)
+  if (shuffledRestaurants.length >= 3) {
     shuffledRestaurants = shuffledRestaurants.slice(2);
+  }
   const response = Restaurant.findAll({
     where: {
       id: {
@@ -110,7 +112,6 @@ User.prototype.getSuggested = async function() {
       }
     }
   });
-  console.log('response: ', response);
   return response;
 };
 

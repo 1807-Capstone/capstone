@@ -105,6 +105,7 @@ const yelpQueryMakerOne = googleResultsArray => {
           id,
           price,
           rating,
+          photos,
           location {
               address1,
               city,
@@ -144,6 +145,7 @@ const yelpQueryMakerTwo = googleResultsArray => {
           id,
           price,
           rating,
+          photos,
           location {
               address1,
               city,

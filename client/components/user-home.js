@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import {Grid, Image, Container, Item, Button, Divider} from 'semantic-ui-react';
+import {
+  Grid,
+  Header,
+  Rating,
+  Container,
+  Item,
+  Button,
+  Divider
+} from 'semantic-ui-react';
 import {fetchSuggestedRestaurantsFromServer} from '../store/restaurant';
 import styled from 'styled-components';
-import axios from 'axios';
 
 /**
  * COMPONENT
@@ -16,52 +23,90 @@ const Box = styled.div`
   height: 90vh;
 `;
 
-export const UserHome = props => {
-  const {email, id} = props;
-  const handleClick = event => {
-    event.preventDefault();
-    props.fetchSuggestedRestaurantsFromServer(event.target.value);
-  };
-  console.log('props: ', props)
-  return (
-    <Container>
-      <Divider hidden />
-      <Grid centered stackable>
-        <Grid.Column width={5} centered>
-          <Item>
-            <Item.Image src="img/profile.jpg" circular size="small" />
-            <h1>Welcome, {email}</h1>
-            <Divider hidden />
-            <Item.Extra>
-              <Button basic>restaurants visted</Button>
-            </Item.Extra>
-            <Item.Extra>
-              <Button basic>account details</Button>
-            </Item.Extra>
-          </Item>
-        </Grid.Column>
-        <Grid.Column width={10}>
-          <Box>
-            <h1>Suggested Restaurants</h1>
-            <button type="button" value={id} onClick={handleClick}>
-              Console.log Suggested Restaurants
-            </button>
-            <Item.Group divided>
-              {/* item will eventually be a link */}
-              <Item>
-                <Item.Image src="img/dim-sum.jpg" size="medium" />
-                <Item.Content>
-                  <Item.Header>Name</Item.Header>
-                  <Item.Description>blah blah blah blah blah</Item.Description>
-                </Item.Content>
-              </Item>
-            </Item.Group>
-          </Box>
-        </Grid.Column>
-      </Grid>
-    </Container>
-  );
-};
+export class UserHome extends Component {
+  componentDidMount() {
+    this.props.fetchSuggestedRestaurantsFromServer(this.props.id);
+  }
+
+  render() {
+    return (
+      <Container>
+        <Divider hidden />
+        <Grid centered stackable>
+          <Grid.Column width={5} centered>
+            <Item>
+              <Item.Image src="img/profile.jpg" circular size="small" />
+              <h1>Welcome, {this.props.email}</h1>
+              <Divider hidden />
+              <Item.Extra>
+                <Button basic>Restaurants Visited</Button>
+              </Item.Extra>
+              <Item.Extra>
+                <Button basic>Account Details</Button>
+              </Item.Extra>
+            </Item>
+          </Grid.Column>
+          <Grid.Column width={10}>
+            <Box>
+              <Header as="h2">Suggested Restaurants</Header>
+              <Item.Group divided>
+                {!this.props.suggestedFetching ? (
+                  this.props.suggestedRestaurants.map(restaurant => {
+                    return (
+                      <Item key={restaurant.id}>
+                        <Item.Image size="small" src={restaurant.imgUrl} />
+
+                        <Item.Content>
+                          <Item.Header as="a">{restaurant.name}</Item.Header>
+                          <Item.Description>
+                            <Rating
+                              icon="star"
+                              defaultRating={Math.floor(
+                                restaurant.googleRating
+                              )}
+                              maxRating={5}
+                              disabled
+                            />
+                            <p>Google Rating</p>
+                            <Rating
+                              icon="star"
+                              defaultRating={Math.floor(restaurant.yelpRating)}
+                              maxRating={5}
+                              disabled
+                            />
+                            <p>Yelp Rating</p>
+                            <Rating
+                              icon="star"
+                              defaultRating={Math.floor(
+                                restaurant.radiusRating
+                              )}
+                              maxRating={5}
+                              disabled
+                            />
+                            <p>Radius Rating</p>
+                          </Item.Description>
+                        </Item.Content>
+                      </Item>
+                    );
+                  })
+                ) : (
+                  <Item>
+                    <Item.Image
+                      size="small"
+                      src="/img/dim-sum.jpgg"
+                    />
+                    <Item.Header as="a">Loading Suggestions</Item.Header>
+                    <Item.Description>Suggestions Loading</Item.Description>
+                  </Item>
+                )}
+              </Item.Group>
+            </Box>
+          </Grid.Column>
+        </Grid>
+      </Container>
+    );
+  }
+}
 
 /**
  * CONTAINER
@@ -70,7 +115,8 @@ const mapState = state => {
   return {
     email: state.user.email,
     id: state.user.id,
-    suggestedRestaurants: state.restaurant.suggestedRestaurants
+    suggestedRestaurants: state.restaurant.suggestedRestaurants,
+    suggestedFetching: state.restaurant.suggestedFetching
   };
 };
 

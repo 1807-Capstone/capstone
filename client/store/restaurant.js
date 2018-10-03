@@ -46,6 +46,7 @@ export const fetchSuggestedRestaurantsFromServer = id => {
   return async dispatch => {
     dispatch(reqSuggestedRestaurants());
     const res = await axios.get(`/api/users/${id}/suggested`);
+    console.log(res.data.length)
     dispatch(gotSuggestedRestaurants(res.data));
   };
 };
@@ -90,7 +91,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         suggestedRestaurants: action.suggestedRestaurants,
-        suggested: true
+        suggestedFetching: false
       };
     case REQ_SUGGESTED_RESTAURANTS:
       return {

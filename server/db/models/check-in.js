@@ -15,7 +15,6 @@ CheckIn.afterCreate(async (checkIn, options) => {
 
 
   const user = await User.findById(userId)
-  console.log(user)
   // After User Checks in, find visited restaurants
   const response = await CheckIn.findAll({
     where: {

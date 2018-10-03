@@ -23,9 +23,17 @@ export const gotOneRestaurant = oneRestaurant => ({
   oneRestaurant
 })
 
+const reqFilteredRestaurants = () => ({
+  type: REQ_FILTERED_RESTAURANTS
+})
+
+const gotFilteredRestaurants = filteredRestaurants => ({
+  type: GOT_FILTERED_RESTAURANTS,
+  filteredRestaurants
+})
+
 // Thunks
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
-  console.log('lat and long', lat, lng)
   return async dispatch => {
     dispatch(reqAllRestaurants())
     const res = await axios.post('/api/restaurants', {lat, lng})
@@ -41,11 +49,36 @@ export const fetchAllRestaurantsFromServer = (lat, lng) => {
 //   }
 // }
 
+export const fetchFilteredRestaurantsFromGoogle = (
+  lat,
+  lng,
+  cuisine,
+  price,
+  rating,
+  distance
+) => {
+  console.log('cuisine', cuisine)
+  return async dispatch => {
+    dispatch(reqFilteredRestaurants())
+    const res = await axios.post('/api/restaurants/filteredGoogle', {
+      lat,
+      lng,
+      cuisine,
+      price,
+      rating,
+      distance
+    })
+    dispatch(gotFilteredRestaurants(res.data))
+  }
+}
+
 const initialState = {
   allRestaurants: [],
   allFetching: false,
   oneRestaurant: {},
-  oneFetching: true
+  oneFetching: true,
+  filteredRestaurants: [],
+  filteredFetching: false
 }
 
 // Reducer
@@ -67,6 +100,14 @@ const reducer = (state = initialState, action) => {
       }
     case REQ_ONE_RESTAURANT:
       return {...state, oneFetching: true}
+    case REQ_FILTERED_RESTAURANTS:
+      return {...state, filteredFetching: true}
+    case GOT_FILTERED_RESTAURANTS:
+      return {
+        ...state,
+        filteredRestaurants: action.filteredRestaurants,
+        filteredFetching: false
+      }
     default:
       return state
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterFormRedux from './filterFormRedux'
 import RestaurantList from './allRestaurants'
-import {fetchFilteredRestaurantsFromServer} from '../store/restaurant'
+import {fetchFilteredRestaurantsFromGoogle} from '../store/restaurant'
 import {connect} from 'react-redux'
 import {fetchGeolocation} from '../store/map'
 
@@ -27,12 +27,23 @@ import {fetchGeolocation} from '../store/map'
 // }
 
 const mapStateToProps = state => ({
-  allRestaurants: state.restaurant.allRestaurants,
+  filteredRestaurants: state.restaurant.filteredRestaurants,
+  filteredFetching: state.restaurant.filteredFetching,
   geolocation: state.map.location
 })
 
 const mapDispatchToProps = dispatch => ({
-  getFilteredRestaurants: () => dispatch(fetchFilteredRestaurantsFromServer()),
+  getFilteredRestaurants: (lat, lng, cuisine, price, rating, distance) =>
+    dispatch(
+      fetchFilteredRestaurantsFromGoogle(
+        lat,
+        lng,
+        cuisine,
+        price,
+        rating,
+        distance
+      )
+    ),
   geolocate: () => dispatch(fetchGeolocation())
 })
 
@@ -40,23 +51,45 @@ class Filter extends React.Component {
   constructor() {
     super()
     this.state = {
-      cuisine: ''
+      cuisine: '',
+      price: '',
+      rating: '',
+      distance: ''
     }
   }
-  select = evt => {
+  selectCuisine = evt => {
     evt.preventDefault()
-    this.setState({cuisine: evt.target.elements.cuisine.value})
+    this.setState({cuisine: evt.target.value})
+  }
+  selectPrice = evt => {
+    evt.preventDefault()
+    this.setState({price: evt.target.value})
+  }
+  selectRating = (evt, {rating}) => {
+    evt.preventDefault()
+    this.setState({rating})
+  }
+  selectDistance = evt => {
+    evt.preventDefault()
+    this.setState({distance: evt.target.value})
   }
   filter = evt => {
     evt.preventDefault()
-    console.log('evt target', evt.target.elements.cuisine.value)
-    this.props.getFilteredRestaurants()
+    console.log('state', this.state)
+    this.props.getFilteredRestaurants(
+      this.props.geolocation.lat,
+      this.props.geolocation.lng,
+      this.state.cuisine,
+      Number(this.state.price),
+      this.state.rating,
+      Number(this.state.distance)
+    )
   }
   componentDidMount() {
     this.props.geolocate()
   }
   render() {
-    console.log('location', this.props.geolocation)
+    console.log('state', this.state)
     return (
       <div className="ui form">
         <br />
@@ -67,11 +100,22 @@ class Filter extends React.Component {
         <br />
         <FilterFormRedux
           handleSubmit={this.filter}
-          handleSelect={this.select}
+          handleSelectCuisine={this.selectCuisine}
+          handleSelectPrice={this.selectPrice}
+          handleSelectRating={this.selectRating}
+          handleSelectDistance={this.selectDistance}
         />
         <br />
         <br />
-        <RestaurantList />
+        {this.props.filteredRestaurants.length ? (
+          <div>
+            {this.props.filteredRestaurants.map(restaurant => {
+              return <p key={restaurant.id}>{restaurant.name}</p>
+            })}
+          </div>
+        ) : (
+          <RestaurantList />
+        )}
       </div>
     )
   }

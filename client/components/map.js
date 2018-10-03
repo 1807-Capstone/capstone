@@ -43,6 +43,12 @@ export class MapView extends React.Component {
       center: [this.props.location.lng, this.props.location.lat],
       zoom: this.props.location.zoom
     })
+    map.addControl(
+      new MapboxDirections({
+        accessToken: mapboxgl.accessToken
+      }),
+      'top-left'
+    )
     await this.geolocate()
   }
 

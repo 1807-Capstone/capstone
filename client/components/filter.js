@@ -75,7 +75,6 @@ class Filter extends React.Component {
   }
   filter = evt => {
     evt.preventDefault()
-    console.log('state', this.state)
     this.props.getFilteredRestaurants(
       this.props.geolocation.lat,
       this.props.geolocation.lng,
@@ -89,7 +88,7 @@ class Filter extends React.Component {
     this.props.geolocate()
   }
   render() {
-    console.log('state', this.state)
+ 
     return (
       <div className="ui form">
         <br />

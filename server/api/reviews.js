@@ -1,15 +1,22 @@
 const router = require('express').Router()
-const {Review} = require('../db/models')
+const {Review, Restaurant} = require('../db/models')
 module.exports = router
 
-router.get('/:restaurantId', async (req, res, next) => {
+router.post('/getreviews', async (req, res, next) => {
   try {
-    const reviews = await Review.findAll({
+    console.log('this is req.body', req.body)
+    const data = await Restaurant.findAll({
       where: {
-        restaurantId: req.params.restaurantId
+        name: req.body.name
       }
     })
-    res.json(reviews)
+    const reviews = await Review.findAll({
+      where: {
+        restaurantId: data[0].dataValues.id
+      }
+    })
+    console.log('this is reviews', reviews)
+    res.status(200).json(reviews)
   } catch (err) {
     next(err)
   }

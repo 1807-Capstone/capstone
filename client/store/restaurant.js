@@ -4,7 +4,6 @@ import axios from 'axios'
 const GOT_ALL_RESTAURANTS = 'GOT_ALL_RESTAURANTS'
 const GOT_ONE_RESTAURANT = 'GOT_ONE_RESTAURANT'
 const REQ_ALL_RESTAURANTS = 'REQ_ALL_RESTAURANTS'
-const REQ_ONE_RESTAURANT = 'REQ_ONE_RESTAURANT'
 const REQ_FILTERED_RESTAURANTS = 'REQ_FILTERED_RESTAURANTS'
 const GOT_FILTERED_RESTAURANTS = 'GOT_FILTERED_RESTAURANTS'
 const GOT_SUGGESTED_RESTAURANTS = 'GOT_SUGGESTED_RESTAURANTS'
@@ -60,8 +59,6 @@ export const fetchSuggestedRestaurantsFromServer = id => {
   }
 }
 
-
-
 export const fetchFilteredRestaurantsFromGoogle = (
   lat,
   lng,
@@ -70,7 +67,6 @@ export const fetchFilteredRestaurantsFromGoogle = (
   rating,
   distance
 ) => {
-  
   return async dispatch => {
     dispatch(reqFilteredRestaurants())
     const res = await axios.post('/api/restaurants/filteredGoogle', {
@@ -113,8 +109,6 @@ const reducer = (state = initialState, action) => {
         oneRestaurant: action.oneRestaurant,
         oneFetching: false
       }
-    case REQ_ONE_RESTAURANT:
-      return {...state, oneFetching: true}
     case REQ_FILTERED_RESTAURANTS:
       return {...state, filteredFetching: true}
     case GOT_FILTERED_RESTAURANTS:
@@ -134,6 +128,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         suggestedFetching: true
       }
+
     default:
       return state
   }

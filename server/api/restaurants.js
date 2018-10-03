@@ -10,8 +10,6 @@ const {
 } = require('../../utils')
 module.exports = router
 
-// const client = yelp.client(process.env.YELP_FUSION_API)
-
 const client = new GraphQLClient('https://api.yelp.com/v3/graphql', {
   headers: {
     Authorization: `Bearer ${process.env.YELP_FUSION_API}`

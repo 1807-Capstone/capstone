@@ -60,13 +60,7 @@ export const fetchSuggestedRestaurantsFromServer = id => {
   }
 }
 
-// export const fetchOneRestaurantFromServer = id => {
-//   return async dispatch => {
-//     dispatch(reqOneRestaurant())
-//     const res = await axios.get(`/api/restaurants/${id}`)
-//     dispatch(gotOneRestaurant(res.data))
-//   }
-// }
+
 
 export const fetchFilteredRestaurantsFromGoogle = (
   lat,
@@ -76,7 +70,7 @@ export const fetchFilteredRestaurantsFromGoogle = (
   rating,
   distance
 ) => {
-  console.log('cuisine', cuisine)
+  
   return async dispatch => {
     dispatch(reqFilteredRestaurants())
     const res = await axios.post('/api/restaurants/filteredGoogle', {

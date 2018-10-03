@@ -26,7 +26,7 @@ const Header = styled.h1`
   margin-top: 25px;
   width: 100vw;
   text-align: center;
-  position: fixed;
+  position: absolute;
 `
 
 const DesktopNavbar = ({handleClick, isLoggedIn}) => (

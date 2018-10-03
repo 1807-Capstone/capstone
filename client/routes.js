@@ -9,7 +9,8 @@ import {
   Filter,
   MapView,
   AllRestaurants,
-  SingleRestaurant
+  SingleRestaurant,
+  HomePage
 } from './components'
 import {me} from './store'
 
@@ -30,6 +31,7 @@ class Routes extends Component {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route exact path="/restaurants" component={AllRestaurants} />
+        <Route path="/home" component={HomePage} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}

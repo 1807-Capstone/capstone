@@ -88,15 +88,12 @@ class Filter extends React.Component {
     this.props.geolocate()
   }
   render() {
- 
     return (
       <div className="ui form">
         <br />
         <h2 className="ui one column stackable center aligned page grid">
           Filter
         </h2>
-        <br />
-        <br />
         <FilterFormRedux
           handleSubmit={this.filter}
           handleSelectCuisine={this.selectCuisine}

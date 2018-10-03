@@ -13,7 +13,7 @@ const Header = styled.h1`
   letter-spacing: 5px;
   margin-top: 25px;
   width: 100vw;
-  position: fixed;
+  position: absolute;
   left: 90px;
   top: 7px;
   color: #35b3bf;
@@ -23,6 +23,15 @@ const Box = styled.div`
   height: 7vh;
   padding: 5px;
   border-bottom: 1px solid #801a15;
+  margin-bottom: 6px;
+`
+const ExitButton = styled.button`
+  border: none;
+  color: black;
+  height: 6px;
+  width: 6px;
+  position: relative;
+  outline: none;
 `
 
 class MobileNavbar extends Component {
@@ -59,6 +68,7 @@ class MobileNavbar extends Component {
           width="thin"
           icon="labeled"
         >
+          <ExitButton onClick={this.handleSidebarHide}>x</ExitButton>
           <Menu.Item as={Link} to="/home">
             <Icon name="home" />
             Home

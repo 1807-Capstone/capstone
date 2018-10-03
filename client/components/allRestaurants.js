@@ -44,10 +44,15 @@ export class AllRestaurants extends Component {
     } else
       return (
         <div>
-          <h1>All Restaurants</h1>
+          <h1 className="ui one column stackable center aligned page grid">
+            All Restaurants
+          </h1>
           {allRestaurants.map((restaurant, idx) => {
             return (
-              <div key={restaurant.id}>
+              <div
+                key={restaurant.id}
+                className="ui one column stackable center aligned page grid"
+              >
                 <Link
                   to={`/restaurants/${restaurant.name}`}
                   onClick={() => this.handleRestaurantClick(restaurant.name)}

@@ -66,11 +66,12 @@ export const fetchSuggestedRestaurantsFromServer = id => {
   };
 };
 
-export const getFilteredFromServer = (price, rating) => {
+export const getFilteredFromServer = (price, rating, cuisine) => {
   return async dispatch => {
     const res = await axios.post('/api/restaurants/filteredServer', {
       price,
-      rating
+      rating,
+      cuisine
     });
     dispatch(getFilteredRestaurantsFromServer(res.data));
   };

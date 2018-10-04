@@ -49,8 +49,8 @@ const mapDispatchToProps = dispatch => ({
   //       distance
   //     )
   //   ),
-  fetchFiltered: (price, rating) =>
-    dispatch(getFilteredFromServer(price, rating)),
+  fetchFiltered: (price, rating, cuisine) =>
+    dispatch(getFilteredFromServer(price, rating, cuisine)),
   geolocate: () => dispatch(fetchGeolocation())
 });
 
@@ -85,7 +85,11 @@ class Filter extends React.Component {
   };
   filter = async evt => {
     evt.preventDefault();
-    await this.props.fetchFiltered(Number(this.state.price), this.state.rating);
+    await this.props.fetchFiltered(
+      Number(this.state.price),
+      this.state.rating,
+      this.state.cuisine
+    );
     const perPage = this.state.perPage;
     const firstPage = this.props.filteredRestaurants.slice(0, perPage);
     const numPages = Math.ceil(this.props.filteredRestaurants.length / perPage);

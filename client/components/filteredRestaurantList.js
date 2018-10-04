@@ -23,7 +23,7 @@ const FilteredRestaurantList = props => {
                       <Item.Content>
                         <Item.Header as="a">{restaurant.name}</Item.Header>
                         <br />
-                        <Item.Image size="small" src={restaurant.imgUrl} />
+                        <Item.Image size="small" src={restaurant.yelpImg} />
                         <Item.Description>
                           <p>Radius rating: {restaurant.radiusRating}</p>
                           <p>Yelp rating: {restaurant.yelpRating}</p>

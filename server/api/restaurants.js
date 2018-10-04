@@ -262,7 +262,7 @@ router.post('/filteredServer', async (req, res, next) => {
   try {
     const currentFilters = {};
     if (req.body.price) {
-      currentFilters.price = req.body.price;
+      currentFilters.price_level = req.body.price;
     }
     if (req.body.rating) {
       currentFilters.radiusRating = req.body.rating;

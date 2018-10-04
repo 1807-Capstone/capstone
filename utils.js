@@ -58,38 +58,82 @@ const statesHash = {
   'West Virginia': 'WV',
   Wisconsin: 'WI',
   Wyoming: 'WY'
-}
+};
 
 const cleanAddress = vicinity => {
-  let addressOne
+  let addressOne;
   if (vicinity.includes('#')) {
-    addressOne = vicinity.split('#')[0].slice(0, -1)
+    addressOne = vicinity.split('#')[0].slice(0, -1);
   } else {
-    addressOne = vicinity.split(',')[0]
+    addressOne = vicinity.split(',')[0];
   }
-  return addressOne
-}
+  return addressOne;
+};
 
 const cleanCity = vicinity => {
-  return vicinity.split(',')[1].slice(1)
-}
+  return vicinity.split(',')[1].slice(1);
+};
 
 const cleanState = compoundCode => {
-  let state = compoundCode.split(',')[1].slice(1)
-  return statesHash[state]
-}
+  let state = compoundCode.split(',')[1].slice(1);
+  return statesHash[state];
+};
+
+const yelpQueryMaker = googleResultsArray => {
+  // let theState = '';
+  // let iterator = 0;
+  // while (!theState) {
+  //   if (googleResultsArray[iterator].plus_code) {
+  //     theState = cleanState(
+  //       googleResultsArray[iterator].plus_code.compound_code
+  //     );
+  //   }
+  //   iterator++;
+  // }
+
+  let finalQuery = '{\n';
+  finalQuery += `b1: business_match(
+      name: "${googleResultsArray.name}",
+      address1: "${cleanAddress(googleResultsArray.vicinity)}",
+      city: "${cleanCity(googleResultsArray.vicinity)}",
+      state: "IL",
+      country: "US",
+      limit: 1
+  )
+  {
+      total
+      business {
+          name,
+          id,
+          price,
+          rating,
+          photos,
+          location {
+              address1,
+              city,
+              state,
+          }
+      }
+  }
+  `;
+  finalQuery += '}';
+  console.log('final query', finalQuery);
+  return finalQuery;
+};
 
 const yelpQueryMakerOne = googleResultsArray => {
-  let theState = ''
-  let iterator = 0
+  let theState = '';
+  let iterator = 0;
   while (!theState) {
     if (googleResultsArray[iterator].plus_code) {
-      theState = cleanState(googleResultsArray[iterator].plus_code.compound_code)
+      theState = cleanState(
+        googleResultsArray[iterator].plus_code.compound_code
+      );
     }
     iterator++;
   }
-  let finalQuery = '{\n'
-  for (let i = 0; i < googleResultsArray.length/2; i++) {
+  let finalQuery = '{\n';
+  for (let i = 0; i < googleResultsArray.length / 2; i++) {
     finalQuery += `b${i + 1}: business_match(
       name: "${googleResultsArray[i].name}",
       address1: "${cleanAddress(googleResultsArray[i].vicinity)}",
@@ -113,23 +157,29 @@ const yelpQueryMakerOne = googleResultsArray => {
           }
       }
   }
-  `
+  `;
   }
-  finalQuery += '}'
-  return finalQuery
-}
+  finalQuery += '}';
+  return finalQuery;
+};
 
 const yelpQueryMakerTwo = googleResultsArray => {
-  let theState = ''
-  let iterator = 0
+  let theState = '';
+  let iterator = 0;
   while (!theState) {
     if (googleResultsArray[iterator].plus_code) {
-      theState = cleanState(googleResultsArray[iterator].plus_code.compound_code)
+      theState = cleanState(
+        googleResultsArray[iterator].plus_code.compound_code
+      );
     }
     iterator++;
   }
-  let finalQuery = '{\n'
-  for (let i = Math.round(googleResultsArray.length/2); i < googleResultsArray.length; i++) {
+  let finalQuery = '{\n';
+  for (
+    let i = Math.round(googleResultsArray.length / 2);
+    i < googleResultsArray.length;
+    i++
+  ) {
     finalQuery += `b${i + 1}: business_match(
       name: "${googleResultsArray[i].name}",
       address1: "${cleanAddress(googleResultsArray[i].vicinity)}",
@@ -153,10 +203,17 @@ const yelpQueryMakerTwo = googleResultsArray => {
           }
       }
   }
-  `
+  `;
   }
-  finalQuery += '}'
-  return finalQuery
-}
+  finalQuery += '}';
+  return finalQuery;
+};
 
-module.exports = {cleanAddress, cleanCity, cleanState, yelpQueryMakerOne, yelpQueryMakerTwo}
+module.exports = {
+  cleanAddress,
+  cleanCity,
+  cleanState,
+  yelpQueryMakerOne,
+  yelpQueryMakerTwo,
+  yelpQueryMaker
+};

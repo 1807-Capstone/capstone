@@ -1,11 +1,11 @@
-import React from 'react'
-import {reduxForm} from 'redux-form'
-import {Rating} from 'semantic-ui-react'
-import {Grid} from 'semantic-ui-react'
+import React from 'react';
+import {reduxForm} from 'redux-form';
+import {Rating} from 'semantic-ui-react';
+import {Grid} from 'semantic-ui-react';
 
 const preventDefault = event => {
-  event.preventDefault()
-}
+  event.preventDefault();
+};
 
 let FilterForm = props => {
   return (
@@ -20,10 +20,13 @@ let FilterForm = props => {
               Cuisine:{' '}
               <select name="cuisine" onChange={props.handleSelectCuisine}>
                 <option value="">---</option>
+                <option value="american">American</option>
                 <option value="italian">Italian</option>
                 <option value="mexican">Mexican</option>
                 <option value="chinese">Chinese</option>
                 <option value="burgers">Burgers</option>
+                <option value="steakhouse">Steakhouses</option>
+                <option value="japanese">Japanese</option>
               </select>
             </label>
           </Grid.Column>
@@ -70,11 +73,11 @@ let FilterForm = props => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
 const FilterFormRedux = reduxForm({
   form: 'filter'
-})(FilterForm)
+})(FilterForm);
 
-export default FilterFormRedux
+export default FilterFormRedux;

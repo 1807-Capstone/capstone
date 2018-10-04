@@ -4,7 +4,6 @@ module.exports = router
 
 router.post('/getreviews', async (req, res, next) => {
   try {
-    console.log('this is req.body', req.body)
     const data = await Restaurant.findAll({
       where: {
         name: req.body.name
@@ -15,7 +14,6 @@ router.post('/getreviews', async (req, res, next) => {
         restaurantId: data[0].dataValues.id
       }
     })
-    console.log('this is reviews', reviews)
     res.status(200).json(reviews)
   } catch (err) {
     next(err)

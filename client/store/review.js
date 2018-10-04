@@ -16,10 +16,10 @@ const addReview = review => ({
 })
 
 // Thunks
-export const getReviewsFromServer = restaurantId => {
+export const getReviewsFromServer = name => {
   return async dispatch => {
-    const res = await axios.get(`/api/reviews/${restaurantId}`)
-    dispatch(getReviews(res.data))
+    const {data} = await axios.post(`/api/reviews/getreviews`, name)
+    dispatch(getReviews(data))
   }
 }
 
@@ -42,4 +42,4 @@ const reducer = (state = [], action) => {
   }
 }
 
-export default reducer;
+export default reducer

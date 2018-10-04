@@ -70,12 +70,10 @@ export class MapView extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log('restaurants', this.props.restaurants[0]);
     this.props.restaurants.map(restaurant =>
       this.createMarker(
         restaurant.geometry.location.lng,
         restaurant.geometry.location.lat,
-        // new mapboxgl.Popup().setText('Tupac > Biggie')
         new mapboxgl.Popup().setText('Tupac > Biggie')
       )
     );

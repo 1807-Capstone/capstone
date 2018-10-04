@@ -631,10 +631,7 @@ async function seed() {
     Cuisine.create({name: 'Chinese'}),
     Cuisine.create({name: 'Indian'}),
     Cuisine.create({name: 'Mexican'}),
-    Cuisine.create({name: 'French'}),
     Cuisine.create({name: 'Japanese'}),
-    Cuisine.create({name: 'Thai'}),
-    Cuisine.create({name: 'Greek'}),
     Cuisine.create({name: 'Vegetarian'})
   ]);
 

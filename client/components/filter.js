@@ -1,9 +1,14 @@
-import React from 'react'
-import FilterFormRedux from './filterFormRedux'
-import RestaurantList from './allRestaurants'
-import {fetchFilteredRestaurantsFromGoogle} from '../store/restaurant'
-import {connect} from 'react-redux'
-import {fetchGeolocation} from '../store/map'
+import React from 'react';
+import FilterFormRedux from './filterFormRedux';
+import RestaurantList from './allRestaurants';
+import {
+  fetchFilteredRestaurantsFromGoogle,
+  getFilteredFromServer
+} from '../store/restaurant';
+import {connect} from 'react-redux';
+import {fetchGeolocation} from '../store/map';
+import {Header} from 'semantic-ui-react';
+import FilteredRestaurantList from './filteredRestaurantList';
 
 // var startLat = document.createElement('div')
 // var startLon = document.createElement('div')
@@ -27,73 +32,92 @@ import {fetchGeolocation} from '../store/map'
 // }
 
 const mapStateToProps = state => ({
-  filteredRestaurants: state.restaurant.filteredRestaurants,
+  filteredRestaurants: state.restaurant.filtered,
   filteredFetching: state.restaurant.filteredFetching,
   geolocation: state.map.location
-})
+});
 
 const mapDispatchToProps = dispatch => ({
-  getFilteredRestaurants: (lat, lng, cuisine, price, rating, distance) =>
-    dispatch(
-      fetchFilteredRestaurantsFromGoogle(
-        lat,
-        lng,
-        cuisine,
-        price,
-        rating,
-        distance
-      )
-    ),
+  // getFilteredRestaurants: (lat, lng, cuisine, price, rating, distance) =>
+  //   dispatch(
+  //     fetchFilteredRestaurantsFromGoogle(
+  //       lat,
+  //       lng,
+  //       cuisine,
+  //       price,
+  //       rating,
+  //       distance
+  //     )
+  //   ),
+  fetchFiltered: (price, rating) =>
+    dispatch(getFilteredFromServer(price, rating)),
   geolocate: () => dispatch(fetchGeolocation())
-})
+});
 
 class Filter extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       cuisine: '',
       price: '',
       rating: '',
-      distance: ''
-    }
+      distance: '',
+      perPage: 6,
+      currentPage: [],
+      numPages: 0
+    };
   }
   selectCuisine = evt => {
-    evt.preventDefault()
-    this.setState({cuisine: evt.target.value})
-  }
+    evt.preventDefault();
+    this.setState({cuisine: evt.target.value});
+  };
   selectPrice = evt => {
-    evt.preventDefault()
-    this.setState({price: evt.target.value})
-  }
+    evt.preventDefault();
+    this.setState({price: evt.target.value});
+  };
   selectRating = (evt, {rating}) => {
-    evt.preventDefault()
-    this.setState({rating})
-  }
+    evt.preventDefault();
+    this.setState({rating});
+  };
   selectDistance = evt => {
-    evt.preventDefault()
-    this.setState({distance: evt.target.value})
-  }
-  filter = evt => {
-    evt.preventDefault()
-    this.props.getFilteredRestaurants(
-      this.props.geolocation.lat,
-      this.props.geolocation.lng,
-      this.state.cuisine,
-      Number(this.state.price),
-      this.state.rating,
-      Number(this.state.distance)
-    )
-  }
+    evt.preventDefault();
+    this.setState({distance: evt.target.value});
+  };
+  filter = async evt => {
+    evt.preventDefault();
+    await this.props.fetchFiltered(Number(this.state.price), this.state.rating);
+    const perPage = this.state.perPage;
+    const firstPage = this.props.filteredRestaurants.slice(0, perPage);
+    const numPages = Math.ceil(this.props.filteredRestaurants.length / perPage);
+    this.setState({
+      currentPage: firstPage,
+      numPages: numPages
+    });
+
+  };
   componentDidMount() {
-    this.props.geolocate()
+    this.props.geolocate();
   }
+
+  handleSelectPage = (evt, {activePage}) => {
+    const startIndex = (activePage - 1) * this.state.perPage;
+    const endIndex = startIndex + this.state.perPage;
+    const pageRestaurants = this.props.filteredRestaurants.slice(
+      startIndex,
+      endIndex
+    );
+    this.setState({currentPage: pageRestaurants});
+  };
+
   render() {
     return (
       <div className="ui form">
         <br />
-        <h2 className="ui one column stackable center aligned page grid">
-          Filter
-        </h2>
+        <div className="ui one column stackable center aligned page grid">
+          <Header as="h2">Filter</Header>
+        </div>
+        <br />
+        <br />
         <FilterFormRedux
           handleSubmit={this.filter}
           handleSelectCuisine={this.selectCuisine}
@@ -103,18 +127,23 @@ class Filter extends React.Component {
         />
         <br />
         <br />
-        {this.props.filteredRestaurants.length ? (
+        {this.props.filteredRestaurants.length &&
+        this.state.currentPage.length ? (
           <div>
-            {this.props.filteredRestaurants.map(restaurant => {
-              return <p key={restaurant.id}>{restaurant.name}</p>
-            })}
+            <div className="two column doubling ui grid">
+              <FilteredRestaurantList
+                restaurants={this.state.currentPage}
+                numPages={this.state.numPages}
+                handleSelect={this.handleSelectPage}
+              />
+            </div>
           </div>
         ) : (
-          <RestaurantList />
+          <div />
         )}
       </div>
-    )
+    );
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Filter)
+export default connect(mapStateToProps, mapDispatchToProps)(Filter);

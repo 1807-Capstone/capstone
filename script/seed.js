@@ -26,7 +26,7 @@ async function seed() {
   const restaurants = await Promise.all([
     Restaurant.create({
       name: 'Original Hooters',
-      geometry: [41.8941717, -87.6345194],
+      location: [41.8941717, -87.6345194],
       price_level: 2,
       rating: 3.9,
       yelpRating: 3.5,
@@ -35,7 +35,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: 'Underground Wonder Bar',
-      geometry: [41.8952072, -87.6313672],
+      location: [41.8952072, -87.6313672],
       price_level: 3,
       rating: 3.6,
       yelpRating: 4.5,
@@ -45,7 +45,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Lou Malnati's Pizzeria`,
-      geometry: [41.8903425, -87.6337034],
+      location: [41.8903425, -87.6337034],
       price_level: 2,
       rating: 4.5,
       yelpRating: 3,
@@ -55,7 +55,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Maggiano's Little Italy`,
-      geometry: [41.8914765, -87.6313334],
+      location: [41.8914765, -87.6313334],
       price_level: 2,
       rating: 4.4,
       yelpRating: 4,
@@ -65,7 +65,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: 'Stout Barrel House & Pizza',
-      geometry: [41.8937555, -87.63151739999999],
+      location: [41.8937555, -87.63151739999999],
       price_level: 2,
       rating: 3.9,
       yelpRating: 3,
@@ -75,7 +75,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Portillo's Hot Dogs`,
-      geometry: [41.8934295, -87.6314147],
+      location: [41.8934295, -87.6314147],
       price_level: 1,
       rating: 4.4,
       yelpRating: 3,
@@ -85,7 +85,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Farmhouse Chicago`,
-      geometry: [41.8967165, -87.6353879],
+      location: [41.8967165, -87.6353879],
       price_level: 2,
       rating: 4.4,
       yelpRating: 4,
@@ -95,7 +95,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Frontera Grill`,
-      geometry: [41.89052059999999, -87.6308469],
+      location: [41.89052059999999, -87.6308469],
       price_level: 2,
       rating: 4.4,
       radiusRating: 2.5,
@@ -104,7 +104,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Yolk- River North`,
-      geometry: [41.896211, -87.633871],
+      location: [41.896211, -87.633871],
       price_level: 2,
       rating: 4.4,
       yelpRating: 3.5,
@@ -114,7 +114,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `ZED451`,
-      geometry: [41.895848, -87.631039],
+      location: [41.895848, -87.631039],
       price_level: 3,
       rating: 4.5,
       yelpRating: 4,
@@ -124,7 +124,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Bavette's Bar & Boeuf`,
-      geometry: [41.8892858, -87.63494209999999],
+      location: [41.8892858, -87.63494209999999],
       price_level: 3,
       rating: 4.8,
       yelpRating: 5,
@@ -134,7 +134,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Wildfire Chicago`,
-      geometry: [41.8938449, -87.63355419999999],
+      location: [41.8938449, -87.63355419999999],
       price_level: 2,
       rating: 4.4,
       yelpRating: 4.5,
@@ -144,7 +144,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Roka Akor`,
-      geometry: [41.890693, -87.631337],
+      location: [41.890693, -87.631337],
       price_level: 3,
       rating: 4.6,
       yelpRating: 3.5,
@@ -154,7 +154,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Chicago Chop House`,
-      geometry: [41.8934262, -87.63044719999999],
+      location: [41.8934262, -87.63044719999999],
       price_level: 3,
       rating: 4.4,
       yelpRating: 4,
@@ -164,7 +164,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Fogo de Chão Brazilian Steackhouse`,
-      geometry: [41.8942345, -87.6321658],
+      location: [41.8942345, -87.6321658],
       price_level: 3,
       rating: 4.6,
       yelpRating: 4,
@@ -174,7 +174,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Sunda`,
-      geometry: [41.8909516, -87.63174339999999],
+      location: [41.8909516, -87.63174339999999],
       price_level: 3,
       rating: 4.4,
       yelpRating: 4.5,
@@ -184,7 +184,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Café Iberico`,
-      geometry: [41.895976, -87.63235499999999],
+      location: [41.895976, -87.63235499999999],
       price_level: 2,
       rating: 4.2,
       yelpRating: 2.5,
@@ -194,7 +194,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `The Dawson`,
-      geometry: [41.8913556, -87.6471969],
+      location: [41.8913556, -87.6471969],
       price_level: 2,
       rating: 4.4,
       yelpRating: 4.5,
@@ -204,7 +204,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Quartino Ristorante`,
-      geometry: [41.8934453, -87.6284081],
+      location: [41.8934453, -87.6284081],
       price_level: 2,
       rating: 4.5,
       yelpRating: 5,
@@ -214,7 +214,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Brunch`,
-      geometry: [41.89367120000001, -87.6372698],
+      location: [41.89367120000001, -87.6372698],
       price_level: 2,
       rating: 4.4,
       yelpRating: 3.5,
@@ -224,7 +224,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Italian Pizza Kitchen`,
-      geometry: [41.9071295, -87.6492076],
+      location: [41.9071295, -87.6492076],
       price_level: 2,
       rating: 3.6,
       yelpRating: 3,
@@ -235,7 +235,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Balena`,
-      geometry: [41.912034, -87.64814899999999],
+      location: [41.912034, -87.64814899999999],
       price_level: 2,
       rating: 4.5,
       yelpRating: 4.0,
@@ -246,7 +246,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Uncle Julio's Mexican From Scratch`,
-      geometry: [41.9105925, -87.65044879999999],
+      location: [41.9105925, -87.65044879999999],
       price_level: 2,
       rating: 4.1,
       yelpRating: 3,
@@ -257,7 +257,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `MingHin Cuisine`,
-      geometry: [41.8532741, -87.6348355],
+      location: [41.8532741, -87.6348355],
       price_level: 2,
       rating: 4.4,
       yelpRating: 4,
@@ -268,7 +268,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Imperial Lamian`,
-      geometry: [41.8902808, -87.6282426],
+      location: [41.8902808, -87.6282426],
       price_level: 2,
       rating: 4.2,
       yelpRating: 4.0,
@@ -279,7 +279,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Sun Wah BBQ`,
-      geometry: [41.97395969999999, -87.6596036],
+      location: [41.97395969999999, -87.6596036],
       price_level: 1,
       rating: 4.3,
       yelpRating: 4,
@@ -290,7 +290,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Duck Duck Goat`,
-      geometry: [41.8866386, -87.64967399999999],
+      location: [41.8866386, -87.64967399999999],
       price_level: 3,
       rating: 4.5,
       yelpRating: 4,
@@ -301,7 +301,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Shanghai Terrace`,
-      geometry: [41.8959851, -87.6250761],
+      location: [41.8959851, -87.6250761],
       price_level: 4,
       rating: 4.6,
       yelpRating: 4,
@@ -312,7 +312,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Panda Express`,
-      geometry: [41.884921, -87.62312010000001],
+      location: [41.884921, -87.62312010000001],
       price_level: 1,
       rating: 4,
       yelpRating: 3,
@@ -324,7 +324,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Lao Sze Chuan`,
-      geometry: [41.891482, -87.62453699999999],
+      location: [41.891482, -87.62453699999999],
       price_level: 2,
       rating: 3.7,
       yelpRating: 3.5,
@@ -335,7 +335,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Great Sea Restaurant`,
-      geometry: [41.968573, -87.710644],
+      location: [41.968573, -87.710644],
       price_level: 2,
       rating: 4.3,
       yelpRating: 4,
@@ -346,7 +346,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Chi Cafe`,
-      geometry: [41.853511, -87.634486],
+      location: [41.853511, -87.634486],
       price_level: 1,
       rating: 4.3,
       yelpRating: 4,
@@ -357,7 +357,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Burger Bar Chicago`,
-      geometry: [41.8678473, -87.6244181],
+      location: [41.8678473, -87.6244181],
       price_level: 2,
       rating: 4.5,
       yelpRating: 4.0,
@@ -368,7 +368,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Umami Burger Wicker Park`,
-      geometry: [41.9087226, -87.6751027],
+      location: [41.9087226, -87.6751027],
       price_level: 2,
       rating: 4.2,
       yelpRating: 4,
@@ -379,7 +379,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `DMK Burger Bar`,
-      geometry: [41.9087226, -87.6751027],
+      location: [41.9087226, -87.6751027],
       price_level: 2,
       rating: 4.4,
       yelpRating: 4,
@@ -390,7 +390,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Epic Burger`,
-      geometry: [41.8895468, -87.6308718],
+      location: [41.8895468, -87.6308718],
       price_level: 1,
       rating: 4.1,
       yelpRating: 4,
@@ -401,7 +401,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `M Burger`,
-      geometry: [41.89310520000001, -87.6285585],
+      location: [41.89310520000001, -87.6285585],
       price_level: 1,
       rating: 4.1,
       yelpRating: 3.5,
@@ -412,7 +412,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Butcher & The Burger`,
-      geometry: [41.9179045, -87.65431410000001],
+      location: [41.9179045, -87.65431410000001],
       price_level: 2,
       rating: 4.5,
       yelpRating: 4,
@@ -424,7 +424,7 @@ async function seed() {
     //new start
     Restaurant.create({
       name: `Ambassador Chicago`,
-      geometry: [41.9059674, -87.6283026],
+      location: [41.9059674, -87.6283026],
       price_level: 2,
       rating: 4.2,
       yelpRating: 3.5,
@@ -435,7 +435,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Fairmont Chicago Millennium Park`,
-      geometry: [41.88602940000001, -87.62117049999999],
+      location: [41.88602940000001, -87.62117049999999],
       price_level: 3,
       rating: 4.4,
       yelpRating: 3.5,
@@ -446,7 +446,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Girl & The Goat`,
-      geometry: [41.8841731, -87.6479548],
+      location: [41.8841731, -87.6479548],
       price_level: 3,
       rating: 4.7,
       yelpRating: 4.2,
@@ -457,7 +457,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Lucky Strike`,
-      geometry: [41.8914021, -87.6195235],
+      location: [41.8914021, -87.6195235],
       price_level: 3,
       rating: 4.1,
       yelpRating: 4.5,
@@ -468,7 +468,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Bella Bacinos`,
-      geometry: [41.8876183, -87.6256375],
+      location: [41.8876183, -87.6256375],
       price_level: 2,
       rating: 3.9,
       yelpRating: 3.5,
@@ -479,7 +479,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Native Foods Cafe`,
-      geometry: [41.8788971, -87.6309826],
+      location: [41.8788971, -87.6309826],
       price_level: 2,
       rating: 4.5,
       yelpRating: 4,
@@ -490,7 +490,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `The Grillroom Chophouse & Wine Bar`,
-      geometry: [41.8805263, -87.628597],
+      location: [41.8805263, -87.628597],
       price_level: 3,
       rating: 4.4,
       yelpRating: 3,
@@ -501,7 +501,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Primebar`,
-      geometry: [41.88494110000001, -87.63668009999999],
+      location: [41.88494110000001, -87.63668009999999],
       price_level: 2,
       rating: 4.1,
       yelpRating: 3.5,
@@ -512,7 +512,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Smith & Wollensky - Chicago`,
-      geometry: [41.88798870000001, -87.62860599999999],
+      location: [41.88798870000001, -87.62860599999999],
       price_level: 3,
       rating: 4.4,
       yelpRating: 3.5,
@@ -523,7 +523,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Bandera`,
-      geometry: [41.89195879999999, -87.6235214],
+      location: [41.89195879999999, -87.6235214],
       price_level: 2,
       rating: 4.5,
       yelpRating: 4,
@@ -534,7 +534,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Las Tablas`,
-      geometry: [41.89195879999999, -87.6235214],
+      location: [41.89195879999999, -87.6235214],
       price_level: 2,
       rating: 4.5,
       yelpRating: 4,
@@ -545,7 +545,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Elephant & Castle`,
-      geometry: [41.8792499, -87.6313018],
+      location: [41.8792499, -87.6313018],
       price_level: 2,
       rating: 4.2,
       yelpRating: 3.5,
@@ -556,7 +556,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Giordano's`,
-      geometry: [41.8959933, -87.6256958],
+      location: [41.8959933, -87.6256958],
       price_level: 2,
       rating: 4.3,
       yelpRating: 4.2,
@@ -567,7 +567,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Giordano's`,
-      geometry: [41.8959933, -87.6256958],
+      location: [41.8959933, -87.6256958],
       price_level: 2,
       rating: 4.3,
       yelpRating: 3.5,
@@ -578,7 +578,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Siena Tavern`,
-      geometry: [41.889043, -87.630156],
+      location: [41.889043, -87.630156],
       price_level: 3,
       rating: 4.5,
       yelpRating: 4,
@@ -589,7 +589,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Gino's East`,
-      geometry: [41.89601589999999, -87.623026],
+      location: [41.89601589999999, -87.623026],
       price_level: 2,
       rating: 4.3,
       yelpRating: 3.5,
@@ -600,7 +600,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `Duffy's Tavern and Grille`,
-      geometry: [41.9329916, -87.6404574],
+      location: [41.9329916, -87.6404574],
       price_level: 1,
       rating: 4,
       yelpRating: 3,
@@ -611,7 +611,7 @@ async function seed() {
     }),
     Restaurant.create({
       name: `McCormick & Schmick's Seafood & Steaks`,
-      geometry: [41.8866025, -87.62722529999999],
+      location: [41.8866025, -87.62722529999999],
       price_level: 3,
       rating: 4.1,
       yelpRating: 3,

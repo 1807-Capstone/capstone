@@ -31,8 +31,8 @@ router.post('/', async (req, res, next) => {
     const initialGoogleSearch = await googleMapsClient
       .placesNearby({
         language: 'en',
-        location: [req.body.lat, req.body.lng],
-        // location: [41.895579, -87.639064],
+        // location: [req.body.lat, req.body.lng],
+        location: [41.895579, -87.639064],
         radius: 500,
         minprice: 1,
         maxprice: 4,
@@ -180,7 +180,6 @@ router.post('/filteredGoogle', async (req, res, next) => {
       try {
         for (let i = 0; i < 5; i++) {
           (function(index) {
-            console.log('in loop', i);
             setTimeout(async () => {
               let city = cleanCity(googleSearch[i].vicinity);
               let state = theState;
@@ -189,14 +188,9 @@ router.post('/filteredGoogle', async (req, res, next) => {
                 location: `${city}, ${state}`
               });
               yelpSearch.push(newResult);
-              console.log(
-                'results with yelp: ',
-                yelpSearch[i].jsonBody.businesses[0].name,
-                googleSearch[i].name
-              );
+
               googleSearch[i].yelpResults =
                 yelpSearch[i].jsonBody.businesses[0];
-              // console.log('googleSearch results', googleSearch);
             }, 5000 + 1000 * index);
           })(i);
           // res.json(googleSearch);
@@ -213,12 +207,11 @@ router.post('/filteredGoogle', async (req, res, next) => {
       //   yelpCalls2();
 
       setTimeout(function() {
-        console.log('** Beginning setTimeout function');
+        // console.log('** Beginning setTimeout function');
         for (let i = 0; i < 5; i++) {
-          console.log('** yelpSearch[i]', yelpSearch[i].jsonBody.businesses[0]);
           googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
         }
-        console.log('** Ran Yelp Wrapper');
+        // console.log('** Ran Yelp Wrapper');
 
         //     for (let i = 5; i < 10; i++) {
         //       console.log('** yelpSearch[i]', yelpSearch[i].jsonBody.businesses[0]);
@@ -266,8 +259,6 @@ router.post('/yelp', async (req, res, next) => {
 });
 
 router.post('/filteredServer', async (req, res, next) => {
-  console.log('here');
-  console.log('req.body', req.body);
   try {
     const currentFilters = {};
     if (req.body.price) {

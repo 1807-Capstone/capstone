@@ -61,7 +61,7 @@ export class AllRestaurants extends Component {
                 </Link>
                 <p>
                   Price level: {restaurant.price_level} ---------- ||Yelp Price
-                  level: {restaurant.yelpResults.price}
+                  {/* level: {restaurant.yelpResults.price} */}
                 </p>
                 <p>
                   Google Rating: {restaurant.rating} ---------- ||Yelp Rating:{' '}

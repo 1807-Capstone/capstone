@@ -29,3 +29,10 @@ form div {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.markerBox {
+  width: 10vw;
+  height: 10vw;
+  /* background-image: url('img/sonicandtails.png'); */
+  background-size: cover;
+}

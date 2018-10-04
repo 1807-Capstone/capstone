@@ -70,14 +70,22 @@ export class MapView extends React.Component {
   }
 
   componentDidUpdate() {
-    this.props.restaurants.map(restaurant =>
+    this.props.restaurants.map(restaurant => {
+      let theHtml =
+        "<div class='markerBox'>" +
+        `<p>Restaurant: ${restaurant.name}</p>` +
+        `<p>${restaurant.geometry.location.lat}</p>` +
+        `<p>${restaurant.geometry.location.lat}</p>` +
+        `<p>${restaurant.geometry.location.lat}</p>` +
+        '</div>'
+      console.log(restaurant)
       this.createMarker(
         restaurant.geometry.location.lng,
         restaurant.geometry.location.lat,
         // new mapboxgl.Popup().setText('Tupac > Biggie')
-        new mapboxgl.Popup().setText('Tupac > Biggie')
+        new mapboxgl.Popup().setHTML(theHtml)
       )
-    )
+    })
   }
 
   createMarker(lng, lat, popUp) {

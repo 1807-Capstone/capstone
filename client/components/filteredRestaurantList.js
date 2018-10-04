@@ -27,7 +27,6 @@ class FilteredRestaurantList extends Component {
   };
 
   render() {
-    console.log('this is props', this.props);
     return (
       <Container>
         <Grid centered stackable>

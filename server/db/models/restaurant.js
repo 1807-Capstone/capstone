@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize')
-const db = require('../db')
+const Sequelize = require('sequelize');
+const db = require('../db');
 
 const Restaurant = db.define('restaurants', {
   name: {
@@ -9,25 +9,23 @@ const Restaurant = db.define('restaurants', {
       notEmpty: true
     }
   },
-  location: {
+  geometry: {
     type: Sequelize.ARRAY(Sequelize.FLOAT),
     allowNull: false
   },
-  description: {
-    type: Sequelize.TEXT
-  },
-  imgUrl: {
-    type: Sequelize.STRING
-  },
-  hours: {
-    type: Sequelize.ARRAY(Sequelize.STRING)
-  },
-  price: {
+  price_level: {
     type: Sequelize.INTEGER,
     allowNull: false,
     validate: {
       min: 1,
       max: 4
+    }
+  },
+  rating: {
+    type: Sequelize.DECIMAL,
+    validate: {
+      min: 1,
+      max: 5
     }
   },
   yelpRating: {
@@ -37,12 +35,11 @@ const Restaurant = db.define('restaurants', {
       max: 5
     }
   },
-  googleRating: {
-    type: Sequelize.DECIMAL,
-    validate: {
-      min: 1,
-      max: 5
-    }
+  yelpImg: {
+    type: Sequelize.STRING
+  },
+  vicinity: {
+    type: Sequelize.STRING
   },
   radiusRating: {
     type: Sequelize.DECIMAL,
@@ -51,6 +48,6 @@ const Restaurant = db.define('restaurants', {
       max: 5
     }
   }
-})
+});
 
-module.exports = Restaurant
+module.exports = Restaurant;

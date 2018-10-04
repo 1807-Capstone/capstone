@@ -1,39 +1,39 @@
-import React from 'react'
-import mapboxgl from 'mapbox-gl'
-import {fetchAllRestaurantsFromServer} from '../store/restaurant'
-import {connect} from 'react-redux'
+import React from 'react';
+import mapboxgl from 'mapbox-gl';
+import {fetchAllRestaurantsFromServer} from '../store/restaurant';
+import {connect} from 'react-redux';
 
-import {withRouter} from 'react-router-dom'
-import {setLocation} from '../store/map'
+import {withRouter} from 'react-router-dom';
+import {setLocation} from '../store/map';
 
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 mapboxgl.accessToken =
-  'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA'
+  'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
 
 const Box = styled.div`
   height: 90vh;
   width: 100vw;
   display: inline-block;
   position: relative;
-`
+`;
 
-let map
-let mapIsEmpty = true
+let map;
+let mapIsEmpty = true;
 
 const mapStateToProps = state => {
   return {
     restaurants: state.restaurant.allRestaurants,
     fetching: state.restaurant.allFetching,
     location: state.map.location
-  }
-}
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   getRestaurants: (lat, lng) =>
     dispatch(fetchAllRestaurantsFromServer(lat, lng)),
   setLocation: location => dispatch(setLocation(location))
-})
+});
 
 export class MapView extends React.Component {
   async componentDidMount() {
@@ -42,14 +42,14 @@ export class MapView extends React.Component {
       style: 'mapbox://styles/mapbox/streets-v9',
       center: [this.props.location.lng, this.props.location.lat],
       zoom: this.props.location.zoom
-    })
+    });
     map.addControl(
       new MapboxDirections({
         accessToken: mapboxgl.accessToken
       }),
       'top-left'
-    )
-    await this.geolocate()
+    );
+    await this.geolocate();
   }
 
   async shouldComponentUpdate(nextProps) {
@@ -58,13 +58,14 @@ export class MapView extends React.Component {
         await this.props.getRestaurants(
           this.props.location.lat,
           this.props.location.lng
-        )
+        );
       }
-      mapIsEmpty = false
+      mapIsEmpty = false;
     }
   }
 
   componentDidUpdate() {
+    console.log('restaurants', this.props.restaurants[0]);
     this.props.restaurants.map(restaurant =>
       new mapboxgl.Marker()
         .setLngLat([
@@ -72,13 +73,13 @@ export class MapView extends React.Component {
           restaurant.geometry.location.lat
         ])
         .addTo(map)
-    )
+    );
   }
 
   createMarker(lng, lat, className) {
-    var marker = document.createElement('div')
-    marker.className = className
-    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map)
+    var marker = document.createElement('div');
+    marker.className = className;
+    new mapboxgl.Marker(marker).setLngLat([lng, lat]).addTo(map);
   }
 
   geolocate() {
@@ -87,19 +88,19 @@ export class MapView extends React.Component {
         enableHighAccuracy: true
       },
       trackUserLocation: true
-    })
+    });
 
-    map.addControl(geolocate)
-    setTimeout(() => geolocate.trigger(), 1000)
+    map.addControl(geolocate);
+    setTimeout(() => geolocate.trigger(), 1000);
     map.on('move', () => {
-      const {lng, lat} = map.getCenter()
+      const {lng, lat} = map.getCenter();
 
       this.props.setLocation({
         lng: lng.toFixed(4),
         lat: lat.toFixed(4),
         zoom: map.getZoom().toFixed(2)
-      })
-    })
+      });
+    });
   }
 
   // new mapboxgl.LngLat(lng, lat).toBounds(5000)
@@ -107,7 +108,7 @@ export class MapView extends React.Component {
 
   addLayer(obj) {
     map.on('load', function() {
-      map.addLayer(obj)
+      map.addLayer(obj);
       //obj example
       // {
       //   id: 'terrain-data',
@@ -118,10 +119,11 @@ export class MapView extends React.Component {
       //   },
       //   'source-layer': 'contour'
       // }
-    })
+    });
   }
 
   render() {
+    console.log('restaurants', this.props.restaurants[0]);
     if (this.props.location) {
       return (
         <div>
@@ -135,15 +137,15 @@ export class MapView extends React.Component {
             />
           </Box>
         </div>
-      )
+      );
     } else {
-      return null
+      return null;
     }
   }
 }
 
 const ConnectedMapView = withRouter(
   connect(mapStateToProps, mapDispatchToProps)(MapView)
-)
+);
 
-export default ConnectedMapView
+export default ConnectedMapView;

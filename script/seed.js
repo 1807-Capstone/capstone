@@ -26,185 +26,356 @@ async function seed() {
   const restaurants = await Promise.all([
     Restaurant.create({
       name: 'Original Hooters',
-      location: [41.8941717, -87.6345194],
-      price: 2,
-      googleRating: 3.9,
-      yelpRating: 3.5,
-      imgUrl: 'https://s3-media2.fl.yelpcdn.com/bphoto/Y3sBlOPkuAqbgqzK9O9PYw/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8941717,
+          lng: -87.6345194
+        }
+      },
+      price_level: 2,
+      rating: 3.9,
+      yelpReslults: {
+        rating: 3.5,
+        photos: [
+          'https://s3-media2.fl.yelpcdn.com/bphoto/Y3sBlOPkuAqbgqzK9O9PYw/o.jpg'
+        ]
+      }
     }),
     Restaurant.create({
       name: 'Underground Wonder Bar',
-      location: [41.8952072, -87.6313672],
-      price: 3,
-      googleRating: 3.6,
-      yelpRating: 4.5,
-      radiusRating: 5,
-      imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/i4wLAu_7nn3LQAYSba-O-w/o.jpg'
-
+      geometry: {
+        location: {
+          lat: 41.8952072,
+          lng: -87.6313672
+        }
+      },
+      price_level: 3,
+      rating: 3.6,
+      yelpResults: {
+        rating: 4.5,
+        photos: [
+          'https://s3-media4.fl.yelpcdn.com/bphoto/i4wLAu_7nn3LQAYSba-O-w/o.jpg'
+        ]
+      }
     }),
     Restaurant.create({
       name: `Lou Malnati's Pizzeria`,
-      location: [41.8903425, -87.6337034],
-      price: 2,
-      googleRating: 4.5,
-      yelpRating: 3,
-      radiusRating: 3.5,
-      imgUrl: 'https://s3-media3.fl.yelpcdn.com/bphoto/yNwjFEaGzBBGZBWItTrDNg/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8903425,
+          lng: -87.6337034
+        }
+      },
+      price_level: 2,
+      rating: 4.5,
+      yelpResults: {
+        rating: 3,
+        photos: [
+          'https://s3-media3.fl.yelpcdn.com/bphoto/yNwjFEaGzBBGZBWItTrDNg/o.jpg'
+        ]
+      }
     }),
     Restaurant.create({
       name: `Maggiano's Little Italy`,
-      location: [41.8914765, -87.6313334],
-      price: 2,
-      googleRating: 4.4,
-      yelpRating: 4,
-      radiusRating: 5,
-      imgUrl: 'https://s3-media1.fl.yelpcdn.com/bphoto/OBFHo81arwg5qZNa4NCcGg/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8914765,
+          lng: -87.6313334
+        }
+      },
+      price_level: 2,
+      rating: 4.4,
+      yelpResults: {
+        rating: 4,
+        photos: [
+          'https://s3-media1.fl.yelpcdn.com/bphoto/OBFHo81arwg5qZNa4NCcGg/o.jpg'
+        ]
+      }
     }),
     Restaurant.create({
       name: 'Stout Barrel House & Pizza',
-      location: [41.8937555, -87.63151739999999],
-      price: 2,
-      googleRating: 3.9,
-      yelpRating: 3,
-      radiusRating: 5,
-      imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/JCtvgPFZIQ-bivzd2YKI4Q/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8937555,
+          lng: -87.63151739999999
+        }
+      },
+      price_level: 2,
+      rating: 3.9,
+      yelpResults: {
+        rating: 3,
+        photos: [
+          'https://s3-media4.fl.yelpcdn.com/bphoto/JCtvgPFZIQ-bivzd2YKI4Q/o.jpg'
+        ]
+      }
     }),
     Restaurant.create({
       name: `Portillo's Hot Dogs`,
-      location: [41.8934295, -87.6314147],
-      price: 1,
-      googleRating: 4.4,
-      yelpRating: 3,
-      radiusRating: 4.5,
-      imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/-9jRmNrw7QgjcUn_EXVsEA/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8934295,
+          lng: -87.6314147
+        }
+      },
+      price_level: 1,
+      rating: 4.4,
+      yelpResults: {
+        rating: 3,
+        photos: [
+          'https://s3-media4.fl.yelpcdn.com/bphoto/-9jRmNrw7QgjcUn_EXVsEA/o.jpg'
+        ]
+      }
     }),
     Restaurant.create({
       name: `Farmhouse Chicago`,
-      location: [41.8967165, -87.6353879],
-      price: 2,
-      googleRating: 4.4,
-      yelpRating: 4,
-      radiusRating: 2.5,
-      imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/bulRW8wPO80X156odFtZdw/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8967165,
+          lng: -87.6353879
+        }
+      },
+      price_level: 2,
+      rating: 4.4,
+      yelpResults: {
+        rating: 4,
+        photos: [
+          'https://s3-media4.fl.yelpcdn.com/bphoto/bulRW8wPO80X156odFtZdw/o.jpg'
+        ]
+      }
     }),
     Restaurant.create({
       name: `Frontera Grill`,
-      location: [41.89052059999999, -87.6308469],
-      price: 2,
-      googleRating: 4.4,
-      radiusRating: 2.5,
-      imgUrl: 'https://s3-media1.fl.yelpcdn.com/bphoto/Uw_hHPSPhe-V3RF0CqWJpg/o.jpg'
-
+      geometry: {
+        location: {
+          lat: 41.89052059999999,
+          lng: -87.6308469
+        }
+      },
+      price_level: 2,
+      rating: 4.4,
+      yelpResults: {
+        rating: 4,
+        photos: [
+          'https://s3-media1.fl.yelpcdn.com/bphoto/Uw_hHPSPhe-V3RF0CqWJpg/o.jpg'
+        ]
+      },
+      radiusRating: 2.5
     }),
     Restaurant.create({
       name: `Yolk- River North`,
-      location: [41.896211, -87.633871],
-      price: 2,
-      googleRating: 4.4,
-      yelpRating: 3.5,
-      radiusRating: 4.5,
-      imgUrl: 'https://s3-media3.fl.yelpcdn.com/bphoto/nPpRZgOJlKciQF6KYjHMaQ/o.jpg'
-
+      geometry: {
+        location: {
+          lat: 41.896211,
+          lng: -87.633871
+        }
+      },
+      price_level: 2,
+      rating: 4.4,
+      yelpResults: {
+        rating: 3.5,
+        photos: [
+          'https://s3-media3.fl.yelpcdn.com/bphoto/nPpRZgOJlKciQF6KYjHMaQ/o.jpg'
+        ]
+      },
+      radiusRating: 4.5
     }),
     Restaurant.create({
       name: `ZED451`,
-      location: [41.895848, -87.631039],
-      price: 3,
-      googleRating: 4.5,
-      yelpRating: 4,
-      radiusRating: 4.5,
-      imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/I2dloQ4kf9Gj9E8U0unmlg/o.jpg'
-
+      geometry: {
+        location: {
+          lat: 41.895848,
+          lng: -87.631039
+        }
+      },
+      price_level: 3,
+      rating: 4.5,
+      yelpResults: {
+        rating: 4,
+        photos: [
+          'https://s3-media4.fl.yelpcdn.com/bphoto/I2dloQ4kf9Gj9E8U0unmlg/o.jpg'
+        ]
+      },
+      radiusRating: 4.5
     }),
     Restaurant.create({
       name: `Bavette's Bar & Boeuf`,
-      location: [41.8892858, -87.63494209999999],
-      price: 3,
-      googleRating: 4.8,
-      yelpRating: 5,
-      radiusRating: 4,
-      imgUrl: 'https://s3-media2.fl.yelpcdn.com/bphoto/umjQHAZBktNxz0LsqUyFxQ/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8892858,
+          lng: -87.63494209999999
+        }
+      },
+      price_level: 3,
+      rating: 4.8,
+      yelpResults: {
+        rating: 5,
+        photos: [
+          'https://s3-media2.fl.yelpcdn.com/bphoto/umjQHAZBktNxz0LsqUyFxQ/o.jpg'
+        ]
+      },
+      radiusRating: 4
     }),
     Restaurant.create({
       name: `Wildfire Chicago`,
-      location: [41.8938449, -87.63355419999999],
-      price: 2,
-      googleRating: 4.4,
-      yelpRating: 4.5,
-      radiusRating: 3.5,
-      imgUrl: 'https://s3-media1.fl.yelpcdn.com/bphoto/emuo_f3qc6qtRuRj43C2pQ/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8938449,
+          lng: -87.63355419999999
+        }
+      },
+      price_level: 2,
+      rating: 4.4,
+      yelpResults: {
+        rating: 4.5,
+        photos: [
+          'https://s3-media1.fl.yelpcdn.com/bphoto/emuo_f3qc6qtRuRj43C2pQ/o.jpg'
+        ]
+      },
+      radiusRating: 3.5
     }),
     Restaurant.create({
       name: `Roka Akor`,
-      location: [41.890693, -87.631337],
-      price: 3,
-      googleRating: 4.6,
-      yelpRating: 3.5,
-      radiusRating: 3,
-      imgUrl: 'https://s3-media3.fl.yelpcdn.com/bphoto/5Y6wK7K_U7e0_mYawKbtpQ/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.890693,
+          lng: -87.631337
+        }
+      },
+      price_level: 3,
+      rating: 4.6,
+      yelpResults: {
+        rating: 3.5,
+        photos: [
+          'https://s3-media3.fl.yelpcdn.com/bphoto/5Y6wK7K_U7e0_mYawKbtpQ/o.jpg'
+        ]
+      },
+      radiusRating: 3
     }),
     Restaurant.create({
       name: `Chicago Chop House`,
-      location: [41.8934262, -87.63044719999999],
-      price: 3,
-      googleRating: 4.4,
-      yelpRating: 4,
-      radiusRating: 2.5,
-      imgUrl: 'https://s3-media2.fl.yelpcdn.com/bphoto/z7cyr3MnWlLthZV4WehX7w/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8934262,
+          lng: -87.63044719999999
+        }
+      },
+      price_level: 3,
+      rating: 4.4,
+      yelpResults: {
+        rating: 4,
+        photos: [
+          'https://s3-media2.fl.yelpcdn.com/bphoto/z7cyr3MnWlLthZV4WehX7w/o.jpg'
+        ]
+      },
+      radiusRating: 2.5
     }),
     Restaurant.create({
       name: `Fogo de Chão Brazilian Steackhouse`,
-      location: [41.8942345, -87.6321658],
-      price: 3,
-      googleRating: 4.6,
-      yelpRating: 4,
-      radiusRating: 3,
-      imgUrl: 'https://s3-media3.fl.yelpcdn.com/bphoto/HCZ8ZI62X9INFxjwsQkwuQ/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8942345,
+          lng: -87.6321658
+        }
+      },
+      price_level: 3,
+      rating: 4.6,
+      yelpResults: {
+        rating: 4,
+        photos: [
+          'https://s3-media3.fl.yelpcdn.com/bphoto/HCZ8ZI62X9INFxjwsQkwuQ/o.jpg'
+        ]
+      },
+      radiusRating: 3
     }),
     Restaurant.create({
       name: `Sunda`,
-      location: [41.8909516, -87.63174339999999],
-      price: 3,
-      googleRating: 4.4,
-      yelpRating: 4.5,
-      radiusRating: 4,
-      imgUrl: 'https://s3-media1.fl.yelpcdn.com/bphoto/LX-3NTcM8lh8txBkqWT-vw/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8909516,
+          lng: -87.63174339999999
+        }
+      },
+      price_level: 3,
+      rating: 4.4,
+      yelpResults: {
+        rating: 4.5,
+        photos: [
+          'https://s3-media1.fl.yelpcdn.com/bphoto/LX-3NTcM8lh8txBkqWT-vw/o.jpg'
+        ]
+      },
+      radiusRating: 4
     }),
     Restaurant.create({
       name: `Café Iberico`,
-      location: [41.895976, -87.63235499999999],
-      price: 2,
-      googleRating: 4.2,
-      yelpRating: 2.5,
-      radiusRating: 2.5,
-      imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/IujivU0ni8kZF_0CQmIdJw/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.895976,
+          lng: -87.63235499999999
+        }
+      },
+      price_level: 2,
+      rating: 4.2,
+      yelpResults: {
+        rating: 2.5,
+        photos: [
+          'https://s3-media4.fl.yelpcdn.com/bphoto/IujivU0ni8kZF_0CQmIdJw/o.jpg'
+        ]
+      },
+      radiusRating: 2.5
     }),
     Restaurant.create({
       name: `The Dawson`,
-      location: [41.8913556, -87.6471969],
-      price: 2,
-      googleRating: 4.4,
-      yelpRating: 4.5,
-      radiusRating: 4,
-      imgUrl: 'https://s3-media4.fl.yelpcdn.com/bphoto/3fYqzUvNUAU0xLsMHjDG-A/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8913556,
+          lng: -87.6471969
+        }
+      },
+      price_level: 2,
+      rating: 4.4,
+      yelpResults: {
+        rating: 4.5,
+        photos: [
+          'https://s3-media4.fl.yelpcdn.com/bphoto/3fYqzUvNUAU0xLsMHjDG-A/o.jpg'
+        ]
+      },
+      radiusRating: 4
     }),
     Restaurant.create({
       name: `Quartino Ristorante`,
-      location: [41.8934453, -87.6284081],
-      price: 2,
-      googleRating: 4.5,
-      yelpRating: 5,
-      radiusRating: 4,
-      imgUrl: 'https://s3-media2.fl.yelpcdn.com/bphoto/yDlBp9AHZlXfLAYoKdl5kA/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.8934453,
+          lng: -87.6284081
+        }
+      },
+      price_level: 2,
+      rating: 4.5,
+      yelpResults: {
+        rating: 5,
+        photos: [
+          'https://s3-media2.fl.yelpcdn.com/bphoto/yDlBp9AHZlXfLAYoKdl5kA/o.jpg'
+        ]
+      },
+      radiusRating: 4
     }),
     Restaurant.create({
       name: `Brunch`,
-      location: [41.89367120000001, -87.6372698],
-      price: 2,
-      googleRating: 4.4,
-      yelpRating: 3.5,
-      radiusRating: 4.5,
-      imgUrl: 'https://s3-media1.fl.yelpcdn.com/bphoto/Vowh8aFIMYHd4IUEZ4rxoA/o.jpg'
+      geometry: {
+        location: {
+          lat: 41.89367120000001,
+          lng: -87.6372698
+        }
+      },
+      price_level: 2,
+      rating: 4.4,
+      yelpResults: {
+        rating: 3.5,
+        photos: [
+          'https://s3-media1.fl.yelpcdn.com/bphoto/Vowh8aFIMYHd4IUEZ4rxoA/o.jpg'
+        ]
+      },
+      radiusRating: 4.5
     })
   ]);
 
@@ -216,10 +387,7 @@ async function seed() {
     Cuisine.create({name: 'Chinese'}),
     Cuisine.create({name: 'Indian'}),
     Cuisine.create({name: 'Mexican'}),
-    Cuisine.create({name: 'French'}),
     Cuisine.create({name: 'Japanese'}),
-    Cuisine.create({name: 'Thai'}),
-    Cuisine.create({name: 'Greek'}),
     Cuisine.create({name: 'Vegetarian'})
   ]);
 
@@ -510,7 +678,6 @@ async function seed() {
       userId: 3,
       restaurantId: 4
     })
-
   ]);
   console.log(`seeded ${checkIns.length} wait times`);
 

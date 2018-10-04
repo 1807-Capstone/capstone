@@ -100,7 +100,6 @@ class Filter extends React.Component {
   }
 
   handleSelectPage = (evt, {activePage}) => {
-    console.log('state', this.state);
     const startIndex = (activePage - 1) * this.state.perPage;
     const endIndex = startIndex + this.state.perPage;
     const pageRestaurants = this.props.filteredRestaurants.slice(

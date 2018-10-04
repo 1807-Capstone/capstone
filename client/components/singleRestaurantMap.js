@@ -21,15 +21,15 @@ class SingleRestaurantMap extends Component {
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
       center: [
-        this.props.restaurant.geometry.location.lng,
-        this.props.restaurant.geometry.location.lat
+        this.props.restaurant.location[1],
+        this.props.restaurant.location[0]
       ],
       zoom: 15
     })
     new mapboxgl.Marker()
       .setLngLat([
-        this.props.restaurant.geometry.location.lng,
-        this.props.restaurant.geometry.location.lat
+        this.props.restaurant.location[1],
+        this.props.restaurant.location[0]
       ])
       .addTo(map)
   }

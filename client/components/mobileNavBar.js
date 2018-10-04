@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
-import {logout} from '../store'
-import {Menu, Image, Icon, Button, Segment, Sidebar} from 'semantic-ui-react'
-import styled from 'styled-components'
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+import {logout} from '../store';
+import {Menu, Image, Icon, Button, Segment, Sidebar} from 'semantic-ui-react';
+import styled from 'styled-components';
 
 const Header = styled.h1`
   font-family: 'Proza Libre', sans-serif;
@@ -13,29 +13,38 @@ const Header = styled.h1`
   letter-spacing: 5px;
   margin-top: 25px;
   width: 100vw;
-  position: fixed;
-  left: 90px;
-  top: 7px;
+  position: absolute;
+  left: 75px;
+  top: 16px;
   color: #35b3bf;
-`
+`;
 const Box = styled.div`
   width: 100vw;
-  height: 7vh;
-  padding: 5px;
+  height: 10vh;
+  padding: 10px;
   border-bottom: 1px solid #801a15;
-`
+  margin-bottom: 6px;
+`;
+const ExitButton = styled.button`
+  border: none;
+  color: black;
+  height: 6px;
+  width: 6px;
+  position: relative;
+  outline: none;
+`;
 
 class MobileNavbar extends Component {
   state = {
     isVisible: false
-  }
-  handleButtonClick = () => this.setState({isVisible: !this.state.isVisible})
+  };
+  handleButtonClick = () => this.setState({isVisible: !this.state.isVisible});
 
-  handleSidebarHide = () => this.setState({isVisible: false})
+  handleSidebarHide = () => this.setState({isVisible: false});
 
   render() {
-    const {handleClick, isLoggedIn} = this.props
-    const {isVisible} = this.state
+    const {handleClick, isLoggedIn} = this.props;
+    const {isVisible} = this.state;
 
     return (
       <div>
@@ -43,11 +52,11 @@ class MobileNavbar extends Component {
           <Header>RADIUS</Header>
           <Button
             basic
-            color="black"
+            inverted
             floated="left"
             onClick={this.handleButtonClick}
           >
-            <Icon name="bars" />
+            <Icon name="bars" color="black" size="large" />
           </Button>
         </Box>
         <Sidebar
@@ -59,6 +68,7 @@ class MobileNavbar extends Component {
           width="thin"
           icon="labeled"
         >
+          <ExitButton onClick={this.handleSidebarHide}>x</ExitButton>
           <Menu.Item as={Link} to="/home">
             <Icon name="home" />
             Home
@@ -81,26 +91,26 @@ class MobileNavbar extends Component {
           </Menu.Item>
         </Sidebar>
       </div>
-    )
+    );
   }
 }
 const mapState = state => {
   return {
     isLoggedIn: !!state.user.id
-  }
-}
+  };
+};
 
 const mapDispatch = dispatch => {
   return {
     handleClick() {
-      dispatch(logout())
+      dispatch(logout());
     }
-  }
-}
+  };
+};
 
-export default connect(mapState, mapDispatch)(MobileNavbar)
+export default connect(mapState, mapDispatch)(MobileNavbar);
 
 MobileNavbar.propTypes = {
   handleClick: PropTypes.func.isRequired,
   isLoggedIn: PropTypes.bool.isRequired
-}
+};

@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 import {
   Grid,
   Header,
@@ -9,13 +9,13 @@ import {
   Item,
   Button,
   Divider
-} from 'semantic-ui-react'
+} from 'semantic-ui-react';
 import {
   fetchSuggestedRestaurantsFromServer,
   gotOneRestaurant
-} from '../store/restaurant'
-import {Link} from 'react-router-dom'
-import styled from 'styled-components'
+} from '../store/restaurant';
+import {Link} from 'react-router-dom';
+import styled from 'styled-components';
 
 /**
  * COMPONENT
@@ -25,30 +25,31 @@ const Box = styled.div`
   padding-right: 10px;
   padding-left: 10px;
   height: 90vh;
-`
+`;
 
 export class UserHome extends Component {
   componentDidMount() {
-    this.props.fetchSuggestedRestaurantsFromServer(this.props.id)
+    this.props.fetchSuggestedRestaurantsFromServer(this.props.id);
   }
 
   handleRestaurantClick = value => {
     const selectedRestaurant = this.props.suggestedRestaurants.filter(
       restaurant => restaurant.name === value
-    )
+    );
 
-    this.props.gotOneRestaurant(selectedRestaurant[0])
-  }
+    this.props.gotOneRestaurant(selectedRestaurant[0]);
+  };
 
   render() {
     return (
       <Container>
         <Divider hidden />
         <Grid centered stackable>
-          <Grid.Column width={5} centered>
+          <Grid.Column computer={5} centered>
             <Item>
-              <Item.Image src="img/profile.jpg" circular size="small" />
               <h1>Welcome, {this.props.email}</h1>
+              <Divider />
+              <Item.Image src="img/profile.jpg" circular size="small" />
               <Divider hidden />
               <Item.Extra>
                 <Button basic>Restaurants Visited</Button>
@@ -66,7 +67,7 @@ export class UserHome extends Component {
                   this.props.suggestedRestaurants.map(restaurant => {
                     return (
                       <Item key={restaurant.id}>
-                        <Item.Image size="small" src={restaurant.imgUrl} />
+                        <Item.Image size="small" src={restaurant.yelpImg} />
                         <Item.Content>
                           <Item.Header
                             as={Link}
@@ -81,16 +82,16 @@ export class UserHome extends Component {
                           <Item.Description>
                             <Rating
                               icon="star"
-                              defaultRating={Math.floor(
-                                restaurant.googleRating
-                              )}
+                              defaultRating={Math.floor(restaurant.rating)}
                               maxRating={5}
                               disabled
                             />
                             <p>Google Rating</p>
                             <Rating
                               icon="star"
-                              defaultRating={Math.floor(restaurant.yelpRating)}
+                              defaultRating={Math.floor(
+                                restaurant.yelpResults.rating
+                              )}
                               maxRating={5}
                               disabled
                             />
@@ -107,7 +108,7 @@ export class UserHome extends Component {
                           </Item.Description>
                         </Item.Content>
                       </Item>
-                    )
+                    );
                   })
                 ) : (
                   <Item>
@@ -120,7 +121,7 @@ export class UserHome extends Component {
           </Grid.Column>
         </Grid>
       </Container>
-    )
+    );
   }
 }
 
@@ -133,16 +134,16 @@ const mapState = state => {
     id: state.user.id,
     suggestedRestaurants: state.restaurant.suggestedRestaurants,
     suggestedFetching: state.restaurant.suggestedFetching
-  }
-}
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   fetchSuggestedRestaurantsFromServer: id =>
     dispatch(fetchSuggestedRestaurantsFromServer(id)),
   gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant))
-})
+});
 
-export default connect(mapState, mapDispatchToProps)(UserHome)
+export default connect(mapState, mapDispatchToProps)(UserHome);
 
 /**
  * PROP TYPES
@@ -150,4 +151,4 @@ export default connect(mapState, mapDispatchToProps)(UserHome)
 UserHome.propTypes = {
   email: PropTypes.string
   // imgUrl: PropTypes.string
-}
+};

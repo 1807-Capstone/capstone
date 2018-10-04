@@ -93,14 +93,7 @@ class Filter extends React.Component {
       currentPage: firstPage,
       numPages: numPages
     });
-    // this.props.getFilteredRestaurants(
-    //   this.props.geolocation.lat,
-    //   this.props.geolocation.lng,
-    //   this.state.cuisine,
-    //   Number(this.state.price),
-    //   this.state.rating,
-    //   Number(this.state.distance)
-    // );
+
   };
   componentDidMount() {
     this.props.geolocate();

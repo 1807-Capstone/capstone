@@ -16,6 +16,7 @@ import {
 } from '../store/restaurant';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import ReactStars from 'react-stars';
 
 /**
  * COMPONENT
@@ -36,7 +37,6 @@ export class UserHome extends Component {
     const selectedRestaurant = this.props.suggestedRestaurants.filter(
       restaurant => restaurant.name === value
     );
-
     this.props.gotOneRestaurant(selectedRestaurant[0]);
   };
 
@@ -80,31 +80,34 @@ export class UserHome extends Component {
                             {restaurant.name}
                           </Item.Header>
                           <Item.Description>
-                            <Rating
-                              icon="star"
-                              defaultRating={Math.floor(restaurant.rating)}
-                              maxRating={5}
-                              disabled
-                            />
-                            <p>Google Rating</p>
-                            <Rating
-                              icon="star"
-                              defaultRating={Math.floor(
-                                restaurant.yelpResults.rating
-                              )}
-                              maxRating={5}
-                              disabled
-                            />
-                            <p>Yelp Rating</p>
-                            <Rating
-                              icon="star"
-                              defaultRating={Math.floor(
-                                restaurant.radiusRating
-                              )}
-                              maxRating={5}
-                              disabled
-                            />
-                            <p>Radius Rating</p>
+                            <p>
+                              Radius Rating
+                              <ReactStars
+                                count={5}
+                                value={restaurant.radiusRating}
+                                half={true}
+                                color2="#35b3bf"
+                                size="25px"
+                              />
+                            </p>
+                            <p>
+                              Google Rating
+                              <ReactStars
+                                count={5}
+                                value={restaurant.rating}
+                                half={true}
+                                color2="#C58600"
+                              />{' '}
+                            </p>
+                            <p>
+                              Yelp Rating
+                              <ReactStars
+                                count={5}
+                                value={restaurant.yelpResults.rating}
+                                half={true}
+                                color2="#C50A00"
+                              />
+                            </p>
                           </Item.Description>
                         </Item.Content>
                       </Item>

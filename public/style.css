@@ -29,3 +29,15 @@ form div {
   border-radius: 50%;
   cursor: pointer;
 }
+
+label {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+.markerBox {
+  width: 10vw;
+  height: 10vw;
+  /* background-image: url('img/sonicandtails.png'); */
+  background-size: cover;
+}

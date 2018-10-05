@@ -3,35 +3,24 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {logout} from '../store';
-import {Menu, Image, Icon, Button, Segment, Sidebar} from 'semantic-ui-react';
+import {Menu, Image, Icon, Button, Divider, Sidebar} from 'semantic-ui-react';
 import styled from 'styled-components';
 
 const Header = styled.h1`
-  font-family: 'Proza Libre', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 5px;
-  margin-top: 25px;
   width: 100vw;
+  height: 5vh;
   position: absolute;
-  left: 75px;
-  top: 16px;
-  color: #35b3bf;
+  padding-top: 5px;
+  text-align: center;
 `;
 const Box = styled.div`
   width: 100vw;
-  height: 10vh;
-  padding: 10px;
-  border-bottom: 1px solid #801a15;
-  margin-bottom: 6px;
-`;
-const ExitButton = styled.button`
-  border: none;
-  color: black;
-  height: 6px;
-  width: 6px;
-  position: relative;
-  outline: none;
+  height: 9vh;
+  padding-top: 10px;
 `;
 
 class MobileNavbar extends Component {
@@ -58,6 +47,9 @@ class MobileNavbar extends Component {
           >
             <Icon name="bars" color="black" size="large" />
           </Button>
+          <Button basic inverted floated="right" as={Link} to="/filter">
+            <Icon name="food" color="black" size="large" />
+          </Button>
         </Box>
         <Sidebar
           animation="overlay"
@@ -66,15 +58,18 @@ class MobileNavbar extends Component {
           onHide={this.handleSidebarHide}
           visible={isVisible}
           width="thin"
-          icon="labeled"
         >
-          <ExitButton onClick={this.handleSidebarHide}>x</ExitButton>
+          {/* <ExitButton onClick={this.handleSidebarHide}>x</ExitButton> */}
+          <Menu.Item>
+            <Icon name="x" onClick={this.handleSidebarHide} />
+            <Divider hidden />
+          </Menu.Item>
           <Menu.Item as={Link} to="/home">
             <Icon name="home" />
             Home
           </Menu.Item>
           <Menu.Item as={Link} to="/map">
-            <Icon name="map marker alternate" />
+            <Icon name="map" />
             Map
           </Menu.Item>
           <Menu.Item as={Link} to="/filter">

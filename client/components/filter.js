@@ -7,29 +7,9 @@ import {
 } from '../store/restaurant';
 import {connect} from 'react-redux';
 import {fetchGeolocation} from '../store/map';
-import {Header} from 'semantic-ui-react';
+import {Header, Divider} from 'semantic-ui-react';
 import FilteredRestaurantList from './filteredRestaurantList';
-
-// var startLat = document.createElement('div')
-// var startLon = document.createElement('div')
-
-// let startLat
-// let startLon
-
-// window.onload = function() {
-//   var startPos
-//   var geoSuccess = function(position) {
-//     startPos = position
-//     // document.getElementById('startLat').innerHTML = startPos.coords.latitude
-//     // document.getElementById('startLon').innerHTML = startPos.coords.longitude
-//     startLat = startPos.coords.latitude
-//     startLon = startPos.coords.longitude
-//   }
-//   navigator.geolocation.getCurrentPosition(geoSuccess)
-//   console.log(startLat)
-//   console.log(startLon)
-//   // console.log(startPos)
-// }
+import {StyledHeader} from './styledComponents';
 
 const mapStateToProps = state => ({
   filteredRestaurants: state.restaurant.filtered,
@@ -97,7 +77,6 @@ class Filter extends React.Component {
       currentPage: firstPage,
       numPages: numPages
     });
-
   };
   componentDidMount() {
     this.props.geolocate();
@@ -115,13 +94,10 @@ class Filter extends React.Component {
 
   render() {
     return (
-      <div className="ui form">
-        <br />
-        <div className="ui one column stackable center aligned page grid">
-          <Header as="h2">Filter</Header>
-        </div>
-        <br />
-        <br />
+      <div className="ui one column stackable center aligned page grid">
+        <Divider />
+        <StyledHeader>FILTER</StyledHeader>
+
         <FilterFormRedux
           handleSubmit={this.filter}
           handleSelectCuisine={this.selectCuisine}
@@ -129,8 +105,6 @@ class Filter extends React.Component {
           handleSelectRating={this.selectRating}
           handleSelectDistance={this.selectDistance}
         />
-        <br />
-        <br />
         {this.props.filteredRestaurants.length &&
         this.state.currentPage.length ? (
           <div>

@@ -5,6 +5,8 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {Grid, Divider, Rating, Image} from 'semantic-ui-react';
 import SingleRestaurantMap from './singleRestaurantMap';
+import ReactStars from 'react-stars';
+import {StyledTitle} from './styledComponents';
 
 const mapStateToProps = state => ({
   restaurant: state.restaurant.oneRestaurant
@@ -17,41 +19,41 @@ export class SingleRestaurant extends Component {
     if (restaurant) {
       return (
         <Grid stackable>
-          <Divider hidden />
-          <Grid.Column width={5}>
-            <h2>{restaurant.name}</h2>
-            <Image src={restaurant.yelpResults.image_url} size="small" />
+          <Grid.Column computer={5} mobile={10}>
+            <Image src={restaurant.yelpResults.image_url} />
+            <StyledTitle>{restaurant.name}</StyledTitle>
             <p>
               Radius Rating:
-              <Rating
-                icon="star"
-                defaultRating={Math.floor(restaurant.radiusRating)}
-                maxRating={5}
-                disabled
+              <ReactStars
+                count={5}
+                value={restaurant.radiusRating}
+                half={true}
+                color2="#35b3bf"
+                size="25px"
               />
             </p>
             <p>
               Yelp Rating:{' '}
-              <Rating
-                icon="star"
-                defaultRating={Math.floor(restaurant.yelpResults.rating)}
-                maxRating={5}
-                disabled
+              <ReactStars
+                count={5}
+                value={restaurant.yelpResults.rating}
+                half={true}
+                color2="#C50A00"
               />
             </p>
             <p>
               Google Rating:{' '}
-              <Rating
-                icon="star"
-                defaultRating={Math.floor(restaurant.rating)}
-                maxRating={5}
-                disabled
+              <ReactStars
+                count={5}
+                value={restaurant.rating}
+                half={true}
+                color2="#C58600"
               />
             </p>
             <p>Price Level:{restaurant.price_level}</p>
             <p>Address: {restaurant.vicinity}</p>
           </Grid.Column>
-          <Grid.Column width={6}>
+          <Grid.Column computer={6} mobile={10}>
             <SingleRestaurantMap />
           </Grid.Column>
           <Grid.Row>Reviews</Grid.Row>

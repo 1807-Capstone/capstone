@@ -1,41 +1,20 @@
-import React from 'react';
-import FilterFormRedux from './filterFormRedux';
-import RestaurantList from './allRestaurants';
+import React from 'react'
+import FilterFormRedux from './filterFormRedux'
+import RestaurantList from './allRestaurants'
 import {
   fetchFilteredRestaurantsFromGoogle,
   getFilteredFromServer
-} from '../store/restaurant';
-import {connect} from 'react-redux';
-import {fetchGeolocation} from '../store/map';
-import {Header} from 'semantic-ui-react';
-import FilteredRestaurantList from './filteredRestaurantList';
-
-// var startLat = document.createElement('div')
-// var startLon = document.createElement('div')
-
-// let startLat
-// let startLon
-
-// window.onload = function() {
-//   var startPos
-//   var geoSuccess = function(position) {
-//     startPos = position
-//     // document.getElementById('startLat').innerHTML = startPos.coords.latitude
-//     // document.getElementById('startLon').innerHTML = startPos.coords.longitude
-//     startLat = startPos.coords.latitude
-//     startLon = startPos.coords.longitude
-//   }
-//   navigator.geolocation.getCurrentPosition(geoSuccess)
-//   console.log(startLat)
-//   console.log(startLon)
-//   // console.log(startPos)
-// }
+} from '../store/restaurant'
+import {connect} from 'react-redux'
+import {fetchGeolocation} from '../store/map'
+import {Header} from 'semantic-ui-react'
+import FilteredRestaurantList from './filteredRestaurantList'
 
 const mapStateToProps = state => ({
   filteredRestaurants: state.restaurant.filtered,
   filteredFetching: state.restaurant.filteredFetching,
   geolocation: state.map.location
-});
+})
 
 const mapDispatchToProps = dispatch => ({
   // getFilteredRestaurants: (lat, lng, cuisine, price, rating, distance) =>
@@ -52,11 +31,11 @@ const mapDispatchToProps = dispatch => ({
   fetchFiltered: (price, rating, cuisine) =>
     dispatch(getFilteredFromServer(price, rating, cuisine)),
   geolocate: () => dispatch(fetchGeolocation())
-});
+})
 
 class Filter extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
       cuisine: '',
       price: '',
@@ -65,53 +44,52 @@ class Filter extends React.Component {
       perPage: 6,
       currentPage: [],
       numPages: 0
-    };
+    }
   }
   selectCuisine = evt => {
-    evt.preventDefault();
-    this.setState({cuisine: evt.target.value});
-  };
+    evt.preventDefault()
+    this.setState({cuisine: evt.target.value})
+  }
   selectPrice = evt => {
-    evt.preventDefault();
-    this.setState({price: evt.target.value});
-  };
+    evt.preventDefault()
+    this.setState({price: evt.target.value})
+  }
   selectRating = (evt, {rating}) => {
-    evt.preventDefault();
-    this.setState({rating});
-  };
+    evt.preventDefault()
+    this.setState({rating})
+  }
   selectDistance = evt => {
-    evt.preventDefault();
-    this.setState({distance: evt.target.value});
-  };
+    evt.preventDefault()
+    this.setState({distance: evt.target.value})
+  }
   filter = async evt => {
-    evt.preventDefault();
+    evt.preventDefault()
     await this.props.fetchFiltered(
       Number(this.state.price),
       this.state.rating,
       this.state.cuisine
-    );
-    const perPage = this.state.perPage;
-    const firstPage = this.props.filteredRestaurants.slice(0, perPage);
-    const numPages = Math.ceil(this.props.filteredRestaurants.length / perPage);
+    )
+    const perPage = this.state.perPage
+    const firstPage = this.props.filteredRestaurants.slice(0, perPage)
+    const numPages = Math.ceil(this.props.filteredRestaurants.length / perPage)
     this.setState({
       currentPage: firstPage,
       numPages: numPages
-    });
-
-  };
+    })
+  }
   componentDidMount() {
-    this.props.geolocate();
+    this.props.geolocate()
   }
 
   handleSelectPage = (evt, {activePage}) => {
-    const startIndex = (activePage - 1) * this.state.perPage;
-    const endIndex = startIndex + this.state.perPage;
+    const startIndex = (activePage - 1) * this.state.perPage
+    const endIndex = startIndex + this.state.perPage
     const pageRestaurants = this.props.filteredRestaurants.slice(
       startIndex,
       endIndex
-    );
-    this.setState({currentPage: pageRestaurants});
-  };
+    )
+    this.setState({currentPage: pageRestaurants})
+  }
 
   render() {
     return (
@@ -146,8 +124,8 @@ class Filter extends React.Component {
           <div />
         )}
       </div>
-    );
+    )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Filter);
+export default connect(mapStateToProps, mapDispatchToProps)(Filter)

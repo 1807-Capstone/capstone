@@ -4,7 +4,7 @@ import {fetchAllRestaurantsFromServer} from '../store/restaurant'
 import {connect} from 'react-redux'
 
 import {withRouter} from 'react-router-dom'
-import {setLocation} from '../store/map'
+import {setLocation, fetchGeolocation} from '../store/map'
 
 import styled from 'styled-components'
 import {Button} from 'semantic-ui-react'
@@ -19,6 +19,22 @@ const Box = styled.div`
   position: relative;
 `
 
+// let startLat = document.createElement('div')
+// let startLon = document.createElement('div')
+
+// var startPos
+// var geoSuccess = function(position) {
+//   startPos = position
+//   document.getElementById('startLat').innerHTML = startPos.coords.latitude
+//   document.getElementById('startLon').innerHTML = startPos.coords.longitude
+//   // startLat = startPos.coords.latitude
+//   // startLon = startPos.coords.longitude
+// }
+// navigator.geolocation.getCurrentPosition(geoSuccess)
+// console.log('startlat', startLat)
+// console.log('startlon', startLon)
+// // console.log(startPos)
+
 let map
 
 let mapIsEmpty = true
@@ -31,27 +47,22 @@ const mapStateToProps = state => {
   return {
     restaurants: state.restaurant.allRestaurants,
     fetching: state.restaurant.allFetching,
-    location: state.map.location
+    location: state.map.location,
+    geolocation: state.map.geolocation
   }
 }
 
 const mapDispatchToProps = dispatch => ({
   getRestaurants: (lat, lng) =>
     dispatch(fetchAllRestaurantsFromServer(lat, lng)),
-  setLocation: location => dispatch(setLocation(location))
-})
-
-let map
-
-let mapIsEmpty = true
-let toggleNavigation = true
-
-let directions = new MapboxDirections({
-  accessToken: mapboxgl.accessToken
+  setLocation: location => dispatch(setLocation(location)),
+  fetchGeolocation: () => dispatch(fetchGeolocation())
 })
 
 export class MapView extends React.Component {
   async componentDidMount() {
+    await this.props.fetchGeolocation()
+    console.log('current location', this.props.location)
     map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
@@ -64,19 +75,22 @@ export class MapView extends React.Component {
     map.addControl(nav, 'top-right')
 
     await this.geolocate()
-
-    // setTimeout(() => {
-    //   let location = map.getCenter()
-    //   this.props.setLocation({
-    //     lng: location.lng.toFixed(4),
-    //     lat: location.lat.toFixed(4),
-    //     zoom: map.getZoom().toFixed(2)
-    //   })
-    // }, 3000)
   }
-
   async shouldComponentUpdate(nextProps) {
-    if (this.props.location.lat === nextProps.location.lat && mapIsEmpty) {
+    console.log('this props', this.props)
+    console.log('next props', nextProps)
+    console.log('mapisempty', mapIsEmpty)
+
+    if (this.props.location.lng !== nextProps.location.lng) {
+      await this.props.fetchGeolocation()
+      // const {lng, lat} = await map.getCenter()
+      // this.props.setLocation({
+      //   lng: lng.toFixed(4),
+      //   lat: lat.toFixed(4),
+      //   zoom: map.getZoom().toFixed(2)
+      // })
+    }
+    if (this.props.location.lng === nextProps.location.lng && mapIsEmpty) {
       if (!this.props.fetching) {
         await this.props.getRestaurants(
           this.props.location.lat,
@@ -96,11 +110,9 @@ export class MapView extends React.Component {
         `<p>${restaurant.geometry.location.lat}</p>` +
         `<p>${restaurant.geometry.location.lat}</p>` +
         '</div>'
-      console.log(restaurant)
       this.createMarker(
         restaurant.geometry.location.lng,
         restaurant.geometry.location.lat,
-        // new mapboxgl.Popup().setText('Tupac > Biggie')
         new mapboxgl.Popup().setHTML(theHtml)
       )
     })
@@ -127,33 +139,22 @@ export class MapView extends React.Component {
     })
 
     map.addControl(geolocate)
-    console.log('location', geolocate)
     setTimeout(() => geolocate.trigger(), 1000)
-
-    // return geolocate
-    map.on('move', () => {
-      const {lng, lat} = map.getCenter()
-      // let lng = geoLocationObject._map._lngLat.lng
-      // let lat = geoLocationObject._map._lngLat.lat
-      // directions.setOrigin([this.props.location.lng, this.props.location.lat])
-      // console.log('first', this.props.location)
-      this.props.setLocation({
-        lng: lng.toFixed(4),
-        lat: lat.toFixed(4),
-        zoom: map.getZoom().toFixed(2)
-      })
-      // this.props.setLocation([
-      //   {
-      //     lng: geoLocationObject._lastKnownPosition.coords.longitude,
-      //     lat: geoLocationObject._lastKnownPosition.coords.latitude,
-      //     zoom: 2
-      //   }
-      // ])
-      // console.log('third', this.props.lng, this.props.lat)
-    })
+    // map.on('move', () => {
+    //   const {lng, lat} = map.getCenter()
+    //   this.props.setLocation({
+    //     lng: lng.toFixed(4),
+    //     lat: lat.toFixed(4),
+    //     zoom: map.getZoom().toFixed(2)
+    //   })
+    //   console.log('Mapbox', lng, lat)
+    // })
   }
   handleButtonClick = () => {
-    directions.setOrigin([this.props.location.lng, this.props.location.lat])
+    directions.setOrigin([
+      this.props.location.lng + 0.0088983,
+      this.props.location.lat - 0.00980448932
+    ])
     if (toggleNavigation) {
       map.addControl(directions, 'top-left')
     } else {

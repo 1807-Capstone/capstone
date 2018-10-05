@@ -1,22 +1,10 @@
 import React, {Component} from 'react';
-import {
-  Grid,
-  Header,
-  Container,
-  Item,
-  Pagination,
-  Rating
-} from 'semantic-ui-react';
-import styled from 'styled-components';
+import {Grid, Item, Pagination, Divider} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import {gotOneRestaurant} from '../store/restaurant';
 import {connect} from 'react-redux';
-
-const Box = styled.div`
-  padding-right: 10px;
-  padding-left: 10px;
-  height: 90vh;
-`;
+import ReactStars from 'react-stars';
+import {StyledTitle} from './styledComponents';
 
 class FilteredRestaurantList extends Component {
   handleRestaurantClick = value => {
@@ -28,20 +16,19 @@ class FilteredRestaurantList extends Component {
 
   render() {
     return (
-      <Container>
+      <div>
+        <Divider hidden />
+        <Divider hidden />
         <Grid centered stackable>
           <Grid.Column width={15} centered="true">
-            <Box>
-              <Header as="h4">Restaurants</Header>
+            <div>
+              {/* <Header as="h4">Restaurants</Header> */}
               <Item.Group divided>
                 <div className="two column doubling ui grid">
                   {this.props.restaurants.map(restaurant => {
                     return (
                       <Item key={restaurant.id} className="column">
-                        <Item.Image
-                          size="small"
-                          src={restaurant.yelpResults.image_url}
-                        />
+                        <Item.Image src={restaurant.yelpResults.image_url} />
                         <Item.Content>
                           <Item.Header
                             as={Link}
@@ -50,39 +37,32 @@ class FilteredRestaurantList extends Component {
                               this.handleRestaurantClick(restaurant.name)
                             }
                           >
-                            {restaurant.name}
+                            <StyledTitle>{restaurant.name}</StyledTitle>
                           </Item.Header>
 
                           <Item.Description>
                             <p>
                               Radius rating:{' '}
-                              <Rating
-                                icon="star"
-                                defaultRating={Math.floor(
-                                  restaurant.radiusRating
-                                )}
-                                maxRating={5}
-                                disabled
+                              <ReactStars
+                                count={5}
+                                value={restaurant.radiusRating}
+                                half={true}
+                                color2="#35b3bf"
+                                size="25px"
                               />
-                            </p>
-                            <p>
                               Yelp rating:{' '}
-                              <Rating
-                                icon="star"
-                                defaultRating={Math.floor(
-                                  restaurant.yelpResults.rating
-                                )}
-                                maxRating={5}
-                                disabled
+                              <ReactStars
+                                count={5}
+                                value={restaurant.yelpResults.rating}
+                                half={true}
+                                color2="#C50A00"
                               />
-                            </p>
-                            <p>
-                              Google rating:{' '}
-                              <Rating
-                                icon="star"
-                                defaultRating={Math.floor(restaurant.rating)}
-                                maxRating={5}
-                                disabled
+                              Google rating:
+                              <ReactStars
+                                count={5}
+                                value={restaurant.rating}
+                                half={true}
+                                color2="#C58600"
                               />
                             </p>
                           </Item.Description>
@@ -101,10 +81,10 @@ class FilteredRestaurantList extends Component {
                   totalPages={this.props.numPages}
                 />
               </div>
-            </Box>
+            </div>
           </Grid.Column>
         </Grid>
-      </Container>
+      </div>
     );
   }
 }

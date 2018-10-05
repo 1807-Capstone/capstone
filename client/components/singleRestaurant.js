@@ -12,6 +12,7 @@ const mapStateToProps = state => ({
 
 export class SingleRestaurant extends Component {
   render() {
+    console.log('restaurant', this.props.restaurant);
     const restaurant = this.props.restaurant;
     if (restaurant) {
       return (

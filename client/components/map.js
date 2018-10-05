@@ -109,7 +109,9 @@ export class MapView extends React.Component {
         `<p>${restaurant.geometry.location.lat}</p>` +
         `<p>${restaurant.geometry.location.lat}</p>` +
         `<p>${restaurant.geometry.location.lat}</p>` +
+        '<a href="home">test</a>' +
         '</div>'
+
       this.createMarker(
         restaurant.geometry.location.lng,
         restaurant.geometry.location.lat,
@@ -151,14 +153,17 @@ export class MapView extends React.Component {
     // })
   }
   handleButtonClick = () => {
-    directions.setOrigin([
-      this.props.location.lng + 0.0088983,
-      this.props.location.lat - 0.00980448932
-    ])
+    // directions.setOrigin([
+    //   this.props.location.lng + 0.0088983,
+    //   this.props.location.lat - 0.00980448932
+    // ])
+
     if (toggleNavigation) {
-      map.addControl(directions, 'top-left')
+      map.on('mousemove', function(e) {
+        console.log(e.lngLat)
+      })
     } else {
-      map.removeControl(directions)
+      // map.removeControl(directions)
     }
     toggleNavigation = !toggleNavigation
   }

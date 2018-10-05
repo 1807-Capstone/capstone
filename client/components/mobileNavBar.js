@@ -23,6 +23,11 @@ const Box = styled.div`
   padding-top: 10px;
 `;
 
+const Block = styled.div`
+  height: 55vh;
+  background: white;
+`;
+
 class MobileNavbar extends Component {
   state = {
     isVisible: false
@@ -64,22 +69,23 @@ class MobileNavbar extends Component {
             <Icon name="x" onClick={this.handleSidebarHide} />
             <Divider hidden />
           </Menu.Item>
-          <Menu.Item as={Link} to="/home">
+          <Menu.Item as={Link} to="/home" onClick={this.handleSidebarHide}>
             <Icon name="home" />
             Home
           </Menu.Item>
-          <Menu.Item as={Link} to="/map">
+          <Menu.Item as={Link} to="/map" onClick={this.handleSidebarHide}>
             <Icon name="map" />
             Map
           </Menu.Item>
-          <Menu.Item as={Link} to="/filter">
+          <Menu.Item as={Link} to="/filter" onClick={this.handleSidebarHide}>
             <Icon name="utensils" />
             Filter
           </Menu.Item>
-          <Menu.Item as={Link} to="/account">
+          <Menu.Item as={Link} to="/account" onClick={this.handleSidebarHide}>
             <Icon name="user" />
             Account
           </Menu.Item>
+          <Block />
           <Menu.Item href="#" onClick={handleClick}>
             <Icon name="log out" />
             Logout

@@ -24,6 +24,7 @@ export class SingleRestaurant extends Component {
             <p>
               Radius Rating:
               <ReactStars
+                edit={false}
                 count={5}
                 value={restaurant.radiusRating}
                 half={true}
@@ -34,6 +35,7 @@ export class SingleRestaurant extends Component {
             <p>
               Yelp Rating:{' '}
               <ReactStars
+                edit={false}
                 count={5}
                 value={restaurant.yelpResults.rating}
                 half={true}
@@ -43,6 +45,7 @@ export class SingleRestaurant extends Component {
             <p>
               Google Rating:{' '}
               <ReactStars
+                edit={false}
                 count={5}
                 value={restaurant.rating}
                 half={true}
@@ -55,7 +58,7 @@ export class SingleRestaurant extends Component {
           <Grid.Column computer={6} mobile={10}>
             <SingleRestaurantMap />
           </Grid.Column>
-          <Grid.Row>Reviews</Grid.Row>
+
           {/* {this.props.reviews.length ? (
             <div>
               {this.props.reviews.map(review => {

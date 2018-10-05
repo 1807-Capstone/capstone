@@ -18,7 +18,6 @@ class FilteredRestaurantList extends Component {
     return (
       <div>
         <Divider hidden />
-        <Divider hidden />
         <Grid centered stackable>
           <Grid.Column width={15} centered="true">
             <div>
@@ -28,7 +27,14 @@ class FilteredRestaurantList extends Component {
                   {this.props.restaurants.map(restaurant => {
                     return (
                       <Item key={restaurant.id} className="column">
-                        <Item.Image src={restaurant.yelpResults.image_url} />
+                        <Item.Image
+                          src={restaurant.yelpResults.image_url}
+                          as={Link}
+                          to={`/restaurants/${restaurant.name}`}
+                          onClick={() =>
+                            this.handleRestaurantClick(restaurant.name)
+                          }
+                        />
                         <Item.Content>
                           <Item.Header
                             as={Link}
@@ -45,6 +51,7 @@ class FilteredRestaurantList extends Component {
                               Radius rating:{' '}
                               <ReactStars
                                 count={5}
+                                edit={false}
                                 value={restaurant.radiusRating}
                                 half={true}
                                 color2="#35b3bf"
@@ -53,6 +60,7 @@ class FilteredRestaurantList extends Component {
                               Yelp rating:{' '}
                               <ReactStars
                                 count={5}
+                                edit={false}
                                 value={restaurant.yelpResults.rating}
                                 half={true}
                                 color2="#C50A00"
@@ -60,6 +68,7 @@ class FilteredRestaurantList extends Component {
                               Google rating:
                               <ReactStars
                                 count={5}
+                                edit={false}
                                 value={restaurant.rating}
                                 half={true}
                                 color2="#C58600"

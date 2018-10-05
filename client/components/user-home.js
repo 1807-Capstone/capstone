@@ -83,6 +83,7 @@ export class UserHome extends Component {
                             <p>
                               Radius Rating
                               <ReactStars
+                                edit={false}
                                 count={5}
                                 value={restaurant.radiusRating}
                                 half={true}
@@ -93,6 +94,7 @@ export class UserHome extends Component {
                             <p>
                               Google Rating
                               <ReactStars
+                                edit={false}
                                 count={5}
                                 value={restaurant.rating}
                                 half={true}
@@ -102,6 +104,7 @@ export class UserHome extends Component {
                             <p>
                               Yelp Rating
                               <ReactStars
+                                edit={false}
                                 count={5}
                                 value={restaurant.yelpResults.rating}
                                 half={true}

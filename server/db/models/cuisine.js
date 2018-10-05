@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize')
-const db = require('../db')
+const Sequelize = require('sequelize');
+const db = require('../db');
 
 const Cuisine = db.define('cuisines', {
   name: {
@@ -9,6 +9,6 @@ const Cuisine = db.define('cuisines', {
       notEmpty: true
     }
   }
-})
+});
 
-module.exports = Cuisine
+module.exports = Cuisine;

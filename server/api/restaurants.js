@@ -267,6 +267,9 @@ router.post('/filteredServer', async (req, res, next) => {
     if (req.body.rating) {
       currentFilters.radiusRating = req.body.rating;
     }
+    if (req.body.cuisine) {
+      currentFilters.keyword = req.body.cuisine;
+    }
     const filteredRestaurants = await Restaurant.findAll({
       where: currentFilters
     });

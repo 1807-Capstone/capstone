@@ -10,26 +10,6 @@ import {fetchGeolocation} from '../store/map';
 import {Header, Divider} from 'semantic-ui-react';
 import FilteredRestaurantList from './filteredRestaurantList';
 import {StyledHeader} from './styledComponents';
-// var startLat = document.createElement('div')
-// var startLon = document.createElement('div')
-
-// let startLat
-// let startLon
-
-// window.onload = function() {
-//   var startPos
-//   var geoSuccess = function(position) {
-//     startPos = position
-//     // document.getElementById('startLat').innerHTML = startPos.coords.latitude
-//     // document.getElementById('startLon').innerHTML = startPos.coords.longitude
-//     startLat = startPos.coords.latitude
-//     startLon = startPos.coords.longitude
-//   }
-//   navigator.geolocation.getCurrentPosition(geoSuccess)
-//   console.log(startLat)
-//   console.log(startLon)
-//   // console.log(startPos)
-// }
 
 const mapStateToProps = state => ({
   filteredRestaurants: state.restaurant.filtered,
@@ -49,8 +29,8 @@ const mapDispatchToProps = dispatch => ({
   //       distance
   //     )
   //   ),
-  fetchFiltered: (price, rating) =>
-    dispatch(getFilteredFromServer(price, rating)),
+  fetchFiltered: (price, rating, cuisine) =>
+    dispatch(getFilteredFromServer(price, rating, cuisine)),
   geolocate: () => dispatch(fetchGeolocation())
 });
 
@@ -85,7 +65,11 @@ class Filter extends React.Component {
   };
   filter = async evt => {
     evt.preventDefault();
-    await this.props.fetchFiltered(Number(this.state.price), this.state.rating);
+    await this.props.fetchFiltered(
+      Number(this.state.price),
+      this.state.rating,
+      this.state.cuisine
+    );
     const perPage = this.state.perPage;
     const firstPage = this.props.filteredRestaurants.slice(0, perPage);
     const numPages = Math.ceil(this.props.filteredRestaurants.length / perPage);

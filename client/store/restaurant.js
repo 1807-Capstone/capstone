@@ -101,7 +101,7 @@ export const fetchFilteredRestaurantsFromGoogle = (
 
 const initialState = {
   allRestaurants: [],
-  allFetching: false,
+  allFetching: true,
   oneRestaurant: {},
   oneFetching: true,
   filteredRestaurants: [],

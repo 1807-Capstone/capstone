@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {GOOGLE_MAPS_API} from '../config'
 
-const initialState = {location: {lng: 0, lat: 90, zoom: 1}}
+const initialState = {location: {lng: -87.639064, lat: 41.895579, zoom: 1}}
 
 //Action Types
 const INITIAL_GEOLOCATE = 'INITIAL_GEOLOCATE'

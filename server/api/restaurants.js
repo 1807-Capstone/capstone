@@ -42,8 +42,6 @@ router.post('/', async (req, res, next) => {
 
     const googleSearch = initialGoogleSearch.json.results;
 
-    const yelpSearch = [];
-
     //   for (let i = 0; i < googleSearch.length; i++) {
     //     await (function(index) {
     //       setTimeout(async () => {
@@ -103,12 +101,13 @@ router.post('/', async (req, res, next) => {
 });
 
 router.post('/filteredGoogle', async (req, res, next) => {
+  console.log('req.body', req.body);
   try {
     const initialGoogleSearch = await googleMapsClient
       .placesNearby({
         language: 'en',
         location: [req.body.lat, req.body.lng],
-        radius: req.body.distance || 500,
+        radius: req.body.radius || 1500,
         minprice: req.body.price || 1,
         maxprice: req.body.price || 4,
         type: 'restaurant',
@@ -118,6 +117,8 @@ router.post('/filteredGoogle', async (req, res, next) => {
       .asPromise();
 
     const googleSearch = initialGoogleSearch.json.results;
+    res.status(200).json(googleSearch);
+
     // res.status(200).json(googleSearch);
 
     const yelpSearch = [];
@@ -168,61 +169,68 @@ router.post('/filteredGoogle', async (req, res, next) => {
 
     // res.status(200).json(googleSearch);
     //
-    const yelpCalls1 = async () => {
-      let theState;
-      let iterator = 0;
-      while (!theState) {
-        if (googleSearch[iterator].plus_code) {
-          theState = cleanState(googleSearch[iterator].plus_code.compound_code);
-        }
-        iterator++;
-      }
-      try {
-        for (let i = 0; i < 5; i++) {
-          (function(index) {
-            setTimeout(async () => {
-              let city = cleanCity(googleSearch[i].vicinity);
-              let state = theState;
-              let newResult = await client.search({
-                term: `${googleSearch[i].name}`,
-                location: `${city}, ${state}`
-              });
-              yelpSearch.push(newResult);
 
-              googleSearch[i].yelpResults =
-                yelpSearch[i].jsonBody.businesses[0];
-            }, 5000 + 1000 * index);
-          })(i);
-          // res.json(googleSearch);
-        }
-      } catch (error) {
-        next(error);
-      }
-    };
+// yelpCalls
 
-    // yelpCalls1();
+    // const yelpCalls1 = async () => {
+    //   let theState;
+    //   let iterator = 0;
+    //   while (!theState) {
+    //     if (googleSearch[iterator].plus_code) {
+    //       theState = cleanState(googleSearch[iterator].plus_code.compound_code);
+    //     }
+    //     iterator++;
+    //   }
+    //   try {
+    //     for (let i = 0; i < 5; i++) {
+    //       (function(index) {
+    //         setTimeout(async () => {
+    //           let city = cleanCity(googleSearch[i].vicinity);
+    //           let state = theState;
+    //           let newResult = await client.search({
+    //             term: `${googleSearch[i].name}`,
+    //             location: `${city}, ${state}`
+    //           });
+    //           yelpSearch.push(newResult);
 
-    const yelpWrapper = () => {
-      yelpCalls1();
-      //   yelpCalls2();
+    //           googleSearch[i].yelpResults =
+    //             yelpSearch[i].jsonBody.businesses[0];
+    //         }, 5000 + 1000 * index);
+    //       })(i);
+    //       // res.json(googleSearch);
+    //     }
+    //   } catch (error) {
+    //     next(error);
+    //   }
+    // };
 
-      setTimeout(function() {
-        // console.log('** Beginning setTimeout function');
-        for (let i = 0; i < 5; i++) {
-          googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
-        }
-        // console.log('** Ran Yelp Wrapper');
+    // // yelpCalls1();
 
-        //     for (let i = 5; i < 10; i++) {
-        //       console.log('** yelpSearch[i]', yelpSearch[i].jsonBody.businesses[0]);
-        //       googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
-        //     }
-        //     // console.log('** Google Search Modified Array ', googleSearch)
-        res.status(200).json(googleSearch);
-      }, 10000);
-    };
+    // const yelpWrapper = () => {
+    //   yelpCalls1();
+    //   //   yelpCalls2();
 
-    yelpWrapper();
+    //   setTimeout(function() {
+    //     // console.log('** Beginning setTimeout function');
+    //     for (let i = 0; i < 5; i++) {
+    //       googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
+    //     }
+    //     // console.log('** Ran Yelp Wrapper');
+
+    //     //     for (let i = 5; i < 10; i++) {
+    //     //       console.log('** yelpSearch[i]', yelpSearch[i].jsonBody.businesses[0]);
+    //     //       googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
+    //     //     }
+    //     //     // console.log('** Google Search Modified Array ', googleSearch)
+    //     res.status(200).json(googleSearch);
+    //   }, 10000);
+    // };
+
+    // yelpWrapper();
+
+
+//yelpCalls
+
     // res.json(googleSearch);
   } catch (error) {
     next(error);

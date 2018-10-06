@@ -80,20 +80,20 @@ export const getFilteredFromServer = (price, rating, cuisine) => {
 export const fetchFilteredRestaurantsFromGoogle = (
   lat,
   lng,
+  radius,
   cuisine,
   price,
-  rating,
-  distance
+  rating
 ) => {
   return async dispatch => {
     dispatch(reqFilteredRestaurants());
     const res = await axios.post('/api/restaurants/filteredGoogle', {
       lat,
       lng,
+      radius,
       cuisine,
       price,
-      rating,
-      distance
+      rating
     });
     dispatch(gotFilteredRestaurants(res.data));
   };

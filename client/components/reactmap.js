@@ -7,8 +7,7 @@ import DeckGL, {HexagonLayer} from 'deck.gl';
 import {connect} from 'react-redux';
 import {
   fetchRestaurantsList,
-  fetchRadiusYelpResultPopup,
-  fetchFilteredRestaurantsFromGoogle
+  fetchRadiusYelpResultPopup
 } from '../store/restaurant';
 import {fetchAllData} from '../store/waittimes';
 import {retrieveCenter} from '../store/map';
@@ -23,16 +22,17 @@ const mapStateToProps = state => {
   return {
     data: state.waittimes.allData,
     dataFetching: state.waittimes.dataFetching,
-    filteredRestaurants: state.restaurant.filteredRestaurants,
-    filteredFetching: state.restaurant.filteredFetching,
+    restaurantsList: state.restaurant.restaurantsList,
+    restaurantsListFetching: state.restaurant.restaurantsListFetching,
+    newPopupInfo: state.restaurant.newPopupInfo,
     center: state.map.center
   };
 };
 
 const mapDispatchToProps = dispatch => ({
   fetchAllData: () => dispatch(fetchAllData()),
-  fetchFilteredRestaurantsFromGoogle: (lat, lng, radius) =>
-    dispatch(fetchFilteredRestaurantsFromGoogle(lat, lng, radius)),
+  fetchRestaurantsList: (lat, lng, radius) =>
+    dispatch(fetchRestaurantsList(lat, lng, radius)),
   retrieveCenter: () => dispatch(retrieveCenter()),
   fetchRadiusYelpResultPopup: (googleRestaurantObj, prevRestaurantsList) =>
     dispatch(
@@ -68,7 +68,7 @@ class Map extends Component {
   componentDidUpdate(prevProps, prevState) {
     if (
       this.props.center !== prevProps.center &&
-      !prevProps.filteredRestaurants.length
+      !prevProps.restaurantsList.length
     ) {
       this.setState({
         viewport: {
@@ -80,8 +80,8 @@ class Map extends Component {
     }
     if (
       this.state.viewport.longitude !== prevState.viewport.longitude &&
-      !this.props.filteredFetching &&
-      !this.props.filteredRestaurants[0]
+      !this.props.restaurantsListFetching &&
+      !this.props.restaurantsList[0]
     ) {
       let dis = getRadius(this.mapRef);
       console.log(
@@ -92,11 +92,15 @@ class Map extends Component {
         '\nradius: ',
         Math.floor(dis * 1000) - 700
       );
-      this.props.fetchFilteredRestaurantsFromGoogle(
+      this.props.fetchRestaurantsList(
         this.props.center.lat,
         this.props.center.lng,
         Math.floor(dis * 1000) - 700
       );
+    }
+
+    if (this.props.newPopupInfo !== prevProps.newPopupInfo) {
+      this.setState({popupInfo: this.props.newPopupInfo});
     }
   }
 
@@ -109,13 +113,13 @@ class Map extends Component {
       '\nlongitude: ',
       this.state.viewport.longitude.toFixed(7),
       '\nradius: ',
-      Math.floor(dis * 1000) - 700
+      Math.floor(dis * 1000)
     );
 
-    this.props.fetchFilteredRestaurantsFromGoogle(
+    this.props.fetchRestaurantsList(
       this.state.viewport.latitude.toFixed(7),
       this.state.viewport.longitude.toFixed(7),
-      Math.floor(dis * 1000) - 700
+      Math.floor(dis * 1000)
     );
   };
 
@@ -130,6 +134,10 @@ class Map extends Component {
         <RestaurantPin
           size={20}
           onClick={() => {
+            this.props.fetchRadiusYelpResultPopup(
+              restaurant,
+              this.props.restaurantsList
+            );
             this.setState({popupInfo: restaurant});
           }}
         />
@@ -159,7 +167,7 @@ class Map extends Component {
   };
 
   render() {
-    const restaurants = this.props.filteredRestaurants;
+    const restaurants = this.props.restaurantsList;
     const data = this.props.data;
     const layer = new HexagonLayer({
       id: 'hexagon-layer',

@@ -66,7 +66,6 @@ const getRadius = mapRef => {
   let center = map.getCenter();
   let ne = bounds._ne;
 
-
   // r = radius of the earth in statute miles
   let r = 6371.0;
 
@@ -106,7 +105,7 @@ const cleanState = compoundCode => {
   return statesHash[state];
 };
 
-const yelpQueryMaker = googleResultsArray => {
+const yelpQueryMaker = (restaurantObject, aState) => {
   // let theState = '';
   // let iterator = 0;
   // while (!theState) {
@@ -120,10 +119,10 @@ const yelpQueryMaker = googleResultsArray => {
 
   let finalQuery = '{\n';
   finalQuery += `b1: business_match(
-      name: "${googleResultsArray.name}",
-      address1: "${cleanAddress(googleResultsArray.vicinity)}",
-      city: "${cleanCity(googleResultsArray.vicinity)}",
-      state: "IL",
+      name: "${restaurantObject.name}",
+      address1: "${cleanAddress(restaurantObject.vicinity)}",
+      city: "${cleanCity(restaurantObject.vicinity)}",
+      state: "${aState}",
       country: "US",
       limit: 1
   )
@@ -144,7 +143,6 @@ const yelpQueryMaker = googleResultsArray => {
   }
   `;
   finalQuery += '}';
-  console.log('final query', finalQuery);
   return finalQuery;
 };
 

@@ -100,7 +100,6 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-
 router.post('/filteredGoogle', async (req, res, next) => {
   console.log('req.body', req.body);
   try {
@@ -170,65 +169,61 @@ router.post('/filteredGoogle', async (req, res, next) => {
     // res.status(200).json(googleSearch);
     //
 
-    // yelpCalls
+    const yelpCalls1 = async () => {
+      let theState;
+      let iterator = 0;
+      while (!theState) {
+        if (googleSearch[iterator].plus_code) {
+          theState = cleanState(googleSearch[iterator].plus_code.compound_code);
+        }
+        iterator++;
+      }
+      try {
+        for (let i = 0; i < 5; i++) {
+          (function(index) {
+            setTimeout(async () => {
+              let city = cleanCity(googleSearch[i].vicinity);
+              let state = theState;
+              let newResult = await client.search({
+                term: `${googleSearch[i].name}`,
+                location: `${city}, ${state}`
+              });
+              yelpSearch.push(newResult);
 
-    // const yelpCalls1 = async () => {
-    //   let theState;
-    //   let iterator = 0;
-    //   while (!theState) {
-    //     if (googleSearch[iterator].plus_code) {
-    //       theState = cleanState(googleSearch[iterator].plus_code.compound_code);
-    //     }
-    //     iterator++;
-    //   }
-    //   try {
-    //     for (let i = 0; i < 5; i++) {
-    //       (function(index) {
-    //         setTimeout(async () => {
-    //           let city = cleanCity(googleSearch[i].vicinity);
-    //           let state = theState;
-    //           let newResult = await client.search({
-    //             term: `${googleSearch[i].name}`,
-    //             location: `${city}, ${state}`
-    //           });
-    //           yelpSearch.push(newResult);
+              googleSearch[i].yelpResults =
+                yelpSearch[i].jsonBody.businesses[0];
+            }, 5000 + 1000 * index);
+          })(i);
+          // res.json(googleSearch);
+        }
+      } catch (error) {
+        next(error);
+      }
+    };
 
-    //           googleSearch[i].yelpResults =
-    //             yelpSearch[i].jsonBody.businesses[0];
-    //         }, 5000 + 1000 * index);
-    //       })(i);
-    //       // res.json(googleSearch);
-    //     }
-    //   } catch (error) {
-    //     next(error);
-    //   }
-    // };
+    // yelpCalls1();
 
-    // // yelpCalls1();
+    const yelpWrapper = () => {
+      yelpCalls1();
+      //   yelpCalls2();
 
-    // const yelpWrapper = () => {
-    //   yelpCalls1();
-    //   //   yelpCalls2();
+      setTimeout(function() {
+        // console.log('** Beginning setTimeout function');
+        for (let i = 0; i < 5; i++) {
+          googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
+        }
+        // console.log('** Ran Yelp Wrapper');
 
-    //   setTimeout(function() {
-    //     // console.log('** Beginning setTimeout function');
-    //     for (let i = 0; i < 5; i++) {
-    //       googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
-    //     }
-    //     // console.log('** Ran Yelp Wrapper');
+        //     for (let i = 5; i < 10; i++) {
+        //       console.log('** yelpSearch[i]', yelpSearch[i].jsonBody.businesses[0]);
+        //       googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
+        //     }
+        //     // console.log('** Google Search Modified Array ', googleSearch)
+        res.status(200).json(googleSearch);
+      }, 10000);
+    };
 
-    //     //     for (let i = 5; i < 10; i++) {
-    //     //       console.log('** yelpSearch[i]', yelpSearch[i].jsonBody.businesses[0]);
-    //     //       googleSearch[i].yelpResults = yelpSearch[i].jsonBody.businesses[0];
-    //     //     }
-    //     //     // console.log('** Google Search Modified Array ', googleSearch)
-    //     res.status(200).json(googleSearch);
-    //   }, 10000);
-    // };
-
-    // yelpWrapper();
-
-    //yelpCalls
+    yelpWrapper();
 
     // res.json(googleSearch);
   } catch (error) {

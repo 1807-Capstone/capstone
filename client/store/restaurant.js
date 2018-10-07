@@ -68,9 +68,10 @@ const reqRadiusYelpResultsPopup = () => ({
   type: REQ_RADIUS_YELP_RESULT_FROM_SERVER
 });
 
-const gotRadiusYelpResultsPopup = restaurantsList => ({
+const gotRadiusYelpResultsPopup = (restaurantsList, newPopupInfo) => ({
   type: GOT_RADIUS_YELP_RESULT_FROM_SERVER,
-  restaurantsList
+  restaurantsList,
+  newPopupInfo
 });
 
 // Thunks
@@ -123,9 +124,26 @@ export const fetchFilteredRestaurantsFromGoogle = (
   };
 };
 
-export const fetchRestaurantsList = (lat, lng, radius, cuisine, price, rating) => {
+export const fetchRestaurantsList = (
+  lat,
+  lng,
+  radius,
+  cuisine,
+  price,
+  rating
+) => {
   return async dispatch => {
-    console.log('lat', lat, 'lng', lng, 'radius', radius, cuisine, price, rating);
+    console.log(
+      'lat',
+      lat,
+      'lng',
+      lng,
+      'radius',
+      radius,
+      cuisine,
+      price,
+      rating
+    );
     dispatch(reqRestaurantsList());
     const res = await axios.post('/api/testaurants/restaurantsList', {
       lat,
@@ -144,10 +162,13 @@ export const fetchRadiusYelpResultPopup = (
   prevRestaurantsList
 ) => {
   return async dispatch => {
-    const response = await axios.post('/api/restaurants/popups', 
-      googleRestaurantObj);
-    console.log(response.data);
-    dispatch(gotRadiusYelpResultsPopup(prevRestaurantsList));
+    const response = await axios.post('/api/testaurants/popups', {
+      googleRestaurantObj,
+      prevRestaurantsList
+    });
+    const newRestaurantList = response.data.prevRestaurantsList;
+    const newPopupInfo = response.data.popupInfo;
+    dispatch(gotRadiusYelpResultsPopup(newRestaurantList, newPopupInfo));
   };
 };
 
@@ -163,7 +184,8 @@ const initialState = {
   filtered: [],
   restaurantsList: [],
   restaurantsListFetching: false,
-  radiusFetching: false
+  radiusFetching: false,
+  newPopupInfo: {}
 };
 
 // Reducer
@@ -213,6 +235,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         restaurantsList: action.restaurantsList,
+        newPopupInfo: action.newPopupInfo,
         radiusFetching: false
       };
     case REQ_RADIUS_YELP_RESULT_FROM_SERVER:

@@ -94,7 +94,7 @@ export class UserHome extends Component {
                               Google Rating
                               <ReactStars
                                 count={5}
-                                value={restaurant.rating}
+                                // value={restaurant.rating}
                                 half={true}
                                 color2="#C58600"
                               />{' '}
@@ -103,7 +103,7 @@ export class UserHome extends Component {
                               Yelp Rating
                               <ReactStars
                                 count={5}
-                                value={restaurant.yelpResults.rating}
+                                // value={restaurant.yelpResults.rating}
                                 half={true}
                                 color2="#C50A00"
                               />

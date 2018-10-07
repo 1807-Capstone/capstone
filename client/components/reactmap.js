@@ -1,22 +1,19 @@
 import React, {Component} from 'react';
-import ReactMapGL, {
-  NavigationControl,
-  Marker,
-  Popup,
-  Layer,
-  Feature
-} from 'react-map-gl';
+import ReactMapGL, {NavigationControl, Marker, Popup} from 'react-map-gl';
 import {getRadius} from '../../utils';
 import {Button} from 'semantic-ui-react';
 import Dimensions from 'react-dimensions';
-import DeckGL, {HexagonLayer, IconLayer} from 'deck.gl';
+import DeckGL, {HexagonLayer} from 'deck.gl';
 import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
-import {fetchFilteredRestaurantsFromGoogle} from '../store/restaurant';
+import {
+  fetchRestaurantsList,
+  fetchRadiusYelpResultPopup,
+  fetchFilteredRestaurantsFromGoogle
+} from '../store/restaurant';
 import {fetchAllData} from '../store/waittimes';
-import {fetchGeolocation} from '../store/map';
-import {StyledTitle} from './styledComponents';
-
+import {retrieveCenter} from '../store/map';
+import RestaurantPopup from './restaurantPopup';
+import RestaurantPin from './restaurantPin';
 import PropTypes from 'prop-types';
 
 const mapBoxToken =
@@ -28,7 +25,7 @@ const mapStateToProps = state => {
     dataFetching: state.waittimes.dataFetching,
     filteredRestaurants: state.restaurant.filteredRestaurants,
     filteredFetching: state.restaurant.filteredFetching,
-    location: state.map.location
+    center: state.map.center
   };
 };
 
@@ -36,25 +33,17 @@ const mapDispatchToProps = dispatch => ({
   fetchAllData: () => dispatch(fetchAllData()),
   fetchFilteredRestaurantsFromGoogle: (lat, lng, radius) =>
     dispatch(fetchFilteredRestaurantsFromGoogle(lat, lng, radius)),
-  fetchGeolocation: () => dispatch(fetchGeolocation())
+  retrieveCenter: () => dispatch(retrieveCenter()),
+  fetchRadiusYelpResultPopup: (googleRestaurantObj, prevRestaurantsList) =>
+    dispatch(
+      fetchRadiusYelpResultPopup(googleRestaurantObj, prevRestaurantsList)
+    )
 });
-
-const tooltipStyle = {
-  position: 'absolute',
-  padding: '4px',
-  background: 'rgba(0, 0, 0, 0.8)',
-  color: '#fff',
-  maxWidth: '300px',
-  fontSize: '10px',
-  zIndex: 9,
-  pointerEvents: 'none'
-};
 
 class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tooltip: null,
       viewport: {
         latitude: 41.895579,
         longitude: -87.639064,
@@ -63,24 +52,29 @@ class Map extends Component {
         bearing: 0,
         width: this.props.containerWidth,
         height: this.props.containerHeight
-      }
+      },
+      popupInfo: null
     };
   }
+  static propTypes = {
+    containerWidth: PropTypes.number.isRequired,
+    containerHeight: PropTypes.number.isRequired
+  };
   componentDidMount() {
     this.props.fetchAllData();
-    this.props.fetchGeolocation();
+    this.props.retrieveCenter();
     console.log(this.mapRef);
   }
   componentDidUpdate(prevProps, prevState) {
     if (
-      this.props.location !== prevProps.location &&
+      this.props.center !== prevProps.center &&
       !prevProps.filteredRestaurants.length
     ) {
       this.setState({
         viewport: {
           ...prevState.viewport,
-          latitude: this.props.location.lat,
-          longitude: this.props.location.lng
+          latitude: this.props.center.lat,
+          longitude: this.props.center.lng
         }
       });
     }
@@ -91,24 +85,20 @@ class Map extends Component {
     ) {
       let dis = getRadius(this.mapRef);
       console.log(
-        'Intial Request\nlatitude: ',
-        this.props.location.lat,
+        'Initial Request\nlatitude: ',
+        this.props.center.lat,
         '\nlongitude: ',
-        this.props.location.lng,
+        this.props.center.lng,
         '\nradius: ',
         Math.floor(dis * 1000) - 700
       );
       this.props.fetchFilteredRestaurantsFromGoogle(
-        this.props.location.lat,
-        this.props.location.lng,
+        this.props.center.lat,
+        this.props.center.lng,
         Math.floor(dis * 1000) - 700
       );
     }
   }
-  static propTypes = {
-    containerWidth: PropTypes.number.isRequired,
-    containerHeight: PropTypes.number.isRequired
-  };
 
   handleClick = () => {
     let dis = getRadius(this.mapRef);
@@ -129,65 +119,60 @@ class Map extends Component {
     );
   };
 
-  _renderTooltip() {
-    const {tooltip} = this.state;
-    if (tooltip) {
-      return (
-        tooltip && (
-          <div style={{...tooltipStyle}}>
-            {tooltip
-              .toString()
-              .split('\n')
-              .map((str, i) => <p key={i}>{str}</p>)}
-          </div>
-        )
-      );
-    }
-    return null;
-  }
+  renderRestaurantMarker = restaurant => {
+    return (
+      <Marker
+        key={`marker-${restaurant.id}`}
+        longitude={restaurant.geometry.location.lng}
+        latitude={restaurant.geometry.location.lat}
+        captureClick={true}
+      >
+        <RestaurantPin
+          size={20}
+          onClick={() => {
+            this.setState({popupInfo: restaurant});
+          }}
+        />
+      </Marker>
+    );
+  };
 
-  setTooltip(object) {
-    this.setState({tooltip: object});
-  }
+  updateViewport = viewport => {
+    this.setState({viewport});
+  };
+
+  renderPopup = () => {
+    const {popupInfo} = this.state;
+    return (
+      popupInfo && (
+        <Popup
+          tipSize={5}
+          anchor="top"
+          longitude={popupInfo.geometry.location.lng}
+          latitude={popupInfo.geometry.location.lat}
+          onClose={() => this.setState({popupInfo: null})}
+        >
+          <RestaurantPopup restaurant={popupInfo} />
+        </Popup>
+      )
+    );
+  };
+
   render() {
     const restaurants = this.props.filteredRestaurants;
-    const {updateViewport} = this.props;
     const data = this.props.data;
     const layer = new HexagonLayer({
       id: 'hexagon-layer',
       data,
-      pickable: true,
+      pickable: false,
       extruded: true,
-      elevationScale: 2,
+      elevationScale: 1.3,
       opacity: 0.2,
       radius: 200,
       coverage: 1,
       getPosition: d => d.COORDINATES
     });
-    const markers = new IconLayer({
-      id: 'icon-layer',
-      data: restaurants,
-      pickable: true,
-      iconAtlas: '/img/icon-atlas.png',
-      iconMapping: {
-        marker: {
-          x: 0,
-          y: 0,
-          width: 128,
-          height: 128,
-          anchorY: 128,
-          mask: true
-        }
-      },
-      sizeScale: 8,
-      getPosition: d => [d.geometry.location.lng, d.geometry.location.lat],
-      getIcon: d => 'marker',
-      getSize: d => 5,
-      getColor: d => [Math.sqrt(d.rating), 140, 0],
-      onClick: ({object}) => {
-        this.setTooltip(`${object.name}\n${object.rating}`);
-      }
-    });
+
     return (
       <div style={{width: '100vw', height: '100vh'}}>
         <Button size="mini" fluid onClick={this.handleClick}>
@@ -199,29 +184,24 @@ class Map extends Component {
           onViewportChange={viewport => this.setState({viewport})}
           ref={map => (this.mapRef = map)}
         >
-          {this._renderTooltip()}
           <DeckGL
             intialViewState={this.state.viewport}
-            controller={true}
             viewState={this.state.viewport}
-            layers={[layer, markers]}
-            setTooltip={this.setTooltip.bind(this)}
+            layers={[layer]}
           />
-          {/* {restaurants.map(restaurant => {
-              return (
-                <Marker
-                  key={restaurant.id}
-                  latitude={restaurant.geometry.location.lat}
-                  longitude={restaurant.geometry.location.lng}
-                  anchor="bottom"
-                >
-                  <div className="mapMarkerStyle" />
-                </Marker>
-              );
-            })} */}
-          <div style={{position: 'absolute', right: 0}}>
-            <NavigationControl onViewportChange={updateViewport} />
+
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              padding: '10px'
+            }}
+          >
+            <NavigationControl onViewportChange={this.updateViewport} />
           </div>
+          {restaurants[0] && restaurants.map(this.renderRestaurantMarker)}
+          {this.renderPopup()}
         </ReactMapGL>
       </div>
     );

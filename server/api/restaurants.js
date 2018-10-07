@@ -100,6 +100,7 @@ router.post('/', async (req, res, next) => {
   }
 });
 
+
 router.post('/filteredGoogle', async (req, res, next) => {
   console.log('req.body', req.body);
   try {
@@ -112,7 +113,6 @@ router.post('/filteredGoogle', async (req, res, next) => {
         maxprice: req.body.price || 4,
         type: 'restaurant',
         keyword: req.body.cuisine || null
-        // rating: req.body.rating || null
       })
       .asPromise();
 
@@ -170,7 +170,7 @@ router.post('/filteredGoogle', async (req, res, next) => {
     // res.status(200).json(googleSearch);
     //
 
-// yelpCalls
+    // yelpCalls
 
     // const yelpCalls1 = async () => {
     //   let theState;
@@ -228,8 +228,7 @@ router.post('/filteredGoogle', async (req, res, next) => {
 
     // yelpWrapper();
 
-
-//yelpCalls
+    //yelpCalls
 
     // res.json(googleSearch);
   } catch (error) {

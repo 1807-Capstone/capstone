@@ -1,3 +1,5 @@
+/* eslint-disable complexity */
+
 import axios from 'axios';
 
 // Action types
@@ -10,6 +12,10 @@ const GOT_FILTERED_RESTAURANTS = 'GOT_FILTERED_RESTAURANTS';
 const GOT_SUGGESTED_RESTAURANTS = 'GOT_SUGGESTED_RESTAURANTS';
 const REQ_SUGGESTED_RESTAURANTS = 'REQ_SUGGESTED_RESTAURANTS';
 const GET_FILTERED_FROM_SERVER = 'GET_FILTERED_FROM_SERVER';
+const GOT_RADIUS_YELP_RESULT_FROM_SERVER = 'GOT_RADIUS_YELP_RESULT_FROM_SERVER';
+const REQ_RADIUS_YELP_RESULT_FROM_SERVER = 'REQ_RADIUS_YELP_RESULT_FROM_SERVER';
+const REQ_RESTAURANTS_LIST = 'REQ_RESTAURANTS_LIST';
+const GOT_RESTAURANTS_LIST = 'GOT_RESTAURANTS_LIST';
 
 // Action creators
 const gotAllRestaurants = allRestaurants => ({
@@ -47,6 +53,24 @@ const gotFilteredRestaurants = filteredRestaurants => ({
 const getFilteredRestaurantsFromServer = filtered => ({
   type: GET_FILTERED_FROM_SERVER,
   filtered
+});
+
+const reqRestaurantsList = () => ({
+  type: REQ_RESTAURANTS_LIST
+});
+
+const gotRestaurantsList = restaurantsList => ({
+  type: GOT_RESTAURANTS_LIST,
+  restaurantsList
+});
+
+const reqRadiusYelpResultsPopup = () => ({
+  type: REQ_RADIUS_YELP_RESULT_FROM_SERVER
+});
+
+const gotRadiusYelpResultsPopup = restaurantsList => ({
+  type: GOT_RADIUS_YELP_RESULT_FROM_SERVER,
+  restaurantsList
 });
 
 // Thunks
@@ -99,6 +123,34 @@ export const fetchFilteredRestaurantsFromGoogle = (
   };
 };
 
+export const fetchRestaurantsList = (lat, lng, radius, cuisine, price, rating) => {
+  return async dispatch => {
+    console.log('lat', lat, 'lng', lng, 'radius', radius, cuisine, price, rating);
+    dispatch(reqRestaurantsList());
+    const res = await axios.post('/api/testaurants/restaurantsList', {
+      lat,
+      lng,
+      radius,
+      cuisine,
+      price,
+      rating
+    });
+    dispatch(gotRestaurantsList(res.data));
+  };
+};
+
+export const fetchRadiusYelpResultPopup = (
+  googleRestaurantObj,
+  prevRestaurantsList
+) => {
+  return async dispatch => {
+    const response = await axios.post('/api/restaurants/popups', 
+      googleRestaurantObj);
+    console.log(response.data);
+    dispatch(gotRadiusYelpResultsPopup(prevRestaurantsList));
+  };
+};
+
 const initialState = {
   allRestaurants: [],
   allFetching: true,
@@ -108,7 +160,10 @@ const initialState = {
   filteredFetching: false,
   suggestedRestaurants: [],
   suggestedFetching: true,
-  filtered: []
+  filtered: [],
+  restaurantsList: [],
+  restaurantsListFetching: false,
+  radiusFetching: false
 };
 
 // Reducer
@@ -153,6 +208,28 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         filtered: action.filtered
+      };
+    case GOT_RADIUS_YELP_RESULT_FROM_SERVER:
+      return {
+        ...state,
+        restaurantsList: action.restaurantsList,
+        radiusFetching: false
+      };
+    case REQ_RADIUS_YELP_RESULT_FROM_SERVER:
+      return {
+        ...state,
+        radiusFetching: true
+      };
+    case GOT_RESTAURANTS_LIST:
+      return {
+        ...state,
+        restaurantsList: action.restaurantsList,
+        restaurantsListFetching: false
+      };
+    case REQ_RESTAURANTS_LIST:
+      return {
+        ...state,
+        restaurantsListFetching: true
       };
     default:
       return state;

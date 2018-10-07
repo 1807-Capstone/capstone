@@ -128,6 +128,18 @@ User.prototype.getSuggested = async function() {
   return response;
 };
 
+User.prototype.getVisited = function() {
+  const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
+  const response = Restaurant.findAll({
+    where: {
+      id: {
+        [Op.or]: userCheckedInRestaurants
+      }
+    }
+  });
+  return response;
+};
+
 /**
  * classMethods
  */

@@ -10,6 +10,7 @@ const GOT_FILTERED_RESTAURANTS = 'GOT_FILTERED_RESTAURANTS';
 const GOT_SUGGESTED_RESTAURANTS = 'GOT_SUGGESTED_RESTAURANTS';
 const REQ_SUGGESTED_RESTAURANTS = 'REQ_SUGGESTED_RESTAURANTS';
 const GET_FILTERED_FROM_SERVER = 'GET_FILTERED_FROM_SERVER';
+const GET_VISITED_FROM_SERVER = 'GET_VISITED_FROM_SERVER';
 
 // Action creators
 const gotAllRestaurants = allRestaurants => ({
@@ -49,6 +50,11 @@ const getFilteredRestaurantsFromServer = filtered => ({
   filtered
 });
 
+const getVisitedRestaurantsFromServer = visited => ({
+  type: GET_VISITED_FROM_SERVER,
+  visited
+});
+
 // Thunks
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
   return async dispatch => {
@@ -74,6 +80,13 @@ export const getFilteredFromServer = (price, rating, cuisine) => {
       cuisine
     });
     dispatch(getFilteredRestaurantsFromServer(res.data));
+  };
+};
+
+export const fetchVisited = id => {
+  return async dispatch => {
+    const res = await axios.get(`/api/users/${id}/visited`);
+    dispatch(getVisitedRestaurantsFromServer(res.data));
   };
 };
 
@@ -108,7 +121,8 @@ const initialState = {
   filteredFetching: false,
   suggestedRestaurants: [],
   suggestedFetching: true,
-  filtered: []
+  filtered: [],
+  visited: []
 };
 
 // Reducer
@@ -153,6 +167,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         filtered: action.filtered
+      };
+    case GET_VISITED_FROM_SERVER:
+      return {
+        ...state,
+        visited: action.visited
       };
     default:
       return state;

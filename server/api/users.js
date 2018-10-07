@@ -65,3 +65,13 @@ router.get('/:id/suggested', async (req, res, next) => {
     next(err);
   }
 });
+
+router.get('/:id/visited', async (req, res, next) => {
+  try {
+    const currentUser = await User.findById(req.params.id);
+    let visitedRestaurants = await currentUser.getVisited();
+    res.status(200).json(visitedRestaurants);
+  } catch (err) {
+    next(err);
+  }
+});

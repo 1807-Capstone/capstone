@@ -12,7 +12,8 @@ import {
 } from 'semantic-ui-react';
 import {
   fetchSuggestedRestaurantsFromServer,
-  gotOneRestaurant
+  gotOneRestaurant,
+  fetchVisited
 } from '../store/restaurant';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
@@ -31,6 +32,7 @@ const Box = styled.div`
 export class UserHome extends Component {
   componentDidMount() {
     this.props.fetchSuggestedRestaurantsFromServer(this.props.id);
+    this.props.gotVisitedRestaurants(this.props.id);
   }
 
   handleRestaurantClick = value => {
@@ -52,7 +54,9 @@ export class UserHome extends Component {
               <Item.Image src="img/profile.jpg" circular size="small" />
               <Divider hidden />
               <Item.Extra>
-                <Button basic>Restaurants Visited</Button>
+                <Button basic as={Link} to="visited">
+                  Restaurants Visited
+                </Button>
               </Item.Extra>
               <Item.Extra>
                 <Button basic>Account Details</Button>
@@ -80,7 +84,7 @@ export class UserHome extends Component {
                             {restaurant.name}
                           </Item.Header>
                           <Item.Description>
-                            <p>
+                            <div>
                               Radius Rating
                               <ReactStars
                                 count={5}
@@ -89,8 +93,8 @@ export class UserHome extends Component {
                                 color2="#35b3bf"
                                 size="25px"
                               />
-                            </p>
-                            <p>
+                            </div>
+                            <div>
                               Google Rating
                               <ReactStars
                                 count={5}
@@ -98,8 +102,8 @@ export class UserHome extends Component {
                                 half={true}
                                 color2="#C58600"
                               />{' '}
-                            </p>
-                            <p>
+                            </div>
+                            <div>
                               Yelp Rating
                               <ReactStars
                                 count={5}
@@ -107,7 +111,7 @@ export class UserHome extends Component {
                                 half={true}
                                 color2="#C50A00"
                               />
-                            </p>
+                            </div>
                           </Item.Description>
                         </Item.Content>
                       </Item>
@@ -136,14 +140,16 @@ const mapState = state => {
     email: state.user.email,
     id: state.user.id,
     suggestedRestaurants: state.restaurant.suggestedRestaurants,
-    suggestedFetching: state.restaurant.suggestedFetching
+    suggestedFetching: state.restaurant.suggestedFetching,
+    visited: state.restaurant.visited
   };
 };
 
 const mapDispatchToProps = dispatch => ({
   fetchSuggestedRestaurantsFromServer: id =>
     dispatch(fetchSuggestedRestaurantsFromServer(id)),
-  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant))
+  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant)),
+  gotVisitedRestaurants: id => dispatch(fetchVisited(id))
 });
 
 export default connect(mapState, mapDispatchToProps)(UserHome);

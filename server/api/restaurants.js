@@ -310,3 +310,7 @@ router.post('/filteredServer', async (req, res, next) => {
 //     next(err);
 //   }
 // });
+
+// `<a href="https://maps.google.com/maps/dir/?daddr=${
+//   restaurant.geometry.location.lat
+// },${restaurant.geometry.location.lng}&amp;ll=" target =_blank>directions</a>`;

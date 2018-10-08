@@ -12,7 +12,8 @@ import {
 } from 'semantic-ui-react';
 import {
   fetchSuggestedRestaurantsFromServer,
-  gotOneRestaurant
+  gotOneRestaurant,
+  fetchVisited
 } from '../store/restaurant';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
@@ -32,6 +33,7 @@ const Box = styled.div`
 export class UserHome extends Component {
   componentDidMount() {
     this.props.fetchSuggestedRestaurantsFromServer(this.props.id);
+    this.props.gotVisitedRestaurants(this.props.id);
   }
 
   render() {
@@ -46,7 +48,6 @@ export class UserHome extends Component {
             <Divider hidden />
             <Container centered>
               <Button basic>Restaurants Visited</Button>
-              <Button basic>Account Details</Button>
             </Container>
           </Grid.Column>
           <Grid.Column width={10}>
@@ -80,14 +81,16 @@ const mapState = state => {
     email: state.user.email,
     id: state.user.id,
     suggestedRestaurants: state.restaurant.suggestedRestaurants,
-    suggestedFetching: state.restaurant.suggestedFetching
+    suggestedFetching: state.restaurant.suggestedFetching,
+    visited: state.restaurant.visited
   };
 };
 
 const mapDispatchToProps = dispatch => ({
   fetchSuggestedRestaurantsFromServer: id =>
     dispatch(fetchSuggestedRestaurantsFromServer(id)),
-  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant))
+  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant)),
+  gotVisitedRestaurants: id => dispatch(fetchVisited(id))
 });
 
 export default connect(mapState, mapDispatchToProps)(UserHome);

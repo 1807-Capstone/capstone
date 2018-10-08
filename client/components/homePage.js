@@ -1,11 +1,24 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import {Grid, Image, Responsive, GridColumn, Item} from 'semantic-ui-react';
+import {
+  Grid,
+  Image,
+  Responsive,
+  GridColumn,
+  Item,
+  Header
+} from 'semantic-ui-react';
 import {fetchSuggestedRestaurantsFromServer} from '../store/restaurant';
 import {me} from '../store/user';
 import {connect} from 'react-redux';
 import SuggestedRestaurants from './suggestedRestaurants';
-import {StyledHeader} from './styledComponents';
+import {
+  StyledHeader,
+  MobileDiv1,
+  MobileDiv2,
+  MobileDiv3,
+  MobileDiv4
+} from './styledComponents';
 
 const StyledBox = styled.div`
   background: #35b3bf;
@@ -24,34 +37,13 @@ const StyledText = styled.h1`
   text-decoration: underline;
 `;
 
-const MobileDiv1 = styled.div`
-  width: 100vw;
-  height: 30.5vh;
-  background-image: url('img/map.jpg');
-  background-size: cover;
-`;
-
-const MobileDiv2 = styled(MobileDiv1)`
-  background: white;
-  padding: 5px;
-`;
-
-const MobileDiv3 = styled(MobileDiv1)`
-  background: #35b3bf;
-  height: 20vh;
-`;
-
-const MobileDiv4 = styled(MobileDiv1)`
-  background: #16a1ae;
-  height: 20vh;
-`;
-
 const StyledHeader1 = styled(StyledHeader)`
-  text-align: center;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
   font-weight: 500;
-  font-size: 20px;
-  width: 98vw;
-  border-bottom: 0.25px solid;
+  font-size: 23px;
+  width: 100vw;
 `;
 
 class HomePage extends Component {
@@ -77,9 +69,7 @@ class HomePage extends Component {
             </GridColumn>
             <Grid.Column width={4}>
               {/* <img src="img/burger.jpeg" /> */}
-              <StyledBox2>
-                <StyledText>FIND YOUR FOOD HERE.</StyledText>
-              </StyledBox2>
+              <StyledBox2 />
             </Grid.Column>
           </Grid>
         </Responsive>
@@ -88,8 +78,9 @@ class HomePage extends Component {
             <Image src="img/logo_transparent.png" size="medium" centered />
           </MobileDiv3>
           <MobileDiv4 />
+          {/* <StyledHeader1>SUGGESTED RESTAURANTS</StyledHeader1> */}
+          {/* <Header as="h2">Suggested Restaurants</Header> */}
           <MobileDiv2>
-            <StyledHeader1>Suggested Restaurants</StyledHeader1>
             {this.props.suggestedRestaurants.length && (
               <Item.Group divided>
                 <SuggestedRestaurants

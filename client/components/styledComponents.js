@@ -35,3 +35,25 @@ export const MapOverlay = styled.div`
   padding-left: 10px;
   padding-top: 10px;
 `;
+
+export const MobileDiv1 = styled.div`
+  width: 100vw;
+  height: 30.5vh;
+  background-image: url('img/map.jpg');
+  background-size: cover;
+`;
+
+export const MobileDiv2 = styled(MobileDiv1)`
+  background: white;
+  padding: 5px;
+`;
+
+export const MobileDiv3 = styled(MobileDiv1)`
+  background: #35b3bf;
+  height: 20vh;
+`;
+
+export const MobileDiv4 = styled(MobileDiv1)`
+  background: #16a1ae;
+  height: 20vh;
+`;

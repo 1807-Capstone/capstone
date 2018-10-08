@@ -29,7 +29,6 @@ export default class StyleControls extends Component {
   }
 
   componentDidMount() {
-    console.log('props', this.props);
     this.updateMapStyle(this.state);
   }
 
@@ -41,7 +40,6 @@ export default class StyleControls extends Component {
 
   updateMapStyle({visibility}) {
     const dataLayers = this.props.dataLayers;
-    console.log('layers', dataLayers);
     const layers = this.dataLayers.filter(layer => {
       const id = layer.id
       return categories.every(

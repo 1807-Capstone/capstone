@@ -33,7 +33,6 @@ export const retrieveCenter = () => {
     const {data} = await axios.post(
       `https://www.googleapis.com/geolocation/v1/geolocate?key=${GOOGLE_MAPS_API}`
     );
-    console.log('center', data);
     dispatch(syncLocation(data));
   };
 };

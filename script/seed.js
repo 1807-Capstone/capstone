@@ -30,12 +30,23 @@ async function seed() {
       price_level: 2,
       rating: 3.9,
       yelpRating: 3.5,
+      radiusRating: 3.0,
       yelpImg:
         'https://s3-media2.fl.yelpcdn.com/bphoto/Y3sBlOPkuAqbgqzK9O9PYw/o.jpg',
       keyword: 'american',
       vicinity: '660 N Wells St, Chicago'
     }),
-
+    Restaurant.create({
+      name: 'Underground Wonder Bar',
+      location: [41.8952072, -87.6313672],
+      price_level: 3,
+      rating: 3.6,
+      yelpRating: 4.5,
+      radiusRating: 5,
+      yelpImg: 'img/wonderbar.jpg',
+      keyword: 'american',
+      vicinity: '710 N Clark St, Chicago'
+    }),
     Restaurant.create({
       name: `Lou Malnati's Pizzeria`,
       location: [41.8903425, -87.6337034],
@@ -102,6 +113,7 @@ async function seed() {
       price_level: 2,
       rating: 4.4,
       radiusRating: 2.5,
+      yelpRating: 3,
       yelpImg:
         'https://s3-media1.fl.yelpcdn.com/bphoto/Uw_hHPSPhe-V3RF0CqWJpg/o.jpg',
       keyword: 'mexican',
@@ -1458,7 +1470,7 @@ async function seed() {
     WaitTime.create({
       name: '15-30 minutes',
       restaurantId: 55
-    }),
+    })
   ]);
 
   console.log(`seeded ${waitTimes.length} check ins`);

@@ -80,8 +80,6 @@ class Map extends Component {
   componentDidMount() {
     this.props.fetchAllData();
     this.props.retrieveCenter();
-    console.log(this.mapRef);
-    console.log('deckRef', this.deckRef);
   }
   componentDidUpdate(prevProps, prevState) {
     if (this.props.data !== prevProps.data) {
@@ -116,14 +114,6 @@ class Map extends Component {
       !this.props.restaurantsList[0]
     ) {
       let dis = getRadius(this.mapRef);
-      console.log(
-        'Initial Request\nlatitude: ',
-        this.props.center.lat,
-        '\nlongitude: ',
-        this.props.center.lng,
-        '\nradius: ',
-        Math.floor(dis * 1000) - 700
-      );
       this.props.fetchRestaurantsList(
         this.props.center.lat,
         this.props.center.lng,
@@ -138,15 +128,6 @@ class Map extends Component {
 
   handleClick = () => {
     let dis = getRadius(this.mapRef);
-
-    console.log(
-      'New Request\nlatitude: ',
-      this.state.viewport.latitude.toFixed(7),
-      '\nlongitude: ',
-      this.state.viewport.longitude.toFixed(7),
-      '\nradius: ',
-      Math.floor(dis * 1000)
-    );
 
     this.props.fetchRestaurantsList(
       this.state.viewport.latitude.toFixed(7),
@@ -213,10 +194,7 @@ class Map extends Component {
       getPosition: d => d.COORDINATES
     });
     const waittimes = this.state.waittimes;
-    console.log('wait TIMEZ in render', waitTimes);
-    console.log('waittimes in render', waittimes);
-    console.log('restaurants in render', restaurants);
-    // console.log('THIS.STATE.LAYERS', this.state.layers);
+
     return (
       <div style={{width: '100vw', height: '100vh'}}>
         <Button size="mini" fluid onClick={this.handleClick}>

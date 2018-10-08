@@ -1,3 +1,5 @@
+/* eslint-disable complexity */
+
 import React, {Component} from 'react';
 import ReactMapGL, {NavigationControl, Marker, Popup} from 'react-map-gl';
 import {getRadius} from '../../utils';
@@ -13,6 +15,7 @@ import {fetchAllData} from '../store/waittimes';
 import {retrieveCenter} from '../store/map';
 import RestaurantPopup from './restaurantPopup';
 import RestaurantPin from './restaurantPin';
+import ControlPanel from './controlPanel';
 import PropTypes from 'prop-types';
 
 const mapBoxToken =
@@ -40,10 +43,24 @@ const mapDispatchToProps = dispatch => ({
     )
 });
 
+const initialLayer = new HexagonLayer({
+  id: 'hexagon-layer',
+  data: [{COORDINATES: [-87.6345194, 41.8941717], time: 0}],
+  pickable: false,
+  extruded: true,
+  elevationScale: 1.3,
+  opacity: 0.2,
+  radius: 200,
+  coverage: 1,
+  getPosition: d => d.COORDINATES
+});
+
 class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      layerCreated: false,
+      waittimes: [initialLayer],
       viewport: {
         latitude: 41.895579,
         longitude: -87.639064,
@@ -64,8 +81,23 @@ class Map extends Component {
     this.props.fetchAllData();
     this.props.retrieveCenter();
     console.log(this.mapRef);
+    console.log('deckRef', this.deckRef);
   }
   componentDidUpdate(prevProps, prevState) {
+    if (this.props.data !== prevProps.data) {
+      let waittimes = new HexagonLayer({
+        id: 'hexagon-layer',
+        data: this.props.data,
+        pickable: false,
+        extruded: true,
+        elevationScale: 1.3,
+        opacity: 0.2,
+        radius: 200,
+        coverage: 1,
+        getPosition: d => d.COORDINATES
+      });
+      this.setState({waittimes: [waittimes], layerCreated: true});
+    }
     if (
       this.props.center !== prevProps.center &&
       !prevProps.restaurantsList.length
@@ -169,7 +201,7 @@ class Map extends Component {
   render() {
     const restaurants = this.props.restaurantsList;
     const data = this.props.data;
-    const layer = new HexagonLayer({
+    const waitTimes = new HexagonLayer({
       id: 'hexagon-layer',
       data,
       pickable: false,
@@ -180,7 +212,11 @@ class Map extends Component {
       coverage: 1,
       getPosition: d => d.COORDINATES
     });
-
+    const waittimes = this.state.waittimes;
+    console.log('wait TIMEZ in render', waitTimes);
+    console.log('waittimes in render', waittimes);
+    console.log('restaurants in render', restaurants);
+    // console.log('THIS.STATE.LAYERS', this.state.layers);
     return (
       <div style={{width: '100vw', height: '100vh'}}>
         <Button size="mini" fluid onClick={this.handleClick}>
@@ -195,9 +231,24 @@ class Map extends Component {
           <DeckGL
             intialViewState={this.state.viewport}
             viewState={this.state.viewport}
-            layers={[layer]}
+            ref={map => (this.deckRef = map)}
+            layers={[waitTimes]}
           />
-
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              padding: '20px'
+            }}
+          >
+            {this.deckRef && (
+              <ControlPanel
+                containerComponent={this.props.containerComponent}
+                dataLayers={this.deckRef.props.layers}
+              />
+            )}
+          </div>
           <div
             style={{
               position: 'absolute',

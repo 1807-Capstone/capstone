@@ -12,3 +12,4 @@ export {default as MapView} from './map';
 export {Login, Signup} from './auth-form';
 export {default as HomePage} from './homePage';
 export {default as ReactMap} from './reactmap.js';
+export {default as UserRestaurants} from './restaurantsVisited';

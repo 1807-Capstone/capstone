@@ -16,6 +16,7 @@ const GOT_RADIUS_YELP_RESULT_FROM_SERVER = 'GOT_RADIUS_YELP_RESULT_FROM_SERVER';
 const REQ_RADIUS_YELP_RESULT_FROM_SERVER = 'REQ_RADIUS_YELP_RESULT_FROM_SERVER';
 const REQ_RESTAURANTS_LIST = 'REQ_RESTAURANTS_LIST';
 const GOT_RESTAURANTS_LIST = 'GOT_RESTAURANTS_LIST';
+const GET_VISITED_FROM_SERVER = 'GET_VISITED_FROM_SERVER';
 
 // Action creators
 const gotAllRestaurants = allRestaurants => ({
@@ -74,6 +75,11 @@ const gotRadiusYelpResultsPopup = (restaurantsList, newPopupInfo) => ({
   newPopupInfo
 });
 
+const getVisitedRestaurantsFromServer = visited => ({
+  type: GET_VISITED_FROM_SERVER,
+  visited
+});
+
 // Thunks
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
   return async dispatch => {
@@ -99,6 +105,13 @@ export const getFilteredFromServer = (price, rating, cuisine) => {
       cuisine
     });
     dispatch(getFilteredRestaurantsFromServer(res.data));
+  };
+};
+
+export const fetchVisited = id => {
+  return async dispatch => {
+    const res = await axios.get(`/api/users/${id}/visited`);
+    dispatch(getVisitedRestaurantsFromServer(res.data));
   };
 };
 
@@ -185,7 +198,8 @@ const initialState = {
   restaurantsList: [],
   restaurantsListFetching: false,
   radiusFetching: false,
-  newPopupInfo: {}
+  newPopupInfo: {},
+  visited: []
 };
 
 // Reducer
@@ -253,6 +267,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         restaurantsListFetching: true
+      };
+    case GET_VISITED_FROM_SERVER:
+      return {
+        ...state,
+        visited: action.visited
       };
     default:
       return state;

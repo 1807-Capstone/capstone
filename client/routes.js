@@ -11,6 +11,7 @@ import {
   AllRestaurants,
   SingleRestaurant,
   HomePage,
+  UserRestaurants,
   ReactMap
 } from './components';
 import {me} from './store';
@@ -37,6 +38,7 @@ class Routes extends Component {
           <Switch>
             {/* Routes placed here are only available after logging in */}
             <Route path="/account" component={UserHome} />
+            <Route path="/visited" component={UserRestaurants} />
             <Route path="/filter" component={Filter} />
             <Route path="/map" component={MapView} />
             <Route path="/reactmap" component={ReactMap} />

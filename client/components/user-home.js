@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {
   Grid,
   Header,
-  Rating,
+  Image,
   Container,
   Item,
   Button,
@@ -17,6 +17,7 @@ import {
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import ReactStars from 'react-stars';
+import SuggestedRestaurants from './suggestedRestaurants';
 
 /**
  * COMPONENT
@@ -33,89 +34,29 @@ export class UserHome extends Component {
     this.props.fetchSuggestedRestaurantsFromServer(this.props.id);
   }
 
-  handleRestaurantClick = value => {
-    const selectedRestaurant = this.props.suggestedRestaurants.filter(
-      restaurant => restaurant.name === value
-    );
-    this.props.gotOneRestaurant(selectedRestaurant[0]);
-  };
-
   render() {
     return (
       <Container>
         <Divider hidden />
         <Grid centered stackable>
-          <Grid.Column computer={5} centered>
-            <Item>
-              <h1>Welcome, {this.props.email}</h1>
-              <Divider />
-              <Item.Image src="img/profile.jpg" circular size="small" />
-              <Divider hidden />
-              <Item.Extra>
-                <Button basic>Restaurants Visited</Button>
-              </Item.Extra>
-              <Item.Extra>
-                <Button basic>Account Details</Button>
-              </Item.Extra>
-            </Item>
+          <Grid.Column computer={5}>
+            <h1>Welcome, {this.props.email}</h1>
+            <Divider />
+            <Image src="img/profile.jpg" circular size="small" centered />
+            <Divider hidden />
+            <Container centered>
+              <Button basic>Restaurants Visited</Button>
+              <Button basic>Account Details</Button>
+            </Container>
           </Grid.Column>
           <Grid.Column width={10}>
             <Box>
               <Header as="h2">Suggested Restaurants</Header>
               <Item.Group divided>
                 {!this.props.suggestedFetching ? (
-                  this.props.suggestedRestaurants.map(restaurant => {
-                    return (
-                      <Item key={restaurant.id}>
-                        <Item.Image size="small" src={restaurant.yelpImg} />
-                        <Item.Content>
-                          <Item.Header
-                            as={Link}
-                            to={`/restaurants/${restaurant.name}`}
-                            value={restaurant.name}
-                            onClick={() =>
-                              this.handleRestaurantClick(restaurant.name)
-                            }
-                          >
-                            {restaurant.name}
-                          </Item.Header>
-                          <Item.Description>
-                            <p>
-                              Radius Rating
-                              <ReactStars
-                                edit={false}
-                                count={5}
-                                value={restaurant.radiusRating}
-                                half={true}
-                                color2="#35b3bf"
-                                size="25px"
-                              />
-                            </p>
-                            <p>
-                              Google Rating
-                              <ReactStars
-                                edit={false}
-                                count={5}
-                                value={restaurant.rating}
-                                half={true}
-                                color2="#C58600"
-                              />{' '}
-                            </p>
-                            <p>
-                              Yelp Rating
-                              <ReactStars
-                                edit={false}
-                                count={5}
-                                value={restaurant.yelpResults.rating}
-                                half={true}
-                                color2="#C50A00"
-                              />
-                            </p>
-                          </Item.Description>
-                        </Item.Content>
-                      </Item>
-                    );
-                  })
+                  <SuggestedRestaurants
+                    suggestedRestaurants={this.props.suggestedRestaurants}
+                  />
                 ) : (
                   <Item>
                     <Item.Header as="a">Loading Suggestions</Item.Header>

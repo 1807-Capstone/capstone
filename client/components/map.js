@@ -1,13 +1,15 @@
 import React from 'react';
 import mapboxgl from 'mapbox-gl';
-import {fetchAllRestaurantsFromServer} from '../store/restaurant';
+import {
+  fetchAllRestaurantsFromServer,
+  gotOneRestaurant
+} from '../store/restaurant';
 import {connect} from 'react-redux';
-
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 import {setLocation, fetchGeolocation} from '../store/map';
 import {MapOverlay} from './styledComponents';
 import styled from 'styled-components';
-import {Button, Item, Sidebar} from 'semantic-ui-react';
+import {Item, Transition} from 'semantic-ui-react';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
@@ -51,17 +53,16 @@ const mapDispatchToProps = dispatch => ({
   getRestaurants: (lat, lng) =>
     dispatch(fetchAllRestaurantsFromServer(lat, lng)),
   setLocation: location => dispatch(setLocation(location)),
-  fetchGeolocation: () => dispatch(fetchGeolocation())
+  fetchGeolocation: () => dispatch(fetchGeolocation()),
+  gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant))
 });
 
 export class MapView extends React.Component {
   state = {
-    isMap: true,
     isList: false
   };
   async componentDidMount() {
     await this.props.fetchGeolocation();
-    console.log('current location', this.props.location);
     map = new mapboxgl.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v9',
@@ -97,24 +98,32 @@ export class MapView extends React.Component {
   }
 
   componentDidUpdate() {
-    this.props.restaurants.map(restaurant => {
+    this.props.restaurants.map((restaurant, index) => {
       let theHtml =
         "<div class='markerBox'>" +
-        `<p>Restaurant: ${restaurant.name}</p>` +
-        `<p>${restaurant.geometry.location.lat}</p>` +
-        `<p>${restaurant.geometry.location.lat}</p>` +
-        `<p>${restaurant.geometry.location.lat}</p>` +
+        `<link to=${restaurant.name}> ${restaurant.name}</link>` +
+        `<p>Google Rating: ${restaurant.rating}</p>` +
         '</div>';
       this.createMarker(
         restaurant.geometry.location.lng,
         restaurant.geometry.location.lat,
-        new mapboxgl.Popup().setHTML(theHtml)
+        new mapboxgl.Popup().setHTML(theHtml),
+        index
       );
     });
   }
 
-  createMarker = (lng, lat, popUp) => {
+  handleRestaurantClick = value => {
+    const selectedRestaurant = this.props.restaurants.filter(
+      restaurant => restaurant.name === value
+    );
+    this.props.gotOneRestaurant(selectedRestaurant[0]);
+  };
+
+  createMarker = (lng, lat, popUp, index) => {
+    // let markerHtml = "<div class='marker'>" + `<p>${index + 1}</p>` + '</div>';
     var marker = document.createElement('div');
+    // var markerhtml = `<div><p>${index + 1}</p></div>`;
     marker.className = 'marker';
     return new mapboxgl.Marker(marker)
       .setLngLat([lng, lat])
@@ -160,7 +169,6 @@ export class MapView extends React.Component {
           {/* <Button primary onClick={this.handleButtonClick}>
             Directions
           </Button> */}
-
           <Box>
             <div>{`Longitude: ${this.props.location.lng} Latitude: ${
               this.props.location.lat
@@ -170,21 +178,32 @@ export class MapView extends React.Component {
               className="absolute top right left bottom"
             />
           </Box>
+
+          <Transition
+            visible={this.state.isList}
+            animation="browse"
+            duration={600}
+          >
+            <MapOverlay>
+              <Item.Group divided>
+                {this.props.restaurants.map((restaurant, index) => (
+                  <Item.Header
+                    key={restaurant.name}
+                    onClick={() => this.handleRestaurantClick(restaurant.name)}
+                    as={Link}
+                    to={`/restaurants/${restaurant.name}`}
+                  >
+                    {index + 1}: {restaurant.name}
+                    <br />
+                  </Item.Header>
+                ))}
+              </Item.Group>
+            </MapOverlay>
+          </Transition>
           {this.state.isList && (
-            <div>
-              <MapOverlay>
-                <Item.Group>
-                  {this.props.restaurants.map((restaurant, index) => (
-                    <Item.Header key={restaurant.name}>
-                      {index + 1}: {restaurant.name}
-                    </Item.Header>
-                  ))}
-                </Item.Group>
-              </MapOverlay>
-              <StyledButton onClick={this.handleListView.bind(this)}>
-                HIDE LIST
-              </StyledButton>
-            </div>
+            <StyledButton onClick={this.handleListView.bind(this)}>
+              HIDE LIST
+            </StyledButton>
           )}
           {!this.state.isList && (
             <StyledButton onClick={this.handleListView.bind(this)}>

@@ -28,7 +28,7 @@ export const StyledBtn = styled.button`
 
 export const MapOverlay = styled.div`
   height: 86vh;
-  background: rgb(255, 255, 255, 0.85);
+  background: rgb(255, 255, 255, 0.9);
   position: fixed;
   top: 9vh;
   width: 55vw;

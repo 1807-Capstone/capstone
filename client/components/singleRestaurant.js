@@ -58,16 +58,6 @@ export class SingleRestaurant extends Component {
           <Grid.Column computer={6} mobile={10}>
             <SingleRestaurantMap />
           </Grid.Column>
-
-          {/* {this.props.reviews.length ? (
-            <div>
-              {this.props.reviews.map(review => {
-                return <p>{review.content}</p>
-              })}
-            </div>
-          ) : (
-            <p>No reviews for this restaurant yet</p>
-          )} */}
         </Grid>
       );
     } else return <h3>Sorry, we could not find this restaurant</h3>;

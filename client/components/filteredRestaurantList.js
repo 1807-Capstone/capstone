@@ -19,9 +19,8 @@ class FilteredRestaurantList extends Component {
       <div>
         <Divider hidden />
         <Grid centered stackable>
-          <Grid.Column width={15} centered="true">
+          <Grid.Column width={15} centered>
             <div>
-              {/* <Header as="h4">Restaurants</Header> */}
               <Item.Group divided>
                 <div className="two column doubling ui grid">
                   {this.props.restaurants.map(restaurant => {
@@ -45,7 +44,6 @@ class FilteredRestaurantList extends Component {
                           >
                             <StyledTitle>{restaurant.name}</StyledTitle>
                           </Item.Header>
-
                           <Item.Description>
                             <p>
                               Radius rating:{' '}

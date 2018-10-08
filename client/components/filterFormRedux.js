@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {reduxForm} from 'redux-form';
-import {Rating, Grid, Divider, Button, Icon} from 'semantic-ui-react';
+import {Grid, Button, Icon, Transition} from 'semantic-ui-react';
 import styled from 'styled-components';
 import {StyledBtn} from './styledComponents';
 
@@ -16,7 +16,11 @@ class FilterForm extends Component {
   render() {
     return (
       <div>
-        {this.state.visible ? (
+        <Transition
+          visible={this.state.visible}
+          animation="slide down"
+          duration={700}
+        >
           <form
             onSubmit={
               this.props.valid ? this.props.handleSubmit : preventDefault
@@ -81,14 +85,19 @@ class FilterForm extends Component {
               <Icon name="angle double up" color="black" />
             </Button>
           </form>
-        ) : (
+        </Transition>
+        <Transition
+          visible={!this.state.visible}
+          animation="fade"
+          duration={700}
+        >
           <StyledBtn onClick={this.handleFilterClick.bind(this)}>
             SHOW FILTERS
             <br />
             <Icon name="angle double down" />
             <br />
           </StyledBtn>
-        )}
+        </Transition>
       </div>
     );
   }

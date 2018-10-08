@@ -35,18 +35,7 @@ async function seed() {
       keyword: 'american',
       vicinity: '660 N Wells St, Chicago'
     }),
-    Restaurant.create({
-      name: 'Underground Wonder Bar',
-      location: [41.8952072, -87.6313672],
-      price_level: 3,
-      rating: 3.6,
-      yelpRating: 4.5,
-      radiusRating: 5,
-      yelpImg:
-        'https://s3-media4.fl.yelpcdn.com/bphoto/i4wLAu_7nn3LQAYSba-O-w/o.jpg',
-      keyword: 'american',
-      vicinity: '710 N Clark St, Chicago'
-    }),
+
     Restaurant.create({
       name: `Lou Malnati's Pizzeria`,
       location: [41.8903425, -87.6337034],

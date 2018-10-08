@@ -49,3 +49,7 @@ label {
 .mapboxgl-popup-content {
   background: rgb(255, 255, 255, 0.9) !important;
 }
+
+.ui.container {
+  text-align: center;
+}

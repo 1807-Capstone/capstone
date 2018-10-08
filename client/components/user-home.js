@@ -47,7 +47,9 @@ export class UserHome extends Component {
             <Image src="img/profile.jpg" circular size="small" centered />
             <Divider hidden />
             <Container centered>
-              <Button basic>Restaurants Visited</Button>
+              <Button basic as={Link} to="/visited" centered>
+                Restaurants Visited
+              </Button>
             </Container>
           </Grid.Column>
           <Grid.Column width={10}>

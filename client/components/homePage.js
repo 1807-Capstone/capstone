@@ -41,8 +41,8 @@ const StyledHeader1 = styled(StyledHeader)`
   text-align: left;
   padding-left: 5px;
   padding-top: 5px;
-  font-weight: 500;
-  font-size: 23px;
+  font-weight: 600;
+  font-size: 15px;
   width: 100vw;
 `;
 
@@ -78,7 +78,7 @@ class HomePage extends Component {
             <Image src="img/logo_transparent.png" size="medium" centered />
           </MobileDiv3>
           <MobileDiv4 />
-          {/* <StyledHeader1>SUGGESTED RESTAURANTS</StyledHeader1> */}
+          <StyledHeader1>Suggested Restaurants</StyledHeader1>
           {/* <Header as="h2">Suggested Restaurants</Header> */}
           <MobileDiv2>
             {this.props.suggestedRestaurants.length && (

@@ -7,7 +7,7 @@ mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
 
 const Box = styled.div`
-  height: 60vh;
+  height: 40vh;
   width: 100vw;
   margin: 20px;
 `;

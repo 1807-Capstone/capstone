@@ -10,6 +10,7 @@ const {
   yelpQueryMaker
 } = require('../../utils');
 const {Restaurant} = require('../db/models');
+const Sequelize = require('sequelize');
 module.exports = router;
 
 // const client = yelp.client(process.env.YELP_FUSION_API);
@@ -26,6 +27,7 @@ const googleMapsClient = require('@google/maps').createClient({
 });
 
 router.post('/', async (req, res, next) => {
+  console.log('in post', req.body.lat);
   try {
     // Google search
     const initialGoogleSearch = await googleMapsClient
@@ -33,6 +35,7 @@ router.post('/', async (req, res, next) => {
         language: 'en',
         // location: [req.body.lat, req.body.lng],
         location: [41.895579, -87.639064],
+        // location: [42.089476, -87.9432741],
         radius: 500,
         minprice: 1,
         maxprice: 4,
@@ -41,7 +44,7 @@ router.post('/', async (req, res, next) => {
       .asPromise();
 
     const googleSearch = initialGoogleSearch.json.results;
-
+    console.log(googleSearch);
     const yelpSearch = [];
 
     //   for (let i = 0; i < googleSearch.length; i++) {
@@ -278,3 +281,35 @@ router.post('/filteredServer', async (req, res, next) => {
     next(error);
   }
 });
+
+// router.post('/allRestaurants', async (req, res, next) => {
+//   const Op = Sequelize.Op;
+//   console.log('here api');
+
+//   console.log('here req body', req.body);
+//   try {
+//     const allRestaurants = await Restaurant.findAll({
+//       where: {
+//         // location: [
+//         //   {
+//         //     [Op.or]: {
+//         //       [Op.lt]: req.body.lat + 1,
+//         //       [Op.gt]: req.body.lat - 1
+//         //     },
+//         //     [Op.or]: {
+//         //       [Op.lt]: req.body.lng + 1,
+//         //       [Op.gt]: req.body.lng - 1
+//         //     }
+//         //   }
+//         // ]
+//         location: [
+//           {[Op.between]: [req.body.lat + 1, req.body.lat - 1]},
+//           {[Op.between]: [req.body.lng + 1, req.body.lng - 1]}
+//         ]
+//       }
+//     });
+//     res.json(allRestaurants);
+//   } catch (err) {
+//     next(err);
+//   }
+// });

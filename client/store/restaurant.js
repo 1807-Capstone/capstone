@@ -53,7 +53,11 @@ const getFilteredRestaurantsFromServer = filtered => ({
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
   return async dispatch => {
     dispatch(reqAllRestaurants());
+    console.log('coordinates', lat, lng);
     const res = await axios.post('/api/restaurants', {lat, lng});
+    // const res = await axios.post('api/restaurants/allRestaurants', {lat, lng});
+    // const res = await axios.post('/api/restaurants/filteredGoogle', {lat, lng});
+    console.log('here axios', res);
     dispatch(gotAllRestaurants(res.data));
   };
 };
@@ -152,7 +156,8 @@ const reducer = (state = initialState, action) => {
     case GET_FILTERED_FROM_SERVER:
       return {
         ...state,
-        filtered: action.filtered
+        filtered: action.filtered,
+        allRestaurants: action.filtered
       };
     default:
       return state;

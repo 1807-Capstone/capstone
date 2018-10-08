@@ -1,6 +1,6 @@
-const router = require('express').Router()
-const {Review, Restaurant} = require('../db/models')
-module.exports = router
+const router = require('express').Router();
+const {Review, Restaurant} = require('../db/models');
+module.exports = router;
 
 router.post('/getreviews', async (req, res, next) => {
   try {
@@ -8,26 +8,28 @@ router.post('/getreviews', async (req, res, next) => {
       where: {
         name: req.body.name
       }
-    })
+    });
     const reviews = await Review.findAll({
       where: {
         restaurantId: data[0].dataValues.id
       }
-    })
-    res.status(200).json(reviews)
+    });
+    res.status(200).json(reviews);
   } catch (err) {
-    next(err)
+    next(err);
   }
-})
+});
 
 router.post('/', async (req, res, next) => {
   try {
+    console.log('req.body', req.body);
     const newReview = await Review.create({
-      content: req.body.content,
+      userId: req.body.userId,
+      restaurantId: req.body.restaurantId,
       rating: req.body.rating
-    })
-    res.json(newReview)
+    });
+    res.json(newReview);
   } catch (err) {
-    next(err)
+    next(err);
   }
-})
+});

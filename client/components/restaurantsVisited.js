@@ -10,6 +10,7 @@ import {
 } from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import {gotOneRestaurant} from '../store/restaurant';
+import ReactStars from 'react-stars';
 
 const mapStateToProps = state => ({
   userRestaurants: state.restaurant.visited
@@ -55,7 +56,6 @@ class UserRestaurants extends React.Component {
     const selectedRestaurant = this.props.userRestaurants.filter(
       restaurant => restaurant.name === value
     );
-    console.log('selected', selectedRestaurant);
     this.props.gotOneRestaurant(selectedRestaurant[0]);
   };
 
@@ -68,9 +68,6 @@ class UserRestaurants extends React.Component {
             <Item.Group divided>
               <div className="two column doubling ui grid">
                 {this.state.currentPage.map(restaurant => {
-                  {
-                    /* {this.props.userRestaurants.map(restaurant => { */
-                  }
                   return (
                     <Item key={restaurant.id} className="column">
                       <Item.Image
@@ -91,33 +88,29 @@ class UserRestaurants extends React.Component {
                         <Item.Description>
                           <p>
                             Radius rating:{' '}
-                            <Rating
-                              icon="star"
-                              defaultRating={Math.floor(
-                                restaurant.radiusRating
-                              )}
-                              maxRating={5}
-                              disabled
+                            <ReactStars
+                              count={5}
+                              value={restaurant.radiusRating}
+                              half={true}
+                              color2="#35b3bf"
                             />
                           </p>
                           <p>
                             Yelp rating:{' '}
-                            <Rating
-                              icon="star"
-                              defaultRating={Math.floor(
-                                restaurant.yelpResults.rating
-                              )}
-                              maxRating={5}
-                              disabled
+                            <ReactStars
+                              count={5}
+                              value={restaurant.yelpResults.rating}
+                              half={true}
+                              color2="#C50A00"
                             />
                           </p>
                           <p>
                             Google rating:{' '}
-                            <Rating
-                              icon="star"
-                              defaultRating={Math.floor(restaurant.rating)}
-                              maxRating={5}
-                              disabled
+                            <ReactStars
+                              count={5}
+                              value={restaurant.rating}
+                              half={true}
+                              color2="#C58600"
                             />
                           </p>
                         </Item.Description>

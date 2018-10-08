@@ -12,11 +12,11 @@ import {updateCheckInOnServer} from '../store/checkin';
 
 const mapStateToProps = state => ({
   restaurant: state.restaurant.oneRestaurant,
-  id: state.user.id
+  user: state.user
 });
 
 const mapDispatchToProps = dispatch => ({
-  triggerCheckIn: id => dispatch(updateUserOnServer(id, 'didCheckIn')),
+  triggerCheckIn: user => dispatch(updateUserOnServer(user, 'didCheckIn')),
   addCheckIn: checkIn => dispatch(updateCheckInOnServer(checkIn))
 });
 
@@ -27,12 +27,13 @@ export class SingleRestaurant extends Component {
   }
 
   handleCheckIn = () => {
+    console.log('props.user', this.props.user);
     const checkInInfo = {
-      userId: this.props.id,
+      userId: this.props.user.id,
       restaurantId: this.props.restaurant.id
     };
     this.props.addCheckIn(checkInInfo);
-    this.props.triggerCheckIn(this.props.id);
+    this.props.triggerCheckIn(this.props.user);
   };
 
   render() {

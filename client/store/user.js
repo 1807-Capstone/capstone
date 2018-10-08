@@ -60,8 +60,17 @@ export const logout = () => async dispatch => {
 
 export const updateUserOnServer = (user, attribute) => async dispatch => {
   try {
-    const res = await axios.put(`/api/users/${user}`, {[attribute]: true});
-    dispatch(updateUser(res.data[1][0]));
+    if (user.didCheckIn === false) {
+      console.log('in if');
+      const res = await axios.put(`/api/users/${user.id}`, {[attribute]: true});
+      dispatch(updateUser(res.data));
+    } else {
+      console.log('in else');
+      const res = await axios.put(`/api/users/${user.id}`, {
+        [attribute]: false
+      });
+      dispatch(updateUser(res.data));
+    }
   } catch (err) {
     console.error(err);
   }

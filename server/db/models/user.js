@@ -89,6 +89,18 @@ function shuffle(array) {
   return array;
 }
 
+User.prototype.getVisited = function() {
+  const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
+  const response = Restaurant.findAll({
+    where: {
+      id: {
+        [Op.or]: userCheckedInRestaurants
+      }
+    }
+  });
+  return response;
+};
+
 User.prototype.getSuggested = async function() {
   const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
   let recommendedRestaurants = [];

@@ -54,7 +54,7 @@ export class UserHome extends Component {
               <Item.Image src="img/profile.jpg" circular size="small" />
               <Divider hidden />
               <Item.Extra>
-                <Button basic as={Link} to="visited">
+                <Button basic as={Link} to="/visited">
                   Restaurants Visited
                 </Button>
               </Item.Extra>

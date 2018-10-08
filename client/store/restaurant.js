@@ -1,3 +1,5 @@
+/* eslint-disable complexity */
+
 import axios from 'axios';
 
 // Action types
@@ -10,6 +12,10 @@ const GOT_FILTERED_RESTAURANTS = 'GOT_FILTERED_RESTAURANTS';
 const GOT_SUGGESTED_RESTAURANTS = 'GOT_SUGGESTED_RESTAURANTS';
 const REQ_SUGGESTED_RESTAURANTS = 'REQ_SUGGESTED_RESTAURANTS';
 const GET_FILTERED_FROM_SERVER = 'GET_FILTERED_FROM_SERVER';
+const GOT_RADIUS_YELP_RESULT_FROM_SERVER = 'GOT_RADIUS_YELP_RESULT_FROM_SERVER';
+const REQ_RADIUS_YELP_RESULT_FROM_SERVER = 'REQ_RADIUS_YELP_RESULT_FROM_SERVER';
+const REQ_RESTAURANTS_LIST = 'REQ_RESTAURANTS_LIST';
+const GOT_RESTAURANTS_LIST = 'GOT_RESTAURANTS_LIST';
 const GET_VISITED_FROM_SERVER = 'GET_VISITED_FROM_SERVER';
 
 // Action creators
@@ -48,6 +54,25 @@ const gotFilteredRestaurants = filteredRestaurants => ({
 const getFilteredRestaurantsFromServer = filtered => ({
   type: GET_FILTERED_FROM_SERVER,
   filtered
+});
+
+const reqRestaurantsList = () => ({
+  type: REQ_RESTAURANTS_LIST
+});
+
+const gotRestaurantsList = restaurantsList => ({
+  type: GOT_RESTAURANTS_LIST,
+  restaurantsList
+});
+
+const reqRadiusYelpResultsPopup = () => ({
+  type: REQ_RADIUS_YELP_RESULT_FROM_SERVER
+});
+
+const gotRadiusYelpResultsPopup = (restaurantsList, newPopupInfo) => ({
+  type: GOT_RADIUS_YELP_RESULT_FROM_SERVER,
+  restaurantsList,
+  newPopupInfo
 });
 
 const getVisitedRestaurantsFromServer = visited => ({
@@ -93,28 +118,76 @@ export const fetchVisited = id => {
 export const fetchFilteredRestaurantsFromGoogle = (
   lat,
   lng,
+  radius,
   cuisine,
   price,
-  rating,
-  distance
+  rating
 ) => {
   return async dispatch => {
     dispatch(reqFilteredRestaurants());
     const res = await axios.post('/api/restaurants/filteredGoogle', {
       lat,
       lng,
+      radius,
       cuisine,
       price,
-      rating,
-      distance
+      rating
     });
     dispatch(gotFilteredRestaurants(res.data));
   };
 };
 
+export const fetchRestaurantsList = (
+  lat,
+  lng,
+  radius,
+  cuisine,
+  price,
+  rating
+) => {
+  return async dispatch => {
+    console.log(
+      'lat',
+      lat,
+      'lng',
+      lng,
+      'radius',
+      radius,
+      cuisine,
+      price,
+      rating
+    );
+    dispatch(reqRestaurantsList());
+    const res = await axios.post('/api/testaurants/restaurantsList', {
+      lat,
+      lng,
+      radius,
+      cuisine,
+      price,
+      rating
+    });
+    dispatch(gotRestaurantsList(res.data));
+  };
+};
+
+export const fetchRadiusYelpResultPopup = (
+  googleRestaurantObj,
+  prevRestaurantsList
+) => {
+  return async dispatch => {
+    const response = await axios.post('/api/testaurants/popups', {
+      googleRestaurantObj,
+      prevRestaurantsList
+    });
+    const newRestaurantList = response.data.prevRestaurantsList;
+    const newPopupInfo = response.data.popupInfo;
+    dispatch(gotRadiusYelpResultsPopup(newRestaurantList, newPopupInfo));
+  };
+};
+
 const initialState = {
   allRestaurants: [],
-  allFetching: false,
+  allFetching: true,
   oneRestaurant: {},
   oneFetching: true,
   filteredRestaurants: [],
@@ -122,6 +195,10 @@ const initialState = {
   suggestedRestaurants: [],
   suggestedFetching: true,
   filtered: [],
+  restaurantsList: [],
+  restaurantsListFetching: false,
+  radiusFetching: false,
+  newPopupInfo: {},
   visited: []
 };
 
@@ -167,6 +244,29 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         filtered: action.filtered
+      };
+    case GOT_RADIUS_YELP_RESULT_FROM_SERVER:
+      return {
+        ...state,
+        restaurantsList: action.restaurantsList,
+        newPopupInfo: action.newPopupInfo,
+        radiusFetching: false
+      };
+    case REQ_RADIUS_YELP_RESULT_FROM_SERVER:
+      return {
+        ...state,
+        radiusFetching: true
+      };
+    case GOT_RESTAURANTS_LIST:
+      return {
+        ...state,
+        restaurantsList: action.restaurantsList,
+        restaurantsListFetching: false
+      };
+    case REQ_RESTAURANTS_LIST:
+      return {
+        ...state,
+        restaurantsListFetching: true
       };
     case GET_VISITED_FROM_SERVER:
       return {

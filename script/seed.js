@@ -811,667 +811,666 @@ async function seed() {
 
   const waitTimes = await Promise.all([
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 1
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 1
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 1
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 2
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 2
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 2
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 3
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 3
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 3
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 4
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 4
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 4
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 5
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 5
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 5
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 6
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 6
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 6
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 7
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 7
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 7
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 8
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 8
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 8
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 9
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 9
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 9
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 10
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 10
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 10
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 11
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 11
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 11
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 12
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 12
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 12
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 13
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 13
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 13
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 14
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 14
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 14
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 15
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 15
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 15
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 16
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 16
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 16
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 17
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 17
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 17
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 18
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 18
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 18
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 19
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 19
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 19
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 20
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 20
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 20
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 21
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 21
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 21
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 22
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 22
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 22
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 23
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 23
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 23
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 24
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 24
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 24
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 25
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 25
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 25
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 26
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 26
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 26
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 27
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 27
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 27
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 28
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 28
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 28
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 29
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 29
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 29
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 30
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 30
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 30
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 31
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 31
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 31
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 32
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 32
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 32
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 33
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 33
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 33
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 34
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 34
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 34
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 35
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 35
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 35
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 36
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 36
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 36
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 37
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 37
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 37
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 38
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 38
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 38
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 39
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 39
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 39
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 40
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 40
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 40
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 41
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 41
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 41
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 42
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 42
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 42
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 43
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 43
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 43
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 44
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 44
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 44
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 45
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 45
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 45
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 46
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 46
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 46
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 47
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 47
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 47
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 48
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 48
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 48
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 49
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 49
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 49
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 50
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 50
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 50
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 51
     }),
     WaitTime.create({
-      name: 'Over 60 minutes',
+      time: 90,
       restaurantId: 51
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 51
     }),
     WaitTime.create({
-      name: '30-60 minutes',
+      time: 60,
       restaurantId: 52
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 52
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 52
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 53
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 53
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 53
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 54
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 54
     }),
     WaitTime.create({
-      name: 'No wait',
+      time: 0,
       restaurantId: 54
     }),
     WaitTime.create({
-      name: 'Under 15 minutes',
+      time: 15,
       restaurantId: 55
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 55
     }),
     WaitTime.create({
-      name: '15-30 minutes',
+      time: 30,
       restaurantId: 55
-    }),
+    })
   ]);
-
   console.log(`seeded ${waitTimes.length} check ins`);
 
   console.log(`seeded successfully`);

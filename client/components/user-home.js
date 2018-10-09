@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {
   Grid,
   Header,
+  Image,
   Container,
   Item,
   Button,
@@ -15,18 +16,12 @@ import {
   fetchVisited
 } from '../store/restaurant';
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
-import ReactStars from 'react-stars';
+import SuggestedRestaurants from './suggestedRestaurants';
+import {UserBox} from './styledComponents';
 
 /**
  * COMPONENT
  */
-
-const Box = styled.div`
-  padding-right: 10px;
-  padding-left: 10px;
-  height: 90vh;
-`;
 
 export class UserHome extends Component {
   componentDidMount() {
@@ -34,95 +29,30 @@ export class UserHome extends Component {
     this.props.gotVisitedRestaurants(this.props.id);
   }
 
-  handleRestaurantClick = value => {
-    const selectedRestaurant = this.props.suggestedRestaurants.filter(
-      restaurant => restaurant.name === value
-    );
-    this.props.gotOneRestaurant(selectedRestaurant[0]);
-  };
-
   render() {
     return (
       <Container>
         <Divider hidden />
         <Grid centered stackable>
-          <Grid.Column computer={5} centered>
-            <Item>
-              <h1>Welcome, {this.props.email}</h1>
-              <Divider />
-              <Item.Image src="img/profile.jpg" circular size="small" />
-              <Divider hidden />
-              <Item.Extra>
-                <Button basic as={Link} to="/visited">
-                  Restaurants Visited
-                </Button>
-              </Item.Extra>
-              <Item.Extra>
-                <Button basic>Account Details</Button>
-              </Item.Extra>
-            </Item>
+          <Grid.Column computer={5}>
+            <h1>Welcome, {this.props.email}</h1>
+            <Divider />
+            <Image src="img/profile.jpg" circular size="small" centered />
+            <Divider hidden />
+            <Container centered>
+              <Button basic as={Link} to="/visited" centered>
+                Restaurants Visited
+              </Button>
+            </Container>
           </Grid.Column>
           <Grid.Column width={10}>
-            <Box>
+            <UserBox>
               <Header as="h2">Suggested Restaurants</Header>
               <Item.Group divided>
                 {!this.props.suggestedFetching ? (
-                  this.props.suggestedRestaurants.map(restaurant => {
-                    return (
-                      <Item key={restaurant.id}>
-                        <Item.Image size="small" src={restaurant.yelpImg} />
-                        <Item.Content>
-                          <Item.Header
-                            as={Link}
-                            to={`/restaurants/${restaurant.name}`}
-                            value={restaurant.name}
-                            onClick={() =>
-                              this.handleRestaurantClick(restaurant.name)
-                            }
-                          >
-                            {restaurant.name}
-                          </Item.Header>
-                          <Item.Description>
-                            <div>
-                              Radius Rating
-                              <ReactStars
-                                count={5}
-                                value={restaurant.radiusRating}
-                                half={true}
-                                edit={false}
-                                color2="#35b3bf"
-                                size="25px"
-                              />
-                            </div>
-                            {restaurant.rating && (
-                              <div>
-                                Google Rating
-                                <ReactStars
-                                  count={5}
-                                  value={restaurant.rating}
-                                  half={true}
-                                  edit={false}
-                                  color2="#C58600"
-                                />{' '}
-                              </div>
-                            )}
-                            {restaurant.yelpResults && (
-                              <div>
-                                Yelp Rating
-                                <ReactStars
-                                  count={5}
-                                  value={restaurant.yelpResults.rating}
-                                  half={true}
-                                  edit={false}
-                                  color2="#C50A00"
-                                />
-                              </div>
-                            )}
-                          </Item.Description>
-                        </Item.Content>
-                      </Item>
-                    );
-                  })
+                  <SuggestedRestaurants
+                    suggestedRestaurants={this.props.suggestedRestaurants}
+                  />
                 ) : (
                   <Item>
                     <Item.Header as="a">Loading Suggestions</Item.Header>
@@ -130,7 +60,7 @@ export class UserHome extends Component {
                   </Item>
                 )}
               </Item.Group>
-            </Box>
+            </UserBox>
           </Grid.Column>
         </Grid>
       </Container>

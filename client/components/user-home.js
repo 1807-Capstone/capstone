@@ -29,6 +29,10 @@ export class UserHome extends Component {
     this.props.gotVisitedRestaurants(this.props.id);
   }
 
+  handleLogout() {
+    this.props.logout();
+  }
+
   render() {
     return (
       <Container>
@@ -42,6 +46,10 @@ export class UserHome extends Component {
             <Container centered="true">
               <Button basic as={Link} to="/visited" centered="true">
                 Restaurants Visited
+              </Button>
+              <br />
+              <Button basic onClick={this.handleLogout} size="mini" centered>
+                Logout
               </Button>
             </Container>
           </Grid.Column>
@@ -85,7 +93,8 @@ const mapDispatchToProps = dispatch => ({
   fetchSuggestedRestaurantsFromServer: id =>
     dispatch(fetchSuggestedRestaurantsFromServer(id)),
   gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant)),
-  gotVisitedRestaurants: id => dispatch(fetchVisited(id))
+  gotVisitedRestaurants: id => dispatch(fetchVisited(id)),
+  logout: () => dispatch(logout)
 });
 
 export default connect(mapState, mapDispatchToProps)(UserHome);

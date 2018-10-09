@@ -42,13 +42,14 @@ export const StyledBtn = styled.button`
 `;
 
 export const MapOverlay = styled.div`
-  height: 80vh;
+  height: 69vh;
   background: rgb(255, 255, 255, 0.9);
   position: fixed;
-  top: 6vh;
+  top: 17vh;
   width: 45vw;
   padding-left: 10px;
   padding-top: 10px;
+  overflow-y: scroll;
 `;
 
 export const MobileDiv1 = styled.div`
@@ -138,11 +139,17 @@ export const StyledButton = styled.button`
   font-size: 15px;
   color: white;
   outline: none;
-  position: absolute;
-  top: 80vh;
+  position: fixed;
+  top: 86vh;
 `;
 
 export const StyledSearchButton = styled(StyledButton)`
   left: 45vw;
   width: 55vw;
+`;
+
+export const FilterBox = styled.div`
+  background: transparent;
+  height: 20vh;
+  width: 100vw;
 `;

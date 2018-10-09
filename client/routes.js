@@ -11,7 +11,8 @@ import {
   AllRestaurants,
   SingleRestaurant,
   HomePage,
-  UserRestaurants
+  UserRestaurants,
+  ReactMap
 } from './components';
 import {me} from './store';
 
@@ -40,6 +41,7 @@ class Routes extends Component {
             <Route path="/visited" component={UserRestaurants} />
             <Route path="/filter" component={Filter} />
             <Route path="/map" component={MapView} />
+            <Route path="/reactmap" component={ReactMap} />
             <Route path="/restaurants/:name" component={SingleRestaurant} />
           </Switch>
         )}

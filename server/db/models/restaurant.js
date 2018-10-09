@@ -24,14 +24,14 @@ const Restaurant = db.define(
       }
     },
     rating: {
-      type: Sequelize.DECIMAL,
+      type: Sequelize.FLOAT,
       validate: {
         min: 1,
         max: 5
       }
     },
     yelpRating: {
-      type: Sequelize.DECIMAL,
+      type: Sequelize.FLOAT,
       validate: {
         min: 1,
         max: 5
@@ -44,7 +44,7 @@ const Restaurant = db.define(
       type: Sequelize.STRING
     },
     radiusRating: {
-      type: Sequelize.DECIMAL,
+      type: Sequelize.FLOAT,
       validate: {
         min: 1,
         max: 5

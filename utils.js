@@ -60,6 +60,32 @@ const statesHash = {
   Wyoming: 'WY'
 };
 
+const getRadius = mapRef => {
+  let map = mapRef.getMap();
+  let bounds = map.getBounds();
+  let center = map.getCenter();
+  let ne = bounds._ne;
+
+  // r = radius of the earth in statute miles
+  let r = 6371.0;
+
+  // Convert lat or lng from decimal degrees into radians (divide by 57.2958)
+  let lat1 = center.lat / 57.2958;
+  let lon1 = center.lng / 57.2958;
+  let lat2 = ne.lat / 57.2958;
+  let lon2 = ne.lng / 57.2958;
+
+  // distance = circle radius from center to Northeast corner of bounds
+  let dis =
+    r *
+    Math.acos(
+      Math.sin(lat1) * Math.sin(lat2) +
+        Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon2 - lon1)
+    );
+
+  return dis;
+};
+
 const cleanAddress = vicinity => {
   let addressOne;
   if (vicinity.includes('#')) {
@@ -79,7 +105,7 @@ const cleanState = compoundCode => {
   return statesHash[state];
 };
 
-const yelpQueryMaker = googleResultsArray => {
+const yelpQueryMaker = (restaurantObject, aState) => {
   // let theState = '';
   // let iterator = 0;
   // while (!theState) {
@@ -93,10 +119,10 @@ const yelpQueryMaker = googleResultsArray => {
 
   let finalQuery = '{\n';
   finalQuery += `b1: business_match(
-      name: "${googleResultsArray.name}",
-      address1: "${cleanAddress(googleResultsArray.vicinity)}",
-      city: "${cleanCity(googleResultsArray.vicinity)}",
-      state: "IL",
+      name: "${restaurantObject.name}",
+      address1: "${cleanAddress(restaurantObject.vicinity)}",
+      city: "${cleanCity(restaurantObject.vicinity)}",
+      state: "${aState}",
       country: "US",
       limit: 1
   )
@@ -117,7 +143,6 @@ const yelpQueryMaker = googleResultsArray => {
   }
   `;
   finalQuery += '}';
-  console.log('final query', finalQuery);
   return finalQuery;
 };
 
@@ -215,5 +240,6 @@ module.exports = {
   cleanState,
   yelpQueryMakerOne,
   yelpQueryMakerTwo,
-  yelpQueryMaker
+  yelpQueryMaker,
+  getRadius
 };

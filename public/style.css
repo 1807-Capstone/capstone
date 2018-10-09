@@ -130,3 +130,34 @@ label {
     margin-left: -4rem !important;
   }
 }
+
+i.circle.icon::before {
+  position: relative;
+  bottom: 8px;
+  right: 8px;
+  color: #a84600;
+}
+
+i.circle.outline.icon {
+  color: black;
+}
+
+#mapListView {
+  overflow-y: auto;
+}
+
+#content::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #content {
+    height: auto;
+    overflow: auto;
+    padding: 0;
+  }
+
+  #content::-webkit-scrollbar {
+    display: initial;
+  }
+}

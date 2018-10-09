@@ -7,7 +7,6 @@ import {
   Signup,
   UserHome,
   Filter,
-  MapView,
   AllRestaurants,
   SingleRestaurant,
   HomePage,
@@ -41,7 +40,6 @@ class Routes extends Component {
             <Route path="/visited" component={UserRestaurants} />
             <Route path="/filter" component={Filter} />
             <Route path="/map" component={ReactMap} />
-            <Route path="/reactmap" component={ReactMap} />
             <Route path="/restaurants/:name" component={SingleRestaurant} />
           </Switch>
         )}

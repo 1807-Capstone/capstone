@@ -14,54 +14,6 @@ import {
 } from './styledComponents';
 import Popup from './popup';
 
-// class HomePage extends Component {
-//   async componentDidMount() {
-//     await this.props.me();
-//     this.props.fetchSuggestedRestaurantsFromServer(this.props.user);
-//   }
-//   render() {
-//     return (
-//       <div>
-//         <Responsive minWidth={930}>
-//           <Grid centered>
-//             <Grid.Column width={4}>
-//               <img src="img/food.jpeg" />
-//             </Grid.Column>
-//             <Grid.Column width={4}>
-//               <img src="img/pasta.jpeg" />
-//             </Grid.Column>
-//             <GridColumn width={4}>
-//               <StyledBox>
-//                 <Image src="img/logo_transparent.png" size="medium" centered />
-//               </StyledBox>
-//             </GridColumn>
-//             <Grid.Column width={4}>
-//               {/* <img src="img/burger.jpeg" /> */}
-//               <StyledBox2 />
-//             </Grid.Column>
-//           </Grid>
-//         </Responsive>
-//         <Responsive maxWidth={929}>
-//           <MobileDiv3>
-//             <Image src="img/logo_transparent.png" size="medium" centered />
-//           </MobileDiv3>
-//           <MobileDiv4 />
-//           <StyledHeader1>Suggested Restaurants</StyledHeader1>
-//           <MobileDiv2>
-//             {this.props.suggestedRestaurants.length && (
-//               <Item.Group divided>
-//                 <SuggestedRestaurants
-//                   suggestedRestaurants={this.props.suggestedRestaurants}
-//                 />
-//               </Item.Group>
-//             )}
-//           </MobileDiv2>
-//         </Responsive>
-//       </div>
-//     );
-//   }
-// }
-
 const mapStateToProps = state => ({
   suggestedRestaurants: state.restaurant.suggestedRestaurants,
   user: state.user.id

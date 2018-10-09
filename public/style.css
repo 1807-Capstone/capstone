@@ -2,6 +2,13 @@ body {
   font-family: 'Open Sans', sans-serif !important;
 }
 
+#content {
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+}
+
 a {
   text-decoration: none;
 }

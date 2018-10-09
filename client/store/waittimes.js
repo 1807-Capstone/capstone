@@ -64,7 +64,7 @@ const reducer = (state = initialState, action) => {
     case ADD_WAIT_TIME:
       return {
         ...state,
-        allData: [...state, action.waitTime]
+        allData: [...state.allData, action.waitTime]
       };
     default:
       return state;

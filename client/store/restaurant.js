@@ -174,7 +174,6 @@ export const fetchRestaurantsList = (
     });
     const restaurantsList = res.data.restaurantsList;
     const secondPageToken = res.data.secondPageToken;
-    console.log('second page token here', secondPageToken);
     dispatch(gotRestaurantsList(restaurantsList));
     const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
     async function secondReq(token) {

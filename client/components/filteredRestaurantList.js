@@ -18,17 +18,22 @@ class FilteredRestaurantList extends Component {
     return (
       <div>
         <Divider hidden />
-        <Divider hidden />
         <Grid centered stackable>
-          <Grid.Column width={15} centered="true">
+          <Grid.Column width={15} centered>
             <div>
-              {/* <Header as="h4">Restaurants</Header> */}
               <Item.Group divided>
                 <div className="two column doubling ui grid">
                   {this.props.restaurants.map(restaurant => {
                     return (
                       <Item key={restaurant.id} className="column">
-                        <Item.Image src={restaurant.yelpResults.image_url} />
+                        <Item.Image
+                          src={restaurant.yelpResults.image_url}
+                          as={Link}
+                          to={`/restaurants/${restaurant.name}`}
+                          onClick={() =>
+                            this.handleRestaurantClick(restaurant.name)
+                          }
+                        />
                         <Item.Content>
                           <Item.Header
                             as={Link}
@@ -39,20 +44,21 @@ class FilteredRestaurantList extends Component {
                           >
                             <StyledTitle>{restaurant.name}</StyledTitle>
                           </Item.Header>
-
                           <Item.Description>
-                            <p>
+                            <div>
                               Radius rating:{' '}
                               <ReactStars
                                 count={5}
+                                edit={false}
                                 value={restaurant.radiusRating}
                                 half={true}
                                 color2="#35b3bf"
-                                size="25px"
+                                // size="25px"
                               />
                               Yelp rating:{' '}
                               <ReactStars
                                 count={5}
+                                edit={false}
                                 value={restaurant.yelpResults.rating}
                                 half={true}
                                 color2="#C50A00"
@@ -60,11 +66,12 @@ class FilteredRestaurantList extends Component {
                               Google rating:
                               <ReactStars
                                 count={5}
+                                edit={false}
                                 value={restaurant.rating}
                                 half={true}
                                 color2="#C58600"
                               />
-                            </p>
+                            </div>
                           </Item.Description>
                         </Item.Content>
                       </Item>

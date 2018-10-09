@@ -30,6 +30,7 @@ async function seed() {
       price_level: 2,
       rating: 3.9,
       yelpRating: 3.5,
+      radiusRating: 3.7,
       yelpImg:
         'https://s3-media2.fl.yelpcdn.com/bphoto/Y3sBlOPkuAqbgqzK9O9PYw/o.jpg',
       keyword: 'american',
@@ -42,8 +43,7 @@ async function seed() {
       rating: 3.6,
       yelpRating: 4.5,
       radiusRating: 5,
-      yelpImg:
-        'https://s3-media4.fl.yelpcdn.com/bphoto/i4wLAu_7nn3LQAYSba-O-w/o.jpg',
+      yelpImg: 'img/wonderbar.jpg',
       keyword: 'american',
       vicinity: '710 N Clark St, Chicago'
     }),
@@ -113,6 +113,7 @@ async function seed() {
       price_level: 2,
       rating: 4.4,
       radiusRating: 2.5,
+      yelpRating: 3,
       yelpImg:
         'https://s3-media1.fl.yelpcdn.com/bphoto/Uw_hHPSPhe-V3RF0CqWJpg/o.jpg',
       keyword: 'mexican',

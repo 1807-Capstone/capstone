@@ -11,10 +11,10 @@ const CheckIn = db.define('check-in', {
 });
 
 CheckIn.afterCreate(async (checkIn, options) => {
+  console.log('checkin', checkIn);
   let userId = checkIn.userId;
 
-
-  const user = await User.findById(userId)
+  const user = await User.findById(userId);
   // After User Checks in, find visited restaurants
   const response = await CheckIn.findAll({
     where: {
@@ -23,10 +23,10 @@ CheckIn.afterCreate(async (checkIn, options) => {
     attributes: ['restaurantId']
   });
   // Clean data
-  const restaurantsVisited = response.map(elem => elem.dataValues.restaurantId)
+  const restaurantsVisited = response.map(elem => elem.dataValues.restaurantId);
   // Find All visited Restaurants
-  user.set('checkedInRestaurants', restaurantsVisited)
-  user.save()
+  user.set('checkedInRestaurants', restaurantsVisited);
+  user.save();
 });
 
 module.exports = CheckIn;

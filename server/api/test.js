@@ -42,6 +42,8 @@ router.post('/', async (req, res, next) => {
 
     const googleSearch = initialGoogleSearch.json.results;
 
+    const yelpSearch = [];
+
     //   for (let i = 0; i < googleSearch.length; i++) {
     //     await (function(index) {
     //       setTimeout(async () => {
@@ -106,17 +108,16 @@ router.post('/filteredGoogle', async (req, res, next) => {
       .placesNearby({
         language: 'en',
         location: [req.body.lat, req.body.lng],
-        radius: req.body.radius || 1500,
+        radius: req.body.distance || 500,
         minprice: req.body.price || 1,
         maxprice: req.body.price || 4,
         type: 'restaurant',
         keyword: req.body.cuisine || null
+        // rating: req.body.rating || null
       })
       .asPromise();
 
     const googleSearch = initialGoogleSearch.json.results;
-    res.status(200).json(googleSearch);
-
     // res.status(200).json(googleSearch);
 
     const yelpSearch = [];
@@ -167,7 +168,6 @@ router.post('/filteredGoogle', async (req, res, next) => {
 
     // res.status(200).json(googleSearch);
     //
-
     const yelpCalls1 = async () => {
       let theState;
       let iterator = 0;
@@ -223,7 +223,6 @@ router.post('/filteredGoogle', async (req, res, next) => {
     };
 
     yelpWrapper();
-
     // res.json(googleSearch);
   } catch (error) {
     next(error);
@@ -260,7 +259,6 @@ router.post('/yelp', async (req, res, next) => {
 });
 
 router.post('/filteredServer', async (req, res, next) => {
-  console.log('req body', req.body);
   try {
     const currentFilters = {};
     if (req.body.price) {
@@ -276,47 +274,6 @@ router.post('/filteredServer', async (req, res, next) => {
       where: currentFilters
     });
     res.json(filteredRestaurants);
-  } catch (error) {
-    next(error);
-  }
-});
-
-router.post('/allRestaurants', async (req, res, next) => {
-  const Op = Sequelize.Op;
-  try {
-    const allRestaurants = await Restaurant.findAll({
-      where: {
-        // location: [
-        //   {
-        //     [Op.or]: {
-        //       [Op.lt]: req.body.lat + 1,
-        //       [Op.gt]: req.body.lat - 1
-        //     },
-        //     [Op.or]: {
-        //       [Op.lt]: req.body.lng + 1,
-        //       [Op.gt]: req.body.lng - 1
-        //     }
-        //   }
-        // ]
-        location: [
-          {[Op.between]: [req.body.lat + 1, req.body.lat - 1]},
-          {[Op.between]: [req.body.lng + 1, req.body.lng - 1]}
-        ]
-      }
-    });
-    res.json(allRestaurants);
-  } catch (err) {
-    next(err);
-  }
-});
-
-// `<a href="https://maps.google.com/maps/dir/?daddr=${
-//   restaurant.geometry.location.lat
-// },${restaurant.geometry.location.lng}&amp;ll=" target =_blank>directions</a>`;
-router.get('/:id', async (req, res, next) => {
-  try {
-    const currentRestaurant = await Restaurant.findById(req.params.id);
-    res.json(currentRestaurant);
   } catch (error) {
     next(error);
   }

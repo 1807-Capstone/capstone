@@ -138,11 +138,17 @@ export const StyledButton = styled.button`
   font-size: 15px;
   color: white;
   outline: none;
-  position: absolute;
-  top: 80vh;
+  position: fixed;
+  top: 86vh;
 `;
 
 export const StyledSearchButton = styled(StyledButton)`
   left: 45vw;
   width: 55vw;
+`;
+
+export const FilterBox = styled.div`
+  background: transparent;
+  height: 20vh;
+  width: 100vw;
 `;

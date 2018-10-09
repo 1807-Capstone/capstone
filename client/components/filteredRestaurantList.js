@@ -81,11 +81,17 @@ class FilteredRestaurantList extends Component {
               </Item.Group>
               <div className="ui one column stackable center aligned page grid">
                 <Pagination
-                  boundaryRange={1}
-                  siblingRange={1}
-                  onPageChange={this.props.handleSelect}
-                  size="mini"
+                  defaultActivePage={1}
+                  firstItem={null}
+                  lastItem={null}
+                  pointing
+                  secondary
                   totalPages={this.props.numPages}
+                  // boundaryRange={1}
+                  // siblingRange={1}
+                  onPageChange={this.props.handleSelect}
+                  // size="mini"
+                  // totalPages={this.props.numPages}
                 />
               </div>
             </div>

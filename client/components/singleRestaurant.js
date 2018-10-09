@@ -38,6 +38,8 @@ export class SingleRestaurant extends Component {
 
   render() {
     const restaurant = this.props.restaurant;
+    const price = restaurant.price_level;
+
     if (restaurant) {
       return (
         <div>
@@ -60,8 +62,8 @@ export class SingleRestaurant extends Component {
               <Button basic onClick={this.handleCheckIn}>
                 Check In Here
               </Button>
-              <br />
               <div>
+                <br />
                 Radius Rating:
                 <ReactStars
                   count={5}
@@ -92,7 +94,11 @@ export class SingleRestaurant extends Component {
                   color2="#C58600"
                 />
               </div>
-              <p>Price Level:{restaurant.price_level}</p>
+              <br />
+              {price === 1 && <p>Price Level: $</p>}
+              {price === 2 && <p>Price Level: $$</p>}
+              {price === 3 && <p>Price Level: $$$</p>}
+              {price === 4 && <p>Price Level: $$$$</p>}
               <p>Address: {restaurant.vicinity}</p>
             </Grid.Column>
             <Grid.Column computer={6} mobile={10}>

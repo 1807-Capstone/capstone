@@ -35,7 +35,6 @@ class HomePage extends Component {
 
   async componentDidMount() {
     await this.props.me();
-    console.log('user', this.props.user);
     await this.props.fetchSuggestedRestaurantsFromServer(this.props.user.id);
     if (this.props.user.didCheckIn) {
       this.setState({
@@ -51,7 +50,6 @@ class HomePage extends Component {
   }
 
   render() {
-    console.log('suggested', this.props.suggestedRestaurants);
     return (
       <div>
         <Responsive minWidth={930}>

@@ -15,11 +15,12 @@ class FilteredRestaurantList extends Component {
   };
 
   render() {
+    console.log('radius', this.props.restaurants[0]);
     return (
       <div>
         <Divider hidden />
         <Grid centered stackable>
-          <Grid.Column width={15} centered>
+          <Grid.Column width={15} centered="true">
             <div>
               <Item.Group divided>
                 <div className="two column doubling ui grid">

@@ -101,7 +101,6 @@ router.post('/', async (req, res, next) => {
 });
 
 router.post('/filteredGoogle', async (req, res, next) => {
-  console.log('req.body', req.body);
   try {
     const initialGoogleSearch = await googleMapsClient
       .placesNearby({

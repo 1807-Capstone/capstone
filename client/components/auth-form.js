@@ -3,50 +3,20 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {auth} from '../store';
 import styled from 'styled-components';
+import {Form, Divider, Grid, Image, Responsive} from 'semantic-ui-react';
 import {
-  Form,
-  Divider,
-  Grid,
-  Image,
-  Responsive,
-  Container
-} from 'semantic-ui-react';
-import {MobileDiv3, MobileDiv4} from './styledComponents';
+  MobileDiv3,
+  MobileDiv4,
+  Input,
+  Button,
+  CompDiv1,
+  CompDiv2,
+  LoginDiv
+} from './styledComponents';
+
 /**
  * COMPONENT
  */
-
-const Input = styled.input`
-  height: 6vh;
-  border-radius: 10px;
-  width: 25vw !important;
-  position: relative;
-  margin: 5px !important;
-  outline: none;
-`;
-
-const Button = styled.button`
-  position: relative;
-  margin: 10px;
-`;
-
-const CompDiv1 = styled(MobileDiv3)`
-  height: 45vh;
-  position: relative;
-  top: 20px;
-`;
-
-const CompDiv2 = styled(MobileDiv4)`
-  height: 45vh;
-  position: relative;
-  top: 20px;
-  padding: 20px;
-`;
-
-const LoginDiv = styled.div`
-  width: 100vw;
-  text-align: center;
-`;
 
 const AuthForm = props => {
   const {name, displayName, handleSubmit, error} = props;

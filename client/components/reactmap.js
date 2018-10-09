@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import ReactMapGL, {NavigationControl, Marker, Popup} from 'react-map-gl';
 import {getRadius} from '../../utils';
-import {Button} from 'semantic-ui-react';
+import {Button, Responsive} from 'semantic-ui-react';
 import Dimensions from 'react-dimensions';
 import DeckGL, {HexagonLayer} from 'deck.gl';
 import {connect} from 'react-redux';
@@ -17,6 +17,8 @@ import RestaurantPopup from './restaurantPopup';
 import RestaurantPin from './restaurantPin';
 import ControlPanel from './controlPanel';
 import PropTypes from 'prop-types';
+import MapList from './mapListView';
+import {StyledSearchButton} from './styledComponents';
 
 const mapBoxToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
@@ -49,7 +51,7 @@ const initialLayer = new HexagonLayer({
   pickable: false,
   extruded: true,
   elevationScale: 1.3,
-  opacity: 0.2,
+  opacity: 0.1,
   radius: 200,
   coverage: 1,
   getPosition: d => d.COORDINATES
@@ -89,7 +91,7 @@ class Map extends Component {
         pickable: false,
         extruded: true,
         elevationScale: 1.3,
-        opacity: 0.2,
+        opacity: 0.1,
         radius: 200,
         coverage: 1,
         getPosition: d => d.COORDINATES
@@ -136,7 +138,7 @@ class Map extends Component {
     );
   };
 
-  renderRestaurantMarker = restaurant => {
+  renderRestaurantMarker = (restaurant, index) => {
     return (
       <Marker
         key={`marker-${restaurant.id}`}
@@ -153,6 +155,7 @@ class Map extends Component {
             );
             this.setState({popupInfo: restaurant});
           }}
+          index={index + 1}
         />
       </Marker>
     );
@@ -196,10 +199,10 @@ class Map extends Component {
     const waittimes = this.state.waittimes;
 
     return (
-      <div style={{width: '100vw', height: '100vh'}}>
-        <Button size="mini" fluid onClick={this.handleClick}>
+      <Responsive style={{width: '100vw', height: '100vh'}}>
+        {/* <Button size="mini" fluid onClick={this.handleClick}>
           Search restaurants here
-        </Button>
+        </Button> */}
         <ReactMapGL
           {...this.state.viewport}
           mapboxApiAccessToken={mapBoxToken}
@@ -227,6 +230,7 @@ class Map extends Component {
               />
             )}
           </div>
+
           <div
             style={{
               position: 'absolute',
@@ -240,13 +244,17 @@ class Map extends Component {
           {restaurants[0] && restaurants.map(this.renderRestaurantMarker)}
           {this.renderPopup()}
         </ReactMapGL>
-      </div>
+        <StyledSearchButton onClick={this.handleClick}>
+          SEARCH THIS AREA
+        </StyledSearchButton>
+        {restaurants.length && <MapList restaurants={restaurants} />}
+      </Responsive>
     );
   }
 }
 
 const sizedMap = Dimensions({
-  containerStyle: {width: '100%', height: '100vh'},
+  containerStyle: {width: '100%', height: '90vh'},
   elementResize: true,
   className: 'react-dimensions-wrapper'
 })(Map);

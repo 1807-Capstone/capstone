@@ -4,16 +4,8 @@ import {Item} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import {gotOneRestaurant} from '../store/restaurant';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
+import {StyledName} from './styledComponents';
 
-const StyledName = styled.h1`
-  width: 95vw;
-  height: 4vh;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  background: white;
-`;
 class SuggestedRestaurants extends Component {
   handleRestaurantClick = value => {
     const selectedRestaurant = this.props.suggestedRestaurants.filter(

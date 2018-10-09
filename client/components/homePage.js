@@ -13,38 +13,13 @@ import {me} from '../store/user';
 import {connect} from 'react-redux';
 import SuggestedRestaurants from './suggestedRestaurants';
 import {
-  StyledHeader,
-  MobileDiv1,
   MobileDiv2,
   MobileDiv3,
-  MobileDiv4
+  MobileDiv4,
+  StyledBox,
+  StyledBox2,
+  StyledHeader1
 } from './styledComponents';
-
-const StyledBox = styled.div`
-  background: #35b3bf;
-  height: 90vh;
-`;
-
-const StyledBox2 = styled(StyledBox)`
-  background: #16a1ae;
-`;
-
-const StyledText = styled.h1`
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 70px;
-  font-weight: 800;
-  text-decoration: underline;
-`;
-
-const StyledHeader1 = styled(StyledHeader)`
-  text-align: left;
-  padding-left: 5px;
-  padding-top: 5px;
-  font-weight: 600;
-  font-size: 15px;
-  width: 100vw;
-`;
 
 class HomePage extends Component {
   async componentDidMount() {

@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif !important;
+  height: 90vh !important;
 }
 
 a {
@@ -24,6 +25,10 @@ form div {
   border-bottom: 0 none !important;
   box-shadow: none;
   font-family: 'Open Sans', sans-serif !important;
+}
+
+.ui[class*='bottom fixed'].menu {
+  height: 10vh;
 }
 
 .marker {
@@ -69,8 +74,8 @@ label {
   font-weight: 500 !important;
 }
 .markerBox {
-  width: 50vw;
-  height: 20vw;
+  width: 50vw !important;
+  height: 40vw !important;
   border-radius: 100%;
   font-family: 'Open Sans', sans-serif !important;
   font-size: 15px;
@@ -78,6 +83,8 @@ label {
 
 .mapboxgl-popup-content {
   background: rgb(255, 255, 255, 0.9) !important;
+  height: 30vh;
+  width: 50vw;
 }
 
 .ui.container {

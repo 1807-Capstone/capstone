@@ -2,15 +2,11 @@ import React, {Component} from 'react';
 import mapboxgl from 'mapbox-gl';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
+import {Box} from './styledComponents';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
 
-const Box = styled.div`
-  height: 40vh;
-  width: 100vw;
-  margin: 20px;
-`;
 const mapStateToProps = state => ({
   restaurant: state.restaurant.oneRestaurant
 });

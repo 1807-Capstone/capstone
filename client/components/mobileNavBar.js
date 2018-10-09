@@ -12,15 +12,14 @@ const Header = styled.h1`
   font-weight: 400;
   letter-spacing: 5px;
   width: 100vw;
-  height: 5vh;
+  height: 4vh;
   position: absolute;
   padding-top: 5px;
   text-align: center;
 `;
 const Box = styled.div`
   width: 100vw;
-  height: 9vh;
-  padding-top: 10px;
+  height: 6vh;
 `;
 
 const Block = styled.div`
@@ -30,7 +29,7 @@ const Block = styled.div`
 
 class MobileNavbar extends Component {
   state = {
-    isVisible: false
+    isVisible: true
   };
   handleButtonClick = () => this.setState({isVisible: !this.state.isVisible});
 
@@ -44,31 +43,8 @@ class MobileNavbar extends Component {
       <div>
         <Box>
           <Header>RADIUS</Header>
-          <Button
-            basic
-            inverted
-            floated="left"
-            onClick={this.handleButtonClick}
-          >
-            <Icon name="bars" color="black" size="large" />
-          </Button>
-          <Button basic inverted floated="right" as={Link} to="/filter">
-            <Icon name="food" color="black" size="large" />
-          </Button>
         </Box>
-        <Sidebar
-          animation="overlay"
-          as={Menu}
-          vertical
-          onHide={this.handleSidebarHide}
-          visible={isVisible}
-          width="thin"
-        >
-          {/* <ExitButton onClick={this.handleSidebarHide}>x</ExitButton> */}
-          <Menu.Item>
-            <Icon name="x" onClick={this.handleSidebarHide} />
-            <Divider hidden />
-          </Menu.Item>
+        <Menu fixed="bottom" icon="labeled" size="mini" widths={4}>
           <Menu.Item as={Link} to="/home" onClick={this.handleSidebarHide}>
             <Icon name="home" />
             Home
@@ -86,11 +62,7 @@ class MobileNavbar extends Component {
             Account
           </Menu.Item>
           <Block />
-          <Menu.Item href="#" onClick={handleClick}>
-            <Icon name="log out" />
-            Logout
-          </Menu.Item>
-        </Sidebar>
+        </Menu>
       </div>
     );
   }

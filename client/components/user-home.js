@@ -16,19 +16,12 @@ import {
   fetchVisited
 } from '../store/restaurant';
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
-import ReactStars from 'react-stars';
 import SuggestedRestaurants from './suggestedRestaurants';
+import {UserBox} from './styledComponents';
 
 /**
  * COMPONENT
  */
-
-const Box = styled.div`
-  padding-right: 10px;
-  padding-left: 10px;
-  height: 90vh;
-`;
 
 export class UserHome extends Component {
   componentDidMount() {
@@ -53,7 +46,7 @@ export class UserHome extends Component {
             </Container>
           </Grid.Column>
           <Grid.Column width={10}>
-            <Box>
+            <UserBox>
               <Header as="h2">Suggested Restaurants</Header>
               <Item.Group divided>
                 {!this.props.suggestedFetching ? (
@@ -67,7 +60,7 @@ export class UserHome extends Component {
                   </Item>
                 )}
               </Item.Group>
-            </Box>
+            </UserBox>
           </Grid.Column>
         </Grid>
       </Container>

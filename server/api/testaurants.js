@@ -25,19 +25,21 @@ const googleMapsClient = require('@google/maps').createClient({
 });
 
 router.post('/restaurantsList', async (req, res, next) => {
+  const location = req.body.lat
+    ? [req.body.lat, req.body.lng]
+    : [-87.6345194, 41.8941717];
   try {
     const initialRestaurantsList = await googleMapsClient
       .placesNearby({
         language: 'en',
-        location: [req.body.lat, req.body.lng],
-        radius: req.body.radius || 1500,
+        location,
+        radius: req.body.radius || 5000,
         minprice: req.body.price || 1,
         maxprice: req.body.price || 4,
         type: 'restaurant',
         keyword: req.body.cuisine || null
       })
       .asPromise();
-
     const restaurantsList = initialRestaurantsList.json.results;
     res.status(200).json(restaurantsList);
   } catch (error) {

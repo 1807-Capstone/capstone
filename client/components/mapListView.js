@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Transition, Item, Button} from 'semantic-ui-react';
+import {Transition, Item, Button, Responsive} from 'semantic-ui-react';
 import {MapOverlay, StyledButton} from './styledComponents';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
@@ -30,37 +30,39 @@ class MapList extends Component {
   render() {
     return (
       <div>
-        <Transition
-          visible={this.state.isList}
-          animation="browse"
-          duration={600}
-        >
-          <MapOverlay>
-            <Item.Group divided>
-              {this.props.restaurants.map((restaurant, index) => (
-                <Name
-                  key={restaurant.name}
-                  // onClick={() => this.handleRestaurantClick(restaurant.name)}
-                  // as={Link}
-                  // to={`/restaurants/${restaurant.name}`}
-                >
-                  {index + 1}: {restaurant.name}
-                  <br />
-                </Name>
-              ))}
-            </Item.Group>
-          </MapOverlay>
-        </Transition>
+        <Responsive maxWidth={1199}>
+          <Transition
+            visible={this.state.isList}
+            animation="browse"
+            duration={600}
+          >
+            <MapOverlay>
+              <Item.Group divided>
+                {this.props.restaurants.map((restaurant, index) => (
+                  <Name
+                    key={restaurant.name}
+                    // onClick={() => this.handleRestaurantClick(restaurant.name)}
+                    // as={Link}
+                    // to={`/restaurants/${restaurant.name}`}
+                  >
+                    {index + 1}: {restaurant.name}
+                    <br />
+                  </Name>
+                ))}
+              </Item.Group>
+            </MapOverlay>
+          </Transition>
 
-        <StyledButton onClick={this.handleListView.bind(this)}>
-          HIDE LIST
-        </StyledButton>
-
-        {!this.state.isList && (
           <StyledButton onClick={this.handleListView.bind(this)}>
-            VIEW LIST
+            HIDE LIST
           </StyledButton>
-        )}
+
+          {!this.state.isList && (
+            <StyledButton onClick={this.handleListView.bind(this)}>
+              VIEW LIST
+            </StyledButton>
+          )}
+        </Responsive>
       </div>
     );
   }

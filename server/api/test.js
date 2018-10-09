@@ -42,6 +42,8 @@ router.post('/', async (req, res, next) => {
 
     const googleSearch = initialGoogleSearch.json.results;
 
+    const yelpSearch = [];
+
     //   for (let i = 0; i < googleSearch.length; i++) {
     //     await (function(index) {
     //       setTimeout(async () => {
@@ -101,23 +103,21 @@ router.post('/', async (req, res, next) => {
 });
 
 router.post('/filteredGoogle', async (req, res, next) => {
-  console.log('req.body', req.body);
   try {
     const initialGoogleSearch = await googleMapsClient
       .placesNearby({
         language: 'en',
         location: [req.body.lat, req.body.lng],
-        radius: req.body.radius || 1500,
+        radius: req.body.distance || 500,
         minprice: req.body.price || 1,
         maxprice: req.body.price || 4,
         type: 'restaurant',
         keyword: req.body.cuisine || null
+        // rating: req.body.rating || null
       })
       .asPromise();
 
     const googleSearch = initialGoogleSearch.json.results;
-    res.status(200).json(googleSearch);
-
     // res.status(200).json(googleSearch);
 
     const yelpSearch = [];
@@ -168,7 +168,6 @@ router.post('/filteredGoogle', async (req, res, next) => {
 
     // res.status(200).json(googleSearch);
     //
-
     const yelpCalls1 = async () => {
       let theState;
       let iterator = 0;
@@ -224,7 +223,6 @@ router.post('/filteredGoogle', async (req, res, next) => {
     };
 
     yelpWrapper();
-
     // res.json(googleSearch);
   } catch (error) {
     next(error);
@@ -276,15 +274,6 @@ router.post('/filteredServer', async (req, res, next) => {
       where: currentFilters
     });
     res.json(filteredRestaurants);
-  } catch (error) {
-    next(error);
-  }
-});
-
-router.get('/:id', async (req, res, next) => {
-  try {
-    const currentRestaurant = await Restaurant.findById(req.params.id);
-    res.json(currentRestaurant);
   } catch (error) {
     next(error);
   }

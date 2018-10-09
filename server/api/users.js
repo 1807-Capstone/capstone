@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User} = require('../db/models');
+const {User, CheckIn} = require('../db/models');
 module.exports = router;
 
 router.get('/', async (req, res, next) => {
@@ -22,6 +22,35 @@ router.get('/:id', async (req, res, next) => {
     if (req.user === currentUser) {
       res.json(currentUser);
     }
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.put('/:id', async (req, res, next) => {
+  try {
+    const userToUpdate = await User.findOne({
+      where: {id: req.params.id}
+    });
+    const updatedUser = await userToUpdate.update(
+      {
+        didCheckIn: !userToUpdate.didCheckIn
+      },
+      {returning: true}
+    );
+    res.json(updatedUser);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.post('/:id/checkIns', async (req, res, next) => {
+  try {
+    const newCheckIn = await CheckIn.create({
+      userId: req.body.userId,
+      restaurantId: req.body.restaurantId
+    });
+    res.json(newCheckIn);
   } catch (err) {
     next(err);
   }

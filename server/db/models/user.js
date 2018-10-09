@@ -33,6 +33,10 @@ const User = db.define(
     },
     checkedInRestaurants: {
       type: Sequelize.ARRAY(Sequelize.INTEGER)
+    },
+    didCheckIn: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false
     }
     // imgUrl: {
     //   type: Sequelize.STRING,
@@ -130,6 +134,18 @@ User.prototype.getSuggested = async function() {
     where: {
       id: {
         [Op.or]: shuffledRestaurants
+      }
+    }
+  });
+  return response;
+};
+
+User.prototype.getVisited = function() {
+  const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
+  const response = Restaurant.findAll({
+    where: {
+      id: {
+        [Op.or]: userCheckedInRestaurants
       }
     }
   });

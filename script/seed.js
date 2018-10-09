@@ -30,6 +30,7 @@ async function seed() {
       price_level: 2,
       rating: 3.9,
       yelpRating: 3.5,
+      radiusRating: 3.7,
       yelpImg:
         'https://s3-media2.fl.yelpcdn.com/bphoto/Y3sBlOPkuAqbgqzK9O9PYw/o.jpg',
       keyword: 'american',

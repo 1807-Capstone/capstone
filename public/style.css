@@ -111,3 +111,15 @@ label {
   margin: auto;
   background: white;
 }
+
+
+i.circle.icon::before {
+  position: relative;
+  bottom: 8px;
+  right: 8px;
+  color: #a84600;
+}
+
+i.circle.outline.icon {
+  color: black;
+}

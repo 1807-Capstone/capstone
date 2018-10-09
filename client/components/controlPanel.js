@@ -18,7 +18,7 @@ export default class StyleControls extends Component {
     const heatMap = this.props.heatMap;
 
     return (
-      <div>
+      <div key={name}>
         <img src="/img/key2.png" />
         <Button
           circular

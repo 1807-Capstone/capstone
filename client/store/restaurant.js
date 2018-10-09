@@ -97,28 +97,28 @@ export const fetchSuggestedRestaurantsFromServer = id => {
   };
 };
 
-// export const getFilteredFromServer = (price, rating, cuisine) => {
-//   return async dispatch => {
-//     const res = await axios.post('/api/restaurants/filteredServer', {
-//       price,
-//       rating,
-//       cuisine
-//     });
-//     dispatch(getFilteredRestaurantsFromServer(res.data));
-//   };
-// };
-
 export const getFilteredFromServer = (price, rating, cuisine) => {
   return async dispatch => {
-    const res = await axios.post('/api/testaurants/restaurantsList', {
+    const res = await axios.post('/api/restaurants/filteredServer', {
       price,
       rating,
       cuisine
     });
-    console.log(res);
     dispatch(getFilteredRestaurantsFromServer(res.data));
   };
 };
+
+// export const getFilteredFromServer = (price, rating, cuisine) => {
+//   return async dispatch => {
+//     const res = await axios.post('/api/testaurants/restaurantsList', {
+//       price,
+//       rating,
+//       cuisine
+//     });
+//     console.log(res);
+//     dispatch(getFilteredRestaurantsFromServer(res.data));
+//   };
+// };
 
 export const fetchVisited = id => {
   return async dispatch => {
@@ -262,8 +262,7 @@ const reducer = (state = initialState, action) => {
     case GET_FILTERED_FROM_SERVER:
       return {
         ...state,
-        filtered: action.filtered,
-        restaurantsList: action.filtered
+        filtered: action.filtered
       };
     case GOT_RADIUS_YELP_RESULT_FROM_SERVER:
       return {

@@ -9,8 +9,7 @@ import DeckGL, {HexagonLayer} from 'deck.gl';
 import {connect} from 'react-redux';
 import {
   fetchRestaurantsList,
-  fetchRadiusYelpResultPopup,
-  getFilteredFromServer
+  fetchRadiusYelpResultPopup
 } from '../store/restaurant';
 import {fetchAllData} from '../store/waittimes';
 import {retrieveCenter} from '../store/map';

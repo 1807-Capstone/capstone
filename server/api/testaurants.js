@@ -25,11 +25,9 @@ const googleMapsClient = require('@google/maps').createClient({
 });
 
 router.post('/restaurantsList', async (req, res, next) => {
-  console.log('req.body special', req.body);
   const location = req.body.lat
     ? [req.body.lat, req.body.lng]
     : [-87.6345194, 41.8941717];
-  console.log(location);
   try {
     const initialRestaurantsList = await googleMapsClient
       .placesNearby({

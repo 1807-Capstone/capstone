@@ -12,7 +12,7 @@ import {
   fetchRadiusYelpResultPopup
 } from '../store/restaurant';
 import {fetchAllData} from '../store/waittimes';
-import {retrieveCenter} from '../store/map';
+import {retrieveCenter, toggleHeatMap} from '../store/map';
 import RestaurantPopup from './restaurantPopup';
 import RestaurantPin from './restaurantPin';
 import ControlPanel from './controlPanel';
@@ -28,7 +28,8 @@ const mapStateToProps = state => {
     restaurantsList: state.restaurant.restaurantsList,
     restaurantsListFetching: state.restaurant.restaurantsListFetching,
     newPopupInfo: state.restaurant.newPopupInfo,
-    center: state.map.center
+    center: state.map.center,
+    heatMap: state.map.heatMap
   };
 };
 
@@ -40,7 +41,8 @@ const mapDispatchToProps = dispatch => ({
   fetchRadiusYelpResultPopup: (googleRestaurantObj, prevRestaurantsList) =>
     dispatch(
       fetchRadiusYelpResultPopup(googleRestaurantObj, prevRestaurantsList)
-    )
+    ),
+  toggleHeatMap: () => dispatch(toggleHeatMap())
 });
 
 const initialLayer = new HexagonLayer({
@@ -59,8 +61,6 @@ class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      layerCreated: false,
-      waittimes: [initialLayer],
       viewport: {
         latitude: 41.895579,
         longitude: -87.639064,
@@ -82,20 +82,6 @@ class Map extends Component {
     this.props.retrieveCenter();
   }
   componentDidUpdate(prevProps, prevState) {
-    if (this.props.data !== prevProps.data) {
-      let waittimes = new HexagonLayer({
-        id: 'hexagon-layer',
-        data: this.props.data,
-        pickable: false,
-        extruded: true,
-        elevationScale: 1.3,
-        opacity: 0.2,
-        radius: 200,
-        coverage: 1,
-        getPosition: d => d.COORDINATES
-      });
-      this.setState({waittimes: [waittimes], layerCreated: true});
-    }
     if (
       this.props.center !== prevProps.center &&
       !prevProps.restaurantsList.length
@@ -193,7 +179,6 @@ class Map extends Component {
       coverage: 1,
       getPosition: d => d.COORDINATES
     });
-    const waittimes = this.state.waittimes;
 
     return (
       <div style={{width: '100vw', height: '100vh'}}>
@@ -206,26 +191,27 @@ class Map extends Component {
           onViewportChange={viewport => this.setState({viewport})}
           ref={map => (this.mapRef = map)}
         >
-          <DeckGL
-            intialViewState={this.state.viewport}
-            viewState={this.state.viewport}
-            ref={map => (this.deckRef = map)}
-            layers={[waitTimes]}
-          />
+          {this.props.heatMap && (
+            <DeckGL
+              intialViewState={this.state.viewport}
+              viewState={this.state.viewport}
+              ref={map => (this.deckRef = map)}
+              layers={[waitTimes]}
+            />
+          )}
           <div
             style={{
               position: 'absolute',
               top: 0,
               right: 0,
-              padding: '20px'
+              margin: '10px'
             }}
           >
-            {this.deckRef && (
-              <ControlPanel
-                containerComponent={this.props.containerComponent}
-                dataLayers={this.deckRef.props.layers}
-              />
-            )}
+            <ControlPanel
+              containerComponent={this.props.containerComponent}
+              toggleHeatMap={this.props.toggleHeatMap}
+              heatMap={this.props.heatMap}
+            />
           </div>
           <div
             style={{

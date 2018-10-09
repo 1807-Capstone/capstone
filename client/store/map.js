@@ -11,6 +11,7 @@ const initialState = {
 const INITIAL_GEOLOCATE = 'INITIAL_GEOLOCATE';
 const SET_LOCATION = 'SET_LOCATION';
 const SYNC_LOCATION = 'SYNC_LOCATION';
+const TOGGLE_HEAT_MAP = 'TOGGLE_HEAT_MAP';
 
 export const setLocation = location => ({
   type: SET_LOCATION,
@@ -27,7 +28,17 @@ export const syncLocation = center => ({
   center
 });
 
+const changeHeatMap = () => ({
+  type: TOGGLE_HEAT_MAP
+});
+
 //Thunks
+
+export const toggleHeatMap = () => {
+  return dispatch => {
+    dispatch(changeHeatMap());
+  };
+};
 
 export const retrieveCenter = () => {
   return async dispatch => {
@@ -75,6 +86,11 @@ const reducer = (state = initialState, action) => {
           lng: action.center.location.lng,
           lat: action.center.location.lat
         }
+      };
+    case TOGGLE_HEAT_MAP:
+      return {
+        ...state,
+        heatMap: !state.heatMap
       };
     default:
       return state;

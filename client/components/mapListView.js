@@ -40,9 +40,9 @@ class MapList extends Component {
               {this.props.restaurants.map((restaurant, index) => (
                 <Name
                   key={restaurant.name}
-                  onClick={() => this.handleRestaurantClick(restaurant.name)}
-                  as={Link}
-                  to={`/restaurants/${restaurant.name}`}
+                  // onClick={() => this.handleRestaurantClick(restaurant.name)}
+                  // as={Link}
+                  // to={`/restaurants/${restaurant.name}`}
                 >
                   {index + 1}: {restaurant.name}
                   <br />

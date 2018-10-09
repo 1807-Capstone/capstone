@@ -40,6 +40,7 @@ class HomePage extends Component {
         showPopup: true
       });
     }
+    this.props.fetchSuggestedRestaurantsFromServer(this.props.user);
   }
 
   togglePopup() {
@@ -91,7 +92,6 @@ class HomePage extends Component {
           </Grid>
         </Responsive>
         <Responsive maxWidth={929}>
-          <MobileDiv4 />
           <MobileDiv3>
             {this.state.showPopup && this.props.user.id ? (
               <Popup
@@ -107,6 +107,7 @@ class HomePage extends Component {
               <Image src="img/logo_transparent.png" size="medium" centered />
             )}
           </MobileDiv3>
+          <MobileDiv4 />
           <StyledHeader1>Suggested Restaurants</StyledHeader1>
           <MobileDiv2>
             {this.props.suggestedRestaurants.length && (

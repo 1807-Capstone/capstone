@@ -45,7 +45,7 @@ export class UserHome extends Component {
               </Button>
             </Container>
           </Grid.Column>
-          <Grid.Column width={10}>
+          <Grid.Column width={11}>
             <UserBox>
               <Header as="h2">Suggested Restaurants</Header>
               <Item.Group divided>

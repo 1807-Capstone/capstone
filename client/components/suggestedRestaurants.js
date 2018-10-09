@@ -4,7 +4,7 @@ import {Item} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import {gotOneRestaurant} from '../store/restaurant';
 import {connect} from 'react-redux';
-import {StyledName} from './styledComponents';
+import {StyledName, UserBox} from './styledComponents';
 
 class SuggestedRestaurants extends Component {
   handleRestaurantClick = value => {

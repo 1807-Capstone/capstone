@@ -87,11 +87,7 @@ class FilteredRestaurantList extends Component {
                   pointing
                   secondary
                   totalPages={this.props.numPages}
-                  // boundaryRange={1}
-                  // siblingRange={1}
                   onPageChange={this.props.handleSelect}
-                  // size="mini"
-                  // totalPages={this.props.numPages}
                 />
               </div>
             </div>

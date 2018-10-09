@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 import {
   Grid,
   Header,
-  Rating,
   Container,
   Item,
   Button,
@@ -84,34 +83,41 @@ export class UserHome extends Component {
                             {restaurant.name}
                           </Item.Header>
                           <Item.Description>
-                            <p>
+                            <div>
                               Radius Rating
                               <ReactStars
                                 count={5}
                                 value={restaurant.radiusRating}
                                 half={true}
+                                edit={false}
                                 color2="#35b3bf"
                                 size="25px"
                               />
-                            </p>
-                            <p>
-                              Google Rating
-                              <ReactStars
-                                count={5}
-                                value={restaurant.rating}
-                                half={true}
-                                color2="#C58600"
-                              />{' '}
-                            </p>
-                            <p>
-                              Yelp Rating
-                              <ReactStars
-                                count={5}
-                                value={restaurant.yelpResults.rating}
-                                half={true}
-                                color2="#C50A00"
-                              />
-                            </p>
+                            </div>
+                            {restaurant.rating && (
+                              <div>
+                                Google Rating
+                                <ReactStars
+                                  count={5}
+                                  value={restaurant.rating}
+                                  half={true}
+                                  edit={false}
+                                  color2="#C58600"
+                                />{' '}
+                              </div>
+                            )}
+                            {restaurant.yelpResults && (
+                              <div>
+                                Yelp Rating
+                                <ReactStars
+                                  count={5}
+                                  value={restaurant.yelpResults.rating}
+                                  half={true}
+                                  edit={false}
+                                  color2="#C50A00"
+                                />
+                              </div>
+                            )}
                           </Item.Description>
                         </Item.Content>
                       </Item>

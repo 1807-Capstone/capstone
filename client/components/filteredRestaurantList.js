@@ -41,14 +41,14 @@ class FilteredRestaurantList extends Component {
                           </Item.Header>
 
                           <Item.Description>
-                            <p>
+                            <div>
                               Radius rating:{' '}
                               <ReactStars
                                 count={5}
                                 value={restaurant.radiusRating}
                                 half={true}
                                 color2="#35b3bf"
-                                size="25px"
+                                // size="25px"
                               />
                               Yelp rating:{' '}
                               <ReactStars
@@ -64,7 +64,7 @@ class FilteredRestaurantList extends Component {
                                 half={true}
                                 color2="#C58600"
                               />
-                            </p>
+                            </div>
                           </Item.Description>
                         </Item.Content>
                       </Item>

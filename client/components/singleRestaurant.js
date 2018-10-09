@@ -49,19 +49,22 @@ export class SingleRestaurant extends Component {
               <Image src={restaurant.yelpResults.image_url} />
               <StyledTitle>{restaurant.name}</StyledTitle>
               <br />
-              <div>
-                <Button
-                  basic
-                  fluid
-                  onClick={this.context.router.history.goBack}
-                >
-                  Go Back
-                </Button>
-              </div>
+              <div />
               <br />
-              <Button basic onClick={this.handleCheckIn}>
+
+              <Button
+                fluid
+                className="ui color1 button"
+                onClick={this.handleCheckIn}
+              >
                 Check In Here
               </Button>
+              <br />
+
+              <Button fluid onClick={this.context.router.history.goBack}>
+                Go Back
+              </Button>
+
               <div>
                 <br />
                 Radius Rating:
@@ -101,6 +104,7 @@ export class SingleRestaurant extends Component {
               {price === 4 && <p>Price Level: $$$$</p>}
               <p>Address: {restaurant.vicinity}</p>
             </Grid.Column>
+
             <Grid.Column computer={6} mobile={10}>
               <SingleRestaurantMap />
             </Grid.Column>

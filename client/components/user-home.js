@@ -43,8 +43,8 @@ export class UserHome extends Component {
             <Divider />
             <Image src="img/profile.jpg" circular size="small" centered />
             <Divider hidden />
-            <Container centered="true">
-              <Button basic as={Link} to="/visited" centered="true">
+            <Container centered>
+              <Button basic as={Link} to="/visited" centered>
                 Restaurants Visited
               </Button>
               <br />

@@ -9,7 +9,8 @@ import DeckGL, {HexagonLayer} from 'deck.gl';
 import {connect} from 'react-redux';
 import {
   fetchRestaurantsList,
-  fetchRadiusYelpResultPopup
+  fetchRadiusYelpResultPopup,
+  getFilteredFromServer
 } from '../store/restaurant';
 import {fetchAllData} from '../store/waittimes';
 import {retrieveCenter} from '../store/map';
@@ -41,7 +42,9 @@ const mapDispatchToProps = dispatch => ({
   fetchRadiusYelpResultPopup: (googleRestaurantObj, prevRestaurantsList) =>
     dispatch(
       fetchRadiusYelpResultPopup(googleRestaurantObj, prevRestaurantsList)
-    )
+    ),
+  fetchFiltered: (price, rating, cuisine) =>
+    dispatch(getFilteredFromServer(price, rating, cuisine))
 });
 
 const initialLayer = new HexagonLayer({
@@ -71,13 +74,30 @@ class Map extends Component {
         width: this.props.containerWidth,
         height: this.props.containerHeight
       },
-      popupInfo: null
+      popupInfo: null,
+      cuisine: '',
+      price: '',
+      rating: ''
     };
   }
   static propTypes = {
     containerWidth: PropTypes.number.isRequired,
     containerHeight: PropTypes.number.isRequired
   };
+
+  selectCuisine = evt => {
+    evt.preventDefault();
+    this.setState({cuisine: evt.target.value});
+  };
+  selectPrice = evt => {
+    evt.preventDefault();
+    this.setState({price: evt.target.value});
+  };
+  selectRating = (evt, {rating}) => {
+    evt.preventDefault();
+    this.setState({rating});
+  };
+
   componentDidMount() {
     this.props.fetchAllData();
     this.props.retrieveCenter();
@@ -161,6 +181,16 @@ class Map extends Component {
 
   updateViewport = viewport => {
     this.setState({viewport});
+  };
+
+  filter = async evt => {
+    evt.preventDefault();
+    let restaurants = await this.props.fetchFiltered(
+      Number(this.state.price),
+      this.state.rating,
+      this.state.cuisine
+    );
+    console.log('filtered restaurants', restaurants);
   };
 
   renderPopup = () => {

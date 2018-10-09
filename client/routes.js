@@ -7,7 +7,6 @@ import {
   Signup,
   UserHome,
   Filter,
-  MapView,
   AllRestaurants,
   SingleRestaurant,
   HomePage,

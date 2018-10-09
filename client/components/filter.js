@@ -7,9 +7,10 @@ import {
 } from '../store/restaurant';
 import {connect} from 'react-redux';
 import {fetchGeolocation} from '../store/map';
-import {Header, Divider} from 'semantic-ui-react';
+import {Header, Divider, Icon} from 'semantic-ui-react';
 import FilteredRestaurantList from './filteredRestaurantList';
-import {StyledHeader} from './styledComponents';
+import {StyledHeader, StyledBtn} from './styledComponents';
+import styled from 'styled-components';
 
 const mapStateToProps = state => ({
   filteredRestaurants: state.restaurant.filtered,
@@ -33,6 +34,12 @@ const mapDispatchToProps = dispatch => ({
     dispatch(getFilteredFromServer(price, rating, cuisine)),
   geolocate: () => dispatch(fetchGeolocation())
 });
+
+const StyledBtn2 = styled(StyledBtn)`
+  color: red;
+  text-align: right;
+  padding-top: -10px;
+`;
 
 class Filter extends React.Component {
   constructor() {
@@ -97,7 +104,6 @@ class Filter extends React.Component {
       <div className="ui one column stackable center aligned page grid">
         <Divider />
         <StyledHeader>FILTER</StyledHeader>
-
         <FilterFormRedux
           handleSubmit={this.filter}
           handleSelectCuisine={this.selectCuisine}

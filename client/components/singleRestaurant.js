@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import {getRestaurantFromServer} from '../store/restaurant';
-import {getReviewsFromServer, addReviewToServer} from '../store/review';
-import {updateUserOnServer} from '../store/user';
 import {connect} from 'react-redux';
 import {Grid, Image, Button} from 'semantic-ui-react';
+import {updateUserOnServer} from '../store/user';
 import SingleRestaurantMap from './singleRestaurantMap';
 import ReactStars from 'react-stars';
 import {StyledTitle} from './styledComponents';
@@ -50,6 +48,7 @@ export class SingleRestaurant extends Component {
             <div>
               Radius Rating:
               <ReactStars
+                edit={false}
                 count={5}
                 value={restaurant.radiusRating}
                 half={true}
@@ -61,6 +60,7 @@ export class SingleRestaurant extends Component {
             <div>
               Yelp Rating:{' '}
               <ReactStars
+                edit={false}
                 count={5}
                 value={restaurant.yelpResults.rating}
                 half={true}
@@ -71,6 +71,7 @@ export class SingleRestaurant extends Component {
             <div>
               Google Rating:{' '}
               <ReactStars
+                edit={false}
                 count={5}
                 value={restaurant.rating}
                 half={true}

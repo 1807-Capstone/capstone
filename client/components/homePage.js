@@ -35,12 +35,12 @@ class HomePage extends Component {
 
   async componentDidMount() {
     await this.props.me();
+    this.props.fetchSuggestedRestaurantsFromServer(this.props.user);
     if (this.props.user.didCheckIn) {
       this.setState({
         showPopup: true
       });
     }
-    this.props.fetchSuggestedRestaurantsFromServer(this.props.user);
   }
 
   togglePopup() {
@@ -50,6 +50,7 @@ class HomePage extends Component {
   }
 
   render() {
+    console.log('this is suggested', this.props.suggestedRestaurants);
     return (
       <div>
         <Responsive minWidth={930}>

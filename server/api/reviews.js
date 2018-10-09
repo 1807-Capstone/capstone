@@ -22,7 +22,6 @@ router.post('/getreviews', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
   try {
-    console.log('req.body', req.body);
     const newReview = await Review.create({
       userId: req.body.userId,
       restaurantId: req.body.restaurantId,

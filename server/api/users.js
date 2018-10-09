@@ -34,7 +34,7 @@ router.put('/:id', async (req, res, next) => {
     });
     const updatedUser = await userToUpdate.update(
       {
-        didCheckIn: true
+        didCheckIn: !userToUpdate.didCheckIn
       },
       {returning: true}
     );

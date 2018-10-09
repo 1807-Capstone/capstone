@@ -1,13 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {
-  Grid,
-  Header,
-  Container,
-  Item,
-  Rating,
-  Pagination
-} from 'semantic-ui-react';
+import {Grid, Header, Container, Item, Pagination} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import {gotOneRestaurant} from '../store/restaurant';
 import ReactStars from 'react-stars';
@@ -34,7 +27,6 @@ class UserRestaurants extends React.Component {
     const perPage = this.state.perPage;
     const firstPage = this.props.userRestaurants.slice(0, perPage);
     const numPages = Math.ceil(this.props.userRestaurants.length / perPage);
-    console.log('currentPage', firstPage);
     this.setState({
       currentPage: firstPage,
       numPages: numPages
@@ -42,7 +34,6 @@ class UserRestaurants extends React.Component {
   }
 
   handleSelectPage = (evt, {activePage}) => {
-    console.log('here');
     const startIndex = (activePage - 1) * this.state.perPage;
     const endIndex = startIndex + this.state.perPage;
     const pageRestaurants = this.props.userRestaurants.slice(
@@ -92,6 +83,7 @@ class UserRestaurants extends React.Component {
                               count={5}
                               value={restaurant.radiusRating}
                               half={true}
+                              edit={false}
                               color2="#35b3bf"
                             />
                           </p>
@@ -101,6 +93,7 @@ class UserRestaurants extends React.Component {
                               count={5}
                               value={restaurant.yelpResults.rating}
                               half={true}
+                              edit={false}
                               color2="#C50A00"
                             />
                           </p>
@@ -110,6 +103,7 @@ class UserRestaurants extends React.Component {
                               count={5}
                               value={restaurant.rating}
                               half={true}
+                              edit={false}
                               color2="#C58600"
                             />
                           </p>

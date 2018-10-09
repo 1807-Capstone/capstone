@@ -24,7 +24,6 @@ export const getReviewsFromServer = name => {
 };
 
 export const addReviewToServer = review => {
-  console.log('review', review);
   return async dispatch => {
     const res = await axios.post('/api/reviews', review);
     dispatch(addReview(res.data));

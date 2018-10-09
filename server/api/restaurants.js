@@ -280,3 +280,12 @@ router.post('/filteredServer', async (req, res, next) => {
     next(error);
   }
 });
+
+router.get('/:id', async (req, res, next) => {
+  try {
+    const currentRestaurant = await Restaurant.findById(req.params.id);
+    res.json(currentRestaurant);
+  } catch (error) {
+    next(error);
+  }
+});

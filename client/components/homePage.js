@@ -16,7 +16,7 @@ import Popup from './popup';
 
 const mapStateToProps = state => ({
   suggestedRestaurants: state.restaurant.suggestedRestaurants,
-  user: state.user.id
+  user: state.user
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -35,12 +35,13 @@ class HomePage extends Component {
 
   async componentDidMount() {
     await this.props.me();
+    console.log('user', this.props.user);
+    await this.props.fetchSuggestedRestaurantsFromServer(this.props.user.id);
     if (this.props.user.didCheckIn) {
       this.setState({
         showPopup: true
       });
     }
-    this.props.fetchSuggestedRestaurantsFromServer(this.props.user);
   }
 
   togglePopup() {
@@ -110,7 +111,7 @@ class HomePage extends Component {
           <MobileDiv4 />
           <StyledHeader1>Suggested Restaurants</StyledHeader1>
           <MobileDiv2>
-            {this.props.suggestedRestaurants.length && (
+            {this.props.suggestedRestaurants.length > 1 && (
               <Item.Group divided>
                 <SuggestedRestaurants
                   suggestedRestaurants={this.props.suggestedRestaurants}

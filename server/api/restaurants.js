@@ -281,9 +281,6 @@ router.post('/filteredServer', async (req, res, next) => {
 
 // router.post('/allRestaurants', async (req, res, next) => {
 //   const Op = Sequelize.Op;
-//   console.log('here api');
-
-//   console.log('here req body', req.body);
 //   try {
 //     const allRestaurants = await Restaurant.findAll({
 //       where: {

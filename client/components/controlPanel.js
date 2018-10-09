@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {fromJS} from 'immutable';
 
-
 // const OdefaultMapStyle = fromJS(MAP_STYLE);
 
 const categories = ['waittimes'];
@@ -41,7 +40,7 @@ export default class StyleControls extends Component {
   updateMapStyle({visibility}) {
     const dataLayers = this.props.dataLayers;
     const layers = this.dataLayers.filter(layer => {
-      const id = layer.id
+      const id = layer.id;
       return categories.every(
         name => visibility[name] || !layerSelector[name].test(id)
       );
@@ -55,7 +54,7 @@ export default class StyleControls extends Component {
 
     return (
       <div key={name} className="input">
-        <label>Wait Times</label>
+        <img src="/img/key2.png" />
         <input
           type="checkbox"
           checked={visibility[name]}

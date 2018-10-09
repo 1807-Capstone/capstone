@@ -3,7 +3,8 @@ import {GOOGLE_MAPS_API} from '../config';
 
 const initialState = {
   location: {lng: -87.639064, lat: 41.895579, zoom: 1},
-  center: {lng: -87.639064, lat: 41.895579}
+  center: {lng: -87.639064, lat: 41.895579},
+  heatMap: true
 };
 
 //Action Types

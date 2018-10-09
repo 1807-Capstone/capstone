@@ -17,6 +17,7 @@ const REQ_RADIUS_YELP_RESULT_FROM_SERVER = 'REQ_RADIUS_YELP_RESULT_FROM_SERVER';
 const REQ_RESTAURANTS_LIST = 'REQ_RESTAURANTS_LIST';
 const GOT_RESTAURANTS_LIST = 'GOT_RESTAURANTS_LIST';
 const GET_VISITED_FROM_SERVER = 'GET_VISITED_FROM_SERVER';
+const GOT_NEXT_PAGE = 'GOT_NEXT_PAGE';
 
 // Action creators
 const gotAllRestaurants = allRestaurants => ({
@@ -78,6 +79,11 @@ const gotRadiusYelpResultsPopup = (restaurantsList, newPopupInfo) => ({
 const getVisitedRestaurantsFromServer = visited => ({
   type: GET_VISITED_FROM_SERVER,
   visited
+});
+
+const gotNextPage = nextPage => ({
+  type: GOT_NEXT_PAGE,
+  nextPage
 });
 
 // Thunks
@@ -166,7 +172,23 @@ export const fetchRestaurantsList = (
       price,
       rating
     });
-    dispatch(gotRestaurantsList(res.data));
+    const restaurantsList = res.data.restaurantsList;
+    const secondPageToken = res.data.secondPageToken;
+    dispatch(gotRestaurantsList(restaurantsList));
+    const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+    async function secondReq(token) {
+      let data;
+      await delay(1200);
+      data = await axios.post('/api/testaurants/nextPage', {
+        token
+      });
+      return data;
+    }
+    if (secondPageToken) {
+      const response = await secondReq(secondPageToken);
+      const nextPage = response.data;
+      dispatch(gotNextPage(nextPage));
+    }
   };
 };
 
@@ -272,6 +294,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         visited: action.visited
+      };
+    case GOT_NEXT_PAGE:
+      return {
+        ...state,
+        restaurantsList: [...state.restaurantsList, ...action.nextPage]
       };
     default:
       return state;

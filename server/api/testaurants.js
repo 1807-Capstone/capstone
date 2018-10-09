@@ -37,9 +37,26 @@ router.post('/restaurantsList', async (req, res, next) => {
         keyword: req.body.cuisine || null
       })
       .asPromise();
-
+    let secondPageToken;
+    if (initialRestaurantsList.json.next_page_token) {
+      secondPageToken = initialRestaurantsList.json.next_page_token;
+    }
     const restaurantsList = initialRestaurantsList.json.results;
-    res.status(200).json(restaurantsList);
+    res.status(200).json({restaurantsList, secondPageToken});
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.post('/nextPage', async (req, res, next) => {
+  try {
+    const nextRestaurantsPage = await googleMapsClient
+      .placesNearby({
+        pagetoken: req.body.token
+      })
+      .asPromise();
+    const nextPage = nextRestaurantsPage.json.results;
+    res.status(200).json(nextPage);
   } catch (error) {
     next(error);
   }

@@ -40,8 +40,7 @@ class Routes extends Component {
             <Route path="/account" component={UserHome} />
             <Route path="/visited" component={UserRestaurants} />
             <Route path="/filter" component={Filter} />
-            <Route path="/map" component={MapView} />
-            <Route path="/reactmap" component={ReactMap} />
+            <Route path="/map" component={ReactMap} />
             <Route path="/restaurants/:name" component={SingleRestaurant} />
           </Switch>
         )}

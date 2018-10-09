@@ -3,13 +3,14 @@
 import React, {Component} from 'react';
 import ReactMapGL, {NavigationControl, Marker, Popup} from 'react-map-gl';
 import {getRadius} from '../../utils';
-import {Button, Responsive} from 'semantic-ui-react';
+import {Responsive} from 'semantic-ui-react';
 import Dimensions from 'react-dimensions';
 import DeckGL, {HexagonLayer} from 'deck.gl';
 import {connect} from 'react-redux';
 import {
   fetchRestaurantsList,
-  fetchRadiusYelpResultPopup
+  fetchRadiusYelpResultPopup,
+  sendRestaurantToPageFromMap
 } from '../store/restaurant';
 import {fetchAllData} from '../store/waittimes';
 import {retrieveCenter, toggleHeatMap} from '../store/map';
@@ -45,9 +46,11 @@ const mapDispatchToProps = dispatch => ({
     dispatch(
       fetchRadiusYelpResultPopup(googleRestaurantObj, prevRestaurantsList)
     ),
-  toggleHeatMap: () => dispatch(toggleHeatMap())
+  toggleHeatMap: () => dispatch(toggleHeatMap()),
+  sendRestaurantToPageFromMap: restaurant => {
+    dispatch(sendRestaurantToPageFromMap(restaurant));
+  }
 });
-
 
 class Map extends Component {
   constructor(props) {
@@ -168,6 +171,7 @@ class Map extends Component {
 
   renderPopup = () => {
     const {popupInfo} = this.state;
+    const sendRestaurant = this.props.sendRestaurantToPageFromMap;
     return (
       popupInfo && (
         <Popup
@@ -177,7 +181,10 @@ class Map extends Component {
           latitude={popupInfo.geometry.location.lat}
           onClose={() => this.setState({popupInfo: null})}
         >
-          <RestaurantPopup restaurant={popupInfo} />
+          <RestaurantPopup
+            restaurant={popupInfo}
+            sendRestaurant={sendRestaurant}
+          />
         </Popup>
       )
     );

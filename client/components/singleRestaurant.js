@@ -26,7 +26,8 @@ export class SingleRestaurant extends Component {
   handleCheckIn = () => {
     const checkInInfo = {
       userId: this.props.user.id,
-      restaurantId: this.props.restaurant.id
+      restaurantId: this.props.restaurant.id,
+      name: this.props.restaurant.name
     };
     this.props.addCheckIn(checkInInfo);
     this.props.triggerCheckIn(this.props.user);
@@ -44,7 +45,9 @@ export class SingleRestaurant extends Component {
           <br />
           <Grid stackable>
             <Grid.Column computer={5} mobile={10}>
-              <Image src={restaurant.yelpResults.image_url} />
+              {restaurant.yelpResults.image_url && (
+                <Image src={restaurant.yelpResults.image_url} />
+              )}
               <StyledTitle>{restaurant.name}</StyledTitle>
               <br />
               <div>
@@ -61,27 +64,31 @@ export class SingleRestaurant extends Component {
                 Check In Here
               </Button>
               <br />
-              <div>
-                Radius Rating:
-                <ReactStars
-                  count={5}
-                  value={restaurant.radiusRating}
-                  half={true}
-                  edit={false}
-                  color2="#35b3bf"
-                  // size="25px"
-                />
-              </div>
-              <div>
-                Yelp Rating:{' '}
-                <ReactStars
-                  count={5}
-                  value={restaurant.yelpResults.rating}
-                  half={true}
-                  edit={false}
-                  color2="#C50A00"
-                />
-              </div>
+              {restaurant.radiusRating && (
+                <div>
+                  Radius Rating:
+                  <ReactStars
+                    count={5}
+                    value={restaurant.radiusRating}
+                    half={true}
+                    edit={false}
+                    color2="#35b3bf"
+                    // size="25px"
+                  />
+                </div>
+              )}
+              {restaurant.yelpResults.rating && (
+                <div>
+                  Yelp Rating:{' '}
+                  <ReactStars
+                    count={5}
+                    value={restaurant.yelpResults.rating}
+                    half={true}
+                    edit={false}
+                    color2="#C50A00"
+                  />
+                </div>
+              )}
               <div>
                 Google Rating:{' '}
                 <ReactStars

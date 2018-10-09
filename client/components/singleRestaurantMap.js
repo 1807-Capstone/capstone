@@ -13,9 +13,10 @@ const mapStateToProps = state => ({
 let map;
 class SingleRestaurantMap extends Component {
   componentDidMount() {
+
     map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v9',
+      style: 'mapbox://styles/mapbox/light-v8',
       center: [
         this.props.restaurant.location[1],
         this.props.restaurant.location[0]

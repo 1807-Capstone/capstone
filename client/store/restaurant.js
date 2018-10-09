@@ -18,6 +18,7 @@ const REQ_RESTAURANTS_LIST = 'REQ_RESTAURANTS_LIST';
 const GOT_RESTAURANTS_LIST = 'GOT_RESTAURANTS_LIST';
 const GET_VISITED_FROM_SERVER = 'GET_VISITED_FROM_SERVER';
 const GOT_NEXT_PAGE = 'GOT_NEXT_PAGE';
+const GOT_RESTAURANT_FROM_MAP = 'GOT_RESTAURANT_FROM_MAP';
 
 // Action creators
 const gotAllRestaurants = allRestaurants => ({
@@ -86,6 +87,11 @@ const gotNextPage = nextPage => ({
   nextPage
 });
 
+const gotRestaurantFromMap = restaurant => ({
+  type: GOT_RESTAURANT_FROM_MAP,
+  restaurant
+});
+
 // Thunks
 export const fetchAllRestaurantsFromServer = (lat, lng) => {
   return async dispatch => {
@@ -111,6 +117,12 @@ export const getFilteredFromServer = (price, rating, cuisine) => {
       cuisine
     });
     dispatch(getFilteredRestaurantsFromServer(res.data));
+  };
+};
+
+export const sendRestaurantToPageFromMap = restaurant => {
+  return dispatch => {
+    dispatch(gotRestaurantFromMap(restaurant));
   };
 };
 
@@ -216,6 +228,7 @@ export const fetchRadiusYelpResultPopup = (
     const newRestaurantList = response.data.prevRestaurantsList;
     const newPopupInfo = response.data.popupInfo;
     dispatch(gotRadiusYelpResultsPopup(newRestaurantList, newPopupInfo));
+    dispatch(gotRestaurantFromMap(newPopupInfo));
   };
 };
 
@@ -318,6 +331,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         restaurantsList: [...state.restaurantsList, ...action.nextPage]
+      };
+    case GOT_RESTAURANT_FROM_MAP:
+      return {
+        ...state,
+        oneRestaurant: action.restaurant
       };
     default:
       return state;

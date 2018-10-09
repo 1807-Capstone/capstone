@@ -119,6 +119,17 @@ label {
   background: white;
 }
 
+@media (max-width: 992px) {
+  #mapForm > .ui.form select {
+    width: 30vw !important;
+  }
+  #mapForm label {
+    width: 25vw;
+  }
+  #mapForm .ui.grid {
+    margin-left: -4rem !important;
+  }
+}
 
 i.circle.icon::before {
   position: relative;
@@ -129,4 +140,24 @@ i.circle.icon::before {
 
 i.circle.outline.icon {
   color: black;
+}
+
+#mapListView {
+  overflow-y: auto;
+}
+
+#content::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #content {
+    height: auto;
+    overflow: auto;
+    padding: 0;
+  }
+
+  #content::-webkit-scrollbar {
+    display: initial;
+  }
 }

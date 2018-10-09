@@ -27,9 +27,11 @@ const Box = styled.div`
 const Navbar = () => {
   return (
     <Fragment>
-      <Box>
-        <Header>RADIUS</Header>
-      </Box>
+      <Responsive maxWidth={1199}>
+        <Box>
+          <Header>RADIUS</Header>
+        </Box>
+      </Responsive>
       <Responsive minWidth={1200}>
         <DesktopNavbar />
       </Responsive>

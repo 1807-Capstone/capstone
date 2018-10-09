@@ -29,7 +29,7 @@ class MapList extends Component {
 
   render() {
     return (
-      <div>
+      <div id="mapListView">
         <Responsive maxWidth={1199}>
           <Transition
             visible={this.state.isList}

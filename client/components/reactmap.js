@@ -206,6 +206,7 @@ class Map extends Component {
           // handleSelectRating={this.selectRating}
           handleSelectDistance={this.selectDistance}
         />
+
         {/* <Button size="mini" fluid onClick={this.handleClick}>
           Search restaurants here
         </Button> */}

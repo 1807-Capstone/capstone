@@ -1,51 +1,27 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import styled from 'styled-components';
-import {Grid, Image, Responsive, GridColumn} from 'semantic-ui-react';
-import Popup from './popup';
+import {Grid, Image, Responsive, GridColumn, Item} from 'semantic-ui-react';
+import {fetchSuggestedRestaurantsFromServer} from '../store/restaurant';
 import {me} from '../store/user';
-
-const StyledBox = styled.div`
-  background: #35b3bf;
-  height: 90vh;
-`;
-
-const StyledBox2 = styled(StyledBox)`
-  background: #16a1ae;
-`;
-
-const StyledText = styled.h1`
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 70px;
-  font-weight: 800;
-  text-decoration: underline;
-`;
-
-const MobileDiv1 = styled.div`
-  width: 100vw;
-  height: 30.5vh;
-  background-image: url('img/map.jpg');
-  background-size: cover;
-`;
-
-const MobileDiv2 = styled(MobileDiv1)`
-  background: #16a1ae;
-`;
-
-const MobileDiv3 = styled(MobileDiv1)`
-  background: #35b3bf;
-`;
-
-const MobileDiv4 = styled(MobileDiv1)`
-  background-image: url('img/cooks.jpeg');
-`;
+import {connect} from 'react-redux';
+import SuggestedRestaurants from './suggestedRestaurants';
+import {
+  MobileDiv2,
+  MobileDiv3,
+  MobileDiv4,
+  StyledBox,
+  StyledBox2,
+  StyledHeader1
+} from './styledComponents';
+import Popup from './popup';
 
 const mapStateToProps = state => ({
-  user: state.user
+  suggestedRestaurants: state.restaurant.suggestedRestaurants,
+  user: state.user.id
 });
 
 const mapDispatchToProps = dispatch => ({
+  fetchSuggestedRestaurantsFromServer: id =>
+    dispatch(fetchSuggestedRestaurantsFromServer(id)),
   me: () => dispatch(me())
 });
 
@@ -110,9 +86,7 @@ class HomePage extends Component {
             )}
             <Grid.Column width={4}>
               {/* <img src="img/burger.jpeg" /> */}
-              <StyledBox2>
-                <StyledText>FIND YOUR FOOD HERE.</StyledText>
-              </StyledBox2>
+              <StyledBox2 />
             </Grid.Column>
           </Grid>
         </Responsive>
@@ -133,7 +107,16 @@ class HomePage extends Component {
               <Image src="img/logo_transparent.png" size="medium" centered />
             )}
           </MobileDiv3>
-          <MobileDiv2 />
+          <StyledHeader1>Suggested Restaurants</StyledHeader1>
+          <MobileDiv2>
+            {this.props.suggestedRestaurants.length && (
+              <Item.Group divided>
+                <SuggestedRestaurants
+                  suggestedRestaurants={this.props.suggestedRestaurants}
+                />
+              </Item.Group>
+            )}
+          </MobileDiv2>
         </Responsive>
       </div>
     );

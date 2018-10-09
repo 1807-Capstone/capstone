@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import {getRestaurantFromServer} from '../store/restaurant';
-import {getReviewsFromServer, addReviewToServer} from '../store/review';
-import {updateUserOnServer} from '../store/user';
 import {connect} from 'react-redux';
 import {Grid, Image, Button} from 'semantic-ui-react';
+import {updateUserOnServer} from '../store/user';
 import SingleRestaurantMap from './singleRestaurantMap';
 import ReactStars from 'react-stars';
 import {StyledTitle} from './styledComponents';

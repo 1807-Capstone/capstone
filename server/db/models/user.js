@@ -102,9 +102,13 @@ User.prototype.getVisited = function() {
 };
 
 User.prototype.getSuggested = async function() {
+  const userId = this.getDataValue('id');
   const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
   let recommendedRestaurants = [];
-  const allUsers = await User.findAll({attributes: ['checkedInRestaurants']});
+  const allUsers = await User.findAll(
+    {where: {id: {[Op.ne]: userId}}},
+    {attributes: ['checkedInRestaurants', 'id']}
+  );
   const allVisitedRestaurants = allUsers.map(
     elem => elem.dataValues.checkedInRestaurants
   );

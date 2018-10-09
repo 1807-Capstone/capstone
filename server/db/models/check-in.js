@@ -11,7 +11,6 @@ const CheckIn = db.define('check-in', {
 });
 
 CheckIn.afterCreate(async (checkIn, options) => {
-  console.log('checkin', checkIn);
   let userId = checkIn.userId;
 
   const user = await User.findById(userId);

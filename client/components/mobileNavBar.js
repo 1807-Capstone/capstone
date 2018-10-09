@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
@@ -28,22 +28,9 @@ const Block = styled.div`
 `;
 
 class MobileNavbar extends Component {
-  state = {
-    isVisible: true
-  };
-  handleButtonClick = () => this.setState({isVisible: !this.state.isVisible});
-
-  handleSidebarHide = () => this.setState({isVisible: false});
-
   render() {
-    const {handleClick, isLoggedIn} = this.props;
-    const {isVisible} = this.state;
-
     return (
-      <div>
-        <Box>
-          <Header>RADIUS</Header>
-        </Box>
+      <Fragment>
         <Menu fixed="bottom" icon="labeled" size="mini" widths={4}>
           <Menu.Item as={Link} to="/home" onClick={this.handleSidebarHide}>
             <Icon name="home" />
@@ -63,7 +50,7 @@ class MobileNavbar extends Component {
           </Menu.Item>
           <Block />
         </Menu>
-      </div>
+      </Fragment>
     );
   }
 }

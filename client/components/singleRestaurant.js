@@ -41,14 +41,21 @@ export class SingleRestaurant extends Component {
     if (restaurant) {
       return (
         <div>
-          <Button basic fluid onClick={this.context.router.history.goBack}>
-            Go Back
-          </Button>
           <br />
           <Grid stackable>
             <Grid.Column computer={5} mobile={10}>
               <Image src={restaurant.yelpResults.image_url} />
               <StyledTitle>{restaurant.name}</StyledTitle>
+              <br />
+              <div>
+                <Button
+                  basic
+                  fluid
+                  onClick={this.context.router.history.goBack}
+                >
+                  Go Back
+                </Button>
+              </div>
               <br />
               <Button basic onClick={this.handleCheckIn}>
                 Check In Here

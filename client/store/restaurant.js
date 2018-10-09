@@ -108,6 +108,18 @@ export const getFilteredFromServer = (price, rating, cuisine) => {
   };
 };
 
+// export const getFilteredFromServer = (price, rating, cuisine) => {
+//   return async dispatch => {
+//     const res = await axios.post('/api/testaurants/restaurantsList', {
+//       price,
+//       rating,
+//       cuisine
+//     });
+//     console.log(res);
+//     dispatch(getFilteredRestaurantsFromServer(res.data));
+//   };
+// };
+
 export const fetchVisited = id => {
   return async dispatch => {
     const res = await axios.get(`/api/users/${id}/visited`);

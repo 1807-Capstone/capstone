@@ -17,6 +17,7 @@ import RestaurantPopup from './restaurantPopup';
 import RestaurantPin from './restaurantPin';
 import ControlPanel from './controlPanel';
 import PropTypes from 'prop-types';
+import MapFormRedux from './mapFormRedux';
 import MapList from './mapListView';
 import {StyledSearchButton} from './styledComponents';
 
@@ -36,8 +37,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   fetchAllData: () => dispatch(fetchAllData()),
-  fetchRestaurantsList: (lat, lng, radius) =>
-    dispatch(fetchRestaurantsList(lat, lng, radius)),
+  fetchRestaurantsList: (lat, lng, radius, cuisine, price) =>
+    dispatch(fetchRestaurantsList(lat, lng, radius, cuisine, price)),
   retrieveCenter: () => dispatch(retrieveCenter()),
   fetchRadiusYelpResultPopup: (googleRestaurantObj, prevRestaurantsList) =>
     dispatch(
@@ -72,13 +73,30 @@ class Map extends Component {
         width: this.props.containerWidth,
         height: this.props.containerHeight
       },
-      popupInfo: null
+      popupInfo: null,
+      cuisine: '',
+      price: '',
+      distance: ''
     };
   }
   static propTypes = {
     containerWidth: PropTypes.number.isRequired,
     containerHeight: PropTypes.number.isRequired
   };
+
+  selectCuisine = evt => {
+    evt.preventDefault();
+    this.setState({cuisine: evt.target.value});
+  };
+  selectPrice = evt => {
+    evt.preventDefault();
+    this.setState({price: evt.target.value});
+  };
+  selectDistance = evt => {
+    evt.preventDefault();
+    this.setState({distance: evt.target.distance});
+  };
+
   componentDidMount() {
     this.props.fetchAllData();
     this.props.retrieveCenter();
@@ -130,11 +148,19 @@ class Map extends Component {
 
   handleClick = () => {
     let dis = getRadius(this.mapRef);
+    let distance;
+    if (this.state.distance) {
+      distance = this.state.distance;
+    } else {
+      distance = Math.floor(dis * 1000);
+    }
 
     this.props.fetchRestaurantsList(
       this.state.viewport.latitude.toFixed(7),
       this.state.viewport.longitude.toFixed(7),
-      Math.floor(dis * 1000)
+      distance,
+      this.state.cuisine,
+      Number(this.state.price)
     );
   };
 
@@ -200,6 +226,12 @@ class Map extends Component {
 
     return (
       <Responsive style={{width: '100vw', height: '100vh'}}>
+        <MapFormRedux
+          handleSelectCuisine={this.selectCuisine}
+          handleSelectPrice={this.selectPrice}
+          // handleSelectRating={this.selectRating}
+          handleSelectDistance={this.selectDistance}
+        />
         {/* <Button size="mini" fluid onClick={this.handleClick}>
           Search restaurants here
         </Button> */}

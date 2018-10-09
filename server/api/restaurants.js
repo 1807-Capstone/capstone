@@ -101,7 +101,6 @@ router.post('/', async (req, res, next) => {
 });
 
 router.post('/filteredGoogle', async (req, res, next) => {
-  console.log('req.body', req.body);
   try {
     const initialGoogleSearch = await googleMapsClient
       .placesNearby({
@@ -280,6 +279,35 @@ router.post('/filteredServer', async (req, res, next) => {
     next(error);
   }
 });
+
+// router.post('/allRestaurants', async (req, res, next) => {
+//   const Op = Sequelize.Op;
+//   try {
+//     const allRestaurants = await Restaurant.findAll({
+//       where: {
+//         // location: [
+//         //   {
+//         //     [Op.or]: {
+//         //       [Op.lt]: req.body.lat + 1,
+//         //       [Op.gt]: req.body.lat - 1
+//         //     },
+//         //     [Op.or]: {
+//         //       [Op.lt]: req.body.lng + 1,
+//         //       [Op.gt]: req.body.lng - 1
+//         //     }
+//         //   }
+//         // ]
+//         location: [
+//           {[Op.between]: [req.body.lat + 1, req.body.lat - 1]},
+//           {[Op.between]: [req.body.lng + 1, req.body.lng - 1]}
+//         ]
+//       }
+//     });
+//     res.json(allRestaurants);
+//   } catch (err) {
+//     next(err);
+//   }
+// });
 
 router.get('/:id', async (req, res, next) => {
   try {

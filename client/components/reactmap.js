@@ -18,7 +18,7 @@ import RestaurantPopup from './restaurantPopup';
 import RestaurantPin from './restaurantPin';
 import ControlPanel from './controlPanel';
 import PropTypes from 'prop-types';
-import FilterFormRedux from './filterFormRedux';
+import MapFormRedux from './mapFormRedux';
 import MapList from './mapListView';
 import {StyledSearchButton} from './styledComponents';
 
@@ -38,15 +38,13 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   fetchAllData: () => dispatch(fetchAllData()),
-  fetchRestaurantsList: (lat, lng, radius) =>
-    dispatch(fetchRestaurantsList(lat, lng, radius)),
+  fetchRestaurantsList: (lat, lng, radius, cuisine, price) =>
+    dispatch(fetchRestaurantsList(lat, lng, radius, cuisine, price)),
   retrieveCenter: () => dispatch(retrieveCenter()),
   fetchRadiusYelpResultPopup: (googleRestaurantObj, prevRestaurantsList) =>
     dispatch(
       fetchRadiusYelpResultPopup(googleRestaurantObj, prevRestaurantsList)
-    ),
-  fetchFiltered: (price, rating, cuisine) =>
-    dispatch(getFilteredFromServer(price, rating, cuisine))
+    )
 });
 
 const initialLayer = new HexagonLayer({
@@ -79,7 +77,7 @@ class Map extends Component {
       popupInfo: null,
       cuisine: '',
       price: '',
-      rating: ''
+      distance: ''
     };
   }
   static propTypes = {
@@ -95,9 +93,9 @@ class Map extends Component {
     evt.preventDefault();
     this.setState({price: evt.target.value});
   };
-  selectRating = (evt, {rating}) => {
+  selectDistance = evt => {
     evt.preventDefault();
-    this.setState({rating});
+    this.setState({distance: evt.target.distance});
   };
 
   componentDidMount() {
@@ -151,11 +149,19 @@ class Map extends Component {
 
   handleClick = () => {
     let dis = getRadius(this.mapRef);
+    let distance;
+    if (this.state.distance) {
+      distance = this.state.distance;
+    } else {
+      distance = Math.floor(dis * 1000);
+    }
 
     this.props.fetchRestaurantsList(
       this.state.viewport.latitude.toFixed(7),
       this.state.viewport.longitude.toFixed(7),
-      Math.floor(dis * 1000)
+      distance,
+      this.state.cuisine,
+      Number(this.state.price)
     );
   };
 
@@ -184,16 +190,6 @@ class Map extends Component {
 
   updateViewport = viewport => {
     this.setState({viewport});
-  };
-
-  filter = async evt => {
-    evt.preventDefault();
-    let restaurants = await this.props.fetchFiltered(
-      Number(this.state.price),
-      this.state.rating,
-      this.state.cuisine
-    );
-    console.log('filtered restaurants', restaurants);
   };
 
   renderPopup = () => {
@@ -231,11 +227,10 @@ class Map extends Component {
 
     return (
       <Responsive style={{width: '100vw', height: '100vh'}}>
-        <FilterFormRedux
-          handleSubmit={this.filter}
+        <MapFormRedux
           handleSelectCuisine={this.selectCuisine}
           handleSelectPrice={this.selectPrice}
-          handleSelectRating={this.selectRating}
+          // handleSelectRating={this.selectRating}
           handleSelectDistance={this.selectDistance}
         />
         {/* <Button size="mini" fluid onClick={this.handleClick}>

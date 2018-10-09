@@ -51,7 +51,6 @@ class HomePage extends Component {
   }
 
   render() {
-    console.log('suggested', this.props.suggestedRestaurants);
     return (
       <div>
         <Responsive minWidth={930}>

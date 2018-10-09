@@ -40,8 +40,26 @@ router.post('/restaurantsList', async (req, res, next) => {
         keyword: req.body.cuisine || null
       })
       .asPromise();
+    let secondPageToken;
+    if (initialRestaurantsList.json.next_page_token) {
+      secondPageToken = initialRestaurantsList.json.next_page_token;
+    }
     const restaurantsList = initialRestaurantsList.json.results;
-    res.status(200).json(restaurantsList);
+    res.status(200).json({restaurantsList, secondPageToken});
+  } catch (error) {
+    next(error);
+  }
+});
+
+router.post('/nextPage', async (req, res, next) => {
+  try {
+    const nextRestaurantsPage = await googleMapsClient
+      .placesNearby({
+        pagetoken: req.body.token
+      })
+      .asPromise();
+    const nextPage = nextRestaurantsPage.json.results;
+    res.status(200).json(nextPage);
   } catch (error) {
     next(error);
   }
@@ -104,12 +122,20 @@ router.post('/popups', async (req, res, next) => {
             ],
             price_level: prevRestaurantsList[i].price_level,
             rating: prevRestaurantsList[i].rating,
+            radiusRating:
+              (prevRestaurantsList[i].rating +
+                yelpResponse.b1.business[0].rating) /
+              2,
             yelpRating: yelpResponse.b1.business[0].rating,
             yelpImg:
               yelpResponse.b1.business[0].photos &&
               yelpResponse.b1.business[0].photos[0],
             vicinity: cleanAddress(prevRestaurantsList[i].vicinity)
           });
+          prevRestaurantsList[i].radiusRating =
+            (prevRestaurantsList[i].rating +
+              yelpResponse.b1.business[0].rating) /
+            2;
         }
         if (!response && yelpResponse.b1.total < 1) {
           let newRestaurant = await Restaurant.create({
@@ -120,8 +146,10 @@ router.post('/popups', async (req, res, next) => {
             ],
             price_level: prevRestaurantsList[i].price_level,
             rating: prevRestaurantsList[i].rating,
+            radiusRating: prevRestaurantsList[i].rating,
             vicinity: cleanAddress(prevRestaurantsList[i].vicinity)
           });
+          prevRestaurantsList[i].radiusRating = prevRestaurantsList[i].rating;
         }
 
         break;

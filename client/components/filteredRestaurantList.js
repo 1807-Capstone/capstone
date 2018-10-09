@@ -15,7 +15,6 @@ class FilteredRestaurantList extends Component {
   };
 
   render() {
-    console.log('radius', this.props.restaurants[0]);
     return (
       <div>
         <Divider hidden />

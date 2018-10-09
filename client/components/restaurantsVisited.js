@@ -1,17 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {
-  Grid,
-  Header,
-  Container,
-  Item,
-  Pagination,
-  Responsive
-} from 'semantic-ui-react';
+import {Grid, Header, Item, Pagination, Responsive} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import {gotOneRestaurant} from '../store/restaurant';
 import ReactStars from 'react-stars';
-import {UserBox, StyledName} from './styledComponents';
+import {StyledName} from './styledComponents';
 
 const mapStateToProps = state => ({
   userRestaurants: state.restaurant.visited

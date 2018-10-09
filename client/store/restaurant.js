@@ -185,6 +185,13 @@ export const fetchRadiusYelpResultPopup = (
   };
 };
 
+export const findRestaurantById = restaurantId => {
+  return async dispatch => {
+    const response = await axios.get(`/api/restaurants/${restaurantId}`);
+    dispatch(gotOneRestaurant(response.data));
+  };
+};
+
 const initialState = {
   allRestaurants: [],
   allFetching: true,

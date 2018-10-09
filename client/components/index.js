@@ -11,6 +11,7 @@ export {default as Filter} from './filter';
 export {default as MapView} from './map';
 export {Login, Signup} from './auth-form';
 export {default as HomePage} from './homePage';
-export {default as ReactMap} from './reactmap.js';
 export {default as UserRestaurants} from './restaurantsVisited';
 export {default as MapList} from './mapListView';
+export {default as Popup} from './popup';
+export {default as ReactMap} from './reactmap.js';

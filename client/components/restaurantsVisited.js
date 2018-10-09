@@ -77,7 +77,7 @@ class UserRestaurants extends React.Component {
                           {restaurant.name}
                         </Item.Header>
                         <Item.Description>
-                          <p>
+                          <div>
                             Radius rating:{' '}
                             <ReactStars
                               count={5}
@@ -86,8 +86,8 @@ class UserRestaurants extends React.Component {
                               edit={false}
                               color2="#35b3bf"
                             />
-                          </p>
-                          <p>
+                          </div>
+                          <div>
                             Yelp rating:{' '}
                             <ReactStars
                               count={5}
@@ -96,8 +96,8 @@ class UserRestaurants extends React.Component {
                               edit={false}
                               color2="#C50A00"
                             />
-                          </p>
-                          <p>
+                          </div>
+                          <div>
                             Google rating:{' '}
                             <ReactStars
                               count={5}
@@ -106,7 +106,7 @@ class UserRestaurants extends React.Component {
                               edit={false}
                               color2="#C58600"
                             />
-                          </p>
+                          </div>
                         </Item.Description>
                       </Item.Content>
                     </Item>
@@ -116,11 +116,13 @@ class UserRestaurants extends React.Component {
             </Item.Group>
             <div className="ui one column stackable center aligned page grid">
               <Pagination
-                boundaryRange={1}
-                siblingRange={1}
-                onPageChange={this.handleSelectPage}
-                size="mini"
+                defaultActivePage={1}
+                firstItem={null}
+                lastItem={null}
+                pointing
+                secondary
                 totalPages={this.state.numPages}
+                onPageChange={this.handleSelectPage}
               />
             </div>
           </Grid.Column>

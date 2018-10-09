@@ -17,6 +17,7 @@ import RestaurantPopup from './restaurantPopup';
 import RestaurantPin from './restaurantPin';
 import ControlPanel from './controlPanel';
 import PropTypes from 'prop-types';
+import FilterFormRedux from './filterFormRedux';
 
 const mapBoxToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
@@ -197,6 +198,13 @@ class Map extends Component {
 
     return (
       <div style={{width: '100vw', height: '100vh'}}>
+        <FilterFormRedux
+          handleSubmit={this.filter}
+          handleSelectCuisine={this.selectCuisine}
+          handleSelectPrice={this.selectPrice}
+          handleSelectRating={this.selectRating}
+          handleSelectDistance={this.selectDistance}
+        />
         <Button size="mini" fluid onClick={this.handleClick}>
           Search restaurants here
         </Button>

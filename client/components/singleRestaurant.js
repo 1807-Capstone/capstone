@@ -1,3 +1,5 @@
+/* eslint-disable complexity */
+
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Grid, Image, Button} from 'semantic-ui-react';
@@ -39,6 +41,8 @@ export class SingleRestaurant extends Component {
 
   render() {
     const restaurant = this.props.restaurant;
+    const price = restaurant.price_level;
+
     if (restaurant) {
       return (
         <div>
@@ -50,22 +54,23 @@ export class SingleRestaurant extends Component {
               )}
               <StyledTitle>{restaurant.name}</StyledTitle>
               <br />
-              <div>
-                <Button
-                  basic
-                  fluid
-                  onClick={this.context.router.history.goBack}
-                >
-                  Go Back
-                </Button>
-              </div>
+              <div />
               <br />
-              <Button basic onClick={this.handleCheckIn}>
+
+              <Button
+                fluid
+                className="ui color1 button"
+                onClick={this.handleCheckIn}
+              >
                 Check In Here
               </Button>
               <br />
+              <Button fluid onClick={this.context.router.history.goBack}>
+                Go Back
+              </Button>
               {restaurant.radiusRating && (
                 <div>
+                  <br />
                   Radius Rating:
                   <ReactStars
                     count={5}
@@ -99,9 +104,14 @@ export class SingleRestaurant extends Component {
                   color2="#C58600"
                 />
               </div>
-              <p>Price Level:{restaurant.price_level}</p>
+              <br />
+              {price === 1 && <p>Price Level: $</p>}
+              {price === 2 && <p>Price Level: $$</p>}
+              {price === 3 && <p>Price Level: $$$</p>}
+              {price === 4 && <p>Price Level: $$$$</p>}
               <p>Address: {restaurant.vicinity}</p>
             </Grid.Column>
+
             <Grid.Column computer={6} mobile={10}>
               <SingleRestaurantMap />
             </Grid.Column>

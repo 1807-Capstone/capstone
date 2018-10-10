@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {reduxForm} from 'redux-form';
-import {Grid} from 'semantic-ui-react';
+import {Grid, Responsive} from 'semantic-ui-react';
 
 const preventDefault = event => {
   event.preventDefault();
@@ -9,13 +9,14 @@ const preventDefault = event => {
 class MapFilter extends Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <form
           onSubmit={this.props.valid ? this.props.handleSubmit : preventDefault}
           className="ui form"
+          id="mapForm"
         >
-          <Grid stackable centered>
-            <Grid.Column computer={3} style={{margin: '0rem 1rem !important'}}>
+          <Grid centered>
+            <Grid.Column width={3} style={{margin: '0rem 1rem !important'}}>
               <label>
                 CUISINE:<select
                   name="cuisine"
@@ -29,7 +30,7 @@ class MapFilter extends Component {
                 </select>
               </label>
             </Grid.Column>
-            <Grid.Column computer={3}>
+            <Grid.Column width={3}>
               <label>
                 PRICE:<select
                   name="price"
@@ -43,7 +44,7 @@ class MapFilter extends Component {
                 </select>
               </label>
             </Grid.Column>
-            <Grid.Column computer={3}>
+            <Grid.Column width={3}>
               <label>
                 DISTANCE:{' '}
                 <select
@@ -61,7 +62,7 @@ class MapFilter extends Component {
           </Grid>
           <div className="ui one column stackable center aligned page grid" />
         </form>
-      </div>
+      </Fragment>
     );
   }
 }

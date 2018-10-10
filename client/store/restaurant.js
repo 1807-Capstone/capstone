@@ -176,17 +176,6 @@ export const fetchRestaurantsList = (
   rating
 ) => {
   return async dispatch => {
-    console.log(
-      'lat',
-      lat,
-      'lng',
-      lng,
-      'radius',
-      radius,
-      cuisine,
-      price,
-      rating
-    );
     dispatch(reqRestaurantsList());
     const res = await axios.post('/api/testaurants/restaurantsList', {
       lat,

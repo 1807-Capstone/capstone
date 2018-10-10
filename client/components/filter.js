@@ -103,7 +103,6 @@ class Filter extends React.Component {
           handleSubmit={this.filter}
           handleSelectCuisine={this.selectCuisine}
           handleSelectPrice={this.selectPrice}
-          handleSelectRating={this.selectRating}
           handleSelectDistance={this.selectDistance}
         />
         {this.props.filteredRestaurants.length &&

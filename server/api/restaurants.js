@@ -7,7 +7,8 @@ const {
   cleanState,
   yelpQueryMakerOne,
   yelpQueryMakerTwo,
-  yelpQueryMaker
+  yelpQueryMaker,
+  convertMetersToDiffLatLng
 } = require('../../utils');
 const {Restaurant} = require('../db/models');
 const Sequelize = require('sequelize');
@@ -264,17 +265,20 @@ router.post('/filteredServer', async (req, res, next) => {
   const Op = Sequelize.Op;
   const [latitude, longitude] = [41.8941717, -87.6345914];
   const currentFilters = {};
-
   try {
     if (req.body.price) {
       currentFilters.price_level = req.body.price;
     }
     if (req.body.distance) {
+      const [dLat, dLng] = convertMetersToDiffLatLng(
+        req.body.distance,
+        latitude
+      );
       currentFilters.lat = {
-        [Op.between]: [latitude - 1, latitude + 1]
+        [Op.between]: [latitude - dLat, latitude + dLat]
       };
       currentFilters.lng = {
-        [Op.between]: [longitude - 1, longitude + 1]
+        [Op.between]: [longitude - dLng, longitude + dLng]
       };
     }
     if (req.body.cuisine) {

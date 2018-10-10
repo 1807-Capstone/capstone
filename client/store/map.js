@@ -4,7 +4,9 @@ import {GOOGLE_MAPS_API} from '../config';
 const initialState = {
   location: {lng: -87.639064, lat: 41.895579, zoom: 1},
   center: {lng: -87.639064, lat: 41.895579},
-  heatMap: true
+  heatMap: true,
+  checkInMap: false,
+  nightMode: false
 };
 
 //Action Types
@@ -12,6 +14,8 @@ const INITIAL_GEOLOCATE = 'INITIAL_GEOLOCATE';
 const SET_LOCATION = 'SET_LOCATION';
 const SYNC_LOCATION = 'SYNC_LOCATION';
 const TOGGLE_HEAT_MAP = 'TOGGLE_HEAT_MAP';
+const TOGGLE_CHECK_IN_MAP = 'TOGGLE_CHECK_IN_MAP';
+const TOGGLE_NIGHT_MODE = 'TOGGLE_NIGHT_MODE';
 
 export const setLocation = location => ({
   type: SET_LOCATION,
@@ -32,7 +36,27 @@ const changeHeatMap = () => ({
   type: TOGGLE_HEAT_MAP
 });
 
+const changeCheckInMap = () => ({
+  type: TOGGLE_CHECK_IN_MAP
+});
+
+const changeNightMode = () => ({
+  type: TOGGLE_NIGHT_MODE
+});
+
 //Thunks
+
+export const toggleNightMode = () => {
+  return dispatch => {
+    dispatch(changeNightMode());
+  };
+};
+
+export const toggleCheckInMap = () => {
+  return dispatch => {
+    dispatch(changeCheckInMap());
+  };
+};
 
 export const toggleHeatMap = () => {
   return dispatch => {
@@ -90,7 +114,19 @@ const reducer = (state = initialState, action) => {
     case TOGGLE_HEAT_MAP:
       return {
         ...state,
-        heatMap: !state.heatMap
+        heatMap: !state.heatMap,
+        checkInMap: false
+      };
+    case TOGGLE_CHECK_IN_MAP:
+      return {
+        ...state,
+        checkInMap: !state.checkInMap,
+        heatMap: false
+      };
+    case TOGGLE_NIGHT_MODE:
+      return {
+        ...state,
+        nightMode: !state.nightMode
       };
     default:
       return state;

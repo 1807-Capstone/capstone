@@ -7,8 +7,16 @@ import restaurant from './restaurant';
 import review from './review';
 import map from './map';
 import waittimes from './waittimes.js';
+import checkin from './checkin.js';
 
-const reducer = combineReducers({user, restaurant, review, map, waittimes});
+const reducer = combineReducers({
+  user,
+  restaurant,
+  review,
+  map,
+  waittimes,
+  checkin
+});
 const middleware = composeWithDevTools(
   applyMiddleware(thunkMiddleware, createLogger({collapsed: true}))
 );

@@ -8,15 +8,18 @@ import SingleRestaurantMap from './singleRestaurantMap';
 import ReactStars from 'react-stars';
 import {StyledTitle} from './styledComponents';
 import {updateCheckInOnServer} from '../store/checkin';
+import {fetchGeolocation} from '../store/map';
 
 const mapStateToProps = state => ({
   restaurant: state.restaurant.oneRestaurant,
-  user: state.user
+  user: state.user,
+  userLocation: state.map.location
 });
 
 const mapDispatchToProps = dispatch => ({
   triggerCheckIn: user => dispatch(updateUserOnServer(user, 'didCheckIn')),
-  addCheckIn: checkIn => dispatch(updateCheckInOnServer(checkIn))
+  addCheckIn: checkIn => dispatch(updateCheckInOnServer(checkIn)),
+  fetchGeolocation: () => dispatch(fetchGeolocation())
 });
 
 export class SingleRestaurant extends Component {
@@ -65,6 +68,28 @@ export class SingleRestaurant extends Component {
                 Check In Here
               </Button>
               <br />
+
+              <Button
+                fluid
+                primary
+                onClick={() =>
+                  window.open(
+                    `https://www.google.com/maps/dir/${this.props.userLocation
+                      .lat - 0.00980448932},${this.props.userLocation.lng +
+                      0.0088983}/${restaurant.location[0]},${
+                      restaurant.location[1]
+                    }/@${this.props.userLocation.lat},${
+                      this.props.userLocation.lng
+                    },14z`,
+                    '_blank'
+                  )
+                }
+              >
+                Get Directions
+              </Button>
+
+              <br />
+
               <Button fluid onClick={this.context.router.history.goBack}>
                 Go Back
               </Button>

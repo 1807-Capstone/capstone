@@ -18,6 +18,7 @@ import {
 import {Link} from 'react-router-dom';
 import SuggestedRestaurants from './suggestedRestaurants';
 import {UserBox} from './styledComponents';
+import {logout} from '../store/user';
 
 /**
  * COMPONENT
@@ -37,40 +38,49 @@ export class UserHome extends Component {
     return (
       <Container>
         <Divider hidden />
-        <Grid centered stackable>
-          <Grid.Column computer={5}>
-            <h1>Welcome, {this.props.email}</h1>
-            <Divider />
-            <Image src="img/profile.jpg" circular size="small" centered />
-            <Divider hidden />
-            <Container centered>
-              <Button basic as={Link} to="/visited" centered>
-                Restaurants Visited
-              </Button>
-              <br />
-              <Button basic onClick={this.handleLogout} size="mini" centered>
-                Logout
-              </Button>
-            </Container>
-          </Grid.Column>
-          <Grid.Column width={11}>
-            <UserBox>
-              <Header as="h2">Suggested Restaurants</Header>
-              <Item.Group divided>
-                {!this.props.suggestedFetching ? (
-                  <SuggestedRestaurants
-                    suggestedRestaurants={this.props.suggestedRestaurants}
-                  />
-                ) : (
-                  <Item>
-                    <Item.Header as="a">Loading Suggestions</Item.Header>
-                    <Item.Description>Suggestions Loading</Item.Description>
-                  </Item>
-                )}
-              </Item.Group>
-            </UserBox>
-          </Grid.Column>
-        </Grid>
+        {this.props.id ? (
+          <Grid centered stackable>
+            <Grid.Column computer={5}>
+              <h1>Welcome, {this.props.email}</h1>
+              <Divider />
+              <Image src="img/profile.jpg" circular size="small" centered />
+              <Divider hidden />
+              <Container centered>
+                <Button basic as={Link} to="/visited" centered>
+                  Restaurants Visited
+                </Button>
+                <br />
+                <Button
+                  basic
+                  onClick={this.handleLogout.bind(this)}
+                  size="mini"
+                  centered
+                >
+                  Logout
+                </Button>
+              </Container>
+            </Grid.Column>
+            <Grid.Column width={11}>
+              <UserBox>
+                <Header as="h2">Suggested Restaurants</Header>
+                <Item.Group divided>
+                  {!this.props.suggestedFetching ? (
+                    <SuggestedRestaurants
+                      suggestedRestaurants={this.props.suggestedRestaurants}
+                    />
+                  ) : (
+                    <Item>
+                      <Item.Header as="a">Loading Suggestions</Item.Header>
+                      <Item.Description>Suggestions Loading</Item.Description>
+                    </Item>
+                  )}
+                </Item.Group>
+              </UserBox>
+            </Grid.Column>
+          </Grid>
+        ) : (
+          <h1>Sign up today!</h1>
+        )}
       </Container>
     );
   }

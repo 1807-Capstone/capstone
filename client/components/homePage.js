@@ -64,34 +64,30 @@ class HomePage extends Component {
             <Grid.Column width={4}>
               <img src="img/food.jpeg" />
             </Grid.Column>
-            {this.state.showPopup && this.props.user.id ? (
-              <Grid.Column width={8} height={30}>
-                <Popup
-                  restaurant={
-                    this.props.user.checkedInRestaurants[
-                      this.props.user.checkedInRestaurants.length - 1
-                    ]
-                  }
-                  user={this.props.user}
-                  closePopup={this.togglePopup.bind(this)}
-                />
-              </Grid.Column>
-            ) : (
-              <div>
-                <Grid.Column width={4}>
-                  <img src="img/pasta.jpeg" />
+            {this.state.showPopup &&
+              this.props.user.id && (
+                <Grid.Column width={8} height={30}>
+                  <Popup
+                    restaurant={
+                      this.props.user.checkedInRestaurants[
+                        this.props.user.checkedInRestaurants.length - 1
+                      ]
+                    }
+                    user={this.props.user}
+                    closePopup={this.togglePopup.bind(this)}
+                  />
                 </Grid.Column>
-                <GridColumn width={4}>
-                  <StyledBox>
-                    <Image
-                      src="img/logo_transparent.png"
-                      size="medium"
-                      centered
-                    />
-                  </StyledBox>
-                </GridColumn>
-              </div>
-            )}
+              )}
+
+            <Grid.Column width={4}>
+              <img src="img/pasta.jpeg" />
+            </Grid.Column>
+            <GridColumn width={4}>
+              <StyledBox>
+                <Image src="img/logo_transparent.png" size="medium" centered />
+              </StyledBox>
+            </GridColumn>
+
             <Grid.Column width={4}>
               <StyledBox2 />
             </Grid.Column>

@@ -48,7 +48,6 @@ export class SingleRestaurant extends Component {
     const price = restaurant.price_level;
 
     if (restaurant) {
-      console.log(this.props.userLocation);
       return (
         < div >
           <Grid stackable>

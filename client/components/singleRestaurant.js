@@ -7,6 +7,7 @@ import ReactStars from 'react-stars';
 import {StyledTitle} from './styledComponents';
 import {updateCheckInOnServer} from '../store/checkin';
 import {fetchGeolocation} from '../store/map';
+import PropTypes from 'prop-types';
 
 const mapStateToProps = state => ({
   restaurant: state.restaurant.oneRestaurant,
@@ -36,7 +37,7 @@ export class SingleRestaurant extends Component {
   };
 
   static contextTypes = {
-    router: () => true
+    router: PropTypes.object
   };
 
   render() {
@@ -53,7 +54,6 @@ export class SingleRestaurant extends Component {
               <StyledTitle>{restaurant.name}</StyledTitle>
               <br />
               <div />
-              {/* <br /> */}
               <Button
                 fluid
                 className="ui color1 button"
@@ -74,7 +74,6 @@ export class SingleRestaurant extends Component {
                   half={true}
                   edit={false}
                   color2="#35b3bf"
-                  // size="25px"
                 />
               </div>
               <div>
@@ -124,7 +123,6 @@ export class SingleRestaurant extends Component {
               </Button>
               <br />
             </Grid.Column>
-
             <Grid.Column computer={6} mobile={10}>
               <SingleRestaurantMap />
             </Grid.Column>

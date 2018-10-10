@@ -20,9 +20,8 @@ export default class StyleControls extends Component {
     const checkInMap = this.props.checkInMap;
     const nightMode = this.props.nightMode;
     const toggleNightMode = this.props.toggleNightMode;
-
     return (
-      <div style={{textAlign: 'right'}}>
+      <div key={1} style={{textAlign: 'right'}}>
         <img src="/img/waittimes.png" />
         <Button
           circular

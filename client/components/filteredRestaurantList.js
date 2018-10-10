@@ -19,7 +19,7 @@ class FilteredRestaurantList extends Component {
       <div>
         <Divider hidden />
         <Grid centered stackable>
-          <Grid.Column width={15} centered>
+          <Grid.Column width={15} centered="true">
             <div>
               <Item.Group divided>
                 <div className="two column doubling ui grid">

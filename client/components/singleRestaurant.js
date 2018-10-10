@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Grid, Image, Button} from 'semantic-ui-react';
+import {Grid, Image, Button, Icon} from 'semantic-ui-react';
 import {updateUserOnServer} from '../store/user';
 import SingleRestaurantMap from './singleRestaurantMap';
 import ReactStars from 'react-stars';
@@ -50,8 +50,22 @@ export class SingleRestaurant extends Component {
     if (restaurant) {
       return (
         <div>
-          <br />
           <Grid stackable>
+            <Button
+              onClick={this.context.router.history.goBack}
+              basic
+              style={{
+                marginLeft: '15px',
+                marginTop: '7px',
+                height: '3vh',
+                padding: '1px',
+                paddingRight: '10px'
+              }}
+            >
+              <Icon name="angle left" color="black" />
+              Back
+            </Button>
+
             <Grid.Column computer={5} mobile={10}>
               {restaurant.yelpResults.image_url && (
                 <Image src={restaurant.yelpResults.image_url} />
@@ -65,10 +79,6 @@ export class SingleRestaurant extends Component {
                 onClick={this.handleCheckIn}
               >
                 Check In Here
-              </Button>
-              <br />
-              <Button fluid onClick={this.context.router.history.goBack}>
-                Go Back
               </Button>
               {restaurant.radiusRating && (
                 <div>

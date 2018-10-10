@@ -1,14 +1,15 @@
 /* eslint-disable complexity */
 
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {Grid, Image, Button} from 'semantic-ui-react';
-import {updateUserOnServer} from '../store/user';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Grid, Image, Button, Icon } from 'semantic-ui-react';
+import { updateUserOnServer } from '../store/user';
 import SingleRestaurantMap from './singleRestaurantMap';
 import ReactStars from 'react-stars';
-import {StyledTitle} from './styledComponents';
-import {updateCheckInOnServer} from '../store/checkin';
-import {fetchGeolocation} from '../store/map';
+import { StyledTitle } from './styledComponents';
+import { updateCheckInOnServer } from '../store/checkin';
+import { fetchGeolocation } from '../store/map';
+import PropTypes from 'prop-types';
 
 const mapStateToProps = state => ({
   restaurant: state.restaurant.oneRestaurant,
@@ -39,7 +40,7 @@ export class SingleRestaurant extends Component {
   };
 
   static contextTypes = {
-    router: () => true
+    router: PropTypes.object
   };
 
   render() {
@@ -48,9 +49,23 @@ export class SingleRestaurant extends Component {
 
     if (restaurant) {
       return (
-        <div>
-          <br />
+        < div >
           <Grid stackable>
+            <Button
+              onClick={this.context.router.history.goBack}
+              basic
+              style={{
+                marginLeft: '15px',
+                marginTop: '7px',
+                height: '3vh',
+                padding: '1px',
+                paddingRight: '10px'
+              }}
+            >
+              <Icon name="angle left" color="black" />
+              Back
+            </Button>
+
             <Grid.Column computer={5} mobile={10}>
               {restaurant.yelpResults.image_url && (
                 <Image src={restaurant.yelpResults.image_url} />
@@ -58,40 +73,12 @@ export class SingleRestaurant extends Component {
               <StyledTitle>{restaurant.name}</StyledTitle>
               <br />
               <div />
-              <br />
-
               <Button
                 fluid
                 className="ui color1 button"
                 onClick={this.handleCheckIn}
               >
                 Check In Here
-              </Button>
-              <br />
-
-              <Button
-                fluid
-                primary
-                onClick={() =>
-                  window.open(
-                    `https://www.google.com/maps/dir/${this.props.userLocation
-                      .lat - 0.00980448932},${this.props.userLocation.lng +
-                      0.0088983}/${restaurant.location[0]},${
-                      restaurant.location[1]
-                    }/@${this.props.userLocation.lat},${
-                      this.props.userLocation.lng
-                    },14z`,
-                    '_blank'
-                  )
-                }
-              >
-                Get Directions
-              </Button>
-
-              <br />
-
-              <Button fluid onClick={this.context.router.history.goBack}>
-                Go Back
               </Button>
               {restaurant.radiusRating && (
                 <div>
@@ -103,7 +90,6 @@ export class SingleRestaurant extends Component {
                     half={true}
                     edit={false}
                     color2="#35b3bf"
-                    // size="25px"
                   />
                 </div>
               )}
@@ -135,13 +121,32 @@ export class SingleRestaurant extends Component {
               {price === 3 && <p>Price Level: $$$</p>}
               {price === 4 && <p>Price Level: $$$$</p>}
               <p>Address: {restaurant.vicinity}</p>
+              <br />
+              <Button
+                fluid
+                className="ui color1 button"
+                onClick={() =>
+                  window.open(
+                    `https://www.google.com/maps/dir/${this.props.userLocation
+                      .lat - 0.0092787},${this.props.userLocation.lng +
+                      0.008707}/${restaurant.location[0]},${
+                    restaurant.location[1]
+                    }/@${this.props.userLocation.lat},${
+                    this.props.userLocation.lng
+                    },14z`,
+                    '_blank'
+                  )
+                }
+              >
+                Get Directions
+              </Button>
+              <br />
             </Grid.Column>
-
             <Grid.Column computer={6} mobile={10}>
               <SingleRestaurantMap />
             </Grid.Column>
           </Grid>
-        </div>
+        </div >
       );
     } else return <h3>Sorry, we could not find this restaurant</h3>;
   }

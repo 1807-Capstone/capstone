@@ -45,8 +45,8 @@ export class UserHome extends Component {
               <Divider />
               <Image src="img/profile.jpg" circular size="small" centered />
               <Divider hidden />
-              <Container centered>
-                <Button basic as={Link} to="/visited" centered>
+              <Container centered="true">
+                <Button basic as={Link} to="/visited" centered="true">
                   Restaurants Visited
                 </Button>
                 <br />
@@ -54,7 +54,7 @@ export class UserHome extends Component {
                   basic
                   onClick={this.handleLogout.bind(this)}
                   size="mini"
-                  centered
+                  centered="true"
                 >
                   Logout
                 </Button>

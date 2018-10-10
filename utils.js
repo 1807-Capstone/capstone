@@ -234,6 +234,13 @@ const yelpQueryMakerTwo = googleResultsArray => {
   return finalQuery;
 };
 
+function convertMetersToDiffLatLng(meters, latitude) {
+  let radius = 6378137;
+  let differenceLat = meters / radius;
+  let differenceLng = meters / (radius * Math.cos(Math.PI * latitude / 180));
+  return [differenceLat * 180 / Math.PI, differenceLng * 180 / Math.PI];
+}
+
 module.exports = {
   cleanAddress,
   cleanCity,
@@ -241,5 +248,6 @@ module.exports = {
   yelpQueryMakerOne,
   yelpQueryMakerTwo,
   yelpQueryMaker,
-  getRadius
+  getRadius,
+  convertMetersToDiffLatLng
 };

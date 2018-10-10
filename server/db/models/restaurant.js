@@ -15,6 +15,12 @@ const Restaurant = db.define(
       type: Sequelize.ARRAY(Sequelize.FLOAT),
       allowNull: false
     },
+    lat: {
+      type: Sequelize.FLOAT
+    },
+    lng: {
+      type: Sequelize.FLOAT
+    },
     price_level: {
       type: Sequelize.INTEGER,
       allowNull: false,
@@ -65,5 +71,11 @@ const Restaurant = db.define(
     }
   }
 );
+
+Restaurant.afterValidate(restaurant => {
+  const [lat, lng] = restaurant.location;
+  restaurant.lat = lat;
+  restaurant.lng = lng;
+});
 
 module.exports = Restaurant;

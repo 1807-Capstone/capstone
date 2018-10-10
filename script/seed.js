@@ -43,7 +43,7 @@ async function seed() {
       rating: 3.6,
       yelpRating: 4.5,
       radiusRating: 5,
-      yelpImg: 'img/wonderbar.jpg',
+      yelpImg: 'https://b.zmtcdn.com/data/pictures/1/16757421/8facfe78e85d14fb3b609fc1876d23d7.jpg',
       keyword: 'american',
       vicinity: '710 N Clark St, Chicago'
     }),

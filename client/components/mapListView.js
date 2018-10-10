@@ -39,15 +39,17 @@ class MapList extends Component {
             <MapOverlay>
               <Item.Group divided>
                 {this.props.restaurants.map((restaurant, index) => (
-                  <Name
-                    key={restaurant.name}
-                    // onClick={() => this.handleRestaurantClick(restaurant.name)}
-                    // as={Link}
-                    // to={`/restaurants/${restaurant.name}`}
-                  >
+                  // <Item.Content
+                  //   key={restaurant.place_id}
+                  //   onClick={() => this.handleRestaurantClick(restaurant.name)}
+                  //   as={Link}
+                  //   to={`/restaurants/${restaurant.name}`}
+                  // >
+                  <Name key={restaurant.place_id}>
                     {index + 1}: {restaurant.name}
                     <br />
                   </Name>
+                  // </Item.Content>
                 ))}
               </Item.Group>
             </MapOverlay>

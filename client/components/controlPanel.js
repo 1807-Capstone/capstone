@@ -1,65 +1,30 @@
 import React, {Component} from 'react';
 import {fromJS} from 'immutable';
-
+import {Button} from 'semantic-ui-react';
 
 // const OdefaultMapStyle = fromJS(MAP_STYLE);
 
 const categories = ['waittimes'];
 
 // Layer id patterns by category
-const layerSelector = {
-  waittimes: /waittimes/
-};
 
 const defaultContainer = ({children}) => (
   <div className="control-panel">{children}</div>
 );
 
 export default class StyleControls extends Component {
-  constructor(props) {
-    super(props);
-
-    this.dataLayers = this.props.dataLayers;
-
-    this.state = {
-      visibility: {
-        waittimes: true
-      }
-    };
-  }
-
-  componentDidMount() {
-    this.updateMapStyle(this.state);
-  }
-
-  onVisibilityChange(name, event) {
-    const visibility = {...this.state.visibility, [name]: event.target.checked};
-    this.setState({visibility});
-    this.updateMapStyle({...this.state, visibility});
-  }
-
-  updateMapStyle({visibility}) {
-    const dataLayers = this.props.dataLayers;
-    const layers = this.dataLayers.filter(layer => {
-      const id = layer.id
-      return categories.every(
-        name => visibility[name] || !layerSelector[name].test(id)
-      );
-    });
-
-    // this.props.onChange(dataLayers.set('layers', layers));
-  }
-
-  renderLayerControl(name) {
-    const {visibility} = this.state;
+  renderLayerControl() {
+    const toggleHeatMap = this.props.toggleHeatMap;
+    const heatMap = this.props.heatMap;
 
     return (
-      <div key={name} className="input">
-        <label>Wait Times</label>
-        <input
-          type="checkbox"
-          checked={visibility[name]}
-          onChange={this.onVisibilityChange.bind(this, name)}
+      <div key={name}>
+        <img src="/img/key2.png" />
+        <Button
+          circular
+          icon={heatMap ? 'circle' : 'circle outline'}
+          color={heatMap ? 'orange' : null}
+          onClick={toggleHeatMap}
         />
       </div>
     );

@@ -32,7 +32,7 @@ const DesktopNavbar = ({handleClick, isLoggedIn}) => (
   <Box>
     <Menu secondary size="mini">
       <Menu.Item>
-        <Image m src="img/logo_transparent.png" size="tiny" />
+        <Image src="img/logo_transparent.png" size="tiny" />
       </Menu.Item>
       <Header>RADIUS</Header>
       {isLoggedIn ? (

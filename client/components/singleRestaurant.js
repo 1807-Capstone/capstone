@@ -6,15 +6,18 @@ import SingleRestaurantMap from './singleRestaurantMap';
 import ReactStars from 'react-stars';
 import {StyledTitle} from './styledComponents';
 import {updateCheckInOnServer} from '../store/checkin';
+import {fetchGeolocation} from '../store/map';
 
 const mapStateToProps = state => ({
   restaurant: state.restaurant.oneRestaurant,
-  user: state.user
+  user: state.user,
+  userLocation: state.map.location
 });
 
 const mapDispatchToProps = dispatch => ({
   triggerCheckIn: user => dispatch(updateUserOnServer(user, 'didCheckIn')),
-  addCheckIn: checkIn => dispatch(updateCheckInOnServer(checkIn))
+  addCheckIn: checkIn => dispatch(updateCheckInOnServer(checkIn)),
+  fetchGeolocation: () => dispatch(fetchGeolocation())
 });
 
 export class SingleRestaurant extends Component {
@@ -38,6 +41,8 @@ export class SingleRestaurant extends Component {
 
   render() {
     const restaurant = this.props.restaurant;
+    const price = restaurant.price_level;
+    
     if (restaurant) {
       return (
         <div>
@@ -47,21 +52,45 @@ export class SingleRestaurant extends Component {
               <Image src={restaurant.yelpResults.image_url} />
               <StyledTitle>{restaurant.name}</StyledTitle>
               <br />
-              <div>
-                <Button
-                  basic
-                  fluid
-                  onClick={this.context.router.history.goBack}
-                >
-                  Go Back
-                </Button>
-              </div>
+              <div />
               <br />
-              <Button basic onClick={this.handleCheckIn}>
+
+              <Button
+                fluid
+                className="ui color1 button"
+                onClick={this.handleCheckIn}
+              >
                 Check In Here
               </Button>
               <br />
+
+              <Button
+                fluid
+                primary
+                onClick={() =>
+                  window.open(
+                    `https://www.google.com/maps/dir/${this.props.userLocation
+                      .lat - 0.00980448932},${this.props.userLocation.lng +
+                      0.0088983}/${restaurant.location[0]},${
+                      restaurant.location[1]
+                    }/@${this.props.userLocation.lat},${
+                      this.props.userLocation.lng
+                    },14z`,
+                    '_blank'
+                  )
+                }
+              >
+                Get Directions
+              </Button>
+
+              <br />
+
+              <Button fluid onClick={this.context.router.history.goBack}>
+                Go Back
+              </Button>
+
               <div>
+                <br />
                 Radius Rating:
                 <ReactStars
                   count={5}
@@ -92,9 +121,14 @@ export class SingleRestaurant extends Component {
                   color2="#C58600"
                 />
               </div>
-              <p>Price Level:{restaurant.price_level}</p>
+              <br />
+              {price === 1 && <p>Price Level: $</p>}
+              {price === 2 && <p>Price Level: $$</p>}
+              {price === 3 && <p>Price Level: $$$</p>}
+              {price === 4 && <p>Price Level: $$$$</p>}
               <p>Address: {restaurant.vicinity}</p>
             </Grid.Column>
+
             <Grid.Column computer={6} mobile={10}>
               <SingleRestaurantMap />
             </Grid.Column>

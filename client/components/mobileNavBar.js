@@ -6,22 +6,6 @@ import {logout} from '../store';
 import {Menu, Image, Icon, Button, Divider, Sidebar} from 'semantic-ui-react';
 import styled from 'styled-components';
 
-const Header = styled.h1`
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 5px;
-  width: 100vw;
-  height: 4vh;
-  position: absolute;
-  padding-top: 5px;
-  text-align: center;
-`;
-const Box = styled.div`
-  width: 100vw;
-  height: 6vh;
-`;
-
 const Block = styled.div`
   height: 55vh;
   background: white;

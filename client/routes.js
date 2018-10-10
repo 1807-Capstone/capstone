@@ -32,15 +32,15 @@ class Routes extends Component {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route exact path="/restaurants" component={AllRestaurants} />
+        <Route path="/filter" component={Filter} />
         <Route path="/home" component={HomePage} />
+        <Route path="/map" component={ReactMap} />
+        <Route path="/restaurants/:name" component={SingleRestaurant} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}
             <Route path="/account" component={UserHome} />
             <Route path="/visited" component={UserRestaurants} />
-            <Route path="/filter" component={Filter} />
-            <Route path="/map" component={ReactMap} />
-            <Route path="/restaurants/:name" component={SingleRestaurant} />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}

@@ -40,13 +40,9 @@ export class SingleRestaurant extends Component {
   };
 
   render() {
-    console.log(this.props);
     const restaurant = this.props.restaurant;
-    console.log(restaurant);
     const price = restaurant.price_level;
-
-    console.log('restaurant location', restaurant.location);
-
+    
     if (restaurant) {
       return (
         <div>

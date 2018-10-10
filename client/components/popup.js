@@ -92,7 +92,7 @@ class PopUp extends React.Component {
                         value={this.state.rating}
                         edit={true}
                         half={true}
-                        color="35b3bf"
+                        color2="#35b3bf"
                         onChange={this.selectRating}
                       />
                     </div>

@@ -125,11 +125,13 @@ label {
 }
 
 @media (max-width: 992px) {
-  #mapForm > .ui.form select {
+  #mapForm .ui.form select {
     width: 30vw !important;
+    outline: none !important;
   }
   #mapForm label {
     width: 25vw;
+    outline: none !important;
   }
   #mapForm .ui.grid {
     margin-left: -4rem !important;

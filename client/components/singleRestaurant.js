@@ -128,8 +128,8 @@ export class SingleRestaurant extends Component {
                 onClick={() =>
                   window.open(
                     `https://www.google.com/maps/dir/${this.props.userLocation
-                      .lat - 0.0092787},${this.props.userLocation.lng +
-                      0.008707}/${restaurant.location[0]},${
+                      .lat},${this.props.userLocation.lng
+                 }/${restaurant.location[0]},${
                     restaurant.location[1]
                     }/@${this.props.userLocation.lat},${
                     this.props.userLocation.lng

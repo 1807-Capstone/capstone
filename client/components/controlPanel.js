@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 import React, {Component} from 'react';
 import {fromJS} from 'immutable';
 import {Button} from 'semantic-ui-react';
@@ -22,7 +23,9 @@ export default class StyleControls extends Component {
     const toggleNightMode = this.props.toggleNightMode;
     return (
       <div key={1} style={{textAlign: 'right'}}>
-        <img src="/img/waittimes.png" />
+        <img
+          src={nightMode ? '/img/waittimesnightmode.png' : '/img/waittimes.png'}
+        />
         <Button
           circular
           icon={heatMap ? 'circle' : 'circle outline'}
@@ -30,7 +33,11 @@ export default class StyleControls extends Component {
           onClick={toggleHeatMap}
         />
         <br />
-        <img src="/img/usertraffic.png" />
+        <img
+          src={
+            nightMode ? '/img/usertrafficnightmode.png' : '/img/usertraffic.png'
+          }
+        />
         <Button
           circular
           icon={checkInMap ? 'circle' : 'circle outline'}

@@ -683,6 +683,1264 @@ async function seed() {
         'https://s3-media3.fl.yelpcdn.com/bphoto/2WwXys5CuBKXKTEFqUVjRw/o.jpg',
       vicinity: '1 East Upper Wacker Drive, Chicago',
       keyword: 'steakhouse'
+    }),
+    Restaurant.create({
+      name: 'Los Portales Mexican Restaurant',
+      location: [42.0080956, -87.6667577],
+      price_level: 1,
+      rating: 4.2,
+      yelpRating: 3,
+      radiusRating: 3.6,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/TcR6HpRk9gNVhr9ZqlJ2xQ/o.jpg',
+      keyword: null,
+      vicinity: '1418 West Morse Avenue'
+    }),
+    Restaurant.create({
+      name: 'Heartland Cafe',
+      location: [42.0092743, -87.6663797],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 3,
+      radiusRating: 3.6,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/sdf8kyQGWwkOB35tCfLhjA/o.jpg',
+      keyword: null,
+      vicinity: '7000 North Glenwood Avenue'
+    }),
+    Restaurant.create({
+      name: 'Tahoora Sweets & Bakery',
+      location: [41.997485, -87.68927],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 3.5,
+      radiusRating: 3.85,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/X1WGZ5T8m0HkHJl2DhcRWQ/o.jpg',
+      keyword: null,
+      vicinity: '2345 West Devon Avenue'
+    }),
+    Restaurant.create({
+      name: 'Sabri Nihari Restaurant',
+      location: [41.9978153, -87.6925613],
+      price_level: 2,
+      rating: 4.1,
+      yelpRating: 3.5,
+      radiusRating: 3.8,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/dBuvm_xhxG6zxUcxJsYwDw/o.jpg',
+      keyword: null,
+      vicinity: '1970'
+    }),
+    Restaurant.create({
+      name: 'Ghareeb Nawaz Restaurant',
+      location: [41.9980708, -87.6815765],
+      price_level: 1,
+      rating: 4.1,
+      yelpRating: 4,
+      radiusRating: 4.05,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/WZ3RP3XYLbiLz32Sty-7Ag/o.jpg',
+      keyword: null,
+      vicinity: '2032 West Devon Avenue'
+    }),
+    Restaurant.create({
+      name: 'San Soo Gab San',
+      location: [41.977527, -87.688737],
+      price_level: 2,
+      rating: 3.8,
+      yelpRating: 3.5,
+      radiusRating: 3.65,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/_dVuql6f6kYYFUckVrl96A/o.jpg',
+      keyword: null,
+      vicinity: '5247 North Western Avenue'
+    }),
+    Restaurant.create({
+      name: 'Pueblito Viejo',
+      location: [41.9804124, -87.692503],
+      price_level: 2,
+      rating: 4.3,
+      yelpRating: 3.5,
+      radiusRating: 3.9,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/-r4xqox2i2JuNESVrwPRPg/o.jpg',
+      keyword: null,
+      vicinity: '5429 North Lincoln Avenue'
+    }),
+    Restaurant.create({
+      name: 'Jibek Jolu',
+      location: [41.9731882, -87.6912697],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/wkWltRo1JaBS4DXWtDp64Q/o.jpg',
+      keyword: null,
+      vicinity: '5047 North Lincoln Avenue'
+    }),
+    Restaurant.create({
+      name: 'Over Easy Café',
+      location: [41.971818, -87.679138],
+      price_level: 2,
+      rating: 4.7,
+      yelpRating: 4.5,
+      radiusRating: 4.6,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/TYaCoftc_iCJXfiUyRMPQQ/o.jpg',
+      keyword: null,
+      vicinity: '4943 North Damen Avenue'
+    }),
+    Restaurant.create({
+      name: 'The Bongo Room',
+      location: [41.9731796, -87.6683478],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/sXh2yw2w2l4dcTzoXZ95DA/o.jpg',
+      keyword: null,
+      vicinity: '5022 North Clark Street'
+    }),
+    Restaurant.create({
+      name: 'Fat Rice',
+      location: [41.9319416, -87.7023701],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/qbIhsnJztgtmabvxQW46jw/o.jpg',
+      keyword: null,
+      vicinity: '2957 West Diversey Avenue'
+    }),
+    Restaurant.create({
+      name: 'The Chicago Diner, Logan Square',
+      location: [41.9237, -87.698444],
+      price_level: 2,
+      rating: 4.7,
+      yelpRating: 4.5,
+      radiusRating: 4.6,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/J67tHzydLXAe50f6dvS_RQ/o.jpg',
+      keyword: null,
+      vicinity: '2333 North Milwaukee Avenue'
+    }),
+    Restaurant.create({
+      name: 'The Rocking Horse',
+      location: [41.927503, -87.704527],
+      price_level: 1,
+      rating: 4.2,
+      yelpRating: 3.5,
+      radiusRating: 3.85,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/boyFHzzf8P_o0NkHjEKR_w/o.jpg',
+      keyword: null,
+      vicinity: '2535 North Milwaukee Avenue'
+    }),
+    Restaurant.create({
+      name: 'Candlelite Chicago',
+      location: [42.01746, -87.6905592],
+      price_level: 2,
+      rating: 4.3,
+      yelpRating: null,
+      radiusRating: 4.3,
+      yelpImg: null,
+      keyword: null,
+      vicinity: '1734'
+    }),
+    Restaurant.create({
+      name: 'Restaurante Cuetzala Gro',
+      location: [42.015525, -87.675356],
+      price_level: 1,
+      rating: 4.7,
+      yelpRating: 4.5,
+      radiusRating: 4.6,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/jM-JdUQgnJDxV2_EpwgPBw/o.jpg',
+      keyword: null,
+      vicinity: '7360 North Clark Street'
+    }),
+    Restaurant.create({
+      name: 'Nueva Italy Pizzeria',
+      location: [42.0116809, -87.6742672],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 4,
+      radiusRating: 4.1,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/gkdzpNS5RdP6RyRm3vPPog/o.jpg',
+      keyword: null,
+      vicinity: '2407'
+    }),
+    Restaurant.create({
+      name: 'Little Caesars Pizza',
+      location: [42.0091908, -87.6735726],
+      price_level: 1,
+      rating: 3.9,
+      yelpRating: 3.5,
+      radiusRating: 3.7,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/UFxKp1vaGv1C-OTIRRmHiw/o.jpg',
+      keyword: null,
+      vicinity: '7001 North Clark Street'
+    }),
+    Restaurant.create({
+      name: 'Taste of Peru',
+      location: [42.0013232, -87.6712749],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/wtl2fpBqBynSpFZ6zn0HNw/o.jpg',
+      keyword: null,
+      vicinity: '6545 North Clark Street'
+    }),
+    Restaurant.create({
+      name: 'Firehouse Grill',
+      location: [42.03203, -87.679215],
+      price_level: 2,
+      rating: 3.9,
+      yelpRating: 3,
+      radiusRating: 3.45,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/TAbcQw8dFCXUlqVHjtWIYA/o.jpg',
+      keyword: null,
+      vicinity: '750 Chicago Avenue'
+    }),
+    Restaurant.create({
+      name: 'Lucky Platter',
+      location: [42.0338098, -87.6783881],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 3.5,
+      radiusRating: 4,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/cmQXA4zcrini7Kjh-v_D1w/o.jpg',
+      keyword: null,
+      vicinity: '514 Main Street'
+    }),
+    Restaurant.create({
+      name: 'Udupi Palace Restaurant',
+      location: [41.997479, -87.694005],
+      price_level: 2,
+      rating: 3.4,
+      yelpRating: 3.5,
+      radiusRating: 3.45,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/0Hs6wH3_Pvv1V5iPcaQ6fQ/o.jpg',
+      keyword: null,
+      vicinity: '1841'
+    }),
+    Restaurant.create({
+      name: 'Websters Wine Bar Chicago',
+      location: [41.9290404, -87.7071021],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/sLq9ZM-UIZCP7SFz2QnytQ/o.jpg',
+      keyword: null,
+      vicinity: '2601 North Milwaukee Avenue'
+    }),
+    Restaurant.create({
+      name: 'Longman & Eagle',
+      location: [41.9300853, -87.7071462],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/K4dJvbjFx-dMpYUVxY-vTA/o.jpg',
+      keyword: null,
+      vicinity: '2657 North Kedzie Avenue'
+    }),
+    Restaurant.create({
+      name: 'Jam',
+      location: [41.9335943, -87.7071875],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: 3.5,
+      radiusRating: 4,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/WhWdgwE_bLYd8xVTOnFfEA/o.jpg',
+      keyword: null,
+      vicinity: '2853 North Kedzie Avenue'
+    }),
+    Restaurant.create({
+      name: 'Argo Georgian Bakery',
+      location: [41.9976908, -87.7002285],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/w8DD0ce5OMD6HqUU3g9IGg/o.jpg',
+      keyword: null,
+      vicinity: '2812 West Devon Avenue'
+    }),
+    Restaurant.create({
+      name: 'Owen & Engine',
+      location: [41.9304682, -87.6881636],
+      price_level: 2,
+      rating: 4.7,
+      yelpRating: 4,
+      radiusRating: 4.35,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/6w2liTJDOuCjhG2t7uFy1A/o.jpg',
+      keyword: null,
+      vicinity: '2700 North Western Avenue'
+    }),
+    Restaurant.create({
+      name: 'Estrella Negra',
+      location: [41.925, -87.6870783],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/f0XyrBcn4SKI41xltyPbgA/o.jpg',
+      keyword: null,
+      vicinity: '2346 West Fullerton Avenue'
+    }),
+    Restaurant.create({
+      name: 'Ramen Wasabi',
+      location: [41.9194968, -87.6914874],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/Tv5wtUME7PQRPjwf5tQCdg/o.jpg',
+      keyword: null,
+      vicinity: '2101 North Milwaukee Avenue'
+    }),
+    Restaurant.create({
+      name: 'Irazu',
+      location: [41.9154821, -87.6850766],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: null,
+      radiusRating: 4.5,
+      yelpImg: null,
+      keyword: null,
+      vicinity: '1865 North Milwaukee Avenue'
+    }),
+    Restaurant.create({
+      name: 'My Pi Pizza',
+      location: [41.918339, -87.678079],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/AEPppNM4fzEzphASDTjIaA/o.jpg',
+      keyword: null,
+      vicinity: '2010 North Damen Avenue E'
+    }),
+    Restaurant.create({
+      name: 'The Bristol',
+      location: [41.921046, -87.678002],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/EfJUMMFhY5S1vkiHdV6GQQ/o.jpg',
+      keyword: null,
+      vicinity: '2152 North Damen Avenue'
+    }),
+    Restaurant.create({
+      name: 'Vienna Beef Factory Store & Cafe',
+      location: [41.9263561, -87.6775825],
+      price_level: 1,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/WdXTnzq0llLkw9io_XLocA/o.jpg',
+      keyword: null,
+      vicinity: '2501 North Damen Avenue'
+    }),
+    Restaurant.create({
+      name: "Steak 'n Shake",
+      location: [42.0267871, -87.7068467],
+      price_level: 1,
+      rating: 3.7,
+      yelpRating: 2.5,
+      radiusRating: 3.1,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/7bSm1f7W71jf__mnd1d25A/o.jpg',
+      keyword: null,
+      vicinity: '2209 Oakton Street'
+    }),
+    Restaurant.create({
+      name: '90 Miles Cuban Cafe',
+      location: [41.917692, -87.691817],
+      price_level: 2,
+      rating: 4.3,
+      yelpRating: 4,
+      radiusRating: 4.15,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/Ms_SObwYCBBlJdAvFWD9Tg/o.jpg',
+      keyword: null,
+      vicinity: '2540 West Armitage Avenue'
+    }),
+    Restaurant.create({
+      name: "Kuma's Corner",
+      location: [41.9395522, -87.7004528],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/belsZm6xXyXQsfVvCeBJRg/o.jpg',
+      keyword: null,
+      vicinity: '2900 West Belmont Avenue'
+    }),
+    Restaurant.create({
+      name: 'Honey Butter Fried Chicken',
+      location: [41.9426309, -87.7028216],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/34tUuwT_1kfQRDoWfU3GWA/o.jpg',
+      keyword: null,
+      vicinity: '3361 North Elston Avenue'
+    }),
+    Restaurant.create({
+      name: 'Reggies Chicago',
+      location: [41.8539813, -87.6267559],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 3.5,
+      radiusRating: 3.95,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/e66fxyp9nSRHIeZKUnETXg/o.jpg',
+      keyword: null,
+      vicinity: '2105 South State Street'
+    }),
+    Restaurant.create({
+      name: 'Triple Crown Restaurant',
+      location: [41.852452, -87.631856],
+      price_level: 2,
+      rating: 4.1,
+      yelpRating: 3.5,
+      radiusRating: 3.8,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/i9bEIXLqb2qUx4lIEXbrag/o.jpg',
+      keyword: null,
+      vicinity: '2217 South Wentworth Avenue'
+    }),
+    Restaurant.create({
+      name: 'Cai',
+      location: [41.854543, -87.6322579],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 3.5,
+      radiusRating: 3.85,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/vJIPg1b9mTUFebkdhwuqfQ/o.jpg',
+      keyword: null,
+      vicinity: '2100 South Archer Avenue'
+    }),
+    Restaurant.create({
+      name: 'Chilam Balam',
+      location: [41.9372248, -87.6441305],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 3.5,
+      radiusRating: 4,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/zNzeDMdLbS4ffdcajaLLlw/o.jpg',
+      keyword: null,
+      vicinity: '3023 North Broadway'
+    }),
+    Restaurant.create({
+      name: 'Chicago Diner',
+      location: [41.9440181, -87.6492138],
+      price_level: 2,
+      rating: 4.7,
+      yelpRating: 4,
+      radiusRating: 4.35,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/XeX9rBrRaVDphaE6lLFuGQ/o.jpg',
+      keyword: null,
+      vicinity: '3411 North Halsted Street'
+    }),
+    Restaurant.create({
+      name: "Pequod's Pizza",
+      location: [41.921885, -87.6644455],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/jlB3XA4XnnoU6omD9TSk5Q/o.jpg',
+      keyword: null,
+      vicinity: '2207 North Clybourn Avenue'
+    }),
+    Restaurant.create({
+      name: 'Floriole Cafe & Bakery',
+      location: [41.9218346, -87.6591992],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/prPNLCR8ZKNcsUs5jjWcGg/o.jpg',
+      keyword: null,
+      vicinity: '1220 West Webster Avenue'
+    }),
+    Restaurant.create({
+      name: 'Cafe Ba-Ba-Reeba!',
+      location: [41.9189836, -87.6486878],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/jMNRpAcS1sPTAcSSTfCDrg/o.jpg',
+      keyword: null,
+      vicinity: '2024 North Halsted Street'
+    }),
+    Restaurant.create({
+      name: 'Chicago Pizza and Oven Grinder Company',
+      location: [41.920771, -87.6373581],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/11hDAi0npubr65KFVRcJ1Q/o.jpg',
+      keyword: null,
+      vicinity: '2121 North Clark Street'
+    }),
+    Restaurant.create({
+      name: 'Balena - Temporarily Closed',
+      location: [41.912034, -87.648149],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/yP1thyrm9J_KrFjwicowXw/o.jpg',
+      keyword: null,
+      vicinity: '1633 North Halsted Street'
+    }),
+    Restaurant.create({
+      name: "Connie's Pizza",
+      location: [41.8491836, -87.6408601],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 3.5,
+      radiusRating: 3.95,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/BTeJejAPQNCd4XkAmz1tQA/o.jpg',
+      keyword: null,
+      vicinity: '2373 South Archer Avenue'
+    }),
+    Restaurant.create({
+      name: 'Han 202 Restaurant',
+      location: [41.837921, -87.641748],
+      price_level: 2,
+      rating: 4.8,
+      yelpRating: 4,
+      radiusRating: 4.4,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/VT7bch9ehJhqknFOM8grsA/o.jpg',
+      keyword: null,
+      vicinity: '605 West 31st Street'
+    }),
+    Restaurant.create({
+      name: 'nana',
+      location: [41.8345012, -87.64605],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/GUko2hbYUaPCakg5M_W56w/o.jpg',
+      keyword: null,
+      vicinity: '3267 South Halsted Street'
+    }),
+    Restaurant.create({
+      name: 'Buffalo Wings & Rings',
+      location: [41.8316161, -87.6462546],
+      price_level: 2,
+      rating: 4.1,
+      yelpRating: 3,
+      radiusRating: 3.55,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/NMXMhFgjYdG_yqYNxT6PWg/o.jpg',
+      keyword: null,
+      vicinity: '3434 South Halsted Street'
+    }),
+    Restaurant.create({
+      name: "Chicago's Home of Chicken & Waffles",
+      location: [41.8224587, -87.6165072],
+      price_level: 2,
+      rating: 4.1,
+      yelpRating: 3.5,
+      radiusRating: 3.8,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/1nIilxbWoCAq4DIMTCJp9g/o.jpg',
+      keyword: null,
+      vicinity: '3947 South King Drive'
+    }),
+    Restaurant.create({
+      name: 'Acadia',
+      location: [41.85904, -87.6252412],
+      price_level: 4,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/cm9sXwtOMxTPD3G6Uo2u1w/o.jpg',
+      keyword: null,
+      vicinity: '1639 South Wabash Avenue'
+    }),
+    Restaurant.create({
+      name: 'Ada Street',
+      location: [41.9124417, -87.6624316],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/reSkThL4K0SDPkMNXZZQQQ/o.jpg',
+      keyword: null,
+      vicinity: '1664 North Ada Street'
+    }),
+    Restaurant.create({
+      name: 'Noodles and Company',
+      location: [41.9176804, -87.6599992],
+      price_level: 1,
+      rating: 4,
+      yelpRating: 3.5,
+      radiusRating: 3.75,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/k2T3eri0hoK_G7_C0ExBRQ/o.jpg',
+      keyword: null,
+      vicinity: '2000 North Clybourn Avenue'
+    }),
+    Restaurant.create({
+      name: 'Azteca Grill',
+      location: [41.9498541, -87.6583944],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 4,
+      radiusRating: 4.1,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/-txywtozomBqL6XrIrFbiw/o.jpg',
+      keyword: null,
+      vicinity: '3731 North Clark Street'
+    }),
+    Restaurant.create({
+      name: 'Tango Sur',
+      location: [41.9507772, -87.6638525],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/EiI7sh3K5jpB9dWCTPwwbg/o.jpg',
+      keyword: null,
+      vicinity: '3763 North Southport Avenue'
+    }),
+    Restaurant.create({
+      name: "Kroll's South Loop",
+      location: [41.858007, -87.624199],
+      price_level: 2,
+      rating: 4.1,
+      yelpRating: 3,
+      radiusRating: 3.55,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/QwIlQPwCP5YQLccgpyMxwA/o.jpg',
+      keyword: null,
+      vicinity: '1736 South Michigan Avenue'
+    }),
+    Restaurant.create({
+      name: 'Weather Mark Tavern',
+      location: [41.8619084, -87.6236391],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 3.5,
+      radiusRating: 3.85,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/Ot-CM_xBv8im2ehBQ5kMGA/o.jpg',
+      keyword: null,
+      vicinity: '1503 Michigan Avenue'
+    }),
+    Restaurant.create({
+      name: 'The Chicago Firehouse Restaurant',
+      location: [41.8639646, -87.6237626],
+      price_level: 3,
+      rating: 4.4,
+      yelpRating: 3.5,
+      radiusRating: 3.95,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/cFnaDTvya9RY51-uwxB2Nw/o.jpg',
+      keyword: null,
+      vicinity: '1401 South Michigan Avenue'
+    }),
+    Restaurant.create({
+      name: "Jason's Deli",
+      location: [41.865574, -87.640241],
+      price_level: 2,
+      rating: 4.3,
+      yelpRating: 3.5,
+      radiusRating: 3.9,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/eVFz28R2PzxAF5euGnf2MA/o.jpg',
+      keyword: null,
+      vicinity: '1258 South Canal Street'
+    }),
+    Restaurant.create({
+      name: "Martyrs'",
+      location: [41.9519563, -87.6770555],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/DpliljoppjvvLwxN1_lNgQ/o.jpg',
+      keyword: null,
+      vicinity: '3855 North Lincoln Avenue'
+    }),
+    Restaurant.create({
+      name: 'The Globe Pub',
+      location: [41.9544097, -87.6777563],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/wZ8DFKub72WHefVTDiOXtA/o.jpg',
+      keyword: null,
+      vicinity: '1934 West Irving Park Road'
+    }),
+    Restaurant.create({
+      name: 'Jai Yen Restaurant',
+      location: [41.950078, -87.6492],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 3.5,
+      radiusRating: 3.95,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/giXkumfzm2MVkyBJlCivdQ/o.jpg',
+      keyword: null,
+      vicinity: '3736 North Broadway'
+    }),
+    Restaurant.create({
+      name: 'Houndstooth Saloon',
+      location: [41.943381, -87.653246],
+      price_level: 2,
+      rating: 3.9,
+      yelpRating: 3,
+      radiusRating: 3.45,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/_e-W_BaTTF3PhFC6SpV2yA/o.jpg',
+      keyword: null,
+      vicinity: '3369 North Clark Street'
+    }),
+    Restaurant.create({
+      name: "Domino's Pizza",
+      location: [41.8662532, -87.6403051],
+      price_level: 1,
+      rating: 2.3,
+      yelpRating: 2,
+      radiusRating: 2.15,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/273OR_wfErlDqtbG38ssSA/o.jpg',
+      keyword: null,
+      vicinity: '1234 South Canal Street'
+    }),
+    Restaurant.create({
+      name: 'La Taberna Tapas on Halsted',
+      location: [41.865285, -87.646728],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 3.5,
+      radiusRating: 3.85,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/08yrra40GS9PMhfi_IYMag/o.jpg',
+      keyword: null,
+      vicinity: '5021'
+    }),
+    Restaurant.create({
+      name: 'Skylark',
+      location: [41.8527891, -87.6461986],
+      price_level: 1,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/9zFG9-y59jDa-60vsr2mMQ/o.jpg',
+      keyword: null,
+      vicinity: '2149 South Halsted Street'
+    }),
+    Restaurant.create({
+      name: "Lady Gregory's Irish Bar & Restaurant",
+      location: [41.977892, -87.66856],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 3.5,
+      radiusRating: 3.95,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/XnHrbwzhoThcn06-G6cJVA/o.jpg',
+      keyword: null,
+      vicinity: '5260 North Clark Street'
+    }),
+    Restaurant.create({
+      name: "Hamburger Mary's",
+      location: [41.979961, -87.668526],
+      price_level: 2,
+      rating: 4.3,
+      yelpRating: 3.5,
+      radiusRating: 3.9,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/KIOT7OQulnndVRiSBsxnhQ/o.jpg',
+      keyword: null,
+      vicinity: '5400 North Clark Street'
+    }),
+    Restaurant.create({
+      name: "Maria's Packaged Goods and Community Bar",
+      location: [41.8380761, -87.6511042],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/U9RA6PiuQ-HG0PmVvLc7GA/o.jpg',
+      keyword: null,
+      vicinity: '960 West 31st Street'
+    }),
+    Restaurant.create({
+      name: "Lalo's on maxwell",
+      location: [41.8645979, -87.6464661],
+      price_level: 2,
+      rating: 3.7,
+      yelpRating: 2.5,
+      radiusRating: 3.1,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/J07iExqFQ9B-7QG-AgiILA/o.jpg',
+      keyword: null,
+      vicinity: '733 West Maxwell Street'
+    }),
+    Restaurant.create({
+      name: "Francesca's on Taylor",
+      location: [41.8694511, -87.6617604],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/4inDadwmdEjibeyP1O5-3w/o.jpg',
+      keyword: null,
+      vicinity: '1400 West Taylor Street'
+    }),
+    Restaurant.create({
+      name: 'WestEnd',
+      location: [41.8818017, -87.6607513],
+      price_level: 2,
+      rating: 4.2,
+      yelpRating: 3.5,
+      radiusRating: 3.85,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/5kqU_5NuSsRe4S8HYrv51Q/o.jpg',
+      keyword: null,
+      vicinity: '1326 West Madison Street'
+    }),
+    Restaurant.create({
+      name: 'Bottom Lounge',
+      location: [41.8852404, -87.6617254],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 3.5,
+      radiusRating: 4,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/JlJIzwkjDqb_jtj1vpS6tA/o.jpg',
+      keyword: null,
+      vicinity: '1375 West Lake Street'
+    }),
+    Restaurant.create({
+      name: 'Next',
+      location: [41.886606, -87.651973],
+      price_level: 4,
+      rating: 4.8,
+      yelpRating: 4,
+      radiusRating: 4.4,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/SmDi4jPntxv4wfnpGRh5Rw/o.jpg',
+      keyword: null,
+      vicinity: '953 West Fulton Market'
+    }),
+    Restaurant.create({
+      name: 'Cobra Lounge',
+      location: [41.8863849, -87.6666826],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/_5LtfbwFzd89AQ19V1NiMg/o.jpg',
+      keyword: null,
+      vicinity: '235 North Ashland Avenue'
+    }),
+    Restaurant.create({
+      name: 'Billy Goat Tavern',
+      location: [41.88137, -87.665885],
+      price_level: 1,
+      rating: 4,
+      yelpRating: 2.5,
+      radiusRating: 3.25,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/shFWoXogm7kl_n6NVGzJuQ/o.jpg',
+      keyword: null,
+      vicinity: '1535 West Madison Street'
+    }),
+    Restaurant.create({
+      name: 'Haymarket Pub & Brewery',
+      location: [41.884188, -87.6472815],
+      price_level: 2,
+      rating: 4.3,
+      yelpRating: 3.5,
+      radiusRating: 3.9,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/fAdddNFlJwNX1YJQJ2npaQ/o.jpg',
+      keyword: null,
+      vicinity: '737 West Randolph Street'
+    }),
+    Restaurant.create({
+      name: 'The Publican',
+      location: [41.8865703, -87.6490005],
+      price_level: 3,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/fEu3lTgRSl-Fvcvzqc38Qw/o.jpg',
+      keyword: null,
+      vicinity: '837 West Fulton Market'
+    }),
+    Restaurant.create({
+      name: 'Yu Choy Chinese Restaurant',
+      location: [41.902383, -87.6654788],
+      price_level: 2,
+      rating: 3.2,
+      yelpRating: 1,
+      radiusRating: 2.1,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/TtniEqmcyrewD_3D9INgVw/o.jpg',
+      keyword: null,
+      vicinity: '1146 North Milwaukee Avenue'
+    }),
+    Restaurant.create({
+      name: 'Carbon',
+      location: [41.896371, -87.668643],
+      price_level: 1,
+      rating: 4.3,
+      yelpRating: 3.5,
+      radiusRating: 3.9,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/w_wcwHKwcqNm1VlaUpRylg/o.jpg',
+      keyword: null,
+      vicinity: '810 North Marshfield Avenue'
+    }),
+    Restaurant.create({
+      name: 'Coalfire',
+      location: [41.890838, -87.6598577],
+      price_level: 2,
+      rating: 4.6,
+      yelpRating: 4,
+      radiusRating: 4.3,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/QWLo302K3VHpXtL5EWlBQw/o.jpg',
+      keyword: null,
+      vicinity: '1321 West Grand Avenue'
+    }),
+    Restaurant.create({
+      name: 'Arami',
+      location: [41.8957682, -87.6733207],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/jZ5_DER7jd9B3Hhclby58A/o.jpg',
+      keyword: null,
+      vicinity: '1829 West Chicago Avenue'
+    }),
+    Restaurant.create({
+      name: 'The Boundary Tavern and Grille',
+      location: [41.903357, -87.6762365],
+      price_level: 2,
+      rating: 4,
+      yelpRating: 3,
+      radiusRating: 3.5,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/GDkcisYX3Bbp-aBPnkIrkA/o.jpg',
+      keyword: null,
+      vicinity: '1932 West Division Street'
+    }),
+    Restaurant.create({
+      name: 'Blue Line Lounge & Grill',
+      location: [41.9095818, -87.6777204],
+      price_level: 2,
+      rating: 4.3,
+      yelpRating: 4,
+      radiusRating: 4.15,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/FxzYt4yvWU90AN_uuB8Fdw/o.jpg',
+      keyword: null,
+      vicinity: '1548 North Damen Avenue'
+    }),
+    Restaurant.create({
+      name: 'LOKaL',
+      location: [41.9106249, -87.6753825],
+      price_level: 2,
+      rating: 3.9,
+      yelpRating: 3.5,
+      radiusRating: 3.7,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/d0SXhnGUq20geybZm9M9tw/o.jpg',
+      keyword: null,
+      vicinity: '1904 West North Avenue'
+    }),
+    Restaurant.create({
+      name: 'LOKaL',
+      location: [41.9106249, -87.6753825],
+      price_level: 2,
+      rating: 3.9,
+      yelpRating: 3.5,
+      radiusRating: 3.7,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/d0SXhnGUq20geybZm9M9tw/o.jpg',
+      keyword: null,
+      vicinity: '1904 West North Avenue'
+    }),
+    Restaurant.create({
+      name: 'Mindy’s HotChocolate',
+      location: [41.9136778, -87.6773652],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/fACKXO6vPkJHUCA64oObYg/o.jpg',
+      keyword: null,
+      vicinity: '1747 North Damen Avenue'
+    }),
+    Restaurant.create({
+      name: 'Mott St',
+      location: [41.9071502, -87.6672727],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/YK0JIh49H3u8JxRP3wKQJw/o.jpg',
+      keyword: null,
+      vicinity: '1401 North Ashland Avenue'
+    }),
+    Restaurant.create({
+      name: 'Orange Garden Restaurant',
+      location: [41.9543012, -87.6780497],
+      price_level: 2,
+      rating: 4.1,
+      yelpRating: 3,
+      radiusRating: 3.55,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/Ay5H6_y-kcik70KE7oNeiw/o.jpg',
+      keyword: null,
+      vicinity: '1942 West Irving Park Road'
+    }),
+    Restaurant.create({
+      name: 'Cho Sun Ok Restaurant',
+      location: [41.9579004, -87.6815705],
+      price_level: 1,
+      rating: 4.2,
+      yelpRating: 3.5,
+      radiusRating: 3.85,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/Gb3djDhf1UncqjXYpfdeEw/o.jpg',
+      keyword: null,
+      vicinity: '4200 North Lincoln Avenue'
+    }),
+    Restaurant.create({
+      name: 'Spacca Napoli Pizzeria',
+      location: [41.963201, -87.673795],
+      price_level: 2,
+      rating: 4.7,
+      yelpRating: 4,
+      radiusRating: 4.35,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/wNzXwZlrUFTs_BlsShbOnA/o.jpg',
+      keyword: null,
+      vicinity: '1769 West Sunnyside Avenue'
+    }),
+    Restaurant.create({
+      name: "Gene's Sausage Shop and Delicatessen",
+      location: [41.9678013, -87.6882966],
+      price_level: 2,
+      rating: 4.7,
+      yelpRating: 4.5,
+      radiusRating: 4.6,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/ofTGir7o38T0ZZX1jLw_Wg/o.jpg',
+      keyword: null,
+      vicinity: '4750 North Lincoln Avenue'
+    }),
+    Restaurant.create({
+      name: 'Isla Pilipina Restaurant',
+      location: [41.9682536, -87.6916932],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/G2fO46uG38BrAzA31xnrCQ/o.jpg',
+      keyword: null,
+      vicinity: '2501 West Lawrence Avenue'
+    }),
+    Restaurant.create({
+      name: 'goosefoot',
+      location: [41.9687601, -87.6959234],
+      price_level: 4,
+      rating: 4.8,
+      yelpRating: 4.5,
+      radiusRating: 4.65,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/9SU7KqFFVEdWy0ui5bMg8g/o.jpg',
+      keyword: null,
+      vicinity: '2656 West Lawrence Avenue'
+    }),
+    Restaurant.create({
+      name: 'Sticky Rice',
+      location: [41.954673, -87.688754],
+      price_level: 1,
+      rating: 4.3,
+      yelpRating: 4,
+      radiusRating: 4.15,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/TzXxVGQRkSo5r3o2ZYp4zQ/o.jpg',
+      keyword: null,
+      vicinity: '3727'
+    }),
+    Restaurant.create({
+      name: 'Julius Meinl Restaurant and Cafe',
+      location: [41.9472245, -87.6637245],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media4.fl.yelpcdn.com/bphoto/TO7JY7pn1pfj-pX3lkwVWw/o.jpg',
+      keyword: null,
+      vicinity: '3601 North Southport Avenue'
+    }),
+    Restaurant.create({
+      name: 'Southport Lanes & Billiards',
+      location: [41.9423684, -87.6636562],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 3.5,
+      radiusRating: 3.95,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/rBA6epLb7A6ins2jaO-icQ/o.jpg',
+      keyword: null,
+      vicinity: '3325 North Southport Avenue'
+    }),
+    Restaurant.create({
+      name: 'Nori Sushi Lincoln Park',
+      location: [41.9327569, -87.6535455],
+      price_level: 2,
+      rating: 4.4,
+      yelpRating: 4,
+      radiusRating: 4.2,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/FOIUVQzoXdojxay6B8ritA/o.jpg',
+      keyword: null,
+      vicinity: '954 West Diversey Parkway'
+    }),
+    Restaurant.create({
+      name: "Paddy Long's Beer & Bacon Pub",
+      location: [41.932711, -87.655049],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/IyU_Lpa6vBc726ad7hlkEA/o.jpg',
+      keyword: null,
+      vicinity: '1028 West Diversey Parkway'
+    }),
+    Restaurant.create({
+      name: "Cheesie's Pub & Grub Lakeview",
+      location: [41.94004, -87.653833],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media1.fl.yelpcdn.com/bphoto/S7zLPO7tZ5ixJ2WwR6y6Nw/o.jpg',
+      keyword: null,
+      vicinity: '958 West Belmont Avenue'
+    }),
+    Restaurant.create({
+      name: "Sheffield's Beer & Wine Garden",
+      location: [41.9416409, -87.6543741],
+      price_level: 2,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/QAqvG94U2_8rEwc7Bq1ZSg/o.jpg',
+      keyword: null,
+      vicinity: '3258 North Sheffield Avenue'
+    }),
+    Restaurant.create({
+      name: "Al's Beef",
+      location: [41.9439741, -87.6541031],
+      price_level: 1,
+      rating: 4.3,
+      yelpRating: 3.5,
+      radiusRating: 3.9,
+      yelpImg:
+        'https://s3-media2.fl.yelpcdn.com/bphoto/foOhW6laOtPUdXL1Dx8CcQ/o.jpg',
+      keyword: null,
+      vicinity: '3420 North Clark Street'
+    }),
+    Restaurant.create({
+      name: 'Pasteur',
+      location: [41.9825693, -87.6597405],
+      price_level: 3,
+      rating: 4.3,
+      yelpRating: 4,
+      radiusRating: 4.15,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/I9Mr4IlLJFkMxPEiyIGlxA/o.jpg',
+      keyword: null,
+      vicinity: '5525 North Broadway'
+    }),
+    Restaurant.create({
+      name: 'bopNgrill',
+      location: [42.0027991, -87.6611122],
+      price_level: 1,
+      rating: 4.5,
+      yelpRating: 4,
+      radiusRating: 4.25,
+      yelpImg:
+        'https://s3-media3.fl.yelpcdn.com/bphoto/yTu1FwwIQVVZb-58SlBwZg/o.jpg',
+      keyword: null,
+      vicinity: '6604 North Sheridan Road'
     })
   ]);
 
@@ -1470,9 +2728,30009 @@ async function seed() {
     WaitTime.create({
       time: 30,
       restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 51
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 58
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 140
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 100
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 19
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 152
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 3
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 49
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 66
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 147
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 141
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 6
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 56
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 87
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 126
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 114
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 33
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 79
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 106
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 134
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 154
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 2
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 10
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 92
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 14
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 155
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 137
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 96
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 95
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 73
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 127
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 91
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 135
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 67
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 109
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 59
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 37
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 150
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 24
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 70
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 61
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 107
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 94
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 98
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 21
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 130
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 52
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 43
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 26
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 4
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 71
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 68
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 16
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 41
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 7
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 69
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 125
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 39
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 148
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 103
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 124
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 81
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 160
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 118
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 46
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 40
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 120
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 65
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 88
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 86
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 75
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 72
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 156
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 142
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 136
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 102
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 149
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 17
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 11
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 93
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 22
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 63
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 132
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 80
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 18
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 129
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 57
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 90
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 159
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 1
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 47
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 115
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 5
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 89
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 32
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 23
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 50
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 42
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 151
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 105
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 78
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 8
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 31
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 108
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 153
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 12
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 38
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 55
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 116
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 119
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 28
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 145
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 113
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 35
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 146
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 29
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 74
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 77
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 104
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 143
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 76
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 64
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 34
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 133
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 84
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 25
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 62
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 36
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 45
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 15
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 53
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 128
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 131
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 157
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 111
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 83
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 158
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 101
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 110
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 30
+    }),
+    WaitTime.create({
+      time: 90,
+      restaurantId: 138
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 117
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 48
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 54
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 20
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 82
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 144
+    }),
+    WaitTime.create({
+      time: 0,
+      restaurantId: 122
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 44
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 60
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 123
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 97
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 60,
+      restaurantId: 13
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 85
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 139
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 27
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 112
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 9
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 99
+    }),
+    WaitTime.create({
+      time: 30,
+      restaurantId: 121
+    }),
+    WaitTime.create({
+      time: 15,
+      restaurantId: 41
     })
   ]);
-  console.log(`seeded ${waitTimes.length} check ins`);
+  console.log(`seeded ${waitTimes.length} waittimes`);
 
   console.log(`seeded successfully`);
 
@@ -1574,7 +32832,7 @@ async function seed() {
       restaurantId: 4
     })
   ]);
-  console.log(`seeded ${checkIns.length} wait times`);
+  console.log(`seeded ${checkIns.length} check ins`);
 
   console.log(`seeded successfully`);
 }

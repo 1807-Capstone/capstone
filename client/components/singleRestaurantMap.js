@@ -8,15 +8,17 @@ mapboxgl.accessToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
 
 const mapStateToProps = state => ({
-  restaurant: state.restaurant.oneRestaurant
+  restaurant: state.restaurant.oneRestaurant,
+  nightMode: state.map.nightMode
 });
 let map;
 class SingleRestaurantMap extends Component {
   componentDidMount() {
-
     map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/light-v8',
+      style: this.props.nightMode
+        ? 'mapbox://styles/mapbox/dark-v9'
+        : 'mapbox://styles/mapbox/light-v8',
       center: [
         this.props.restaurant.location[1],
         this.props.restaurant.location[0]

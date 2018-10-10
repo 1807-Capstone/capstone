@@ -1,13 +1,38 @@
 const Sequelize = require('sequelize');
 const User = require('./user');
+const Restaurant = require('./restaurant');
 const db = require('../db');
 
-const CheckIn = db.define('check-in', {
-  id: {
-    type: Sequelize.INTEGER,
-    primaryKey: true,
-    autoIncrement: true
+const CheckIn = db.define(
+  'check-in',
+  {
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    COORDINATES: {
+      type: Sequelize.ARRAY(Sequelize.FLOAT)
+    }
+  },
+  {
+    setterMethods: {
+      coordinates: function(COORDINATES) {
+        this.setDataValue('COORDINATES', COORDINATES);
+      }
+    }
   }
+);
+
+CheckIn.beforeCreate(async checkIn => {
+  let restaurantId = checkIn.restaurantId;
+
+  //Find restaurant
+  const restaurant = await Restaurant.findById(restaurantId);
+  //set long/latitude of waitTime for heat map
+  let latitude = restaurant.getDataValue('location')[0];
+  let longitude = restaurant.getDataValue('location')[1];
+  checkIn.set('COORDINATES', [longitude, latitude]);
 });
 
 CheckIn.afterCreate(async (checkIn, options) => {

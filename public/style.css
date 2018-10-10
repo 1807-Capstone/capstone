@@ -119,12 +119,11 @@ label {
   background: white;
 }
 
-
 i.circle.icon::before {
   position: relative;
   bottom: 8px;
   right: 8px;
-  color: #a84600;
+  color: black;
 }
 
 i.circle.outline.icon {

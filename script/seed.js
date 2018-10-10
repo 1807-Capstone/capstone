@@ -1472,7 +1472,7 @@ async function seed() {
       restaurantId: 55
     })
   ]);
-  console.log(`seeded ${waitTimes.length} check ins`);
+  console.log(`seeded ${waitTimes.length} wait times`);
 
   console.log(`seeded successfully`);
 
@@ -1574,7 +1574,7 @@ async function seed() {
       restaurantId: 4
     })
   ]);
-  console.log(`seeded ${checkIns.length} wait times`);
+  console.log(`seeded ${checkIns.length} check ins`);
 
   console.log(`seeded successfully`);
 }

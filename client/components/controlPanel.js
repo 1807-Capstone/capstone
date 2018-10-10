@@ -20,7 +20,6 @@ export default class StyleControls extends Component {
     const checkInMap = this.props.checkInMap;
     const nightMode = this.props.nightMode;
     const toggleNightMode = this.props.toggleNightMode;
-
     return (
       <div>
         <div key={name}>

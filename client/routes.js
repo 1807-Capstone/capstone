@@ -29,22 +29,24 @@ class Routes extends Component {
     return (
       <Switch>
         {/* Routes placed here are available to all visitors */}
+      <Route exact path="/" component={HomePage} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
-        <Route exact path="/restaurants" component={AllRestaurants} />
+        <Route path="/account" component={UserHome} />
+        
+        <Route path="/filter" component={Filter} />
         <Route path="/home" component={HomePage} />
+        <Route path="/map" component={ReactMap} />
+        <Route path="/restaurants/:name" component={SingleRestaurant} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}
-            <Route path="/account" component={UserHome} />
+            
             <Route path="/visited" component={UserRestaurants} />
-            <Route path="/filter" component={Filter} />
-            <Route path="/map" component={ReactMap} />
-            <Route path="/restaurants/:name" component={SingleRestaurant} />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}
-        <Route component={Login} />
+        <Route component={HomePage} />
       </Switch>
     );
   }

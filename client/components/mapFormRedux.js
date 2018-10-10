@@ -23,7 +23,7 @@ class MapFilter extends Component {
                   onChange={this.props.handleSelectCuisine}
                 >
                   <option value="">---</option>
-                  <option value="american">American></option>
+                  <option value="american">American</option>
                   <option value="italian">Italian</option>
                   <option value="mexican">Mexican</option>
                   <option value="chinese">Chinese</option>

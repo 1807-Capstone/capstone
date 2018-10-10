@@ -1,23 +1,48 @@
-import React, {PureComponent, Component} from 'react';
+import React, {Component} from 'react';
 import ReactStars from 'react-stars';
+import {Link} from 'react-router-dom';
+import {Header} from 'semantic-ui-react';
 
 export default class RestaurantPopup extends Component {
   render() {
-    const {restaurant} = this.props;
+    const {restaurant, sendRestaurant} = this.props;
     const displayName = `${restaurant.name}`;
+    let singleRestaurant = restaurant;
+    let loc = [
+      singleRestaurant.geometry.location.lat,
+      singleRestaurant.geometry.location.lng
+    ];
+    singleRestaurant.yelpResults = {test: 'test'};
+    if (singleRestaurant.yelpImg) {
+      singleRestaurant.yelpResults.image_url = singleRestaurant.yelpImg;
+    }
+    if (singleRestaurant.yelpRating) {
+      singleRestaurant.yelpResults.rating = singleRestaurant.yelpRating;
+    }
+    if (!singleRestaurant.location) {
+      singleRestaurant.location = loc;
+    }
 
     return (
       <div>
         <div>
-          <a
+          <Header
+            as={Link}
+            to={`/restaurants/${displayName}`}
+            color="teal"
+            size="small"
+          >
+            {displayName}
+          </Header>
+          {/* <a
+            onClick={sendRestaurant(restaurant)}
             style={{color: '#9999ff'}}
-            target="_new"
             href={`/restaurants/${displayName}`}
           >
             {displayName}
-          </a>
+          </a> */}
           <div>
-            Google Rating
+            Google Rating:
             <ReactStars
               count={5}
               value={restaurant.rating}
@@ -47,13 +72,11 @@ export default class RestaurantPopup extends Component {
               />
             </div>
           )}
-          {
-            restaurant.yelpImg && (
-              <div>
-                <img width={50} src={restaurant.yelpImg} />
-              </div>
-            )
-          }
+          {restaurant.yelpImg && (
+            <div>
+              <img width={50} src={restaurant.yelpImg} />
+            </div>
+          )}
         </div>
       </div>
     );

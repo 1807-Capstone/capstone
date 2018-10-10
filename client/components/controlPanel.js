@@ -24,7 +24,7 @@ export default class StyleControls extends Component {
     return (
       <div>
         <div key={name}>
-          <img src="/img/key2.png" />
+          <img src="/img/waittimes.png" />
           <Button
             circular
             icon={heatMap ? 'circle' : 'circle outline'}
@@ -32,6 +32,7 @@ export default class StyleControls extends Component {
             onClick={toggleHeatMap}
           />
         </div>
+        <img src="/img/usertraffic.png" />
         <div key={name + '1'}>
           <Button
             circular

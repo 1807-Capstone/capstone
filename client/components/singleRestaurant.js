@@ -1,14 +1,14 @@
 /* eslint-disable complexity */
 
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {Grid, Image, Button, Icon} from 'semantic-ui-react';
-import {updateUserOnServer} from '../store/user';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Grid, Image, Button, Icon } from 'semantic-ui-react';
+import { updateUserOnServer } from '../store/user';
 import SingleRestaurantMap from './singleRestaurantMap';
 import ReactStars from 'react-stars';
-import {StyledTitle} from './styledComponents';
-import {updateCheckInOnServer} from '../store/checkin';
-import {fetchGeolocation} from '../store/map';
+import { StyledTitle } from './styledComponents';
+import { updateCheckInOnServer } from '../store/checkin';
+import { fetchGeolocation } from '../store/map';
 import PropTypes from 'prop-types';
 
 const mapStateToProps = state => ({
@@ -49,7 +49,7 @@ export class SingleRestaurant extends Component {
 
     if (restaurant) {
       return (
-        <div>
+        < div >
           <Grid stackable>
             <Button
               onClick={this.context.router.history.goBack}
@@ -128,11 +128,11 @@ export class SingleRestaurant extends Component {
                 onClick={() =>
                   window.open(
                     `https://www.google.com/maps/dir/${this.props.userLocation
-                      .lat - 0.00980448932},${this.props.userLocation.lng +
-                      0.0088983}/${restaurant.location[0]},${
-                      restaurant.location[1]
+                      .lat},${this.props.userLocation.lng
+                 }/${restaurant.location[0]},${
+                    restaurant.location[1]
                     }/@${this.props.userLocation.lat},${
-                      this.props.userLocation.lng
+                    this.props.userLocation.lng
                     },14z`,
                     '_blank'
                   )
@@ -146,7 +146,7 @@ export class SingleRestaurant extends Component {
               <SingleRestaurantMap />
             </Grid.Column>
           </Grid>
-        </div>
+        </div >
       );
     } else return <h3>Sorry, we could not find this restaurant</h3>;
   }

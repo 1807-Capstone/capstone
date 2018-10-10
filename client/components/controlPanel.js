@@ -16,16 +16,39 @@ export default class StyleControls extends Component {
   renderLayerControl() {
     const toggleHeatMap = this.props.toggleHeatMap;
     const heatMap = this.props.heatMap;
+    const toggleCheckInMap = this.props.toggleCheckInMap;
+    const checkInMap = this.props.checkInMap;
+    const nightMode = this.props.nightMode;
+    const toggleNightMode = this.props.toggleNightMode;
 
     return (
-      <div key={name}>
-        <img src="/img/key2.png" />
-        <Button
-          circular
-          icon={heatMap ? 'circle' : 'circle outline'}
-          color={heatMap ? 'orange' : null}
-          onClick={toggleHeatMap}
-        />
+      <div>
+        <div key={name}>
+          <img src="/img/waittimes.png" />
+          <Button
+            circular
+            icon={heatMap ? 'circle' : 'circle outline'}
+            color={heatMap ? 'orange' : null}
+            onClick={toggleHeatMap}
+          />
+        </div>
+        <img src="/img/usertraffic.png" />
+        <div key={name + '1'}>
+          <Button
+            circular
+            icon={checkInMap ? 'circle' : 'circle outline'}
+            color={checkInMap ? 'purple' : null}
+            onClick={toggleCheckInMap}
+          />
+        </div>
+        <div key={name + '2'}>
+          <Button
+            circular
+            icon={nightMode ? 'circle' : 'circle outline'}
+            color={nightMode ? 'black' : null}
+            onClick={toggleNightMode}
+          />
+        </div>
       </div>
     );
   }

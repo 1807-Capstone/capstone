@@ -3,16 +3,23 @@
 import React, {Component} from 'react';
 import ReactMapGL, {NavigationControl, Marker, Popup} from 'react-map-gl';
 import {getRadius} from '../../utils';
-import {Button, Responsive} from 'semantic-ui-react';
+import {Responsive} from 'semantic-ui-react';
 import Dimensions from 'react-dimensions';
 import DeckGL, {HexagonLayer} from 'deck.gl';
 import {connect} from 'react-redux';
 import {
   fetchRestaurantsList,
-  fetchRadiusYelpResultPopup
+  fetchRadiusYelpResultPopup,
+  sendRestaurantToPageFromMap
 } from '../store/restaurant';
+import {fetchAllCheckins} from '../store/checkin';
 import {fetchAllData} from '../store/waittimes';
-import {retrieveCenter, toggleHeatMap} from '../store/map';
+import {
+  retrieveCenter,
+  toggleHeatMap,
+  toggleCheckInMap,
+  toggleNightMode
+} from '../store/map';
 import RestaurantPopup from './restaurantPopup';
 import RestaurantPin from './restaurantPin';
 import ControlPanel from './controlPanel';
@@ -28,16 +35,21 @@ const mapStateToProps = state => {
   return {
     data: state.waittimes.allData,
     dataFetching: state.waittimes.dataFetching,
+    checkIns: state.checkin.checkIns,
+    checkInsFetching: state.checkin.checkInsFetching,
     restaurantsList: state.restaurant.restaurantsList,
     restaurantsListFetching: state.restaurant.restaurantsListFetching,
     newPopupInfo: state.restaurant.newPopupInfo,
     center: state.map.center,
-    heatMap: state.map.heatMap
+    heatMap: state.map.heatMap,
+    checkInMap: state.map.checkInMap,
+    nightMode: state.map.nightMode
   };
 };
 
 const mapDispatchToProps = dispatch => ({
   fetchAllData: () => dispatch(fetchAllData()),
+  fetchAllCheckins: () => dispatch(fetchAllCheckins()),
   fetchRestaurantsList: (lat, lng, radius, cuisine, price) =>
     dispatch(fetchRestaurantsList(lat, lng, radius, cuisine, price)),
   retrieveCenter: () => dispatch(retrieveCenter()),
@@ -45,9 +57,13 @@ const mapDispatchToProps = dispatch => ({
     dispatch(
       fetchRadiusYelpResultPopup(googleRestaurantObj, prevRestaurantsList)
     ),
-  toggleHeatMap: () => dispatch(toggleHeatMap())
+  toggleHeatMap: () => dispatch(toggleHeatMap()),
+  toggleCheckInMap: () => dispatch(toggleCheckInMap()),
+  toggleNightMode: () => dispatch(toggleNightMode()),
+  sendRestaurantToPageFromMap: restaurant => {
+    dispatch(sendRestaurantToPageFromMap(restaurant));
+  }
 });
-
 
 class Map extends Component {
   constructor(props) {
@@ -88,6 +104,7 @@ class Map extends Component {
 
   componentDidMount() {
     this.props.fetchAllData();
+    this.props.fetchAllCheckins();
     this.props.retrieveCenter();
   }
   componentDidUpdate(prevProps, prevState) {
@@ -168,6 +185,7 @@ class Map extends Component {
 
   renderPopup = () => {
     const {popupInfo} = this.state;
+    const sendRestaurant = this.props.sendRestaurantToPageFromMap;
     return (
       popupInfo && (
         <Popup
@@ -177,7 +195,10 @@ class Map extends Component {
           latitude={popupInfo.geometry.location.lat}
           onClose={() => this.setState({popupInfo: null})}
         >
-          <RestaurantPopup restaurant={popupInfo} />
+          <RestaurantPopup
+            restaurant={popupInfo}
+            sendRestaurant={sendRestaurant}
+          />
         </Popup>
       )
     );
@@ -186,10 +207,31 @@ class Map extends Component {
   render() {
     const restaurants = this.props.restaurantsList;
     const data = this.props.data;
+    const checkInData = this.props.checkIns;
+    const nightMode = this.props.nightMode;
     const waitTimes = new HexagonLayer({
       id: 'hexagon-layer',
       data,
       pickable: false,
+      extruded: true,
+      elevationScale: 1.3,
+      opacity: 0.2,
+      radius: 200,
+      coverage: 1,
+      getPosition: d => d.COORDINATES
+    });
+    const checkIns = new HexagonLayer({
+      id: 'hexagon-layer',
+      data: checkInData,
+      pickable: false,
+      colorRange: [
+        [237, 248, 251],
+        [191, 211, 230],
+        [158, 188, 218],
+        [140, 150, 198],
+        [136, 86, 167],
+        [136, 86, 167]
+      ],
       extruded: true,
       elevationScale: 1.3,
       opacity: 0.2,
@@ -213,6 +255,11 @@ class Map extends Component {
         <ReactMapGL
           {...this.state.viewport}
           mapboxApiAccessToken={mapBoxToken}
+          mapStyle={
+            nightMode
+              ? 'mapbox://styles/mapbox/dark-v9'
+              : 'mapbox://styles/mapbox/light-v8'
+          }
           onViewportChange={viewport => this.setState({viewport})}
           ref={map => (this.mapRef = map)}
         >
@@ -220,8 +267,14 @@ class Map extends Component {
             <DeckGL
               intialViewState={this.state.viewport}
               viewState={this.state.viewport}
-              ref={map => (this.deckRef = map)}
               layers={[waitTimes]}
+            />
+          )}
+          {this.props.checkInMap && (
+            <DeckGL
+              intialViewState={this.state.viewport}
+              viewState={this.state.viewport}
+              layers={[checkIns]}
             />
           )}
           <div
@@ -235,7 +288,11 @@ class Map extends Component {
             <ControlPanel
               containerComponent={this.props.containerComponent}
               toggleHeatMap={this.props.toggleHeatMap}
+              toggleCheckInMap={this.props.toggleCheckInMap}
+              toggleNightMode={this.props.toggleNightMode}
               heatMap={this.props.heatMap}
+              checkInMap={this.props.checkInMap}
+              nightMode={this.props.nightMode}
             />
           </div>
 

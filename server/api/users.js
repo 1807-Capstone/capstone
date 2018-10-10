@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User, CheckIn} = require('../db/models');
+const {User, CheckIn, Restaurant} = require('../db/models');
 module.exports = router;
 
 router.get('/', async (req, res, next) => {
@@ -46,9 +46,14 @@ router.put('/:id', async (req, res, next) => {
 
 router.post('/:id/checkIns', async (req, res, next) => {
   try {
+    let restaurantId;
+    if (typeof req.body.restaurantId === 'string') {
+      let response = await Restaurant.findOne({where: {name: req.body.name}});
+      restaurantId = response.dataValues.id;
+    } else restaurantId = req.body.restaurantId;
     const newCheckIn = await CheckIn.create({
       userId: req.body.userId,
-      restaurantId: req.body.restaurantId
+      restaurantId: restaurantId
     });
     res.json(newCheckIn);
   } catch (err) {

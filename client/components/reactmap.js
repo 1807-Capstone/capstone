@@ -282,7 +282,7 @@ class Map extends Component {
               position: 'absolute',
               top: 0,
               right: 0,
-              margin: '8px'
+              margin: '10px'
             }}
           >
             <ControlPanel

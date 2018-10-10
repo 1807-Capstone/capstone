@@ -119,6 +119,11 @@ label {
   background: white;
 }
 
+.ui.color1.button {
+  background-color: #35b3bf;
+  color: black;
+}
+
 @media (max-width: 992px) {
   #mapForm > .ui.form select {
     width: 30vw !important;

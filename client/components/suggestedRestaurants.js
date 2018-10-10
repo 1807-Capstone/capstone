@@ -34,7 +34,7 @@ class SuggestedRestaurants extends Component {
               <StyledName>{restaurant.name}</StyledName>
             </Item.Header>
             <Item.Description>
-              <p>
+              <div>
                 Radius Rating
                 <ReactStars
                   edit={false}
@@ -42,10 +42,10 @@ class SuggestedRestaurants extends Component {
                   value={restaurant.radiusRating}
                   half={true}
                   color2="#35b3bf"
-                  size="25px"
+                  // size="25px"
                 />
-              </p>
-              <p>
+              </div>
+              <div>
                 Google Rating
                 <ReactStars
                   edit={false}
@@ -54,8 +54,8 @@ class SuggestedRestaurants extends Component {
                   half={true}
                   color2="#C58600"
                 />{' '}
-              </p>
-              <p>
+              </div>
+              <div>
                 Yelp Rating
                 <ReactStars
                   edit={false}
@@ -64,7 +64,7 @@ class SuggestedRestaurants extends Component {
                   half={true}
                   color2="#C50A00"
                 />
-              </p>
+              </div>
             </Item.Description>
           </Item.Content>
         </Item>

@@ -17,7 +17,6 @@ router.get('/', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
   try {
-    console.log('req.body', req.body);
     const newWaitTime = await WaitTime.create({
       time: req.body.waitTime.time,
       restaurantId: req.body.waitTime.restaurantId

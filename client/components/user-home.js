@@ -54,7 +54,7 @@ export class UserHome extends Component {
                   as={Link}
                   to="/visited"
                   centered="true"
-                  className="ui color1 button"
+                  className="ui color2 button"
                 >
                   Restaurants Visited
                 </Button>

@@ -29,14 +29,23 @@ const AuthForm = props => {
             <Image src="img/logo_transparent.png" size="medium" centered />
           </CompDiv1>
           <CompDiv2>
-            <Form onSubmit={handleSubmit} name={name}>
-              <Input name="email" type="text" placeholder="Email" />
-              <Divider />
-              <Input name="password" type="password" placeholder="Password" />
-              <Button type="submit">{displayName}</Button>
+            <Form
+              className="ui centered grid"
+              onSubmit={handleSubmit}
+              name={name}
+            >
+              <div>
+                <Input name="email" type="text" placeholder="Email" />
+                <Input name="password" type="password" placeholder="Password" />
+                <br />
+              </div>
+              <br />
+              <Button className="ui inverted  small button" type="submit">
+                {displayName}
+              </Button>
               {error && error.response && <div> {error.response.data} </div>}
             </Form>
-            <a href="/auth/google">{displayName} with Google</a>
+            {/* <a href="/auth/google">{displayName} with Google</a> */}
           </CompDiv2>
         </Grid>
       </Responsive>
@@ -46,16 +55,20 @@ const AuthForm = props => {
         </MobileDiv3>
         <MobileDiv4 />
         <LoginDiv>
+          <br />
           <Form onSubmit={handleSubmit} name={name}>
             <Input name="email" type="text" placeholder="Email" />
             <Divider />
             <br />
             <Input name="password" type="password" placeholder="Password" />
             <br />
-            <Button type="submit">{displayName}</Button>
+            <br />
+            <Button type="submit" className="ui color2 button">
+              {displayName}
+            </Button>
             {error && error.response && <div> {error.response.data} </div>}
           </Form>
-          <a href="/auth/google">{displayName} with Google</a>
+          {/* <a href="/auth/google">{displayName} with Google</a> */}
         </LoginDiv>
       </Responsive>
     </div>

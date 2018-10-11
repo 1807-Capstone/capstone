@@ -20,7 +20,29 @@ async function seed() {
     User.create({email: 'tony@boetto.org', password: '123'}),
     User.create({email: 'parag.g.zaveri@gmail.com', password: '123'}),
     User.create({email: 'juliet.welcome@gmail.com', password: '123'}),
-    User.create({email: 'abby.wigdale@gmail.com', password: '123'})
+    User.create({email: 'abby.wigdale@gmail.com', password: '123'}),
+    User.create({email: 'billybob2@gmail.com', password: '123'}),
+    User.create({email: 'tonester@email.com', password: '123'}),
+    User.create({email: 'sillyfella@gmail.com', password: '123'}),
+    User.create({email: 'testerfella@gmail.com', password: '123'}),
+    User.create({email: 'testaccount@gmail.com', password: '123'}),
+    User.create({email: 'anewaccount@gmail.com', password: '123'}),
+    User.create({email: 'anewHope@gmail.com', password: '123'}),
+    User.create({email: 'baronharkonnen@gmail.com', password: '123'}),
+    User.create({email: 'anewFight@gmail.com', password: '123'}),
+    User.create({email: 'nextchecking@gmail.com', password: '123'}),
+    User.create({email: 'test@gmail.com', password: '123'}),
+    User.create({email: 'testnewfacee@gmail.com', password: '123'}),
+    User.create({email: 'test2342@gmail.com', password: '123'}),
+    User.create({email: 'anewseresffes@gmail.com', password: '123'}),
+    User.create({email: 'testaccount22@gmail.com', password: '123'}),
+    User.create({email: 'anewmatrix@timestamp.com', password: '123'}),
+    User.create({email: 'letskeepseeding@gmail.com', password: '123'}),
+    User.create({email: 'newewfweufe@gmail.com', password: '123'}),
+    User.create({email: 'feiujifjerejrr@nrec.com', password: '123'}),
+    User.create({email: 'paulatreides@gmail.com', password: '123'}),
+    User.create({email: 'muaddib@tony.com', password: '123'}),
+    User.create({email: 'testarooonster@test.com', password: '123'})
   ]);
 
   const restaurants = await Promise.all([
@@ -43,7 +65,8 @@ async function seed() {
       rating: 3.6,
       yelpRating: 4.5,
       radiusRating: 5,
-      yelpImg: 'https://b.zmtcdn.com/data/pictures/1/16757421/8facfe78e85d14fb3b609fc1876d23d7.jpg',
+      yelpImg:
+        'https://b.zmtcdn.com/data/pictures/1/16757421/8facfe78e85d14fb3b609fc1876d23d7.jpg',
       keyword: 'american',
       vicinity: '710 N Clark St, Chicago'
     }),
@@ -32149,586 +32172,6 @@ async function seed() {
       time: 15,
       restaurantId: 42
     }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 120
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 65
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 119
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 97
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 77
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 74
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 122
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 80
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 34
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 88
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 86
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 75
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 143
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 5
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 72
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 156
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 133
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 54
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 11
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 142
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 136
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 102
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 149
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 17
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 20
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 89
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 11
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 93
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 82
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 80
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 22
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 63
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 104
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 84
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 132
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 80
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 85
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 82
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 27
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 18
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 129
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 23
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 105
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 9
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 44
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 1
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 116
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 1
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 104
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 57
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 12
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 82
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 128
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 90
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 50
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 159
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 99
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 1
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 99
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 47
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 25
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 115
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 83
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 5
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 89
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 32
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 23
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 50
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 42
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 138
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 151
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 105
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 83
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 45
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 78
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 8
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 76
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 13
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 31
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 108
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 153
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 12
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 116
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 38
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 55
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 116
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 119
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 28
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 145
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 113
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 35
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 60
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 146
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 29
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 74
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 77
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 76
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 104
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 143
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 76
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 64
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 138
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 34
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 133
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 84
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 25
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 62
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 9
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 36
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 45
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 15
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 53
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 128
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 131
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 157
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 111
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 83
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 121
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 158
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 101
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 110
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 30
-    }),
-    WaitTime.create({
-      time: 90,
-      restaurantId: 138
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 117
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 48
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 112
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 54
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 20
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 82
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 144
-    }),
-    WaitTime.create({
-      time: 0,
-      restaurantId: 122
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 44
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 60
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 123
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 97
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 9
-    }),
-    WaitTime.create({
-      time: 60,
-      restaurantId: 13
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 85
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 139
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 27
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 112
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 9
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 99
-    }),
-    WaitTime.create({
-      time: 30,
-      restaurantId: 121
-    }),
-    WaitTime.create({
-      time: 15,
-      restaurantId: 41
-    })
   ]);
   console.log(`seeded ${waitTimes.length} waittimes`);
 
@@ -32737,15 +32180,195 @@ async function seed() {
   const checkIns = await Promise.all([
     CheckIn.create({
       userId: 1,
-      restaurantId: 1
+      restaurantId: 72
     }),
     CheckIn.create({
       userId: 1,
-      restaurantId: 5
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 50
     }),
     CheckIn.create({
       userId: 1,
       restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 49
     }),
     CheckIn.create({
       userId: 1,
@@ -32753,19 +32376,167 @@ async function seed() {
     }),
     CheckIn.create({
       userId: 1,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 1,
       restaurantId: 13
     }),
     CheckIn.create({
       userId: 1,
-      restaurantId: 11
+      restaurantId: 10
     }),
     CheckIn.create({
       userId: 1,
-      restaurantId: 14
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 1,
+      restaurantId: 129
     }),
     CheckIn.create({
       userId: 2,
-      restaurantId: 1
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 155
     }),
     CheckIn.create({
       userId: 2,
@@ -32773,7 +32544,51 @@ async function seed() {
     }),
     CheckIn.create({
       userId: 2,
-      restaurantId: 8
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 159
     }),
     CheckIn.create({
       userId: 2,
@@ -32781,11 +32596,135 @@ async function seed() {
     }),
     CheckIn.create({
       userId: 2,
-      restaurantId: 6
+      restaurantId: 156
     }),
     CheckIn.create({
       userId: 2,
-      restaurantId: 12
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 145
     }),
     CheckIn.create({
       userId: 2,
@@ -32793,19 +32732,91 @@ async function seed() {
     }),
     CheckIn.create({
       userId: 2,
-      restaurantId: 9
+      restaurantId: 135
     }),
     CheckIn.create({
       userId: 2,
-      restaurantId: 11
+      restaurantId: 74
     }),
     CheckIn.create({
       userId: 2,
-      restaurantId: 18
+      restaurantId: 146
     }),
     CheckIn.create({
-      userId: 3,
-      restaurantId: 12
+      userId: 2,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 2,
+      restaurantId: 40
     }),
     CheckIn.create({
       userId: 3,
@@ -32813,15 +32824,199 @@ async function seed() {
     }),
     CheckIn.create({
       userId: 3,
-      restaurantId: 14
-    }),
-    CheckIn.create({
-      userId: 3,
-      restaurantId: 17
-    }),
-    CheckIn.create({
-      userId: 3,
       restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 71
     }),
     CheckIn.create({
       userId: 3,
@@ -32829,8 +33024,8217 @@ async function seed() {
     }),
     CheckIn.create({
       userId: 3,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 3,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 4,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 5,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 6,
       restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 6,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 7,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 8,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 9,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 10,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 11,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 12,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 13,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 14,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 15,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 16,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 17,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 18,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 19,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 20,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 21,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 148
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 58
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 22,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 84
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 23,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 142
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 121
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 29
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 79
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 25
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 65
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 24,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 144
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 35
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 53
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 39
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 43
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 127
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 19
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 25,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 72
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 117
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 125
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 31
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 119
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 60
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 12
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 158
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 151
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 94
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 107
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 23
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 8
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 55
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 99
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 93
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 62
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 149
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 90
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 116
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 97
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 153
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 68
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 41
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 128
+    }),
+    CheckIn.create({
+      userId: 26,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 11
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 75
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 48
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 22
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 111
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 16
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 135
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 155
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 112
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 102
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 118
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 95
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 123
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 47
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 122
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 44
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 140
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 76
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 133
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 10
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 34
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 37
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 2
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 6
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 30
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 156
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 150
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 160
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 26
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 77
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 5
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 120
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 159
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 141
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 82
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 145
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 17
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 74
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 57
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 27,
+      restaurantId: 63
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 105
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 88
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 147
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 101
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 64
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 20
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 139
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 1
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 132
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 33
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 89
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 136
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 50
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 126
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 100
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 66
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 27
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 15
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 110
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 80
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 86
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 81
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 87
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 91
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 113
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 131
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 54
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 96
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 42
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 108
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 46
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 103
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 61
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 7
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 67
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 14
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 32
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 13
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 51
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 40
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 92
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 73
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 129
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 98
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 114
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 59
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 85
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 70
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 49
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 134
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 21
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 24
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 146
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 52
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 4
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 137
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 104
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 157
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 154
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 45
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 143
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 138
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 83
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 78
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 69
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 3
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 109
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 124
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 9
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 38
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 152
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 106
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 36
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 115
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 71
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 28
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 18
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 56
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 130
+    }),
+    CheckIn.create({
+      userId: 28,
+      restaurantId: 141
     })
+
+    // CheckIn.create({
+    //   userId: 1,
+    //   restaurantId: 1
+    // }),
+    // CheckIn.create({
+    //   userId: 1,
+    //   restaurantId: 5
+    // }),
+    // CheckIn.create({
+    //   userId: 1,
+    //   restaurantId: 8
+    // }),
+    // CheckIn.create({
+    //   userId: 1,
+    //   restaurantId: 7
+    // }),
+    // CheckIn.create({
+    //   userId: 1,
+    //   restaurantId: 13
+    // }),
+    // CheckIn.create({
+    //   userId: 1,
+    //   restaurantId: 11
+    // }),
+    // CheckIn.create({
+    //   userId: 1,
+    //   restaurantId: 14
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 1
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 5
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 8
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 14
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 6
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 12
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 2
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 9
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 11
+    // }),
+    // CheckIn.create({
+    //   userId: 2,
+    //   restaurantId: 18
+    // }),
+    // CheckIn.create({
+    //   userId: 3,
+    //   restaurantId: 12
+    // }),
+    // CheckIn.create({
+    //   userId: 3,
+    //   restaurantId: 13
+    // }),
+    // CheckIn.create({
+    //   userId: 3,
+    //   restaurantId: 14
+    // }),
+    // CheckIn.create({
+    //   userId: 3,
+    //   restaurantId: 17
+    // }),
+    // CheckIn.create({
+    //   userId: 3,
+    //   restaurantId: 18
+    // }),
+    // CheckIn.create({
+    //   userId: 3,
+    //   restaurantId: 1
+    // }),
+    // CheckIn.create({
+    //   userId: 3,
+    //   restaurantId: 4
+    // })
   ]);
   console.log(`seeded ${checkIns.length} check ins`);
 

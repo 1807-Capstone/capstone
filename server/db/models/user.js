@@ -134,7 +134,6 @@ User.prototype.getSuggested = async function() {
   if (shuffledRestaurants.length >= 3) {
     shuffledRestaurants = shuffledRestaurants.slice(0, 3);
   }
-  console.log('shuffledRestaurants length', shuffledRestaurants.length);
   const response = await Restaurant.findAll({
     where: {
       id: {
@@ -142,7 +141,6 @@ User.prototype.getSuggested = async function() {
       }
     }
   });
-  console.log(response.length);
   return response;
 };
 

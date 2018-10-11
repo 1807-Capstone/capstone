@@ -132,9 +132,9 @@ User.prototype.getSuggested = async function() {
     ];
   let shuffledRestaurants = shuffle(recommendedRestaurants);
   if (shuffledRestaurants.length >= 3) {
-    shuffledRestaurants = shuffledRestaurants.slice(2);
+    shuffledRestaurants = shuffledRestaurants.slice(0, 3);
   }
-  const response = Restaurant.findAll({
+  const response = await Restaurant.findAll({
     where: {
       id: {
         [Op.or]: shuffledRestaurants

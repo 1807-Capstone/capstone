@@ -160,7 +160,6 @@ i.circle.outline.icon {
 @media (min-width: 992px) {
   #content {
     height: auto;
-    overflow: auto;
     padding: 0;
   }
 

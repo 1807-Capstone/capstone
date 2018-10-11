@@ -29,7 +29,7 @@ class FilterForm extends Component {
           >
             <Grid stackable centered>
               <Grid.Column
-                computer={3}
+                computer={4}
                 style={{margin: '0rem 1rem !important'}}
               >
                 <label>
@@ -48,7 +48,7 @@ class FilterForm extends Component {
                   </select>
                 </label>
               </Grid.Column>
-              <Grid.Column computer={3}>
+              <Grid.Column computer={4}>
                 <label>
                   PRICE:<select
                     name="price"
@@ -62,7 +62,7 @@ class FilterForm extends Component {
                   </select>
                 </label>
               </Grid.Column>
-              <Grid.Column computer={3}>
+              <Grid.Column computer={4}>
                 <label>
                   DISTANCE:{' '}
                   <select

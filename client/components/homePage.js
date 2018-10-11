@@ -126,13 +126,15 @@ class HomePage extends Component {
           )}
           {!this.props.user.id && (
             <div style={{margin: '10px'}}>
-              <h1>Sign up or login now!</h1>
               <br />
-              <Button as={Link} to="/login" fluid className="ui color1 button">
-                Login
+              <h1 className="ui centered grid">Sign up or log in now!</h1>
+              <br />
+              <br />
+              <Button as={Link} to="/login" fluid className="ui color2 button">
+                Log In
               </Button>
               <br />
-              <Button as={Link} to="/signup" fluid className="ui color1 button">
+              <Button as={Link} to="/signup" fluid className="ui color2 button">
                 Sign Up
               </Button>
             </div>

@@ -5,7 +5,8 @@ import {
   Responsive,
   GridColumn,
   Item,
-  Header
+  Header,
+  Button
 } from 'semantic-ui-react';
 import {fetchSuggestedRestaurantsFromServer} from '../store/restaurant';
 import {me} from '../store/user';
@@ -16,10 +17,10 @@ import {
   MobileDiv4,
   StyledBox,
   StyledBox2,
-  StyledHeader1,
   UserBox
 } from './styledComponents';
 import Popup from './popup';
+import {Link} from 'react-router-dom';
 
 const mapStateToProps = state => ({
   suggestedRestaurants: state.restaurant.suggestedRestaurants,
@@ -42,7 +43,9 @@ class HomePage extends Component {
 
   async componentDidMount() {
     await this.props.me();
-    await this.props.fetchSuggestedRestaurantsFromServer(this.props.user.id);
+    if (this.props.user.id) {
+      await this.props.fetchSuggestedRestaurantsFromServer(this.props.user.id);
+    }
     if (this.props.user.didCheckIn) {
       this.setState({
         showPopup: true
@@ -120,6 +123,19 @@ class HomePage extends Component {
                 />
               </Item.Group>
             </UserBox>
+          )}
+          {!this.props.user.id && (
+            <div style={{margin: '10px'}}>
+              <h1>Sign up or login now!</h1>
+              <br />
+              <Button as={Link} to="/login" fluid className="ui color1 button">
+                Login
+              </Button>
+              <br />
+              <Button as={Link} to="/signup" fluid className="ui color1 button">
+                Sign Up
+              </Button>
+            </div>
           )}
         </Responsive>
       </main>

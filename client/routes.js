@@ -29,11 +29,10 @@ class Routes extends Component {
     return (
       <Switch>
         {/* Routes placed here are available to all visitors */}
-      <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/account" component={UserHome} />
-        
         <Route path="/filter" component={Filter} />
         <Route path="/home" component={HomePage} />
         <Route path="/map" component={ReactMap} />
@@ -41,7 +40,7 @@ class Routes extends Component {
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}
-            
+
             <Route path="/visited" component={UserRestaurants} />
           </Switch>
         )}

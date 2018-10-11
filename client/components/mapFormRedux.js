@@ -1,6 +1,6 @@
-import React, {Component, Fragment} from 'react';
-import {reduxForm} from 'redux-form';
-import {Grid, Responsive} from 'semantic-ui-react';
+import React, { Component, Fragment } from 'react';
+import { reduxForm } from 'redux-form';
+import { Grid, Responsive } from 'semantic-ui-react';
 
 const preventDefault = event => {
   event.preventDefault();
@@ -16,17 +16,20 @@ class MapFilter extends Component {
           id="mapForm"
         >
           <Grid centered>
-            <Grid.Column width={3} style={{margin: '0rem 1rem !important'}}>
+            <Grid.Column width={3} style={{ margin: '0rem 1rem !important' }}>
               <label>
                 CUISINE:<select
                   name="cuisine"
                   onChange={this.props.handleSelectCuisine}
                 >
                   <option value="">---</option>
+                  <option value="american">American</option>
                   <option value="italian">Italian</option>
                   <option value="mexican">Mexican</option>
                   <option value="chinese">Chinese</option>
                   <option value="burgers">Burgers</option>
+                  <option value="japanese">Japanese</option>
+                  <option value="steakhouse">Steakhouses</option>
                 </select>
               </label>
             </Grid.Column>

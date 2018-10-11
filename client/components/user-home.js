@@ -18,16 +18,19 @@ import {
 import {Link} from 'react-router-dom';
 import SuggestedRestaurants from './suggestedRestaurants';
 import {UserBox} from './styledComponents';
-import {logout} from '../store/user';
+import {logout, me} from '../store/user';
 
 /**
  * COMPONENT
  */
 
 export class UserHome extends Component {
-  componentDidMount() {
-    this.props.fetchSuggestedRestaurantsFromServer(this.props.id);
-    this.props.gotVisitedRestaurants(this.props.id);
+  async componentDidMount() {
+    await this.props.me();
+    if (this.props.id) {
+      this.props.fetchSuggestedRestaurantsFromServer(this.props.id);
+      this.props.gotVisitedRestaurants(this.props.id);
+    }
   }
 
   handleLogout() {
@@ -43,10 +46,16 @@ export class UserHome extends Component {
             <Grid.Column computer={5}>
               <h1>Welcome, {this.props.email}</h1>
               <Divider />
-              <Image src="img/profile.jpg" circular size="small" centered />
+              <Image src="img/ghost.png" circular size="small" centered />
               <Divider hidden />
               <Container centered="true">
-                <Button basic as={Link} to="/visited" centered="true">
+                <Button
+                  fluid
+                  as={Link}
+                  to="/visited"
+                  centered="true"
+                  className="ui color1 button"
+                >
                   Restaurants Visited
                 </Button>
                 <br />
@@ -79,7 +88,17 @@ export class UserHome extends Component {
             </Grid.Column>
           </Grid>
         ) : (
-          <h1>Sign up today!</h1>
+          <div>
+            <h1>Sign up or login now!</h1>
+            <br />
+            <Button as={Link} to="/login" fluid className="ui color1 button">
+              Login
+            </Button>
+            <br />
+            <Button as={Link} to="/signup" fluid className="ui color1 button">
+              Sign Up
+            </Button>
+          </div>
         )}
       </Container>
     );
@@ -104,7 +123,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(fetchSuggestedRestaurantsFromServer(id)),
   gotOneRestaurant: restaurant => dispatch(gotOneRestaurant(restaurant)),
   gotVisitedRestaurants: id => dispatch(fetchVisited(id)),
-  logout: () => dispatch(logout)
+  logout: () => dispatch(logout()),
+  me: () => dispatch(me())
 });
 
 export default connect(mapState, mapDispatchToProps)(UserHome);

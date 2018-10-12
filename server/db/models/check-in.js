@@ -34,7 +34,7 @@ CheckIn.beforeCreate(async checkIn => {
   checkIn.set('COORDINATES', [longitude, latitude]);
 });
 
-CheckIn.afterCreate(async checkIn => {
+CheckIn.afterCreate(async (checkIn, options) => {
   let userId = checkIn.userId;
 
   const user = await User.findById(userId);

@@ -26,20 +26,19 @@ const CheckIn = db.define(
 
 CheckIn.beforeCreate(async checkIn => {
   let restaurantId = checkIn.restaurantId;
-
   //Find restaurant
   const restaurant = await Restaurant.findById(restaurantId);
-  //set long/latitude of waitTime for heat map
+  //set long/latitude of check In for heat map
   let latitude = restaurant.getDataValue('location')[0];
   let longitude = restaurant.getDataValue('location')[1];
   checkIn.set('COORDINATES', [longitude, latitude]);
 });
 
-CheckIn.afterCreate(async (checkIn, options) => {
+CheckIn.afterCreate(async checkIn => {
   let userId = checkIn.userId;
 
   const user = await User.findById(userId);
-  // After User Checks in, find visited restaurants
+  // After user checks in, find all visited restaurants
   const response = await CheckIn.findAll({
     where: {
       userId: userId
@@ -48,7 +47,7 @@ CheckIn.afterCreate(async (checkIn, options) => {
   });
   // Clean data
   const restaurantsVisited = response.map(elem => elem.dataValues.restaurantId);
-  // Find All visited Restaurants
+  // Set all visited restaurants in array on user's tuple
   user.set('checkedInRestaurants', restaurantsVisited);
   user.save();
 });

@@ -105,13 +105,16 @@ User.prototype.getSuggested = async function() {
   const userId = this.getDataValue('id');
   const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
   let recommendedRestaurants = [];
+  //Retrieve all users' checked-in restaurant's array
   const allUsers = await User.findAll(
     {where: {id: {[Op.ne]: userId}}},
     {attributes: ['checkedInRestaurants', 'id']}
   );
+  //Create an array of these arrays
   const allVisitedRestaurants = allUsers.map(
     elem => elem.dataValues.checkedInRestaurants
   );
+  //Check each array for the largest intersection, and set recommendedRestaurants as the difference between that array and user's checked in restaurants
   allVisitedRestaurants.forEach(elem => {
     if (
       intersection(userCheckedInRestaurants, elem).length >
@@ -120,6 +123,7 @@ User.prototype.getSuggested = async function() {
       recommendedRestaurants = difference(elem, userCheckedInRestaurants);
     }
   });
+  //If no intersection, return data to avoid error
   if (!recommendedRestaurants.length)
     return [
       {
@@ -130,10 +134,12 @@ User.prototype.getSuggested = async function() {
         imgUrl: '/img/dim-sum.jpg'
       }
     ];
+  //Shuffle and slice recommended restaurant array.
   let shuffledRestaurants = shuffle(recommendedRestaurants);
   if (shuffledRestaurants.length >= 3) {
     shuffledRestaurants = shuffledRestaurants.slice(0, 3);
   }
+  //Return relevant data on these arrays, including imgUrl, rating, location etc.
   const response = await Restaurant.findAll({
     where: {
       id: {

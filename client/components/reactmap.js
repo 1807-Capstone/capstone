@@ -245,13 +245,8 @@ class Map extends Component {
         <MapFormRedux
           handleSelectCuisine={this.selectCuisine}
           handleSelectPrice={this.selectPrice}
-          // handleSelectRating={this.selectRating}
           handleSelectDistance={this.selectDistance}
         />
-
-        {/* <Button size="mini" fluid onClick={this.handleClick}>
-          Search restaurants here
-        </Button> */}
         <ReactMapGL
           {...this.state.viewport}
           mapboxApiAccessToken={mapBoxToken}

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Transition, Item, Button, Responsive} from 'semantic-ui-react';
+import {Transition, Item, Responsive} from 'semantic-ui-react';
 import {MapOverlay, StyledButton} from './styledComponents';
-import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {gotOneRestaurant} from '../store/restaurant';
 import styled from 'styled-components';
@@ -39,17 +38,10 @@ class MapList extends Component {
             <MapOverlay>
               <Item.Group divided>
                 {this.props.restaurants.map((restaurant, index) => (
-                  // <Item.Content
-                  //   key={restaurant.place_id}
-                  //   onClick={() => this.handleRestaurantClick(restaurant.name)}
-                  //   as={Link}
-                  //   to={`/restaurants/${restaurant.name}`}
-                  // >
                   <Name key={restaurant.place_id}>
                     {index + 1}: {restaurant.name}
                     <br />
                   </Name>
-                  // </Item.Content>
                 ))}
               </Item.Group>
             </MapOverlay>

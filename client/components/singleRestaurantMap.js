@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import mapboxgl from 'mapbox-gl';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
 import {Box} from './styledComponents';
 
 mapboxgl.accessToken =

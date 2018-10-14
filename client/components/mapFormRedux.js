@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { reduxForm } from 'redux-form';
-import { Grid, Responsive } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 
 const preventDefault = event => {
   event.preventDefault();

@@ -3,9 +3,7 @@
 import axios from 'axios';
 
 // Action types
-const GOT_ALL_RESTAURANTS = 'GOT_ALL_RESTAURANTS';
 const GOT_ONE_RESTAURANT = 'GOT_ONE_RESTAURANT';
-const REQ_ALL_RESTAURANTS = 'REQ_ALL_RESTAURANTS';
 const REQ_ONE_RESTAURANT = 'REQ_ONE_RESTAURANT';
 const REQ_FILTERED_RESTAURANTS = 'REQ_FILTERED_RESTAURANTS';
 const GOT_FILTERED_RESTAURANTS = 'GOT_FILTERED_RESTAURANTS';
@@ -13,7 +11,6 @@ const GOT_SUGGESTED_RESTAURANTS = 'GOT_SUGGESTED_RESTAURANTS';
 const REQ_SUGGESTED_RESTAURANTS = 'REQ_SUGGESTED_RESTAURANTS';
 const GET_FILTERED_FROM_SERVER = 'GET_FILTERED_FROM_SERVER';
 const GOT_RADIUS_YELP_RESULT_FROM_SERVER = 'GOT_RADIUS_YELP_RESULT_FROM_SERVER';
-const REQ_RADIUS_YELP_RESULT_FROM_SERVER = 'REQ_RADIUS_YELP_RESULT_FROM_SERVER';
 const REQ_RESTAURANTS_LIST = 'REQ_RESTAURANTS_LIST';
 const GOT_RESTAURANTS_LIST = 'GOT_RESTAURANTS_LIST';
 const GET_VISITED_FROM_SERVER = 'GET_VISITED_FROM_SERVER';
@@ -21,14 +18,6 @@ const GOT_NEXT_PAGE = 'GOT_NEXT_PAGE';
 const GOT_RESTAURANT_FROM_MAP = 'GOT_RESTAURANT_FROM_MAP';
 
 // Action creators
-const gotAllRestaurants = allRestaurants => ({
-  type: GOT_ALL_RESTAURANTS,
-  allRestaurants
-});
-
-const reqAllRestaurants = () => ({
-  type: REQ_ALL_RESTAURANTS
-});
 
 export const gotOneRestaurant = oneRestaurant => ({
   type: GOT_ONE_RESTAURANT,
@@ -67,9 +56,6 @@ const gotRestaurantsList = restaurantsList => ({
   restaurantsList
 });
 
-const reqRadiusYelpResultsPopup = () => ({
-  type: REQ_RADIUS_YELP_RESULT_FROM_SERVER
-});
 
 const gotRadiusYelpResultsPopup = (restaurantsList, newPopupInfo) => ({
   type: GOT_RADIUS_YELP_RESULT_FROM_SERVER,
@@ -93,13 +79,7 @@ const gotRestaurantFromMap = restaurant => ({
 });
 
 // Thunks
-export const fetchAllRestaurantsFromServer = (lat, lng) => {
-  return async dispatch => {
-    dispatch(reqAllRestaurants());
-    const res = await axios.post('/api/restaurants', {lat, lng});
-    dispatch(gotAllRestaurants(res.data));
-  };
-};
+
 
 export const fetchSuggestedRestaurantsFromServer = id => {
   return async dispatch => {
@@ -126,17 +106,6 @@ export const sendRestaurantToPageFromMap = restaurant => {
   };
 };
 
-// export const getFilteredFromServer = (price, rating, cuisine) => {
-//   return async dispatch => {
-//     const res = await axios.post('/api/testaurants/restaurantsList', {
-//       price,
-//       rating,
-//       cuisine
-//     });
-//     console.log(res);
-//     dispatch(getFilteredRestaurantsFromServer(res.data));
-//   };
-// };
 
 export const fetchVisited = id => {
   return async dispatch => {
@@ -177,7 +146,7 @@ export const fetchRestaurantsList = (
 ) => {
   return async dispatch => {
     dispatch(reqRestaurantsList());
-    const res = await axios.post('/api/testaurants/restaurantsList', {
+    const res = await axios.post('/api/restaurants/restaurantsList', {
       lat,
       lng,
       radius,
@@ -192,7 +161,7 @@ export const fetchRestaurantsList = (
     async function secondReq(token) {
       let data;
       await delay(2500);
-      data = await axios.post('/api/testaurants/nextPage', {
+      data = await axios.post('/api/restaurants/nextPage', {
         token
       });
       return data;
@@ -210,7 +179,7 @@ export const fetchRadiusYelpResultPopup = (
   prevRestaurantsList
 ) => {
   return async dispatch => {
-    const response = await axios.post('/api/testaurants/popups', {
+    const response = await axios.post('/api/restaurants/popups', {
       googleRestaurantObj,
       prevRestaurantsList
     });
@@ -229,8 +198,6 @@ export const findRestaurantById = restaurantId => {
 };
 
 const initialState = {
-  allRestaurants: [],
-  allFetching: true,
   oneRestaurant: {},
   oneFetching: true,
   filteredRestaurants: [],
@@ -240,7 +207,6 @@ const initialState = {
   filtered: [],
   restaurantsList: [],
   restaurantsListFetching: false,
-  radiusFetching: false,
   newPopupInfo: {},
   visited: []
 };
@@ -248,14 +214,6 @@ const initialState = {
 // Reducer
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case GOT_ALL_RESTAURANTS:
-      return {
-        ...state,
-        allRestaurants: action.allRestaurants,
-        allFetching: false
-      };
-    case REQ_ALL_RESTAURANTS:
-      return {...state, allFetching: true};
     case GOT_ONE_RESTAURANT:
       return {
         ...state,
@@ -293,12 +251,6 @@ const reducer = (state = initialState, action) => {
         ...state,
         restaurantsList: action.restaurantsList,
         newPopupInfo: action.newPopupInfo,
-        radiusFetching: false
-      };
-    case REQ_RADIUS_YELP_RESULT_FROM_SERVER:
-      return {
-        ...state,
-        radiusFetching: true
       };
     case GOT_RESTAURANTS_LIST:
       return {

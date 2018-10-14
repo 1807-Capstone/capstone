@@ -5,7 +5,7 @@ import {Header} from 'semantic-ui-react';
 
 export default class RestaurantPopup extends Component {
   render() {
-    const {restaurant, sendRestaurant} = this.props;
+    const {restaurant} = this.props;
     const displayName = `${restaurant.name}`;
     let singleRestaurant = restaurant;
     let loc = [
@@ -34,13 +34,6 @@ export default class RestaurantPopup extends Component {
           >
             {displayName}
           </Header>
-          {/* <a
-            onClick={sendRestaurant(restaurant)}
-            style={{color: '#9999ff'}}
-            href={`/restaurants/${displayName}`}
-          >
-            {displayName}
-          </a> */}
           <div>
             Google Rating:
             <ReactStars

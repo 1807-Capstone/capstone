@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {logout} from '../store';
-import {Menu, Image, Icon, Button, Divider, Sidebar} from 'semantic-ui-react';
+import {Menu, Icon} from 'semantic-ui-react';
 import styled from 'styled-components';
 
 const Block = styled.div`

@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Rating } from 'semantic-ui-react'
 
 export const Review = props => {
 	const {review} = props

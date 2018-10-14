@@ -1,8 +1,7 @@
 import axios from 'axios';
-import {GOOGLE_MAPS_API} from '../config';
 
 const initialState = {
-  location: {lng: -87.639064, lat: 41.895579, zoom: 1},
+  location: {lng: -87.639064, lat: 41.895579},
   center: {lng: -87.639064, lat: 41.895579},
   heatMap: true,
   checkInMap: false,
@@ -66,25 +65,14 @@ export const toggleHeatMap = () => {
 
 export const retrieveCenter = () => {
   return async dispatch => {
-    const {data} = await axios.post(
-      `https://www.googleapis.com/geolocation/v1/geolocate?key=${GOOGLE_MAPS_API}`
-    );
-    dispatch(syncLocation(data));
+    const res = await axios.post('/api/map/retrievecenter');
+    dispatch(syncLocation(res.data));
   };
 };
 
 export const fetchGeolocation = () => {
-  let mapApi;
-  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    mapApi = GOOGLE_MAPS_API;
-  } else {
-    mapApi = GOOGLE_MAPS_API;
-  }
   return async dispatch => {
-    const res = await axios.post(
-      `https://www.googleapis.com/geolocation/v1/geolocate?key=${mapApi}`,
-      {}
-    );
+    const res = await axios.post('/api/map/retrievecenter');
     dispatch(initialGeolocation(res.data));
   };
 };
@@ -99,8 +87,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         location: {
           lng: action.geolocation.location.lng,
-          lat: action.geolocation.location.lat,
-          zoom: state.location.zoom
+          lat: action.geolocation.location.lat
         }
       };
     case SYNC_LOCATION:

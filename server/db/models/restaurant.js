@@ -39,7 +39,7 @@ const Restaurant = db.define(
     yelpRating: {
       type: Sequelize.FLOAT,
       validate: {
-        min: 1,
+        min: 0,
         max: 5
       }
     },

@@ -1,7 +1,7 @@
 {
-  "name": "capstone",
+  "name": "radiuschicago",
   "version": "1.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "Radius is a user-driven app to find and compare local restaurants. With reviews from Yelp and Google easily accessible in app, it’s a one stop shop to plan your next meal.",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -33,7 +33,7 @@
       "git add"
     ]
   },
-  "author": "Fullstack Academy of Code",
+  "author": "Abby Wigdale, Parag Zaveri, Juliet Welcome, Tony Boetto",
   "license": "MIT",
   "dependencies": {
     "@google/maps": "^0.5.5",

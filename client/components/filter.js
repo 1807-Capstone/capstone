@@ -1,13 +1,9 @@
 import React from 'react';
 import FilterFormRedux from './filterFormRedux';
-import RestaurantList from './allRestaurants';
-import {
-  fetchFilteredRestaurantsFromGoogle,
-  getFilteredFromServer
-} from '../store/restaurant';
+import {getFilteredFromServer} from '../store/restaurant';
 import {connect} from 'react-redux';
 import {fetchGeolocation} from '../store/map';
-import {Header, Divider, Icon} from 'semantic-ui-react';
+import {Divider} from 'semantic-ui-react';
 import FilteredRestaurantList from './filteredRestaurantList';
 import {StyledHeader, StyledBtn} from './styledComponents';
 import styled from 'styled-components';
@@ -19,17 +15,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  // getFilteredRestaurants: (lat, lng, cuisine, price, rating, distance) =>
-  //   dispatch(
-  //     fetchFilteredRestaurantsFromGoogle(
-  //       lat,
-  //       lng,
-  //       cuisine,
-  //       price,
-  //       rating,
-  //       distance
-  //     )
-  //   ),
   fetchFiltered: (cuisine, price, distance) =>
     dispatch(getFilteredFromServer(cuisine, price, distance)),
   geolocate: () => dispatch(fetchGeolocation())

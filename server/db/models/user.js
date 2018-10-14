@@ -32,7 +32,7 @@ const User = db.define(
       type: Sequelize.STRING
     },
     checkedInRestaurants: {
-      type: Sequelize.ARRAY(Sequelize.INTEGER)
+      type: Sequelize.ARRAY(Sequelize.INTEGER),
     },
     didCheckIn: {
       type: Sequelize.BOOLEAN,
@@ -91,6 +91,17 @@ function shuffle(array) {
 
 User.prototype.getVisited = function() {
   const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
+  if (!userCheckedInRestaurants) {
+    return [
+      {
+        rating: 4,
+        yelpResults: {rating: 3},
+        radiusRating: 5,
+        name: 'No Suggestions Based on Your Data!',
+        yelpImg: '/img/dim-sum.jpg'
+      }
+    ];
+  }
   const response = Restaurant.findAll({
     where: {
       id: {
@@ -104,44 +115,62 @@ User.prototype.getVisited = function() {
 User.prototype.getSuggested = async function() {
   const userId = this.getDataValue('id');
   const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
-  let recommendedRestaurants = [];
-  const allUsers = await User.findAll(
-    {where: {id: {[Op.ne]: userId}}},
-    {attributes: ['checkedInRestaurants', 'id']}
-  );
-  const allVisitedRestaurants = allUsers.map(
-    elem => elem.dataValues.checkedInRestaurants
-  );
-  allVisitedRestaurants.forEach(elem => {
-    if (
-      intersection(userCheckedInRestaurants, elem).length >
-      recommendedRestaurants.length
-    ) {
-      recommendedRestaurants = difference(elem, userCheckedInRestaurants);
-    }
-  });
-  if (!recommendedRestaurants.length)
+  if (!userCheckedInRestaurants) {
     return [
       {
-        googleRating: 4,
-        yelpRating: 3,
+        rating: 4,
+        yelpResults: {rating: 3},
         radiusRating: 5,
         name: 'No Suggestions Based on Your Data!',
-        imgUrl: '/img/dim-sum.jpg'
+        yelpImg: '/img/dim-sum.jpg'
       }
     ];
-  let shuffledRestaurants = shuffle(recommendedRestaurants);
-  if (shuffledRestaurants.length >= 3) {
-    shuffledRestaurants = shuffledRestaurants.slice(0, 3);
-  }
-  const response = await Restaurant.findAll({
-    where: {
-      id: {
-        [Op.or]: shuffledRestaurants
+  } else {
+    let recommendedRestaurants = [];
+    //Retrieve all users' checked-in restaurant's array
+    const allUsers = await User.findAll(
+      {where: {id: {[Op.ne]: userId}}},
+      {attributes: ['checkedInRestaurants', 'id']}
+    );
+    //Create an array of these arrays
+    const allVisitedRestaurants = allUsers.map(
+      elem => elem.dataValues.checkedInRestaurants
+    );
+    //Check each array for the largest intersection, and set recommendedRestaurants as the difference between that array and user's checked in restaurants
+    allVisitedRestaurants.forEach(elem => {
+      if (
+        intersection(userCheckedInRestaurants, elem).length >
+        recommendedRestaurants.length
+      ) {
+        recommendedRestaurants = difference(elem, userCheckedInRestaurants);
       }
+    });
+    //If no intersection, return data to avoid error
+    if (!recommendedRestaurants.length)
+      return [
+        {
+          rating: 4,
+          yelpResults: {rating: 3},
+          radiusRating: 5,
+          name: 'No Suggestions Based on Your Data!',
+          yelpImg: '/img/dim-sum.jpg'
+        }
+      ];
+    //Shuffle and slice recommended restaurant array.
+    let shuffledRestaurants = shuffle(recommendedRestaurants);
+    if (shuffledRestaurants.length >= 3) {
+      shuffledRestaurants = shuffledRestaurants.slice(0, 3);
     }
-  });
-  return response;
+    //Return relevant data on these arrays, including imgUrl, rating, location etc.
+    const response = await Restaurant.findAll({
+      where: {
+        id: {
+          [Op.or]: shuffledRestaurants
+        }
+      }
+    });
+    return response;
+  }
 };
 
 User.prototype.getVisited = function() {

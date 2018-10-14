@@ -4,7 +4,6 @@ const db = require('../server/db');
 const {
   User,
   Restaurant,
-  Cuisine,
   Review,
   WaitTime,
   CheckIn
@@ -15,26 +14,22 @@ const reviewSeeds = require('./reviews.json');
 const userSeeds = require('./users.json');
 const checkInSeeds = require('./checkins.json');
 const waitTimeSeeds = require('./waitTimes.json');
-const cuisineSeeds = require('./cuisines.json');
 
 async function seed() {
   await db.sync({force: true});
   console.log('db synced!');
   const users = await User.bulkCreate(userSeeds, {individualHooks: true});
   const restaurants = await Restaurant.bulkCreate(restaurantSeeds);
-  const cuisines = await Cuisine.bulkCreate(cuisineSeeds);
   const reviews = await Review.bulkCreate(reviewSeeds);
   const waittimes = await WaitTime.bulkCreate(waitTimeSeeds);
   const checkIns = await CheckIn.bulkCreate(checkInSeeds);
   await db.query(`ALTER SEQUENCE "users_id_seq" RESTART WITH 29;`);
   await db.query(`ALTER SEQUENCE "restaurants_id_seq" RESTART WITH 161;`);
   await db.query(`ALTER SEQUENCE "check-ins_id_seq" RESTART WITH 2241;`);
-  await db.query(`ALTER SEQUENCE "cuisines_id_seq" RESTART WITH 8;`);
   await db.query(`ALTER SEQUENCE "reviews_id_seq" RESTART WITH 16;`);
   await db.query(`ALTER SEQUENCE "waitTimes_id_seq" RESTART WITH 6021;`);
   console.log('seeded 28 users');
   console.log('seeded 161 restaurants');
-  console.log('seeded 8 cuisines');
   console.log('seeded 16 reviews');
   console.log('seeded 6020 wait times');
   console.log('seeded 2240 check ins');

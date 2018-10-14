@@ -36,19 +36,15 @@ CheckIn.beforeCreate(async checkIn => {
 
 CheckIn.afterCreate(async checkIn => {
   let userId = checkIn.userId;
-
+  let restaurantId = checkIn.restaurantId;
   const user = await User.findById(userId);
   // After user checks in, find all visited restaurants
-  const response = await CheckIn.findAll({
-    where: {
-      userId: userId
-    },
-    attributes: ['restaurantId']
-  });
-  // Clean data
-  const restaurantsVisited = response.map(elem => elem.dataValues.restaurantId);
-  // Set all visited restaurants in array on user's tuple
-  user.set('checkedInRestaurants', restaurantsVisited);
+  let usersCheckedIn = user.getDataValue('checkedInRestaurants');
+  if (!usersCheckedIn) usersCheckedIn = [];
+  if (usersCheckedIn.indexOf(restaurantId) === -1) {
+    usersCheckedIn.push(restaurantId);
+  }
+  user.set('checkedInRestaurants', usersCheckedIn);
   user.save();
 });
 

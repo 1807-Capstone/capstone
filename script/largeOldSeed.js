@@ -4,7 +4,6 @@ const db = require('../server/db');
 const {
   User,
   Restaurant,
-  Cuisine,
   Review,
   WaitTime,
   CheckIn
@@ -1969,18 +1968,6 @@ async function seed() {
 
   console.log(`seeded ${restaurants.length} restaurants`);
   console.log(`seeded ${users.length} users`);
-
-  const cuisines = await Promise.all([
-    Cuisine.create({name: 'american'}),
-    Cuisine.create({name: 'italian'}),
-    Cuisine.create({name: 'chinese'}),
-    Cuisine.create({name: 'mexican'}),
-    Cuisine.create({name: 'japanese'}),
-    Cuisine.create({name: 'burgers'}),
-    Cuisine.create({name: 'steakhouse'})
-  ]);
-
-  console.log(`seeded ${cuisines.length} cuisines`);
 
   const reviews = await Promise.all([
     Review.create({

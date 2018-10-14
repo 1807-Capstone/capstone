@@ -53,7 +53,6 @@ class FilteredRestaurantList extends Component {
                                 value={restaurant.radiusRating}
                                 half={true}
                                 color2="#35b3bf"
-                                // size="25px"
                               />
                               Yelp rating:{' '}
                               <ReactStars

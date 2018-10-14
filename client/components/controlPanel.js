@@ -1,13 +1,10 @@
 /* eslint-disable complexity */
 import React, {Component} from 'react';
-import {fromJS} from 'immutable';
 import {Button} from 'semantic-ui-react';
 
-// const OdefaultMapStyle = fromJS(MAP_STYLE);
 
 const categories = ['waittimes'];
 
-// Layer id patterns by category
 
 const defaultContainer = ({children}) => (
   <div className="control-panel">{children}</div>

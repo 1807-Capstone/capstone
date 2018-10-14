@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Responsive, Item} from 'semantic-ui-react';
+import {Grid, Responsive} from 'semantic-ui-react';
 import {reduxForm} from 'redux-form';
 import {updateUserOnServer} from '../store/user';
 import {addReviewToServer} from '../store/review';

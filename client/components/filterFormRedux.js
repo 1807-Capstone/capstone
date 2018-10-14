@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {reduxForm} from 'redux-form';
 import {Grid, Button, Icon, Transition} from 'semantic-ui-react';
-import styled from 'styled-components';
 import {StyledBtn} from './styledComponents';
 
 const preventDefault = event => {

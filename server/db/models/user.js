@@ -32,7 +32,7 @@ const User = db.define(
       type: Sequelize.STRING
     },
     checkedInRestaurants: {
-      type: Sequelize.ARRAY(Sequelize.INTEGER)
+      type: Sequelize.ARRAY(Sequelize.INTEGER),
     },
     didCheckIn: {
       type: Sequelize.BOOLEAN,
@@ -115,7 +115,6 @@ User.prototype.getVisited = function() {
 User.prototype.getSuggested = async function() {
   const userId = this.getDataValue('id');
   const userCheckedInRestaurants = this.getDataValue('checkedInRestaurants');
-  console.log('checkedInRestaurants: ', userCheckedInRestaurants);
   if (!userCheckedInRestaurants) {
     return [
       {

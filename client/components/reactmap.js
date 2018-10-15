@@ -106,7 +106,6 @@ class Map extends Component {
     this.props.retrieveCenter();
     this.props.fetchAllData();
     this.props.fetchAllCheckins();
-    console.log('here');
   }
   componentDidUpdate(prevProps, prevState) {
     if (

@@ -1,19 +1,19 @@
 /* eslint-disable complexity */
 
-import React, {Component} from 'react';
-import ReactMapGL, {NavigationControl, Marker, Popup} from 'react-map-gl';
-import {getRadius} from '../../utils';
-import {Responsive} from 'semantic-ui-react';
+import React, { Component } from 'react';
+import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl';
+import { getRadius } from '../../utils';
+import { Responsive } from 'semantic-ui-react';
 import Dimensions from 'react-dimensions';
-import DeckGL, {HexagonLayer} from 'deck.gl';
-import {connect} from 'react-redux';
+import DeckGL, { HexagonLayer } from 'deck.gl';
+import { connect } from 'react-redux';
 import {
   fetchRestaurantsList,
   fetchRadiusYelpResultPopup,
   sendRestaurantToPageFromMap
 } from '../store/restaurant';
-import {fetchAllCheckins} from '../store/checkin';
-import {fetchAllData} from '../store/waittimes';
+import { fetchAllCheckins } from '../store/checkin';
+import { fetchAllData } from '../store/waittimes';
 import {
   retrieveCenter,
   toggleHeatMap,
@@ -26,7 +26,7 @@ import ControlPanel from './controlPanel';
 import PropTypes from 'prop-types';
 import MapFormRedux from './mapFormRedux';
 import MapList from './mapListView';
-import {StyledSearchButton} from './styledComponents';
+import { StyledSearchButton } from './styledComponents';
 
 const mapBoxToken =
   'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
@@ -91,21 +91,22 @@ class Map extends Component {
 
   selectCuisine = evt => {
     evt.preventDefault();
-    this.setState({cuisine: evt.target.value});
+    this.setState({ cuisine: evt.target.value });
   };
   selectPrice = evt => {
     evt.preventDefault();
-    this.setState({price: evt.target.value});
+    this.setState({ price: evt.target.value });
   };
   selectDistance = evt => {
     evt.preventDefault();
-    this.setState({distance: evt.target.distance});
+    this.setState({ distance: evt.target.distance });
   };
 
   componentDidMount() {
+    this.props.retrieveCenter();
     this.props.fetchAllData();
     this.props.fetchAllCheckins();
-    this.props.retrieveCenter();
+    console.log('here');
   }
   componentDidUpdate(prevProps, prevState) {
     if (
@@ -134,7 +135,7 @@ class Map extends Component {
     }
 
     if (this.props.newPopupInfo !== prevProps.newPopupInfo) {
-      this.setState({popupInfo: this.props.newPopupInfo});
+      this.setState({ popupInfo: this.props.newPopupInfo });
     }
   }
 
@@ -171,7 +172,7 @@ class Map extends Component {
               restaurant,
               this.props.restaurantsList
             );
-            this.setState({popupInfo: restaurant});
+            this.setState({ popupInfo: restaurant });
           }}
           index={index + 1}
         />
@@ -180,11 +181,11 @@ class Map extends Component {
   };
 
   updateViewport = viewport => {
-    this.setState({viewport});
+    this.setState({ viewport });
   };
 
   renderPopup = () => {
-    const {popupInfo} = this.state;
+    const { popupInfo } = this.state;
     const sendRestaurant = this.props.sendRestaurantToPageFromMap;
     return (
       popupInfo && (
@@ -193,7 +194,7 @@ class Map extends Component {
           anchor="top"
           longitude={popupInfo.geometry.location.lng}
           latitude={popupInfo.geometry.location.lat}
-          onClose={() => this.setState({popupInfo: null})}
+          onClose={() => this.setState({ popupInfo: null })}
         >
           <RestaurantPopup
             restaurant={popupInfo}
@@ -241,7 +242,7 @@ class Map extends Component {
     });
 
     return (
-      <Responsive style={{width: '100vw', height: '100vh'}}>
+      <Responsive style={{ width: '100vw', height: '100vh' }}>
         <MapFormRedux
           handleSelectCuisine={this.selectCuisine}
           handleSelectPrice={this.selectPrice}
@@ -255,7 +256,7 @@ class Map extends Component {
               ? 'mapbox://styles/mapbox/dark-v9'
               : 'mapbox://styles/mapbox/light-v8'
           }
-          onViewportChange={viewport => this.setState({viewport})}
+          onViewportChange={viewport => this.setState({ viewport })}
           ref={map => (this.mapRef = map)}
         >
           {this.props.heatMap && (
@@ -314,7 +315,7 @@ class Map extends Component {
 }
 
 const sizedMap = Dimensions({
-  containerStyle: {width: '100%', height: '90vh'},
+  containerStyle: { width: '100%', height: '90vh' },
   elementResize: true,
   className: 'react-dimensions-wrapper'
 })(Map);

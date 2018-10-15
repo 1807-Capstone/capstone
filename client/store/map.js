@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const initialState = {
-  location: {lng: -87.639064, lat: 41.895579},
-  center: {lng: -87.639064, lat: 41.895579},
+  location: { lng: -87.639064, lat: 41.895579 },
+  center: { lng: -87.639064, lat: 41.895579 },
   heatMap: true,
   checkInMap: false,
   nightMode: false
@@ -65,15 +65,27 @@ export const toggleHeatMap = () => {
 
 export const retrieveCenter = () => {
   return async dispatch => {
-    const res = await axios.post('/api/map/retrievecenter');
-    dispatch(syncLocation(res.data));
+    const res = await axios.get('/api/map/retrievecenter');
+
+
+    const { data } = await axios.post(
+      `https://www.googleapis.com/geolocation/v1/geolocate?key=${
+      res.data
+      }`)
+
+    dispatch(syncLocation(data));
   };
 };
 
 export const fetchGeolocation = () => {
   return async dispatch => {
-    const res = await axios.post('/api/map/retrievecenter');
-    dispatch(initialGeolocation(res.data));
+    const res = await axios.get('/api/map/retrievecenter');
+
+    const { data } = await axios.post(
+      `https://www.googleapis.com/geolocation/v1/geolocate?key=${
+      res.data
+      }`)
+    dispatch(initialGeolocation(data));
   };
 };
 
@@ -81,7 +93,7 @@ export const fetchGeolocation = () => {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_LOCATION:
-      return {...state, location: action.location};
+      return { ...state, location: action.location };
     case INITIAL_GEOLOCATE:
       return {
         ...state,
